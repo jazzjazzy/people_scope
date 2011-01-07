@@ -1,0 +1,57 @@
+{*FORM-HEADER*}
+
+<style>
+
+</style>
+<link media="print" rel="stylesheet" href="css/bulkprint.css" type="text/css">
+<div id="row1">
+<h1><div id="staff-title">{*page_title*}</div><div style="clear:both;"></div></h1>
+<div class="container">
+			<div  class="tab">
+			<div id="tab-header">
+				<h1>User Details</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+				<div class="noprint">{*FUNCTION*}</div>
+				<div class="value">{*user_id*}{*err_user_id*}</div><br class="clear"/>
+				<div class="label">username :</div><div class="value">{*username*}{*err_username*}</div><br class="clear"/>
+				<div class="label">password :</div><div class="value">{*password*}{*err_password*}</div><br class="clear"/>
+				<div class="label">name :</div><div class="value">{*name*}{*err_name*}</div><br class="clear"/>
+				<div class="label">surname :</div><div class="value">{*surname*}{*err_surname*}</div><br class="clear"/>
+				<div class="label">email :</div><div class="value">{*email*}{*err_email*}</div><br class="clear"/>
+				<div class="label">active :</div><div class="value">{*active*}{*err_active*}</div><br class="clear"/>
+				<div class="label">last_login :</div><div class="value">{*last_login*}{*err_last_login*}</div><br class="clear"/>
+				<div class="label">division_id :</div><div class="value">{*division_id*}{*err_division_id*}</div><br class="clear"/>
+				<div class="label">group_name :</div><div class="value">{*group_name*}{*err_group_name*}</div><br class="clear"/>
+			<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+			</div>
+			<div  class="tab">
+			<div id="tab-header">
+				<h1>Account Details</h1>
+			</div>
+			<div id="tab-text">
+				Information about the element, create, Modify and delete dates 
+			</div>
+			<div id="tab-body">
+				<div style="width:120px">Last Login on : </div>{*last_login*}<br />
+				<div style="width:120px">Created on : </div>{*create_date*}<br />
+				<div style="width:120px">Modified on :</div>{*modify_date*}<br />
+				<div style="width:120px">Deleted on :</div>{*delete_date*}<br />
+				<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+			</div>
+</div>
+{*COMMENTS*}
+{*pageinfo*}<br class="clear" />
+<br class="clear"/>
+
+
+{*FORM-FOOTER*}
+</div>
+{*pbreak*}{*pbreakend*}

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_Dig</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_Dig</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Base class for other PEAR classes.  Provides rudimentary  emulation of destructors.</p>
+<p class="description"><p>If you want a destructor in your class, inherit PEAR and make a  destructor method called _yourclassname (same name as the  constructor, but with a &quot;_&quot; prefix).  Also, in your constructor you  have to call the PEAR constructor: $this-&gt;PEAR();.  The destructor method will be called without parameters.  Note that  at in some SAPI implementations (such as Apache), any output during  the request shutdown (in which destructors are called) seems to be  discarded.  If you need to get any debug information from your  destructor, use error_log(), syslog() or something similar.</p><p>IMPORTANT! To use the emulated destructors you need to create the  objects by reference: $obj =&amp; new PEAR_child;</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Greg Beaver &lt;<a href="mailto:cellog@php.net">cellog@php.net</a>&gt;</li>
+				<li><span class="field">author:</span> Stig Bakken &lt;<a href="mailto:ssb@php.net">ssb@php.net</a>&gt;</li>
+				<li><span class="field">author:</span> Tomas V.V. Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+				<li><span class="field">version:</span> Release: 1.4.5</li>
+				<li><span class="field">copyright:</span> 1997-2005 The PHP Group</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---Dig.php.html">/assets/PEAR/Net/Dig.php</a> (line <span class="field"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a26">26</a></span>)
+		</p>
+		
+				
+		<pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --Net_Dig</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$address" title="details" class="var-name">$address</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$cmd" title="details" class="var-name">$cmd</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$dig_prog" title="details" class="var-name">$dig_prog</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$query_type" title="details" class="var-name">$query_type</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$raw_data" title="details" class="var-name">$raw_data</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$result" title="details" class="var-name">$result</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$server" title="details" class="var-name">$server</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result"><a href="../PEAR/Net_Dig.html">object Net_Dig</a></span>
+										<a href="#Net_Dig" title="details" class="method-name">Net_Dig</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">object Net_Dig_result</span>
+										<a href="#dig" title="details" class="method-name">dig</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">obj</span>
+										<a href="#_parse_data" title="details" class="method-name">_parse_data</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">obj</span>
+										<a href="#_parse_resource" title="details" class="method-name">_parse_resource</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$line</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_validate_type" title="details" class="method-name">_validate_type</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$address" id="$address"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$address</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a36">36</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The address to dig</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cmd" id="$cmd"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cmd</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a60">60</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The last system command executed (for debugging)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$dig_prog" id="$dig_prog"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$dig_prog</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a76">76</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The location of the system dig program</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$query_type" id="$query_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$query_type</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a52">52</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The type of DNS records to dig for</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$raw_data" id="$raw_data"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$raw_data</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a68">68</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The raw output of the system command (for debugging)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$result" id="$result"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$result</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a84">84</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The parsed result of the last dig</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$server" id="$server"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$server</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The server to use for digging</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+					<blockquote>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_debug">PEAR::$_debug</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_handler">PEAR::$_default_error_handler</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_mode">PEAR::$_default_error_mode</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_options">PEAR::$_default_error_options</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_error_class">PEAR::$_error_class</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_expected_errors">PEAR::$_expected_errors</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_Dig" id="Net_Dig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_Dig</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a107">107</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The Net_Dig constructor  Called when a new Net_Dig object is initialized</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A new Net_Dig object</li>
+				<li><span class="field">author:</span> Colin Viebrock &lt;<a href="mailto:colin@easyDNS.com">colin@easyDNS.com</a>&gt;</li>
+				<li><span class="field">since:</span> PHP 4.0.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../PEAR/Net_Dig.html">object Net_Dig</a></span>
+		<span class="method-name">
+			Net_Dig
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$address</span><span class="var-description">: [$address]  The address to dig (can be set                                using the $address property as well)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: [$server]   The server to dig at (can be set                                using the $server property as well)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddig" id="dig"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">dig</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a144">144</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Does a dig of the given address (or $this-&gt;address)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A new Net_Dig_result object</li>
+				<li><span class="field">author:</span> Colin Viebrock &lt;<a href="mailto:colin@easyDNS.com">colin@easyDNS.com</a>&gt;</li>
+				<li><span class="field">since:</span> PHP 4.0.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object Net_Dig_result</span>
+		<span class="method-name">
+			dig
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$address</span><span class="var-description">: [$address] The address to dig (can be set                                 using the $address property as well)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_parse_data" id="_parse_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_parse_data</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a230">230</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parses the raw data in $this-&gt;raw_data</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Net_Dig_result  $return   A Net_Dig_result object</li>
+				<li><span class="field">author:</span> Colin Viebrock &lt;<a href="mailto:colin@easyDNS.com">colin@easyDNS.com</a>&gt;</li>
+				<li><span class="field">since:</span> PHP 4.0.5</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">obj</span>
+		<span class="method-name">
+			_parse_data
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_parse_resource" id="_parse_resource"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_parse_resource</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a362">362</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parses a resource record line</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Net_Dig_resource  $return   A Net_Dig_resource object</li>
+				<li><span class="field">author:</span> Colin Viebrock &lt;<a href="mailto:colin@easyDNS.com">colin@easyDNS.com</a>&gt;</li>
+				<li><span class="field">since:</span> PHP 4.0.5</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">obj</span>
+		<span class="method-name">
+			_parse_resource
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$line</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$line</span><span class="var-description">: The line to parse</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_validate_type" id="_validate_type"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_validate_type</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetDig.php.html#a193">193</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validates the value of $this-&gt;query_type</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if $this-&gt;query_type is a                                 valid dig query, otherwise false</li>
+				<li><span class="field">author:</span> Colin Viebrock &lt;<a href="mailto:colin@easyDNS.com">colin@easyDNS.com</a>&gt;</li>
+				<li><span class="field">since:</span> PHP 4.0.5</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_validate_type
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+					<blockquote>
+													<img src="../media/images/Constructor.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#method_checkDelExpect">PEAR::_checkDelExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:01:59 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

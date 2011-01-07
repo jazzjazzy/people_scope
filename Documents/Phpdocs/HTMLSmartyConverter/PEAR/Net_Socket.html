@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class Net_Socket</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">PEAR<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                                                                                                                                                                                                                                                                            
+                                                  		[ <a href="../classtrees_PEAR.html" class="menu">class tree: PEAR</a> ]
+		[ <a href="../elementindex_PEAR.html" class="menu">index: PEAR</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">PEAR</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../PEAR/_assets---PEAR---PEAR.php.html">PEAR.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../PEAR/Net_Dig.html">Net_Dig</a>    	 <br />
+	    		<a href="../PEAR/Net_Socket.html">Net_Socket</a>    	 <br />
+	    		<a href="../PEAR/PEAR.html">PEAR</a>    	 <br />
+	    		<a href="../PEAR/PEAR_Error.html">PEAR_Error</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Net_Socket</h1>
+Source Location: /assets/PEAR/Net/Socket.php<br /><br />
+
+<h2 class="class-name">Class Net_Socket</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+						
+					| <a href="#sec-inherited">Inherited Properties, Constants, and Methods</a>
+											| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>Generalized Socket class.
+</strong></p>
+
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---Socket.php.html">/assets/PEAR/Net/Socket.php</a> [<span class="field">line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a35">35</a></span>]
+		</p>
+
+		
+		<pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --Net_Socket</pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Stig Bakken &lt;<a href="mailto:ssb@php.net">ssb@php.net</a>&gt;</li>
+			 		  			 			 <li>Chuck Hagenbuch &lt;<a href="mailto:chuck@horde.org">chuck@horde.org</a>&gt;</li>
+			 		  			 		  			 		  		</ul>
+		
+		
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>1.1</td></tr>
+				<tr><td><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>1997-2005 The PHP Group</td></tr>
+	</table>
+		</td>
+
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_vars">Properties</a></strong></p>
+		<ul>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$addr">$addr</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$blocking">$blocking</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$fp">$fp</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$lineLength">$lineLength</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$persistent">$persistent</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$port">$port</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#var$timeout">$timeout</a></li>
+		  		</ul>
+		</td>
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodconnect">connect</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methoddisconnect">disconnect</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodeof">eof</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodgets">gets</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodgetStatus">getStatus</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodisBlocking">isBlocking</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodread">read</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadAll">readAll</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadByte">readByte</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadInt">readInt</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadIPAddress">readIPAddress</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadLine">readLine</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadString">readString</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodreadWord">readWord</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodselect">select</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodsetBlocking">setBlocking</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodsetTimeout">setTimeout</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodwrite">write</a></li>
+		  		  <li><a href="../PEAR/Net_Socket.html#methodwriteLine">writeLine</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+
+	<a name="sec-inherited"></a>
+	<div class="info-box">
+		<div class="info-box-title">Inherited Properties, Constants, and Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+						| <span class="disabled">Inherited Properties, Constants, and Methods</span>
+												| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+																			| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header" width="30%">Inherited Properties</th>
+					<th class="class-table-header" width="40%">Inherited Methods</th>
+					<th class="class-table-header" width="30%">Inherited Constants</th>
+				</tr>
+				<tr>
+					<td width="30%">
+													<p>Inherited From <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_debug">PEAR::$_debug</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_default_error_handler">PEAR::$_default_error_handler</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_default_error_mode">PEAR::$_default_error_mode</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_default_error_options">PEAR::$_default_error_options</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_error_class">PEAR::$_error_class</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#var$_expected_errors">PEAR::$_expected_errors</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="40%">
+													<p>Inherited From <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Constructor.  Registers this object in  $_PEAR_destructor_object_list for destructor emulation if a  destructor object exists.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">This method deletes all occurences of the specified element from  the expected error codes stack.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">This method is used to tell which errors you expect to get.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">If you have a class that's mostly/entirely static, and you need static</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Tell whether a value is a PEAR error.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">OS independant PHP extension load. Remember to take care  on the correct extension name for case sensitive OSes.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Pop the last error handler used</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">This method pops one element off the expected error codes  stack.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Push a new error handler on top of the error handler options stack. With this  you can easily override the actual error handler for some code and restore  it later with popErrorHandling.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Use this function to register a shutdown method for static  classes.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets how errors generated by this object should be handled.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Simpler form of raiseError with fewer options.  In most cases  message, code and userinfo are enough.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#method_checkDelExpect">PEAR::_checkDelExpect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">This method checks unsets an error code if available</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Destructor (the emulated type of...).  Does nothing right now,  but is included for forward compatibility, so subclass  destructors should always call it.</span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="30%">
+											</td>
+				</tr>
+			</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Property Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+						| <span class="disabled">Property Summary</span> | <a href="#sec-vars">Properties Detail</a>
+												| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
+																																																							<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$addr" title="details" class="var-name-summary">$addr</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The IP address to connect to.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$blocking" title="details" class="var-name-summary">$blocking</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Whether the socket is blocking. Defaults to true.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">resource</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$fp" title="details" class="var-name-summary">$fp</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Socket file pointer.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$lineLength" title="details" class="var-name-summary">$lineLength</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Number of bytes to read at a time in readLine() and  readAll(). Defaults to 2048.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$persistent" title="details" class="var-name-summary">$persistent</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Whether the socket is persistent. Defaults to false.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$port" title="details" class="var-name-summary">$port</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The port number to connect to.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$timeout" title="details" class="var-name-summary">$timeout</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Number of seconds to wait on socket connections before assuming  there's no more data. Defaults to no timeout.</td></tr>
+				</div>
+										</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																																																																																								<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#connect" title="details" class="method-name">connect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Connect to the specified port. If called when the socket is  already connected, it disconnects and connects again.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#disconnect" title="details" class="method-name">disconnect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Disconnects from the peer, closes the socket.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">bool</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#eof" title="details" class="method-name">eof</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Tests for end-of-file on a socket descriptor.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">$size</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#gets" title="details" class="method-name">gets</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get a specified line of data</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getStatus" title="details" class="method-name">getStatus</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns information about an existing socket resource.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isBlocking" title="details" class="method-name">isBlocking</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Find out if the socket is in blocking mode.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">$size</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#read" title="details" class="method-name">read</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Read a specified amount of data. This is guaranteed to return,  and has the added benefit of getting everything in one fread()  chunk; if you know the size of the data you're getting  beforehand, this is definitely the way to go.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readAll" title="details" class="method-name">readAll</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Read until the socket closes, or until there is no more data in</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">1</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readByte" title="details" class="method-name">readByte</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reads a byte of data</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readInt" title="details" class="method-name">readInt</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reads an int of data</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">Dot</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readIPAddress" title="details" class="method-name">readIPAddress</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reads an IP Address and returns it in a dot formated string</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">All</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readLine" title="details" class="method-name">readLine</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Read until either the end of the socket or a newline, whichever  comes first. Strips the trailing newline from the returned data.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string,</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readString" title="details" class="method-name">readString</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reads a zero-terminated string of data</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">1</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#readWord" title="details" class="method-name">readWord</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reads a word of data</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">False</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#select" title="details" class="method-name">select</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Runs the equivalent of the select() system call on the socket  with a timeout specified by tv_sec and tv_usec.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setBlocking" title="details" class="method-name">setBlocking</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets whether the socket connection should be blocking or  not. A read call to a non-blocking socket will return immediately  if there is no data available, whereas it will block until there  is data for blocking sockets.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setTimeout" title="details" class="method-name">setTimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the timeout value on socket descriptor,  expressed in the sum of seconds and microseconds</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#write" title="details" class="method-name">write</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Write a specified amount of data.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#writeLine" title="details" class="method-name">writeLine</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Write a line of data to the socket, followed by a trailing &quot;\r\n&quot;.</td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+										| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+			<a name="var$addr" id="$addr"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$addr</span>
+			 = <span class="var-default"> ''</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a59">59</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The IP address to connect to.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$blocking" id="$blocking"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$blocking</span>
+			 = <span class="var-default"> true</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a47">47</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Whether the socket is blocking. Defaults to true.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$fp" id="$fp"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">resource</span>&nbsp;&nbsp;
+			<span class="var-name">$fp</span>
+			 = <span class="var-default"> null</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a41">41</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Socket file pointer.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$lineLength" id="$lineLength"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$lineLength</span>
+			 = <span class="var-default"> 2048</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a79">79</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Number of bytes to read at a time in readLine() and  readAll(). Defaults to 2048.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$persistent" id="$persistent"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$persistent</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a53">53</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Whether the socket is persistent. Defaults to false.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$port" id="$port"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$port</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a65">65</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The port number to connect to.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$timeout" id="$timeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$timeout</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a72">72</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Number of seconds to wait on socket connections before assuming  there's no more data. Defaults to no timeout.
+</strong></p>
+	
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">connect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a97">97</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean connect(
+string
+$addr, [integer
+$port = 0], [boolean
+$persistent = null], [integer
+$timeout = null], [array
+$options = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Connect to the specified port. If called when the socket is  already connected, it disconnects and connects again.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$addr:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> IP address or host name.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$port:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> TCP port number.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$persistent:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) Whether the connection is                              persistent (kept open between requests                              by the web server).</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$timeout:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) How long to wait for data.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$options:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> See options for stream_context_create.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>| PEAR_Error  True on success or a PEAR_Error on failure.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">disconnect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a157">157</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed disconnect(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Disconnects from the peer, closes the socket.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on success or an error object otherwise</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodeof" id="eof"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">eof</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a335">335</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>bool eof(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Tests for end-of-file on a socket descriptor.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgets" id="gets"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">gets</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a248">248</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>$size gets(
+
+$size&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get a specified line of data
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$size:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>bytes of data from the socket, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetStatus" id="getStatus"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getStatus</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a232">232</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getStatus(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns information about an existing socket resource.
+</strong></p>
+<span class="description"><p>Currently returns four entries in the result array:</p><p>&lt;p&gt;
+ timed_out (bool) - The socket timed out waiting for data<br />  blocked (bool) - The socket was blocked<br />  eof (bool) - Indicates EOF event<br />  unread_bytes (int) - Number of bytes left in the socket buffer<br />  &lt;/p&gt;</p></span>
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Array containing information about existing socket resource or an error object otherwise</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisBlocking" id="isBlocking"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isBlocking</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a174">174</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean isBlocking(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Find out if the socket is in blocking mode.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>The current blocking mode.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodread" id="read"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">read</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a268">268</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>$size read(
+integer
+$size&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Read a specified amount of data. This is guaranteed to return,  and has the added benefit of getting everything in one fread()  chunk; if you know the size of the data you're getting  beforehand, this is definitely the way to go.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$size:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The number of bytes to read from the socket.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>bytes of data from the socket, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadAll" id="readAll"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">readAll</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a468">468</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string readAll(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Read until the socket closes, or until there is no more data in
+</strong></p>
+<span class="description"><p>the inner PHP buffer. If the inner buffer is empty, in blocking  mode we wait for at least 1 byte of data. Therefore, in  blocking mode, if there is no data at all to be read, this  function will never exit (unless the socket is closed on the  remote end).</p></span>
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>All data until the socket closes, or a PEAR_Error if                  not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadByte" id="readByte"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">readByte</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a347">347</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>1 readByte(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reads a byte of data
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>byte of data from the socket, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadInt" id="readInt"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">readInt</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a380">380</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer readInt(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reads an int of data
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>1 int of data from the socket, or a PEAR_Error if                   not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadIPAddress" id="readIPAddress"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">readIPAddress</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a418">418</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>Dot readIPAddress(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reads an IP Address and returns it in a dot formated string
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>formated string, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadLine" id="readLine"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">readLine</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a438">438</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>All readLine(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Read until either the end of the socket or a newline, whichever  comes first. Strips the trailing newline from the returned data.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>available data up to a newline, without that          newline, or until the end of the socket, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadString" id="readString"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">readString</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a398">398</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string, readString(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reads a zero-terminated string of data
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreadWord" id="readWord"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">readWord</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a363">363</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>1 readWord(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reads a word of data
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>word of data from the socket, or a PEAR_Error if          not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodselect" id="select"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">select</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a493">493</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>False select(
+integer
+$state, integer
+$tv_sec, [integer
+$tv_usec = 0]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Runs the equivalent of the select() system call on the socket  with a timeout specified by tv_sec and tv_usec.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$state:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Which of read/write/error to check for.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tv_sec:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Number of seconds for timeout.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tv_usec:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Number of microseconds for timeout.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>if select fails, integer describing which of read/write/error          are ready, or PEAR_Error if not connected.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetBlocking" id="setBlocking"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setBlocking</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a189">189</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed setBlocking(
+boolean
+$mode&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets whether the socket connection should be blocking or  not. A read call to a non-blocking socket will return immediately  if there is no data available, whereas it will block until there  is data for blocking sockets.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mode:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> True for blocking sockets, false for nonblocking.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on success or an error object otherwise</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetTimeout" id="setTimeout"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setTimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a209">209</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed setTimeout(
+integer
+$seconds, integer
+$microseconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the timeout value on socket descriptor,  expressed in the sum of seconds and microseconds
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$seconds:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Seconds.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$microseconds:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Microseconds.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on success or an error object otherwise</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodwrite" id="write"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">write</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a287">287</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed write(
+string
+$data, [integer
+$blocksize = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Write a specified amount of data.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$data:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Data to write.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$blocksize:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Amount of data to write at once.                             NULL means all at once.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on success or an error object otherwise</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodwriteLine" id="writeLine"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">writeLine</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSocket.php.html#a320">320</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed writeLine(
+
+$data&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Write a line of data to the socket, followed by a trailing &quot;\r\n&quot;.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$data:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>fputs result, or an error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:58:04 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

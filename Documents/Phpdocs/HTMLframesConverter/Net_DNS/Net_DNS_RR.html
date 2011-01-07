@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_DNS_RR</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_DNS_RR</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resource Record object definition</p>
+<p class="description"><p>Builds or parses resource record sections of the DNS  packet including  the answer, authority, and additional  sections of the packet.</p></p>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---DNS---RR.php.html">/assets/PEAR/Net/DNS/RR.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a41">41</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_TSIG.html">Net_DNS_RR_TSIG</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>TSIG</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_SOA.html">Net_DNS_RR_SOA</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>SOA</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_PTR.html">Net_DNS_RR_PTR</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>PTR</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_NS.html">Net_DNS_RR_NS</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>NS</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_MX.html">Net_DNS_RR_MX</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>MX</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_CNAME.html">Net_DNS_RR_CNAME</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>CNAME</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_DNS/Net_DNS_RR_A.html">Net_DNS_RR_A</a>
+					</td>
+					<td>
+											A representation of a resource record of type <strong>A</strong>
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$class" title="details" class="var-name">$class</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$name" title="details" class="var-name">$name</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$rdata" title="details" class="var-name">$rdata</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$rdlength" title="details" class="var-name">$rdlength</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$ttl" title="details" class="var-name">$ttl</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$type" title="details" class="var-name">$type</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_DNS_RR</span>
+										<a href="#Net_DNS_RR" title="details" class="method-name">Net_DNS_RR</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$rrdata</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#data" title="details" class="method-name">data</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$packet</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#display" title="details" class="method-name">display</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#new_from_array" title="details" class="method-name">new_from_array</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$rrarray</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#new_from_data" title="details" class="method-name">new_from_data</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rrtype</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rrclass</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ttl</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rdlength</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#new_from_string" title="details" class="method-name">new_from_string</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$rrstring</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$update_type</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#rdata" title="details" class="method-name">rdata</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$packetORrdata</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#rdatastr" title="details" class="method-name">rdatastr</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#rr_rdata" title="details" class="method-name">rr_rdata</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$packet</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#string" title="details" class="method-name">string</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$class" id="$class"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$class</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$class">Net_DNS_RR_TSIG::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$class">Net_DNS_RR_SOA::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$class">Net_DNS_RR_PTR::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$class">Net_DNS_RR_NS::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$class">Net_DNS_RR_MX::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$class">Net_DNS_RR_CNAME::$class</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$class">Net_DNS_RR_A::$class</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$name" id="$name"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$name</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$name">Net_DNS_RR_TSIG::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$name">Net_DNS_RR_SOA::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$name">Net_DNS_RR_PTR::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$name">Net_DNS_RR_NS::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$name">Net_DNS_RR_MX::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$name">Net_DNS_RR_CNAME::$name</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$name">Net_DNS_RR_A::$name</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$rdata" id="$rdata"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$rdata</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a49">49</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$rdata">Net_DNS_RR_TSIG::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$rdata">Net_DNS_RR_SOA::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$rdata">Net_DNS_RR_PTR::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$rdata">Net_DNS_RR_NS::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$rdata">Net_DNS_RR_MX::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$rdata">Net_DNS_RR_CNAME::$rdata</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$rdata">Net_DNS_RR_A::$rdata</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$rdlength" id="$rdlength"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$rdlength</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$rdlength">Net_DNS_RR_TSIG::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$rdlength">Net_DNS_RR_SOA::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$rdlength">Net_DNS_RR_PTR::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$rdlength">Net_DNS_RR_NS::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$rdlength">Net_DNS_RR_MX::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$rdlength">Net_DNS_RR_CNAME::$rdlength</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$rdlength">Net_DNS_RR_A::$rdlength</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$ttl" id="$ttl"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ttl</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a47">47</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$ttl">Net_DNS_RR_TSIG::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$ttl">Net_DNS_RR_SOA::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$ttl">Net_DNS_RR_PTR::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$ttl">Net_DNS_RR_NS::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$ttl">Net_DNS_RR_MX::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$ttl">Net_DNS_RR_CNAME::$ttl</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$ttl">Net_DNS_RR_A::$ttl</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$type" id="$type"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$type</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a45">45</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#var$type">Net_DNS_RR_TSIG::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#var$type">Net_DNS_RR_SOA::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#var$type">Net_DNS_RR_PTR::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#var$type">Net_DNS_RR_NS::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#var$type">Net_DNS_RR_MX::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#var$type">Net_DNS_RR_CNAME::$type</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#var$type">Net_DNS_RR_A::$type</a>
+							</li>
+				</ul>
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_DNS_RR" id="Net_DNS_RR"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_DNS_RR</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a57">57</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">Net_DNS_RR</span>
+		<span class="method-name">
+			Net_DNS_RR
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$rrdata</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rrdata</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddata" id="data"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">data</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a261">261</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			data
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$packet</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$packet</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisplay" id="display"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">display</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a213">213</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			display
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodnew_from_array" id="new_from_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">new_from_array</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a182">182</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			new_from_array
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$rrarray</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rrarray</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnew_from_data" id="new_from_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">new_from_data</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a71">71</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			new_from_data
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rrtype</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rrclass</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ttl</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rdlength</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rrtype</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rrclass</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ttl</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rdlength</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$data</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnew_from_string" id="new_from_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">new_from_string</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a90">90</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			new_from_string
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$rrstring</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$update_type</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rrstring</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$update_type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrdata" id="rdata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">rdata</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a242">242</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rdata
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$packetORrdata</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$packetORrdata</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrdatastr" id="rdatastr"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">rdatastr</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a232">232</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rdatastr
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#methodrdatastr">Net_DNS_RR_TSIG::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#methodrdatastr">Net_DNS_RR_SOA::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#methodrdatastr">Net_DNS_RR_PTR::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#methodrdatastr">Net_DNS_RR_NS::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#methodrdatastr">Net_DNS_RR_MX::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#methodrdatastr">Net_DNS_RR_CNAME::rdatastr()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#methodrdatastr">Net_DNS_RR_A::rdatastr()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodrr_rdata" id="rr_rdata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">rr_rdata</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a255">255</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rr_rdata
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$packet</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$packet</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_TSIG.html#methodrr_rdata">Net_DNS_RR_TSIG::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_SOA.html#methodrr_rdata">Net_DNS_RR_SOA::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_PTR.html#methodrr_rdata">Net_DNS_RR_PTR::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_NS.html#methodrr_rdata">Net_DNS_RR_NS::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_MX.html#methodrr_rdata">Net_DNS_RR_MX::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_CNAME.html#methodrr_rdata">Net_DNS_RR_CNAME::rr_rdata()</a>
+							</li>
+					<li>
+				<a href="../Net_DNS/Net_DNS_RR_A.html#methodrr_rdata">Net_DNS_RR_A::rr_rdata()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodstring" id="string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">string</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSRR.php.html#a220">220</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			string
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:11:44 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,102 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd4e5c423d77f54a02927be12d1caa5f16')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Home.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4e5c423d77f54a02927be12d1caa5f16">Home</SPAN></A><DIV id="d4e5c423d77f54a02927be12d1caa5f16">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd37d66808446944b6a49b08c57059af13')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Department_List.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p37d66808446944b6a49b08c57059af13">Department List</SPAN></A><DIV id="d37d66808446944b6a49b08c57059af13">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='List_jobs.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa4cca39651bb4408868532c5f0c8a5ee">List jobs</SPAN></A><DIV id="tda4cca39651bb4408868532c5f0c8a5ee">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Page_2.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pdd6f4dce677d4f3a9bfa067bae6b4966">Page 2</SPAN></A><DIV id="tddd6f4dce677d4f3a9bfa067bae6b4966">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Page_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p58738143c2be41b2abaec6efdcaee6aa">Page 3</SPAN></A><DIV id="td58738143c2be41b2abaec6efdcaee6aa">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>

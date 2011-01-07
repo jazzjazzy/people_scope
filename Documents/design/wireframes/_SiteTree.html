@@ -1,0 +1,126 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd0c579186149b48dc96c59eeac272a85a')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Home.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0c579186149b48dc96c59eeac272a85a">Home</SPAN></A><DIV id="d0c579186149b48dc96c59eeac272a85a">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='main.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p87fe9552535b4c44a38c605175417491">main</SPAN></A><DIV id="td87fe9552535b4c44a38c605175417491">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Department.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa45905c6c7574d87a10a8de4421ac42f">Department</SPAN></A><DIV id="tda45905c6c7574d87a10a8de4421ac42f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd3367f42efd7c483ab3573873023c5eca')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Jobs.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3367f42efd7c483ab3573873023c5eca">Jobs</SPAN></A><DIV id="d3367f42efd7c483ab3573873023c5eca">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Create_a_job_Advertisment.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p412e27bcc6aa4ee0961f31e88fc540bf">Create a job Advertisment</SPAN></A><DIV id="td412e27bcc6aa4ee0961f31e88fc540bf">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Template.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p29c75f00116a42bb9a22e45b08893a83">Template</SPAN></A><DIV id="td29c75f00116a42bb9a22e45b08893a83">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Roles.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd1d4bd7d32314d1399d8a56115f7eefd">Roles</SPAN></A><DIV id="tdd1d4bd7d32314d1399d8a56115f7eefd">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Administration.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa0512c2a52754e9a87da1d00251a506c">Administration</SPAN></A><DIV id="tda0512c2a52754e9a87da1d00251a506c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>

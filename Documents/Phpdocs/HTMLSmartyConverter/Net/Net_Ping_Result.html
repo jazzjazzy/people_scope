@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class Net_Ping_Result</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">Net<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                              
+                                                                                                                                                                                                                                                                                                		[ <a href="../classtrees_Net.html" class="menu">class tree: Net</a> ]
+		[ <a href="../elementindex_Net.html" class="menu">index: Net</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">Net</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../Net/_assets---PEAR---Net---Dict.php.html">Dict.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../Net/_assets---PEAR---Net---Finger.php.html">Finger.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../Net/_assets---PEAR---Net---Ping.php.html">Ping.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../Net/_assets---PEAR---Net---Whois.php.html">Whois.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Net/Net_Dict.html">Net_Dict</a>    	 <br />
+	    		<a href="../Net/Net_Finger.html">Net_Finger</a>    	 <br />
+	    		<a href="../Net/Net_Ping.html">Net_Ping</a>    	 <br />
+	    		<a href="../Net/Net_Ping_Result.html">Net_Ping_Result</a>    	 <br />
+	    		<a href="../Net/Net_Whois.html">Net_Whois</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Net_Ping_Result</h1>
+Source Location: /assets/PEAR/Net/Ping.php<br /><br />
+
+<h2 class="class-name">Class Net_Ping_Result</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+						
+											| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>Container class for Net_Ping results
+</strong></p>
+
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---Ping.php.html">/assets/PEAR/Net/Ping.php</a> [<span class="field">line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a531">531</a></span>]
+		</p>
+
+		
+		<pre></pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Jan Lehnardt &lt;<a href="mailto:jan@php.net">jan@php.net</a>&gt;</li>
+			 		  			 		  			 		  		</ul>
+		
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+				<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>$Revision: 1.39 $</td></tr>
+	</table>
+		</td>
+
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_vars">Properties</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_bytes_per_request">$_bytes_per_request</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_bytes_total">$_bytes_total</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_icmp_sequence">$_icmp_sequence</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_raw_data">$_raw_data</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_round_trip">$_round_trip</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_sysname">$_sysname</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_target_ip">$_target_ip</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#var$_ttl">$_ttl</a></li>
+		  		</ul>
+		</td>
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodNet_Ping_Result">Net_Ping_Result</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodfactory">factory</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetAvg">getAvg</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetBytesPerRequest">getBytesPerRequest</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetBytesTotal">getBytesTotal</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetICMPSequence">getICMPSequence</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetLoss">getLoss</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetMax">getMax</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetMin">getMin</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetRawData">getRawData</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetReceived">getReceived</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetRoundTrip">getRoundTrip</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetStddev">getStddev</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetSystemName">getSystemName</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetTargetIp">getTargetIp</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetTransmitted">getTransmitted</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetTTL">getTTL</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#methodgetValue">getValue</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResult">_parseResult</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultaix">_parseResultaix</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultdarwin">_parseResultdarwin</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultfreebsd">_parseResultfreebsd</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResulthpux">_parseResulthpux</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultlinux">_parseResultlinux</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultnetbsd">_parseResultnetbsd</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_parseResultwindows">_parseResultwindows</a></li>
+		  		  <li><a href="../Net/Net_Ping_Result.html#method_prepareParseResult">_prepareParseResult</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Property Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+									| <span class="disabled">Property Summary</span> | <a href="#sec-vars">Properties Detail</a>
+												| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
+																																																													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">int</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_bytes_per_request" title="details" class="var-name-summary">$_bytes_per_request</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Number of bytes that are sent with each ICMP request</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">int</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_bytes_total" title="details" class="var-name-summary">$_bytes_total</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The total number of bytes that are sent with all ICMP requests</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_icmp_sequence" title="details" class="var-name-summary">$_icmp_sequence</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">ICMP sequence number and associated time in ms</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_raw_data" title="details" class="var-name-summary">$_raw_data</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The raw Net_Ping::result</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">int</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_round_trip" title="details" class="var-name-summary">$_round_trip</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Statistical information about the ping</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">int</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_sysname" title="details" class="var-name-summary">$_sysname</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The Net_Ping::_sysname</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_target_ip" title="details" class="var-name-summary">$_target_ip</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The target's IP Address</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">int</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_ttl" title="details" class="var-name-summary">$_ttl</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">The ICMP request's TTL</td></tr>
+				</div>
+										</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																																																																																																																																																								<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">Net_Ping_Result</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#Net_Ping_Result" title="details" class="method-name">Net_Ping_Result</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Constructor for the Class</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#factory" title="details" class="method-name">factory</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Factory for Net_Ping_Result</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getAvg" title="details" class="method-name">getAvg</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_round_tripp['avg'];</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">int</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getBytesPerRequest" title="details" class="method-name">getBytesPerRequest</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_bytes_per_request;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">int</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getBytesTotal" title="details" class="method-name">getBytesTotal</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_bytes_total;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getICMPSequence" title="details" class="method-name">getICMPSequence</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_icmp_sequence;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getLoss" title="details" class="method-name">getLoss</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_loss;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMax" title="details" class="method-name">getMax</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_round_trip['max'];</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMin" title="details" class="method-name">getMin</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_round_trip['min'];</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getRawData" title="details" class="method-name">getRawData</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_raw_data;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getReceived" title="details" class="method-name">getReceived</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_received;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getRoundTrip" title="details" class="method-name">getRoundTrip</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_round_trip;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getStddev" title="details" class="method-name">getStddev</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_round_trip['stddev'];</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getSystemName" title="details" class="method-name">getSystemName</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_sysname;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getTargetIp" title="details" class="method-name">getTargetIp</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_target_ip;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getTransmitted" title="details" class="method-name">getTransmitted</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_transmitted;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">int</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getTTL" title="details" class="method-name">getTTL</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Accessor for $this-&gt;_ttl;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getValue" title="details" class="method-name">getValue</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns a Ping_Result property</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResult" title="details" class="method-name">_parseResult</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Delegates the parsing routine according to $this-&gt;_sysname</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultaix" title="details" class="method-name">_parseResultaix</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of AIX' ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultdarwin" title="details" class="method-name">_parseResultdarwin</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of Darwin's ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultfreebsd" title="details" class="method-name">_parseResultfreebsd</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of FreeBSD's ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResulthpux" title="details" class="method-name">_parseResulthpux</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of HP-UX' ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultlinux" title="details" class="method-name">_parseResultlinux</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of Linux' ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultnetbsd" title="details" class="method-name">_parseResultnetbsd</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of NetBSD's ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_parseResultwindows" title="details" class="method-name">_parseResultwindows</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parses the output of Windows' ping command</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_prepareParseResult" title="details" class="method-name">_prepareParseResult</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Preparation method for _parseResult</td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+													| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+			<a name="var$_bytes_per_request" id="$_bytes_per_request"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>&nbsp;&nbsp;
+			<span class="var-name">$_bytes_per_request</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a555">555</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Number of bytes that are sent with each ICMP request
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_bytes_total" id="$_bytes_total"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>&nbsp;&nbsp;
+			<span class="var-name">$_bytes_total</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a563">563</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The total number of bytes that are sent with all ICMP requests
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_icmp_sequence" id="$_icmp_sequence"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_icmp_sequence</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a539">539</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>ICMP sequence number and associated time in ms
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_raw_data" id="$_raw_data"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_raw_data</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a579">579</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The raw Net_Ping::result
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_round_trip" id="$_round_trip"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>&nbsp;&nbsp;
+			<span class="var-name">$_round_trip</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a595">595</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Statistical information about the ping
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_sysname" id="$_sysname"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>&nbsp;&nbsp;
+			<span class="var-name">$_sysname</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a587">587</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The Net_Ping::_sysname
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_target_ip" id="$_target_ip"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_target_ip</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a547">547</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The target's IP Address
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_ttl" id="$_ttl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>&nbsp;&nbsp;
+			<span class="var-name">$_ttl</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a571">571</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>The ICMP request's TTL
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="methodNet_Ping_Result" id="Net_Ping_Result"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">Constructor Net_Ping_Result</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a603">603</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>Net_Ping_Result Net_Ping_Result(
+
+$result, 
+$sysname&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Constructor for the Class
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$result:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$sysname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodfactory" id="factory"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">factory</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a618">618</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void factory(
+array
+$result, string
+$sysname&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Factory for Net_Ping_Result
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$result:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Net_Ping result</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$sysname:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> OS_Guess::sysname</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetAvg" id="getAvg"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getAvg</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1059">1059</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getAvg(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_round_tripp['avg'];
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_round_trip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetBytesPerRequest" id="getBytesPerRequest"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getBytesPerRequest</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a951">951</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>int getBytesPerRequest(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_bytes_per_request;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>bytes per request</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_bytes_per_request</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetBytesTotal" id="getBytesTotal"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getBytesTotal</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a963">963</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>int getBytesTotal(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_bytes_total;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>total bytes</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_bytes_total</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetICMPSequence" id="getICMPSequence"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getICMPSequence</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a939">939</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getICMPSequence(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_icmp_sequence;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>ICMP sequence</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_icmp_sequence</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetLoss" id="getLoss"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getLoss</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1092">1092</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getLoss(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_loss;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMax" id="getMax"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMax</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1035">1035</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getMax(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_round_trip['max'];
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_round_trip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMin" id="getMin"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMin</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1023">1023</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getMin(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_round_trip['min'];
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_round_trip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetRawData" id="getRawData"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getRawData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a987">987</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getRawData(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_raw_data;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>raw data</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_raw_data</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetReceived" id="getReceived"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getReceived</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1081">1081</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getReceived(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_received;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetRoundTrip" id="getRoundTrip"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getRoundTrip</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1011">1011</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getRoundTrip(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_round_trip;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_round_trip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetStddev" id="getStddev"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getStddev</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1047">1047</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getStddev(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_round_trip['stddev'];
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_round_trip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetSystemName" id="getSystemName"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getSystemName</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a999">999</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getSystemName(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_sysname;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>OS_Guess::sysname</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_sysname</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetTargetIp" id="getTargetIp"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getTargetIp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a927">927</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getTargetIp(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_target_ip;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>IP address</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_target_ip</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetTransmitted" id="getTransmitted"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getTransmitted</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a1070">1070</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getTransmitted(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_transmitted;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>statistical information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetTTL" id="getTTL"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getTTL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a975">975</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>int getTTL(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Accessor for $this-&gt;_ttl;
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>TTL</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>Ping_Result::_ttl</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetValue" id="getValue"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getValue</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a915">915</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getValue(
+string
+$name&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns a Ping_Result property
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> property name</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>property value</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResult" id="_parseResult"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResult</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a646">646</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResult(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Delegates the parsing routine according to $this-&gt;_sysname
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultaix" id="_parseResultaix"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultaix</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a791">791</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultaix(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of AIX' ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultdarwin" id="_parseResultdarwin"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultdarwin</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a713">713</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultdarwin(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of Darwin's ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultfreebsd" id="_parseResultfreebsd"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultfreebsd</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a830">830</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultfreebsd(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of FreeBSD's ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResulthpux" id="_parseResulthpux"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResulthpux</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a752">752</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResulthpux(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of HP-UX' ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultlinux" id="_parseResultlinux"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultlinux</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a657">657</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultlinux(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of Linux' ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net/Net_Ping_Result.html#method_parseResultlinux">Net_Ping_Result::_parseResultlinux()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultnetbsd" id="_parseResultnetbsd"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultnetbsd</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a703">703</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultnetbsd(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of NetBSD's ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net/Net_Ping_Result.html#method_parseResultfreebsd">Net_Ping_Result::_parseResultfreebsd()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_parseResultwindows" id="_parseResultwindows"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_parseResultwindows</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a870">870</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _parseResultwindows(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parses the output of Windows' ping command
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Author:</strong>&nbsp;&nbsp;</td><td>Kai Schröder &lt;<a href="mailto:k.schroeder@php.net">k.schroeder@php.net</a>&gt;</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_prepareParseResult" id="_prepareParseResult"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_prepareParseResult</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net__assetsPEARNetPing.php.html#a634">634</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _prepareParseResult(
+string
+$sysname&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Preparation method for _parseResult
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$sysname:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> OS_Guess::sysname  $return bool</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:52:28 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

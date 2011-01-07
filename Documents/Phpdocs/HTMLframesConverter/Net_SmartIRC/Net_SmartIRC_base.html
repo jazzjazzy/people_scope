@@ -1,0 +1,3643 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_SmartIRC_base</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_SmartIRC_base</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">main SmartIRC class</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Mirco 'meebey' Bauer &lt;<a href="mailto:mail@meebey.net">mail@meebey.net</a>&gt;</li>
+				<li><span class="field">version:</span> 0.5.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---SmartIRC.php.html">/assets/PEAR/Net/SmartIRC.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a60">60</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a>
+					</td>
+					<td>
+											$Id: irccommands.php,v 1.1.2.1 2003/10/10 20:20:58 meebey Exp $
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																																																																																																																																																																																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$channel" title="details" class="var-name">$channel</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$nreplycodes" title="details" class="var-name">$nreplycodes</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$replycodes" title="details" class="var-name">$replycodes</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_actionhandler" title="details" class="var-name">$_actionhandler</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_actionhandlerid" title="details" class="var-name">$_actionhandlerid</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_address" title="details" class="var-name">$_address</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_autoreconnect" title="details" class="var-name">$_autoreconnect</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_autoretry" title="details" class="var-name">$_autoretry</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_benchmark" title="details" class="var-name">$_benchmark</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_benchmark_starttime" title="details" class="var-name">$_benchmark_starttime</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_benchmark_stoptime" title="details" class="var-name">$_benchmark_stoptime</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_channels" title="details" class="var-name">$_channels</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_channelsyncing" title="details" class="var-name">$_channelsyncing</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_ctcpversion" title="details" class="var-name">$_ctcpversion</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_debug" title="details" class="var-name">$_debug</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_disconnecttime" title="details" class="var-name">$_disconnecttime</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_lastrx" title="details" class="var-name">$_lastrx</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_lasttx" title="details" class="var-name">$_lasttx</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_logdestination" title="details" class="var-name">$_logdestination</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_logfile" title="details" class="var-name">$_logfile</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">resource</span>
+					<a href="#$_logfilefp" title="details" class="var-name">$_logfilefp</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_loggedin" title="details" class="var-name">$_loggedin</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_maxtimer" title="details" class="var-name">$_maxtimer</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_messagebuffer" title="details" class="var-name">$_messagebuffer</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_messagebuffersize" title="details" class="var-name">$_messagebuffersize</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_mintimer" title="details" class="var-name">$_mintimer</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_motd" title="details" class="var-name">$_motd</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_nick" title="details" class="var-name">$_nick</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_password" title="details" class="var-name">$_password</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_port" title="details" class="var-name">$_port</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_realname" title="details" class="var-name">$_realname</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_receivedelay" title="details" class="var-name">$_receivedelay</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_rxtimeout" title="details" class="var-name">$_rxtimeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_selecttimeout" title="details" class="var-name">$_selecttimeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_senddelay" title="details" class="var-name">$_senddelay</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">resource</span>
+					<a href="#$_socket" title="details" class="var-name">$_socket</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_state" title="details" class="var-name">$_state</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_timehandler" title="details" class="var-name">$_timehandler</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_timehandlerid" title="details" class="var-name">$_timehandlerid</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$_txtimeout" title="details" class="var-name">$_txtimeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_usermode" title="details" class="var-name">$_usermode</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_username" title="details" class="var-name">$_username</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_usesockets" title="details" class="var-name">$_usesockets</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#Net_SmartIRC_base" title="details" class="method-name">Net_SmartIRC_base</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quickdisconnect</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#getMotd" title="details" class="method-name">getMotd</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getUsermode" title="details" class="method-name">getUsermode</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isBanned" title="details" class="method-name">isBanned</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$hostmask</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isError" title="details" class="method-name">isError</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$object</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isJoined" title="details" class="method-name">isJoined</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isOpped" title="details" class="method-name">isOpped</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isVoiced" title="details" class="method-name">isVoiced</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#listen" title="details" class="method-name">listen</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#listenFor" title="details" class="method-name">listenFor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$messagetype</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#log" title="details" class="method-name">log</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$level</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$entry</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$line</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#login" title="details" class="method-name">login</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$realname</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$usermode</span> = <span class="var-default">0</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#objListenFor" title="details" class="method-name">objListenFor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$messagetype</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#reconnect" title="details" class="method-name">reconnect</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#registerActionhandler" title="details" class="method-name">registerActionhandler</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$regexhandler</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#registerTimehandler" title="details" class="method-name">registerTimehandler</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$interval</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setAutoReconnect" title="details" class="method-name">setAutoReconnect</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setAutoRetry" title="details" class="method-name">setAutoRetry</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setBenchmark" title="details" class="method-name">setBenchmark</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setChannelSynching" title="details" class="method-name">setChannelSynching</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setChannelSyncing" title="details" class="method-name">setChannelSyncing</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setCtcpVersion" title="details" class="method-name">setCtcpVersion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$versionstring</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDebug" title="details" class="method-name">setDebug</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$level</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDisconnecttime" title="details" class="method-name">setDisconnecttime</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setLogdestination" title="details" class="method-name">setLogdestination</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setLogfile" title="details" class="method-name">setLogfile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setReceivedelay" title="details" class="method-name">setReceivedelay</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setReceiveTimeout" title="details" class="method-name">setReceiveTimeout</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$seconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setSenddelay" title="details" class="method-name">setSenddelay</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setTransmitTimeout" title="details" class="method-name">setTransmitTimeout</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$seconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setUseSockets" title="details" class="method-name">setUseSockets</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$boolean</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#showBenchmark" title="details" class="method-name">showBenchmark</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#startBenchmark" title="details" class="method-name">startBenchmark</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#stopBenchmark" title="details" class="method-name">stopBenchmark</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#throwError" title="details" class="method-name">&amp;throwError</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#unregisterActionhandler" title="details" class="method-name">unregisterActionhandler</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$regexhandler</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#unregisterActionid" title="details" class="method-name">unregisterActionid</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#unregisterTimeid" title="details" class="method-name">unregisterTimeid</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_adduser" title="details" class="method-name">_adduser</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$channel</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$newuser</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$channel</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$newuser</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_calculateselecttimeout" title="details" class="method-name">_calculateselecttimeout</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$microseconds</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_checkbuffer" title="details" class="method-name">_checkbuffer</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_checkPHPVersion" title="details" class="method-name">_checkPHPVersion</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_checktimeout" title="details" class="method-name">_checktimeout</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_checktimer" title="details" class="method-name">_checktimer</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#_gettype" title="details" class="method-name">_gettype</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$line</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_handleactionhandler" title="details" class="method-name">_handleactionhandler</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_handlemessage" title="details" class="method-name">_handlemessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$messagecode</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_isValidType" title="details" class="method-name">_isValidType</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">float</span>
+										<a href="#_microint" title="details" class="method-name">_microint</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_nicknameinuse" title="details" class="method-name">_nicknameinuse</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_pong" title="details" class="method-name">_pong</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_rawreceive" title="details" class="method-name">_rawreceive</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_rawsend" title="details" class="method-name">_rawsend</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_removeuser" title="details" class="method-name">_removeuser</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_reorderactionhandler" title="details" class="method-name">_reorderactionhandler</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_reordermodules" title="details" class="method-name">_reordermodules</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_reordertimehandler" title="details" class="method-name">_reordertimehandler</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#_selecttimeout" title="details" class="method-name">_selecttimeout</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_send" title="details" class="method-name">_send</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$priority</span> = <span class="var-default">SMARTIRC_MEDIUM</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#_state" title="details" class="method-name">_state</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_updatemintimer" title="details" class="method-name">_updatemintimer</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_updatestate" title="details" class="method-name">_updatestate</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$channel" id="$channel"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$channel</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a331">331</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores all channels in this array where we are joined, works only if channelsyncing is activated.</p>
+<p class="description"><p>Eg. for accessing a user, use it like this: (in this example the SmartIRC object is stored in $irc)  $irc-&gt;channel['#test']-&gt;users['meebey']-&gt;nick;</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/Net_SmartIRC_channeluser.html">Net_SmartIRC_channeluser</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/Net_SmartIRC_channel.html">Net_SmartIRC_channel</a></li>
+				<li><span class="field">see:</span> <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$nreplycodes" id="$nreplycodes"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$nreplycodes</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a318">318</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">All numeric IRC replycodes, the index is the numeric replycode.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> $SMARTIRC_nreplycodes</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$replycodes" id="$replycodes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$replycodes</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a309">309</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">All IRC replycodes, the index is the replycode name.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> $SMARTIRC_replycodes</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_actionhandler" id="$_actionhandler"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_actionhandler</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a120">120</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_actionhandlerid" id="$_actionhandlerid"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_actionhandlerid</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a216">216</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_address" id="$_address"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_address</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a72">72</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_autoreconnect" id="$_autoreconnect"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_autoreconnect</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a294">294</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_autoretry" id="$_autoretry"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_autoretry</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a300">300</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_benchmark" id="$_benchmark"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_benchmark</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a198">198</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_benchmark_starttime" id="$_benchmark_starttime"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_benchmark_starttime</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a204">204</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_benchmark_stoptime" id="$_benchmark_stoptime"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_benchmark_stoptime</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a210">210</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_channels" id="$_channels"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_channels</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a234">234</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_channelsyncing" id="$_channelsyncing"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_channelsyncing</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a240">240</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_ctcpversion" id="$_ctcpversion"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_ctcpversion</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a246">246</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_debug" id="$_debug"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_debug</span>
+			 = <span class="var-default"> SMARTIRC_DEBUG_NOTICE</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a132">132</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_disconnecttime" id="$_disconnecttime"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_disconnecttime</span>
+			 = <span class="var-default"> 1000</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a186">186</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_lastrx" id="$_lastrx"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_lastrx</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a282">282</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_lasttx" id="$_lasttx"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_lasttx</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a288">288</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_logdestination" id="$_logdestination"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_logdestination</span>
+			 = <span class="var-default"> SMARTIRC_STDOUT</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a168">168</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_logfile" id="$_logfile"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_logfile</span>
+			 = <span class="var-default"> 'Net_SmartIRC.log'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a180">180</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_logfilefp" id="$_logfilefp"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">resource</span>
+			<span class="var-name">$_logfilefp</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a174">174</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_loggedin" id="$_loggedin"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_loggedin</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a192">192</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_maxtimer" id="$_maxtimer"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_maxtimer</span>
+			 = <span class="var-default"> 300000</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a258">258</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_messagebuffer" id="$_messagebuffer"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_messagebuffer</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a138">138</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_messagebuffersize" id="$_messagebuffersize"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_messagebuffersize</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a144">144</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_mintimer" id="$_mintimer"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_mintimer</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a252">252</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_motd" id="$_motd"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_motd</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a228">228</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_nick" id="$_nick"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_nick</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a84">84</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_password" id="$_password"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_password</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a108">108</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_port" id="$_port"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_port</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a78">78</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_realname" id="$_realname"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_realname</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a96">96</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_receivedelay" id="$_receivedelay"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_receivedelay</span>
+			 = <span class="var-default"> 100</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a156">156</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_rxtimeout" id="$_rxtimeout"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_rxtimeout</span>
+			 = <span class="var-default"> 300</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a270">270</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_selecttimeout" id="$_selecttimeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_selecttimeout</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a276">276</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_senddelay" id="$_senddelay"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_senddelay</span>
+			 = <span class="var-default"> 250</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a162">162</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_socket" id="$_socket"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">resource</span>
+			<span class="var-name">$_socket</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a66">66</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_state" id="$_state"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_state</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a114">114</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_timehandler" id="$_timehandler"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_timehandler</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a126">126</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_timehandlerid" id="$_timehandlerid"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_timehandlerid</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a222">222</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_txtimeout" id="$_txtimeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$_txtimeout</span>
+			 = <span class="var-default"> 300</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a264">264</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_usermode" id="$_usermode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_usermode</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a102">102</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_username" id="$_username"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_username</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a90">90</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_usesockets" id="$_usesockets"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_usesockets</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a150">150</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_SmartIRC_base" id="Net_SmartIRC_base"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_SmartIRC_base</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a340">340</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor. Initiales the messagebuffer and &quot;links&quot; the replycodes from  global into properties. Also some PHP runtime settings are configured.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Net_SmartIRC_base
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">connect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a828">828</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the sockets and connects to the IRC server on the given port.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$address</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$port</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">disconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a896">896</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disconnects from the IRC server nicely with a QUIT or just destroys the socket.</p>
+<p class="description"><p>Disconnects from the IRC server in the given quickness mode.  $quickdisconnect:  true, just close the socket  false, send QUIT and wait $_disconnectime before closing the socket</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			disconnect
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quickdisconnect</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$quickdisconnect</span><span class="var-description">: default: false</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMotd" id="getMotd"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMotd</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a804">804</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the full motd.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMotd
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUsermode" id="getUsermode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getUsermode</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a815">815</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the usermode.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUsermode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisBanned" id="isBanned"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isBanned</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1108">1108</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if the hostmask is on the specified channel banned and returns the result.</p>
+<p class="description"><p>ChannelSyncing is required for this.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isBanned
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$hostmask</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hostmask</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisError" id="isError"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isError</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2196">2196</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isError
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$object</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisJoined" id="isJoined"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isJoined</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1020">1020</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">checks if we or the given user is joined to the specified channel and returns the result  ChannelSyncing is required for this.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isJoined
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nickname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisOpped" id="isOpped"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isOpped</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1048">1048</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if we or the given user is opped on the specified channel and returns the result.</p>
+<p class="description"><p>ChannelSyncing is required for this.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isOpped
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nickname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisVoiced" id="isVoiced"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isVoiced</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1078">1078</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if we or the given user is voiced on the specified channel and returns the result.</p>
+<p class="description"><p>ChannelSyncing is required for this.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isVoiced
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nickname</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nickname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlisten" id="listen"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">listen</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1135">1135</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">goes into receive mode</p>
+<p class="description"><p>Goes into receive and idle mode. Only call this if you want to &quot;spawn&quot; the bot.  No further lines of PHP code will be processed after this call, only the bot methods!</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			listen
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlistenFor" id="listenFor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">listenFor</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1156">1156</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">waits for a special message type and puts the answer in $result</p>
+<p class="description"><p>Creates a special actionhandler for that given TYPE and returns the answer.  This will only receive the requested type, immediately quit and disconnect from the IRC server.  Made for showing IRC statistics on your homepage, or other IRC related information.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> answer from the IRC server for this $messagetype</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			listenFor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$messagetype</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$messagetype</span><span class="var-description">: see in the documentation 'Message Types'</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlog" id="log"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">log</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a741">741</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds an entry to the log.</p>
+<p class="description"><p>Adds an entry to the log with Linux style log format.  Possible $level constants (can also be combined with &quot;|&quot;s)  SMARTIRC_DEBUG_NONE  SMARTIRC_DEBUG_NOTICE  SMARTIRC_DEBUG_CONNECTION  SMARTIRC_DEBUG_SOCKET  SMARTIRC_DEBUG_IRCMESSAGES  SMARTIRC_DEBUG_MESSAGETYPES  SMARTIRC_DEBUG_ACTIONHANDLER  SMARTIRC_DEBUG_TIMEHANDLER  SMARTIRC_DEBUG_MESSAGEHANDLER  SMARTIRC_DEBUG_CHANNELSYNCING  SMARTIRC_DEBUG_MODULES  SMARTIRC_DEBUG_USERSYNCING  SMARTIRC_DEBUG_ALL</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_DEBUG_NOTICE">SMARTIRC_DEBUG_NOTICE</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			log
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$level</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$entry</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$line</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$level</span><span class="var-description">: bit constants (SMARTIRC_DEBUG_*)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$entry</span><span class="var-description">: the new log entry</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$file</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$line</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a981">981</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">login and register nickname on the IRC network</p>
+<p class="description"><p>Registers the nickname and user information on the IRC network.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			login
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$realname</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$usermode</span> = <span class="var-default">0</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nick</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$realname</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$usermode</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobjListenFor" id="objListenFor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">objListenFor</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1182">1182</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">waits for a special message type and puts the answer in $result</p>
+<p class="description"><p>Creates a special actionhandler for that given TYPE and returns the answer.  This will only receive the requested type, immediately quit and disconnect from the IRC server.  Made for showing IRC statistics on your homepage, or other IRC related information.  This special version of listenFor() stores the whole ircdata object, not just the message!</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> answer from the IRC server for this $messagetype</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			objListenFor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$messagetype</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$messagetype</span><span class="var-description">: see in the documentation 'Message Types'</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreconnect" id="reconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">reconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a940">940</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reconnects to the IRC server with the same login info,  it also rejoins the channels</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reconnect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodregisterActionhandler" id="registerActionhandler"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">registerActionhandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1210">1210</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">registers a new actionhandler and returns the assigned id</p>
+<p class="description"><p>Registers an actionhandler in Net_SmartIRC for calling it later.  The actionhandler id is needed for unregistering the actionhandler.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> assigned actionhandler id</li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/_assets---raintpl---example.php.html">example.php</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			registerActionhandler
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$regexhandler</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$handlertype</span><span class="var-description">: bits constants, see in this documentation Message Types</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regexhandler</span><span class="var-description">: the message that has to be in the IRC message in regex syntax</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$object</span><span class="var-description">: a reference to the objects of the method</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$methodname</span><span class="var-description">: the methodname that will be called when the handler happens</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregisterTimehandler" id="registerTimehandler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">registerTimehandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1318">1318</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">registers a timehandler and returns the assigned id</p>
+<p class="description"><p>Registers a timehandler in Net_SmartIRC, which will be called in the specified interval.  The timehandler id is needed for unregistering the timehandler.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> assigned timehandler id</li>
+				<li><span class="field">see:</span> example7.php</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			registerTimehandler
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$interval</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$interval</span><span class="var-description">: interval time in milliseconds</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$object</span><span class="var-description">: a reference to the objects of the method</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$methodname</span><span class="var-description">: the methodname that will be called when the handler happens</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAutoReconnect" id="setAutoReconnect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setAutoReconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a614">614</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables autoreconnecting.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAutoReconnect
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAutoRetry" id="setAutoRetry"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setAutoRetry</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a630">630</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables autoretry for connecting to a server.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAutoRetry
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBenchmark" id="setBenchmark"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setBenchmark</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a445">445</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables the benchmark engine.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBenchmark
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetChannelSynching" id="setChannelSynching"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setChannelSynching</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a462">462</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deprecated, use setChannelSyncing() instead!</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setChannelSynching
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetChannelSyncing" id="setChannelSyncing"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setChannelSyncing</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a478">478</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables channel syncing.</p>
+<p class="description"><p>Channel syncing means, all users on all channel we are joined are tracked in the  channel array. This makes it very handy for botcoding.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setChannelSyncing
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCtcpVersion" id="setCtcpVersion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setCtcpVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a500">500</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the CTCP version reply string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCtcpVersion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$versionstring</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$versionstring</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDebug" id="setDebug"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setDebug</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a433">433</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the level of debug messages.</p>
+<p class="description"><p>Sets the debug level (bitwise), useful for testing/developing your code.  Here the list of all possible debug levels:  SMARTIRC_DEBUG_NONE  SMARTIRC_DEBUG_NOTICE  SMARTIRC_DEBUG_CONNECTION  SMARTIRC_DEBUG_SOCKET  SMARTIRC_DEBUG_IRCMESSAGES  SMARTIRC_DEBUG_MESSAGETYPES  SMARTIRC_DEBUG_ACTIONHANDLER  SMARTIRC_DEBUG_TIMEHANDLER  SMARTIRC_DEBUG_MESSAGEHANDLER  SMARTIRC_DEBUG_CHANNELSYNCING  SMARTIRC_DEBUG_MODULES  SMARTIRC_DEBUG_USERSYNCING  SMARTIRC_DEBUG_ALL</p><p>Default: SMARTIRC_DEBUG_NOTICE</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> DOCUMENTATION</li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_DEBUG_NOTICE">SMARTIRC_DEBUG_NOTICE</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDebug
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$level</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$level</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDisconnecttime" id="setDisconnecttime"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setDisconnecttime</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a558">558</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the delaytime before closing the socket when disconnect.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDisconnecttime
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$milliseconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLogdestination" id="setLogdestination"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setLogdestination</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a520">520</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the destination of all log messages.</p>
+<p class="description"><p>Sets the destination of log messages.  $type can be:  SMARTIRC_FILE for saving the log into a file  SMARTIRC_STDOUT for echoing the log to stdout  SMARTIRC_SYSLOG for sending the log to the syslog  Default: SMARTIRC_STDOUT</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_STDOUT">SMARTIRC_STDOUT</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setLogdestination
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$type</span><span class="var-description">: must be on of the constants</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLogfile" id="setLogfile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setLogfile</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a546">546</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the file for the log if the destination is set to file.</p>
+<p class="description"><p>Sets the logfile, if <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogdestination">logdestination</a> is set to SMARTIRC_FILE.  This should be only used with full path!</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setLogfile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetReceivedelay" id="setReceivedelay"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setReceivedelay</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a578">578</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the delay for receiving data from the IRC server.</p>
+<p class="description"><p>Sets the delaytime between messages that are received, this reduces your CPU load.  Don't set this too low (min 100ms).  Default: 100</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReceivedelay
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$milliseconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetReceiveTimeout" id="setReceiveTimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setReceiveTimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a649">649</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the receive timeout.</p>
+<p class="description"><p>If the timeout occurs, the connection will be reinitialized  Default: 300 seconds</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReceiveTimeout
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$seconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$seconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSenddelay" id="setSenddelay"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setSenddelay</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a598">598</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the delay for sending data to the IRC server.</p>
+<p class="description"><p>Sets the delaytime between messages that are sent, because IRC servers doesn't like floods.  This will avoid sending your messages too fast to the IRC server.  Default: 250</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSenddelay
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$milliseconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$milliseconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTransmitTimeout" id="setTransmitTimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setTransmitTimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a668">668</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the transmit timeout.</p>
+<p class="description"><p>If the timeout occurs, the connection will be reinitialized  Default: 300 seconds</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTransmitTimeout
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$seconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$seconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUseSockets" id="setUseSockets"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setUseSockets</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a378">378</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables the usage of real sockets.</p>
+<p class="description"><p>Enables/disables the usage of real sockets instead of fsocks  (works only if your PHP build has loaded the PHP socket extension)  Default: false</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUseSockets
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$boolean</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$boolean</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowBenchmark" id="showBenchmark"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">showBenchmark</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a711">711</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Shows the benchmark result.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			showBenchmark
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstartBenchmark" id="startBenchmark"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">startBenchmark</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a683">683</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Starts the benchmark (sets the counters).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			startBenchmark
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstopBenchmark" id="stopBenchmark"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">stopBenchmark</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a695">695</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stops the benchmark and displays the result.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			stopBenchmark
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodthrowError" id="throwError"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">throwError</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2200">2200</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			&amp;throwError
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunregisterActionhandler" id="unregisterActionhandler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">unregisterActionhandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1242">1242</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">unregisters an existing actionhandler</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			unregisterActionhandler
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$regexhandler</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$object</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$methodname</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$object</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$handlertype</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regexhandler</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$object</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$methodname</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunregisterActionid" id="unregisterActionid"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">unregisterActionid</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1283">1283</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">unregisters an existing actionhandler via the id</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			unregisterActionid
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunregisterTimeid" id="unregisterTimeid"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">unregisterTimeid</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1347">1347</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">unregisters an existing timehandler via the id</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> example7.php</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			unregisterTimeid
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_adduser" id="_adduser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_adduser</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2043">2043</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">adds an user to the channelobject or updates his info</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_adduser
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$channel</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$newuser</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$channel</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$newuser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$channel</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$newuser</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$channel</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$newuser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_calculateselecttimeout" id="_calculateselecttimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_calculateselecttimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1720">1720</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">calculates the selecttimeout value</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_calculateselecttimeout
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$microseconds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$microseconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_checkbuffer" id="_checkbuffer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_checkbuffer</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1423">1423</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">checks the buffer if there are messages to send</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_checkbuffer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_checkPHPVersion" id="_checkPHPVersion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_checkPHPVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2174">2174</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_checkPHPVersion
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_checktimeout" id="_checktimeout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_checktimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1494">1494</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a receive or transmit timeout occured and reconnects if configured</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_checktimeout
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_checktimer" id="_checktimer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_checktimer</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1465">1465</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the running timers and calls the registered timehandler,  when the interval is reached.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_checktimer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_gettype" id="_gettype"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_gettype</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1802">1802</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">determines the messagetype of $line</p>
+<p class="description"><p>Analyses the type of an IRC message and returns the type.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> SMARTIRC_TYPE_* constant</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			_gettype
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$line</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$line</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_handleactionhandler" id="_handleactionhandler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_handleactionhandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1988">1988</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">tries to find a actionhandler for the received message ($ircdata) and calls it</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_handleactionhandler
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$ircdata</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$ircdata</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_handlemessage" id="_handlemessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_handlemessage</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1942">1942</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">tries to find a messagehandler for the received message ($ircdata) and calls it</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_handlemessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$messagecode</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$messagecode</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$ircdata</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$ircdata</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_isValidType" id="_isValidType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_isValidType</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2186">2186</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">checks if the passed handlertype is valid</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_isValidType
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$handlertype</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$handlertype</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_microint" id="_microint"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_microint</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2027">2027</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getting current microtime, needed for benchmarks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">float</span>
+		<span class="method-name">
+			_microint
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_nicknameinuse" id="_nicknameinuse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_nicknameinuse</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1377">1377</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">changes a already used nickname to a new nickname plus 3 random digits</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_nicknameinuse
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_pong" id="_pong"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_pong</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1683">1683</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sends the pong for keeping alive</p>
+<p class="description"><p>Sends the PONG signal as reply of the PING from the IRC server.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_pong
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_rawreceive" id="_rawreceive"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_rawreceive</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1546">1546</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">goes into main idle loop for waiting messages from the IRC server</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_rawreceive
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_rawsend" id="_rawsend"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_rawsend</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1517">1517</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sends a raw message to the IRC server (don't use this!!)</p>
+<p class="description"><p>Use message() or _send() instead.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_rawsend
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_removeuser" id="_removeuser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_removeuser</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2104">2104</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">removes an user from one channel or all if he quits</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_removeuser
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$ircdata</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$ircdata</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$ircdata</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$ircdata</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_reorderactionhandler" id="_reorderactionhandler"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_reorderactionhandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1754">1754</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">reorders the actionhandler array, needed after removing one</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_reorderactionhandler
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_reordermodules" id="_reordermodules"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_reordermodules</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1784">1784</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">reorders the modules array, needed after removing one</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_reordermodules
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_reordertimehandler" id="_reordertimehandler"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_reordertimehandler</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1769">1769</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">reorders the timehandler array, needed after removing one</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_reordertimehandler
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_selecttimeout" id="_selecttimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_selecttimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1695">1695</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the calculated selecttimeout value</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> selecttimeout in microseconds</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			_selecttimeout
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_send" id="_send"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_send</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1398">1398</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sends an IRC message</p>
+<p class="description"><p>Adds a message to the messagequeue, with the optional priority.  $priority:  SMARTIRC_CRITICAL  SMARTIRC_HIGH  SMARTIRC_MEDIUM  SMARTIRC_LOW</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_send
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$priority</span> = <span class="var-default">SMARTIRC_MEDIUM</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$priority</span><span class="var-description">: must be one of the priority constants</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_state" id="_state"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_state</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1923">1923</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current connection state</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> SMARTIRC_STATE_CONNECTED or SMARTIRC_STATE_DISCONNECTED</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			_state
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_updatemintimer" id="_updatemintimer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_updatemintimer</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1733">1733</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">updates _mintimer to the smallest timer interval</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_updatemintimer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_updatestate" id="_updatestate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_updatestate</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1901">1901</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">updates the current connection state</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_updatestate
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:13:53 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

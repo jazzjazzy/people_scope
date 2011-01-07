@@ -1,0 +1,345 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<DIV id=u0 style="position:absolute; left:770px; top:14px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u0_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Welcome Wersal Nubspar</span></DIV></DIV>
+<DIV id=u1 style="position:absolute; left:770px; top:30px; width:100px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u1_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u><b>Logout</b></u></span></DIV></DIV>
+<DIV id=ou2 style="position:absolute; left:160px; top:730px; width:831px; height:21px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:839px; height:29px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u2.png',sizingMethod='scale');
+"><img style="width:839px; height:29px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u2.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u2container style="position:absolute; left:160px; top:730px; width:831px; height:21px;; overflow:visible;">
+
+<DIV id=u3 style="position:absolute; left:2px; top:2px; width:826px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u3_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u2 src="Resources/transparent.gif" style="position:absolute; left:160px; top:730px; width:830px; height:20px"  >
+
+<span style="position:absolute; left:157px; top:86px; width:839px; height:35px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u4.png',sizingMethod='scale');
+"><img style="width:839px; height:35px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u4.png" border="0" alt=""></span>
+
+<IMG id=u4 src="Resources/transparent.gif" style="position:absolute; left:160px; top:89px; width:830px; height:26px">
+
+<DIV id=u4container style="position:absolute; left:160px; top:89px; width:831px; height:27px;; overflow:visible">
+
+<DIV id=u5 style="position:absolute; left:3px; top:3px; width:829px; height:25px;">
+
+<span style="position:absolute; left:-3px; top:-3px; width:833px; height:29px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u5.png',sizingMethod='scale');
+"><img style="width:833px; height:29px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u5.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u5container style="position:absolute; left:3px; top:3px; width:829px; height:25px; overflow:visible">
+
+<DIV id=u6container style="position:absolute; left:0px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u7 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u7_rtf><span style=" color:#000000; font-size:13px;">Home </span></DIV></DIV>
+</DIV>
+<IMG id=u6 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u8container style="position:absolute; left:100px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u9 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u9_rtf><span style=" color:#000000; font-size:13px;">Jobs</span></DIV></DIV>
+</DIV>
+<IMG id=u8 src="Resources/transparent.gif" style="position:absolute; left:100px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u10container style="position:absolute; left:200px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u11 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u11_rtf><span style=" color:#000000; font-size:13px;">Application</span></DIV></DIV>
+</DIV>
+<IMG id=u10 src="Resources/transparent.gif" style="position:absolute; left:200px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u12container style="position:absolute; left:300px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u13 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u13_rtf><span style=" color:#000000; font-size:13px;">Templates</span></DIV></DIV>
+</DIV>
+<IMG id=u12 src="Resources/transparent.gif" style="position:absolute; left:300px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u14container style="position:absolute; left:400px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u15 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u15_rtf><span style=" color:#000000; font-size:13px;">Administration</span></DIV></DIV>
+</DIV>
+<IMG id=u14 src="Resources/transparent.gif" style="position:absolute; left:400px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u16container style="position:absolute; left:500px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u17 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u17_rtf><span style=" color:#000000; font-size:13px;">Reports</span></DIV></DIV>
+</DIV>
+<IMG id=u16 src="Resources/transparent.gif" style="position:absolute; left:500px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u18container style="position:absolute; left:600px; top:0px; width:225px; height:21px;; overflow:visible;">
+
+<DIV id=u19 style="position:absolute; left:2px; top:2px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u19_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:600px; top:0px; width:224px; height:20px"  >
+
+</DIV>
+</DIV>
+<DIV id=sm0u4 style="position:absolute; left:160px; top:89px; width:830px; height:26px; visibility:hidden;">
+<IMG src="Resources/transparent.gif" style="position:absolute; left:103px; top:-97px; width:343px; height:290px;" onmouseover="document.getElementById('sm0u4').style.visibility='hidden'; ">
+
+<DIV style="position:absolute; left:3px; top:3px; width:1px; height:1px;">
+<IMG id=rou10 src="Resources/transparent.gif" style="position:absolute; left:200px; top:0px; width:100px; height:20px" >
+
+</DIV>
+<span style="position:absolute; left:200px; top:20px; width:152px; height:79px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u20.png',sizingMethod='scale');
+"><img style="width:152px; height:79px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u20.png" border="0" alt=""></span>
+
+<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:203px; top:23px; width:143px; height:70px">
+
+<DIV id=u20container style="position:absolute; left:203px; top:23px; width:144px; height:71px;; overflow:visible">
+
+<DIV id=u21 style="position:absolute; left:3px; top:3px; width:142px; height:69px;">
+
+<span style="position:absolute; left:-3px; top:-3px; width:146px; height:73px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u21.png',sizingMethod='scale');
+"><img style="width:146px; height:73px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u21.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u21container style="position:absolute; left:3px; top:3px; width:142px; height:69px; overflow:visible">
+
+<DIV id=u22container style="position:absolute; left:0px; top:0px; width:138px; height:25px;; overflow:visible;">
+
+<DIV id=u23 style="position:absolute; left:2px; top:2px; width:133px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u23_rtf><span style=" color:#000000; font-size:13px;">Expression of interest</span></DIV></DIV>
+</DIV>
+<IMG id=u22 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:137px; height:24px"  >
+
+<DIV id=u24container style="position:absolute; left:0px; top:24px; width:138px; height:21px;; overflow:visible;">
+
+<DIV id=u25 style="position:absolute; left:2px; top:2px; width:133px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u25_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u24 src="Resources/transparent.gif" style="position:absolute; left:0px; top:24px; width:137px; height:20px"  >
+
+<DIV id=u26container style="position:absolute; left:0px; top:44px; width:138px; height:21px;; overflow:visible;">
+
+<DIV id=u27 style="position:absolute; left:2px; top:2px; width:133px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u27_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u26 src="Resources/transparent.gif" style="position:absolute; left:0px; top:44px; width:137px; height:20px"  >
+
+</DIV>
+</DIV>
+</DIV>
+<script type="text/javascript">
+InitializeSubmenu('sm0u4', 'rou10', 'u10', 'u10ShowSubmenu');
+</script>
+
+<DIV id=sm1u4 style="position:absolute; left:160px; top:89px; width:830px; height:26px; visibility:hidden;">
+<IMG src="Resources/transparent.gif" style="position:absolute; left:3px; top:-97px; width:306px; height:286px;" onmouseover="document.getElementById('sm1u4').style.visibility='hidden'; ">
+
+<DIV style="position:absolute; left:3px; top:3px; width:1px; height:1px;">
+<IMG id=rou8 src="Resources/transparent.gif" style="position:absolute; left:100px; top:0px; width:100px; height:20px" >
+
+</DIV>
+<span style="position:absolute; left:100px; top:20px; width:115px; height:75px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u28.png',sizingMethod='scale');
+"><img style="width:115px; height:75px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u28.png" border="0" alt=""></span>
+
+<IMG id=u28 src="Resources/transparent.gif" style="position:absolute; left:103px; top:23px; width:106px; height:66px">
+
+<DIV id=u28container style="position:absolute; left:103px; top:23px; width:107px; height:67px;; overflow:visible">
+
+<DIV id=u29 style="position:absolute; left:3px; top:3px; width:105px; height:65px;">
+
+<span style="position:absolute; left:-3px; top:-3px; width:109px; height:69px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u29.png',sizingMethod='scale');
+"><img style="width:109px; height:69px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u29.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u29container style="position:absolute; left:3px; top:3px; width:105px; height:65px; overflow:visible">
+
+<DIV id=u30container style="position:absolute; left:0px; top:0px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u31 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u31_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">New Job</span></DIV></DIV>
+</DIV>
+<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:100px; height:20px"  >
+
+<DIV id=u32container style="position:absolute; left:0px; top:20px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u33 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u33_rtf><span style=" color:#000000; font-size:13px;">Expression </span></DIV></DIV>
+</DIV>
+<IMG id=u32 src="Resources/transparent.gif" style="position:absolute; left:0px; top:20px; width:100px; height:20px"  >
+
+<DIV id=u34container style="position:absolute; left:0px; top:40px; width:101px; height:21px;; overflow:visible;">
+
+<DIV id=u35 style="position:absolute; left:2px; top:2px; width:96px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u35_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u34 src="Resources/transparent.gif" style="position:absolute; left:0px; top:40px; width:100px; height:20px"  >
+
+</DIV>
+</DIV>
+</DIV>
+<script type="text/javascript">
+InitializeSubmenu('sm1u4', 'rou8', 'u8', 'u8ShowSubmenu');
+</script>
+
+<DIV id=ou36 style="position:absolute; left:165px; top:10px; width:176px; height:76px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:184px; height:84px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u36.png',sizingMethod='scale');
+"><img style="width:184px; height:84px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u36.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u36container style="position:absolute; left:165px; top:10px; width:176px; height:76px;; overflow:visible;">
+
+<DIV id=u37 style="position:absolute; left:2px; top:29.5px; width:171px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u37_rtf><div style="text-align:center"><span style=" color:#000000; font-size:13px;">B Recruiter</span></div></DIV></DIV>
+</DIV>
+<IMG id=u36 src="Resources/transparent.gif" style="position:absolute; left:165px; top:10px; width:175px; height:75px"  >
+
+<DIV id=ou38 style="position:absolute; left:205px; top:188px; width:746px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:754px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u38.png',sizingMethod='scale');
+"><img style="width:754px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u38.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u38container style="position:absolute; left:205px; top:188px; width:746px; height:126px;; overflow:visible;">
+
+<DIV id=u39 style="position:absolute; left:2px; top:54.5px; width:741px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u39_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u38 src="Resources/transparent.gif" style="position:absolute; left:205px; top:188px; width:745px; height:125px"  >
+
+<DIV id=u40 style="position:absolute; left:210px; top:147px; width:150px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u40_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16px;">Current Departments</span></DIV></DIV>
+<DIV id=u41 style="position:absolute; left:220px; top:197px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u41_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Store Jobs </span></DIV></DIV>
+<DIV id=u42 style="position:absolute; left:220px; top:223px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u42_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Active jobs:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 6</span></DIV></DIV>
+<span style="position:absolute; left:220px; top:217px; width:203px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u43.png',sizingMethod='scale');
+"><img style="width:203px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u43.png" border="0" alt=""></span>
+
+<IMG id=u43 src="Resources/transparent.gif" style="position:absolute; left:220px; top:216.5px; width:200px; height:2px">
+
+<DIV id=u44 style="position:absolute; left:219px; top:239px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u44_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Succesfull applicants : 2&nbsp; </span></DIV></DIV>
+<DIV id=u45 style="position:absolute; left:219px; top:256px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u45_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of new job this month:&nbsp; &nbsp; &nbsp; 4</span></DIV></DIV>
+<DIV id=u46 style="position:absolute; left:450px; top:223px; width:180px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u46_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Applicants :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 34 </span></DIV></DIV>
+<DIV id=u47 style="position:absolute; left:449px; top:240px; width:171px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u47_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Expression of Interest :&nbsp;&nbsp; 163</span></DIV></DIV>
+<DIV id=ou48 style="position:absolute; left:206px; top:333px; width:746px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:754px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u38.png',sizingMethod='scale');
+"><img style="width:754px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u38.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u48container style="position:absolute; left:206px; top:333px; width:746px; height:126px;; overflow:visible;">
+
+<DIV id=u49 style="position:absolute; left:2px; top:54.5px; width:741px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u49_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u48 src="Resources/transparent.gif" style="position:absolute; left:206px; top:333px; width:745px; height:125px"  >
+
+<DIV id=u50 style="position:absolute; left:221px; top:342px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u50_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Office Jobs </span></DIV></DIV>
+<DIV id=u51 style="position:absolute; left:221px; top:368px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u51_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Active jobs:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 3</span></DIV></DIV>
+<span style="position:absolute; left:221px; top:362px; width:203px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u52.png',sizingMethod='scale');
+"><img style="width:203px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u52.png" border="0" alt=""></span>
+
+<IMG id=u52 src="Resources/transparent.gif" style="position:absolute; left:221px; top:361.5px; width:200px; height:2px">
+
+<DIV id=u53 style="position:absolute; left:220px; top:384px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u53_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Succesfull applicants : 0&nbsp; </span></DIV></DIV>
+<DIV id=u54 style="position:absolute; left:220px; top:401px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u54_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of new job this month:&nbsp; &nbsp; &nbsp; 1</span></DIV></DIV>
+<DIV id=u55 style="position:absolute; left:451px; top:368px; width:180px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u55_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Applicants :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 94 </span></DIV></DIV>
+<DIV id=u56 style="position:absolute; left:450px; top:385px; width:171px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u56_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Expression of Interest :&nbsp; &nbsp;&nbsp; 15</span></DIV></DIV>
+<DIV id=ou57 style="position:absolute; left:207px; top:483px; width:746px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:754px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u38.png',sizingMethod='scale');
+"><img style="width:754px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u38.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u57container style="position:absolute; left:207px; top:483px; width:746px; height:126px;; overflow:visible;">
+
+<DIV id=u58 style="position:absolute; left:2px; top:54.5px; width:741px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u58_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u57 src="Resources/transparent.gif" style="position:absolute; left:207px; top:483px; width:745px; height:125px"  >
+
+<DIV id=u59 style="position:absolute; left:222px; top:492px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u59_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">WareHouse Jobs </span></DIV></DIV>
+<DIV id=u60 style="position:absolute; left:222px; top:518px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u60_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Active jobs:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 2</span></DIV></DIV>
+<span style="position:absolute; left:222px; top:512px; width:203px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Department_List_files/u61.png',sizingMethod='scale');
+"><img style="width:203px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Department_List_files/u61.png" border="0" alt=""></span>
+
+<IMG id=u61 src="Resources/transparent.gif" style="position:absolute; left:222px; top:511.5px; width:200px; height:2px">
+
+<DIV id=u62 style="position:absolute; left:221px; top:534px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u62_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of Succesfull applicants : 0&nbsp; </span></DIV></DIV>
+<DIV id=u63 style="position:absolute; left:221px; top:551px; width:210px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u63_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Number of new job this month:&nbsp; &nbsp; &nbsp; 1</span></DIV></DIV>
+<DIV id=u64 style="position:absolute; left:452px; top:518px; width:180px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Applicants :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 94 </span></DIV></DIV>
+<DIV id=u65 style="position:absolute; left:451px; top:535px; width:171px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u65_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Expression of Interest :&nbsp; &nbsp;&nbsp; 15</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Department_List_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

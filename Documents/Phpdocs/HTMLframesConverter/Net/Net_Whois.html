@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_Whois</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_Whois</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Looks up records in the databases maintained by several Network Information  Centres (NICs).  This class uses PEAR's Net_Socket:: class.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Seamus Venasse &lt;<a href="mailto:seamus.venasse@polaris.ca">seamus.venasse@polaris.ca</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> 1997-2005 The PHP Group</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---Whois.php.html">/assets/PEAR/Net/Whois.php</a> (line <span class="field"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a36">36</a></span>)
+		</p>
+		
+				
+		<pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --Net_Whois</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_errorCodes" title="details" class="var-name">$_errorCodes</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_ipNicServers" title="details" class="var-name">$_ipNicServers</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_nicServers" title="details" class="var-name">$_nicServers</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_whoisServerID" title="details" class="var-name">$_whoisServerID</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_Whois</span>
+										<a href="#Net_Whois" title="details" class="method-name">Net_Whois</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#query" title="details" class="method-name">query</a>
+											(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>, [<span class="var-type">$userWhoisServer</span>&nbsp;<span class="var-name">$userWhoisServer</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#queryAPNIC" title="details" class="method-name">queryAPNIC</a>
+											(<span class="var-type">$ipAddress</span>&nbsp;<span class="var-name">$domain</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#queryIPv6" title="details" class="method-name">queryIPv6</a>
+											(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#queryRADB" title="details" class="method-name">queryRADB</a>
+											(<span class="var-type">$ipAddress</span>&nbsp;<span class="var-name">$ipAddress</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#_chooseServer" title="details" class="method-name">_chooseServer</a>
+											(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_connect" title="details" class="method-name">_connect</a>
+											(<span class="var-type">$nicServer</span>&nbsp;<span class="var-name">$nicServer</span>, <span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_errorCodes" id="$_errorCodes"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_errorCodes</span>
+			 = <span class="var-default">array (<br />        010 =&gt; 'Unable to create a socket object',<br />        011 =&gt; 'Unable to open socket',<br />        012 =&gt; 'Write to socket failed',<br />        013 =&gt; 'Read from socket failed'<br />    )</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a83">83</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">List of error codes and text</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_ipNicServers" id="$_ipNicServers"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_ipNicServers</span>
+			 = <span class="var-default">array (&quot;RNICHOST&quot;, &quot;PNICHOST&quot;, &quot;BNICHOST&quot;)</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a75">75</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Server to search for IP address lookups</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_nicServers" id="$_nicServers"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_nicServers</span>
+			 = <span class="var-default">array (<br />        &quot;NICHOST&quot;           =&gt; &quot;whois.crsnic.net&quot;,<br />        &quot;INICHOST&quot;          =&gt; &quot;whois.networksolutions.com&quot;,<br />        &quot;DNICHOST&quot;          =&gt; &quot;whois.nic.mil&quot;,<br />        &quot;GNICHOST&quot;          =&gt; &quot;whois.nic.gov&quot;,<br />        &quot;ANICHOST&quot;          =&gt; &quot;whois.arin.net&quot;,<br />        &quot;RNICHOST&quot;          =&gt; &quot;whois.ripe.net&quot;,<br />        &quot;PNICHOST&quot;          =&gt; &quot;whois.apnic.net&quot;,<br />        &quot;RUNICHOST&quot;         =&gt; &quot;whois.ripn.net&quot;,<br />        &quot;MNICHOST&quot;          =&gt; &quot;whois.ra.net&quot;,<br />        &quot;QNICHOST_TAIL&quot;     =&gt; &quot;.whois-servers.net&quot;,<br />        &quot;SNICHOST&quot;          =&gt; &quot;whois.6bone.net&quot;,<br />        &quot;BNICHOST&quot;          =&gt; &quot;whois.registro.br&quot;<br />    )</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">List of NICs to query</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_whoisServerID" id="$_whoisServerID"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_whoisServerID</span>
+			 = <span class="var-default"> &quot;Whois Server: &quot;</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a67">67</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Search string of server to search on</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+					<blockquote>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_debug">PEAR::$_debug</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_handler">PEAR::$_default_error_handler</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_mode">PEAR::$_default_error_mode</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_default_error_options">PEAR::$_default_error_options</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_error_class">PEAR::$_error_class</a></span><br>
+							</span>
+													<img src="../media/images/PrivateVariable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../PEAR/PEAR.html#var$_expected_errors">PEAR::$_expected_errors</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_Whois" id="Net_Whois"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_Whois</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a97">97</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs a new Net_Whois object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Net_Whois</span>
+		<span class="method-name">
+			Net_Whois
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">query</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a114">114</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the necessary servers to perform a domain whois query.  Prefix  queries with a &quot;!&quot; to lookup information in InterNIC handle database.</p>
+<p class="description"><p>Add a &quot;-arin&quot; suffix to queries to lookup information in ARIN handle  database.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> returns a PEAR_Error on failure, or a string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			query
+		</span>
+					(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>, [<span class="var-type">$userWhoisServer</span>&nbsp;<span class="var-name">$userWhoisServer</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$domain</span>
+				<span class="var-name">$domain</span><span class="var-description">: string IP address or host name</span>			</li>
+					<li>
+				<span class="var-type">$userWhoisServer</span>
+				<span class="var-name">$userWhoisServer</span><span class="var-description">: string server to query (optional)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryAPNIC" id="queryAPNIC"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">queryAPNIC</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a150">150</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use the Asia/Pacific Network Information Center (APNIC) database.</p>
+<p class="description"><p>It contains network numbers used in East Asia, Australia, New  Zealand, and the Pacific islands.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> returns a PEAR_Error on failure, or a string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			queryAPNIC
+		</span>
+					(<span class="var-type">$ipAddress</span>&nbsp;<span class="var-name">$domain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$ipAddress</span>
+				<span class="var-name">$domain</span><span class="var-description">: string IP address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryIPv6" id="queryIPv6"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">queryIPv6</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a164">164</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use the IPv6 Resource Center (6bone) database.  It contains network  names and addresses for the IPv6 network.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> returns a PEAR_Error on failure, or a string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			queryIPv6
+		</span>
+					(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$domain</span>
+				<span class="var-name">$domain</span><span class="var-description">: string IP address or host name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryRADB" id="queryRADB"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">queryRADB</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a179">179</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use the Route Arbiter Database (RADB) database.  It contains  route policy specifications for a large number of operators'  networks.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> returns a PEAR_Error on failure, or a string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			queryRADB
+		</span>
+					(<span class="var-type">$ipAddress</span>&nbsp;<span class="var-name">$ipAddress</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$ipAddress</span>
+				<span class="var-name">$ipAddress</span><span class="var-description">: string IP address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_chooseServer" id="_chooseServer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_chooseServer</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a192">192</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determines the correct server to connect to based upon the domin</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whois server host name</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_chooseServer
+		</span>
+					(<span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$domain</span>
+				<span class="var-name">$domain</span><span class="var-description">: string IP address or host name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_connect" id="_connect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_connect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net__assetsPEARNetWhois.php.html#a218">218</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connects to the whois server and retrieves domain information</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> returns a PEAR_Error on failure, string of whois data on success</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_connect
+		</span>
+					(<span class="var-type">$nicServer</span>&nbsp;<span class="var-name">$nicServer</span>, <span class="var-type">$domain</span>&nbsp;<span class="var-name">$domain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$nicServer</span>
+				<span class="var-name">$nicServer</span><span class="var-description">: string FQDN of whois server to query</span>			</li>
+					<li>
+				<span class="var-type">$domain</span>
+				<span class="var-name">$domain</span><span class="var-description">: string domain name to query</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../PEAR/PEAR.html">PEAR</a></span></p>
+					<blockquote>
+													<img src="../media/images/Constructor.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#method_checkDelExpect">PEAR::_checkDelExpect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:16:00 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,3835 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class Net_IMAP</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">Net_IMAP<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                                                                                                                  
+                                                                                                                                                                                                            		[ <a href="../classtrees_Net_IMAP.html" class="menu">class tree: Net_IMAP</a> ]
+		[ <a href="../elementindex_Net_IMAP.html" class="menu">index: Net_IMAP</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">Net_IMAP</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../Net_IMAP/_assets---PEAR---Net---IMAP.php.html">IMAP.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Net_IMAP/Net_IMAP.html">Net_IMAP</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Net_IMAP</h1>
+Source Location: /assets/PEAR/Net/IMAP.php<br /><br />
+
+<h2 class="class-name">Class Net_IMAP</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+						
+					| <a href="#sec-inherited">Inherited Properties, Constants, and Methods</a>
+											| <a href="#sec-vars">Properties</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>Provides an implementation of the IMAP protocol using PEAR's  Net_Socket:: class.
+</strong></p>
+
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---IMAP.php.html">/assets/PEAR/Net/IMAP.php</a> [<span class="field">line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a30">30</a></span>]
+		</p>
+
+		
+		<pre><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a>
+   |
+   --Net_IMAP</pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Damian Alejandro Fernandez Sosa &lt;<a href="mailto:damlists@cnba.uba.ar">damlists@cnba.uba.ar</a>&gt;</li>
+			 		  		</ul>
+		
+		
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+	</table>
+		</td>
+
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodNet_IMAP">Net_IMAP</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodappendMessage">appendMessage</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodconnect">connect</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodcopyMessages">copyMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodcreateMailbox">createMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddeleteACL">deleteACL</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddeleteAnnotation">deleteAnnotation</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddeleteMailbox">deleteMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddeleteMessages">deleteMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddeleteMsg">deleteMsg</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methoddisconnect">disconnect</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodexamineMailbox">examineMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodexpunge">expunge</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetACL">getACL</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetACLRights">getACLRights</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetAnnotation">getAnnotation</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetBody">getBody</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetEnvelope">getEnvelope</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetFlags">getFlags</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetHierarchyDelimiter">getHierarchyDelimiter</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetListing">getListing</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMailboxes">getMailboxes</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMailboxSize">getMailboxSize</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMessages">getMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMessagesList">getMessagesList</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMessagesQuota">getMessagesQuota</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMsg">getMsg</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetMyRights">getMyRights</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetNumberOfMessages">getNumberOfMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetNumberOfRecentMessages">getNumberOfRecentMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetNumberOfUnSeenMessages">getNumberOfUnSeenMessages</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetParsedHeaders">getParsedHeaders</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetRawHeaders">getRawHeaders</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetSize">getSize</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetStorageQuota">getStorageQuota</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodgetSummary">getSummary</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodhasFlag">hasFlag</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodisAnswered">isAnswered</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodisDeleted">isDeleted</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodisDraft">isDraft</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodisFlagged">isFlagged</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodisSeen">isSeen</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodlistsubscribedMailboxes">listsubscribedMailboxes</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodlogin">login</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodmailboxExist">mailboxExist</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodnumMsg">numMsg</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodrenameMailbox">renameMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsearch">search</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodselectMailbox">selectMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsetACL">setACL</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsetAnnotation">setAnnotation</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsetMessagesQuota">setMessagesQuota</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsetStorageQuota">setStorageQuota</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodsubscribeMailbox">subscribeMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#methodunsubscribeMailbox">unsubscribeMailbox</a></li>
+		  		  <li><a href="../Net_IMAP/Net_IMAP.html#method_getSearchListFromArray">_getSearchListFromArray</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+
+	<a name="sec-inherited"></a>
+	<div class="info-box">
+		<div class="info-box-title">Inherited Properties, Constants, and Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+						| <span class="disabled">Inherited Properties, Constants, and Methods</span>
+												| <a href="#sec-vars">Properties</a>
+																			| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header" width="30%">Inherited Properties</th>
+					<th class="class-table-header" width="40%">Inherited Methods</th>
+					<th class="class-table-header" width="30%">Inherited Constants</th>
+				</tr>
+				<tr>
+					<td width="30%">
+													<p>Inherited From <span class="classname"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$currentMailbox">Net_IMAPProtocol::$currentMailbox</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$dbgDialog">Net_IMAPProtocol::$dbgDialog</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$supportedAuthMethods">Net_IMAPProtocol::$supportedAuthMethods</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$supportedSASLAuthMethods">Net_IMAPProtocol::$supportedSASLAuthMethods</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_cmd_counter">Net_IMAPProtocol::$_cmd_counter</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_connected">Net_IMAPProtocol::$_connected</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_debug">Net_IMAPProtocol::$_debug</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_lastCmdID">Net_IMAPProtocol::$_lastCmdID</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_serverAuthMethods">Net_IMAPProtocol::$_serverAuthMethods</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_serverSupportedCapabilities">Net_IMAPProtocol::$_serverSupportedCapabilities</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_socket">Net_IMAPProtocol::$_socket</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_unParsedReturn">Net_IMAPProtocol::$_unParsedReturn</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_useUTF_7">Net_IMAPProtocol::$_useUTF_7</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="40%">
+													<p>Inherited From <span class="classname"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodNet_IMAPProtocol">Net_IMAPProtocol::Net_IMAPProtocol()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Constructor</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdAppend">Net_IMAPProtocol::cmdAppend()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  APPEND  Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdAuthenticate">Net_IMAPProtocol::cmdAuthenticate()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Attempt to authenticate to the iMAP server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCapability">Net_IMAPProtocol::cmdCapability()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  CAPABILITY Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCheck">Net_IMAPProtocol::cmdCheck()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the CHECK command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdClose">Net_IMAPProtocol::cmdClose()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the CLOSE command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdConnect">Net_IMAPProtocol::cmdConnect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Attempt to connect to the IMAP server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCopy">Net_IMAPProtocol::cmdCopy()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the COPY command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCreate">Net_IMAPProtocol::cmdCreate()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  CREATE Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDelete">Net_IMAPProtocol::cmdDelete()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  DELETE Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDeleteACL">Net_IMAPProtocol::cmdDeleteACL()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDeleteAnnotation">Net_IMAPProtocol::cmdDeleteAnnotation()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdExamine">Net_IMAPProtocol::cmdExamine()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  EXAMINE  Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdExpunge">Net_IMAPProtocol::cmdExpunge()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the EXPUNGE command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdFetch">Net_IMAPProtocol::cmdFetch()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  FETCH Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetACL">Net_IMAPProtocol::cmdGetACL()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetAnnotation">Net_IMAPProtocol::cmdGetAnnotation()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetQuota">Net_IMAPProtocol::cmdGetQuota()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the GETQUOTA command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetQuotaRoot">Net_IMAPProtocol::cmdGetQuotaRoot()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the GETQUOTAROOT command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdList">Net_IMAPProtocol::cmdList()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  LIST  Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdListRights">Net_IMAPProtocol::cmdListRights()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLogin">Net_IMAPProtocol::cmdLogin()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Attempt to login to the iMAP server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLogout">Net_IMAPProtocol::cmdLogout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Attempt to disconnect from the iMAP server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLsub">Net_IMAPProtocol::cmdLsub()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  LSUB  Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdMyRights">Net_IMAPProtocol::cmdMyRights()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdNoop">Net_IMAPProtocol::cmdNoop()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the NOOP command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdRename">Net_IMAPProtocol::cmdRename()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  RENAME Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSearch">Net_IMAPProtocol::cmdSearch()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the SEARCH command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSelect">Net_IMAPProtocol::cmdSelect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  Select Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetACL">Net_IMAPProtocol::cmdSetACL()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">******************************************************************</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetAnnotation">Net_IMAPProtocol::cmdSetAnnotation()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">*****************************************************************************</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetQuota">Net_IMAPProtocol::cmdSetQuota()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the SETQUOTA command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetQuotaRoot">Net_IMAPProtocol::cmdSetQuotaRoot()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the SETQUOTAROOT command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdStatus">Net_IMAPProtocol::cmdStatus()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  STATUS Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdStore">Net_IMAPProtocol::cmdStore()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the STORE command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSubscribe">Net_IMAPProtocol::cmdSubscribe()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  SUSCRIBE  Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidCopy">Net_IMAPProtocol::cmdUidCopy()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidFetch">Net_IMAPProtocol::cmdUidFetch()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidSearch">Net_IMAPProtocol::cmdUidSearch()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the SEARCH command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidStore">Net_IMAPProtocol::cmdUidStore()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the UID STORE command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUnsubscribe">Net_IMAPProtocol::cmdUnsubscribe()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the  UNSUSCRIBE  Mailbox Command</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdX">Net_IMAPProtocol::cmdX()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the X command.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetCurrentMailbox">Net_IMAPProtocol::getCurrentMailbox()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">get current mailbox name</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetDebugDialog">Net_IMAPProtocol::getDebugDialog()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetLastCmdId">Net_IMAPProtocol::getLastCmdId()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">get the last cmd ID</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetServerAuthMethods">Net_IMAPProtocol::getServerAuthMethods()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tell if the server has capability $capability</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetUnparsedResponse">Net_IMAPProtocol::getUnparsedResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">get the &quot;returning of the unparsed response&quot; feature status</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasAclSupport">Net_IMAPProtocol::hasAclSupport()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tell if the server has Quota support</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasAnnotateMoreSupport">Net_IMAPProtocol::hasAnnotateMoreSupport()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tell if the server has support for the ANNOTATEMORE extension</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasCapability">Net_IMAPProtocol::hasCapability()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tell if the server has capability $capability</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasQuotaSupport">Net_IMAPProtocol::hasQuotaSupport()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tell if the server has Quota support</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodsetDebug">Net_IMAPProtocol::setDebug()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the debuging information on or off</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodsetUnparsedResponse">Net_IMAPProtocol::setUnparsedResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">set the &quot;returning of the unparsed response&quot; feature on or off</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodutf_7_decode">Net_IMAPProtocol::utf_7_decode()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodutf_7_encode">Net_IMAPProtocol::utf_7_encode()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_arrayfy_content">Net_IMAPProtocol::_arrayfy_content()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Makes the content an Array</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authCRAM_MD5">Net_IMAPProtocol::_authCRAM_MD5()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authDigest_MD5">Net_IMAPProtocol::_authDigest_MD5()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authLOGIN">Net_IMAPProtocol::_authLOGIN()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_genericCommand">Net_IMAPProtocol::_genericCommand()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_genericImapResponseParser">Net_IMAPProtocol::_genericImapResponseParser()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getAddressList">Net_IMAPProtocol::_getAddressList()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the ARRDLIST as defined in RFC</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getBestAuthMethod">Net_IMAPProtocol::_getBestAuthMethod()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Returns the name of the best authentication method that the server  has advertised.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getClosingBracesPos">Net_IMAPProtocol::_getClosingBracesPos()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Utility funcion to find the closing parenthesis &quot;)&quot; Position it takes care of quoted ones</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getCmdId">Net_IMAPProtocol::_getCmdId()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">get the cmd ID</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getEXTarray">Net_IMAPProtocol::_getEXTarray()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getNextToken">Net_IMAPProtocol::_getNextToken()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Fetches the next IMAP token or parenthesis</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getRawResponse">Net_IMAPProtocol::_getRawResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Get a response from the server with an optional string of commandID.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getToEOL">Net_IMAPProtocol::_getToEOL()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Utility funcion to get from here to the end of the line</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseBodyResponse">Net_IMAPProtocol::_parseBodyResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the BODY response</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseContentresponse">Net_IMAPProtocol::_parseContentresponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the BODY[],BODY[TEXT],.... responses</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseENVELOPEresponse">Net_IMAPProtocol::_parseENVELOPEresponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the ENVELOPE response</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseFLAGSresponse">Net_IMAPProtocol::_parseFLAGSresponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the FLAG response</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseOneStringResponse">Net_IMAPProtocol::_parseOneStringResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Parses the responses like RFC822.SIZE and INTERNALDATE</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseSpace">Net_IMAPProtocol::_parseSpace()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseString">Net_IMAPProtocol::_parseString()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_prot_error">Net_IMAPProtocol::_prot_error()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Utility funcion to display to console the protocol errors</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_putCMD">Net_IMAPProtocol::_putCMD()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send a command to the server with an optional string of arguments.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_recvLn">Net_IMAPProtocol::_recvLn()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Receive the given string of data from the server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_retrParsedResponse">Net_IMAPProtocol::_retrParsedResponse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_send">Net_IMAPProtocol::_send()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Send the given string of data to the server.</span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="30%">
+											</td>
+				</tr>
+			</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-vars">Properties</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">Net_IMAP</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#Net_IMAP" title="details" class="method-name">Net_IMAP</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Constructor</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#appendMessage" title="details" class="method-name">appendMessage</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Appends a mail to  a mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">true</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#connect" title="details" class="method-name">connect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Attempt to connect to the IMAP server located at $host $port</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#copyMessages" title="details" class="method-name">copyMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Copies mail from one folder to another</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#createMailbox" title="details" class="method-name">createMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Creates the mailbox $mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#deleteACL" title="details" class="method-name">deleteACL</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">deletes the ACL on a mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#deleteAnnotation" title="details" class="method-name">deleteAnnotation</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#deleteMailbox" title="details" class="method-name">deleteMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Deletes the mailbox $mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#deleteMessages" title="details" class="method-name">deleteMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#deleteMsg" title="details" class="method-name">deleteMsg</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#disconnect" title="details" class="method-name">disconnect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#examineMailbox" title="details" class="method-name">examineMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#expunge" title="details" class="method-name">expunge</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">****************************************************************</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getACL" title="details" class="method-name">getACL</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">get the Access Control List details</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getACLRights" title="details" class="method-name">getACLRights</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">returns an array containing the rights that a user logged on has on the mailbox  this method can be used by any user, not only the administrator</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getAnnotation" title="details" class="method-name">getAnnotation</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getBody" title="details" class="method-name">getBody</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getEnvelope" title="details" class="method-name">getEnvelope</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getFlags" title="details" class="method-name">getFlags</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Lists the flags of the selected messages</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getHierarchyDelimiter" title="details" class="method-name">getHierarchyDelimiter</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Gets the HierachyDelimiter character used to create subfolders  cyrus users &quot;.&quot;    and wu-imapd uses &quot;/&quot;</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getListing" title="details" class="method-name">getListing</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMailboxes" title="details" class="method-name">getMailboxes</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns an array containing the names of the selected mailboxes</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMailboxSize" title="details" class="method-name">getMailboxSize</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMessages" title="details" class="method-name">getMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMessagesList" title="details" class="method-name">getMessagesList</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">assoc</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMessagesQuota" title="details" class="method-name">getMessagesQuota</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns MESSAGES quota details</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMsg" title="details" class="method-name">getMsg</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMyRights" title="details" class="method-name">getMyRights</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">returns the rights that the user logged on has on the mailbox  this method can be used by any user, not only the administrator</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getNumberOfMessages" title="details" class="method-name">getNumberOfMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getNumberOfRecentMessages" title="details" class="method-name">getNumberOfRecentMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getNumberOfUnSeenMessages" title="details" class="method-name">getNumberOfUnSeenMessages</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getParsedHeaders" title="details" class="method-name">getParsedHeaders</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getRawHeaders" title="details" class="method-name">getRawHeaders</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getSize" title="details" class="method-name">getSize</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">***************************************************</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">assoc</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getStorageQuota" title="details" class="method-name">getStorageQuota</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns STORAGE quota details</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getSummary" title="details" class="method-name">getSummary</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#hasFlag" title="details" class="method-name">hasFlag</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isAnswered" title="details" class="method-name">isAnswered</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check the Answered flag</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isDeleted" title="details" class="method-name">isDeleted</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check the Deleted flag</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isDraft" title="details" class="method-name">isDraft</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check the Draft flag</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isFlagged" title="details" class="method-name">isFlagged</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check the flagged flag</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isSeen" title="details" class="method-name">isSeen</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check the Seen flag</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#listsubscribedMailboxes" title="details" class="method-name">listsubscribedMailboxes</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Lists the subscription to mailboxes</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">true</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#login" title="details" class="method-name">login</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Attempt to authenticate to the IMAP server.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#mailboxExist" title="details" class="method-name">mailboxExist</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">check if the mailbox name exists</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#numMsg" title="details" class="method-name">numMsg</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#renameMailbox" title="details" class="method-name">renameMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Renames the mailbox $mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#search" title="details" class="method-name">search</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#selectMailbox" title="details" class="method-name">selectMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setACL" title="details" class="method-name">setACL</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Set ACL on a mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setAnnotation" title="details" class="method-name">setAnnotation</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">****************************************************************</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">true</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setMessagesQuota" title="details" class="method-name">setMessagesQuota</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">sets MESSAGES quota details</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">true</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setStorageQuota" title="details" class="method-name">setStorageQuota</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">sets STORAGE quota details</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#subscribeMailbox" title="details" class="method-name">subscribeMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Subscribes to the selected mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#unsubscribeMailbox" title="details" class="method-name">unsubscribeMailbox</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Removes the subscription to a mailbox</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_getSearchListFromArray" title="details" class="method-name">_getSearchListFromArray</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+										| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+					</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-vars">Properties</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="methodNet_IMAP" id="Net_IMAP"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">Constructor Net_IMAP</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a43">43</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>Net_IMAP Net_IMAP(
+[string
+$host = 'localhost'], [int
+$port = 143], string
+2&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Constructor
+</strong></p>
+<span class="description"><p>Instantiates a new Net_SMTP object, overriding any defaults  with parameters that are passed in.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">2:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The value to give when sending EHLO or HELO.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$host:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The server to connect to.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$port:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The port to connect to.</span>			</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodappendMessage" id="appendMessage"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">appendMessage</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a756">756</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed appendMessage(
+string
+$rfc_message, [string
+$mailbox = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Appends a mail to  a mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$rfc_message:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to append in RFC822 format</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to append to</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">connect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a66">66</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>true connect(
+string
+$host, string
+$port&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Attempt to connect to the IMAP server located at $host $port
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$host:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The IMAP server</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$port:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> <p>The IMAP port</p><p>It is only useful in a very few circunstances           because the contructor already makes this job</p></span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodcopyMessages" id="copyMessages"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">copyMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a705">705</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed copyMessages(
+string
+$dest_mailbox, [
+$msg_id = null], [string
+$source_mailbox = null], mixed
+$message_set&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Copies mail from one folder to another
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$dest_mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to copy sessages to</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">mixed</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_set:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the messages that I want to copy (all by default) it also                                   can be an array</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$source_mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name from where the messages are copied</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodcreateMailbox" id="createMailbox"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">createMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a942">942</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed createMailbox(
+string
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Creates the mailbox $mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to create</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddeleteACL" id="deleteACL"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">deleteACL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1564">1564</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed deleteACL(
+string
+$mailbox_name, string
+$user&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>deletes the ACL on a mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the mailbox</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$user:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> user to set the ACL</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>True on success, or PEAR_Error on false</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddeleteAnnotation" id="deleteAnnotation"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">deleteAnnotation</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1694">1694</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void deleteAnnotation(
+
+$entry, 
+$values, [
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$entry:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$values:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddeleteMailbox" id="deleteMailbox"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">deleteMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a962">962</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed deleteMailbox(
+string
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Deletes the mailbox $mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to delete</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddeleteMessages" id="deleteMessages"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">deleteMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a655">655</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void deleteMessages(
+[
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddeleteMsg" id="deleteMsg"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">deleteMsg</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1830">1830</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void deleteMsg(
+
+$msg_id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">disconnect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a170">170</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void disconnect(
+[
+$expungeOnExit = false]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$expungeOnExit:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodexamineMailbox" id="examineMailbox"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">examineMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a219">219</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void examineMailbox(
+
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodexpunge" id="expunge"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">expunge</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1311">1311</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void expunge(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>****************************************************************
+</strong></p>
+<span class="description"><p>*                                                               ** *           MISC METHODS                                        ** *                                                               ** ****************************************************************</p></span>
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetACL" id="getACL"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getACL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1504">1504</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getACL(
+[string
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>get the Access Control List details
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mailbox to get ACL info.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetACLRights" id="getACLRights"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getACLRights</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1628">1628</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getACLRights(
+
+$user, [string
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>returns an array containing the rights that a user logged on has on the mailbox  this method can be used by any user, not only the administrator
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the mailbox to query rights</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$user:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>string contailing the list of rights on success, or PEAR_Error on failure</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetAnnotation" id="getAnnotation"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getAnnotation</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1714">1714</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getAnnotation(
+
+$entries, 
+$values, [
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$entries:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$values:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetBody" id="getBody"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getBody</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a379">379</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getBody(
+
+$msg_id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetEnvelope" id="getEnvelope"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getEnvelope</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a538">538</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getEnvelope(
+[
+$mailbox = ''], [
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetFlags" id="getFlags"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getFlags</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1156">1156</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getFlags(
+[mixes
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Lists the flags of the selected messages
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message list</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>array on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetHierarchyDelimiter" id="getHierarchyDelimiter"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getHierarchyDelimiter</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a802">802</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getHierarchyDelimiter(
+[
+$mailbox = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Gets the HierachyDelimiter character used to create subfolders  cyrus users &quot;.&quot;    and wu-imapd uses &quot;/&quot;
+</strong></p>
+<span class="description"><p>$param  string  the mailbox to get the hierarchy from</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>the hierarchy delimiter</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetListing" id="getListing"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getListing</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1824">1824</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getListing(
+[
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMailboxes" id="getMailboxes"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMailboxes</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a846">846</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getMailboxes(
+[
+$reference = ''], [string
+$restriction_search = 0], [string
+$returnAttributes = false], string
+$mailbox_base&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns an array containing the names of the selected mailboxes
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_base:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> base mailbox to start the search                    $mailbox_base     if $mailbox_base == ''     then $mailbox_base is the curent selected mailbox</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$restriction_search:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> false or 0 means return all mailboxes  true or 1 return only the mailbox that contains that exact name</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$returnAttributes:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> true means return an assoc array containing mailbox names and mailbox attributes</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$reference:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMailboxSize" id="getMailboxSize"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMailboxSize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a588">588</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getMailboxSize(
+[
+$mailbox = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMessages" id="getMessages"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a403">403</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getMessages(
+[
+$msg_id = null], [
+$indexIsMessageNumber = true]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$indexIsMessageNumber:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMessagesList" id="getMessagesList"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMessagesList</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a303">303</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getMessagesList(
+[
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMessagesQuota" id="getMessagesQuota"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMessagesQuota</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1408">1408</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>assoc getMessagesQuota(
+[string
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns MESSAGES quota details
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mailbox to get quota info.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>array contaning the quota info  on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMsg" id="getMsg"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMsg</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1811">1811</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getMsg(
+
+$msg_id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMyRights" id="getMyRights"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMyRights</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1587">1587</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getMyRights(
+[string
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>returns the rights that the user logged on has on the mailbox  this method can be used by any user, not only the administrator
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the mailbox to query rights</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>string contailing the list of rights on success, or PEAR_Error on failure</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetNumberOfMessages" id="getNumberOfMessages"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getNumberOfMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a451">451</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getNumberOfMessages(
+[
+$mailbox = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetNumberOfRecentMessages" id="getNumberOfRecentMessages"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getNumberOfRecentMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a506">506</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getNumberOfRecentMessages(
+[
+$mailbox = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetNumberOfUnSeenMessages" id="getNumberOfUnSeenMessages"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getNumberOfUnSeenMessages</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a479">479</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getNumberOfUnSeenMessages(
+[
+$mailbox = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetParsedHeaders" id="getParsedHeaders"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getParsedHeaders</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a267">267</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getParsedHeaders(
+
+$msg_id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetRawHeaders" id="getRawHeaders"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getRawHeaders</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a244">244</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getRawHeaders(
+
+$msg_id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetSize" id="getSize"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getSize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1794">1794</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getSize(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>***************************************************
+</strong></p>
+<span class="description"><p>*******************************************************</p></span>
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetStorageQuota" id="getStorageQuota"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getStorageQuota</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1372">1372</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>assoc getStorageQuota(
+[string
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns STORAGE quota details
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mailbox to get quota info.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>array contaning the quota info  on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetSummary" id="getSummary"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getSummary</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a333">333</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void getSummary(
+[
+$msg_id = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$msg_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodhasFlag" id="hasFlag"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">hasFlag</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1276">1276</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void hasFlag(
+
+$message_nro, 
+$flag&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$flag:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisAnswered" id="isAnswered"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isAnswered</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1212">1212</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed isAnswered(
+mixes
+$message_nro&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check the Answered flag
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to check</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true or false if the flag is sert PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisDeleted" id="isDeleted"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">isDeleted</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1266">1266</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed isDeleted(
+mixes
+$message_nro&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check the Deleted flag
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to check</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true or false if the flag is sert PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisDraft" id="isDraft"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isDraft</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1247">1247</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed isDraft(
+mixes
+$message_nro&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check the Draft flag
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to check</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true or false if the flag is sert PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisFlagged" id="isFlagged"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">isFlagged</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1229">1229</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed isFlagged(
+mixes
+$message_nro&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check the flagged flag
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to check</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true or false if the flag is sert PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisSeen" id="isSeen"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isSeen</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1196">1196</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed isSeen(
+mixes
+$message_nro&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check the Seen flag
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">mixes</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message_nro:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message to check</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true or false if the flag is sert PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlistsubscribedMailboxes" id="listsubscribedMailboxes"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">listsubscribedMailboxes</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1071">1071</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed listsubscribedMailboxes(
+[
+$reference = ''], [
+$restriction_search = 0], [
+$returnAttributes = false], string
+$mailbox_base, string
+$mailbox_name&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Lists the subscription to mailboxes
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_base:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name start the search (see to getMailboxes() )</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name filter the search (see to getMailboxes() )</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$reference:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$restriction_search:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$returnAttributes:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a111">111</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>true login(
+string
+$user, string
+$pass, [string
+$useauthenticate = true], [boolean
+$selectMailbox = true]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Attempt to authenticate to the IMAP server.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$user:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The userid to authenticate as.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$pass:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The password to authenticate with.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$useauthenticate:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> true: authenticate using         the IMAP AUTHENTICATE command. false: authenticate using         the IMAP AUTHENTICATE command. 'string': authenticate using         the IMAP AUTHENTICATE command but using the authMethod in 'string'</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$selectMailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> automaticaly select inbox on login (false does not)</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodmailboxExist" id="mailboxExist"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">mailboxExist</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a916">916</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean mailboxExist(
+string
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>check if the mailbox name exists
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to check existance</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/false on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodnumMsg" id="numMsg"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">numMsg</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1799">1799</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void numMsg(
+[
+$mailbox = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodrenameMailbox" id="renameMailbox"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">renameMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a988">988</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed renameMailbox(
+
+$oldmailbox, 
+$newmailbox, string
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Renames the mailbox $mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to rename</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$oldmailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$newmailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">search</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1332">1332</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void search(
+
+$search_list, [
+$uidSearch = false]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$search_list:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$uidSearch:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodselectMailbox" id="selectMailbox"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">selectMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a198">198</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void selectMailbox(
+
+$mailbox&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetACL" id="setACL"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setACL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1542">1542</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed setACL(
+string
+$mailbox_name, string
+$user, string
+$acl&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Set ACL on a mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the mailbox</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$user:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> user to set the ACL</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$acl:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> ACL list</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>True on success, or PEAR_Error on false</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetAnnotation" id="setAnnotation"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setAnnotation</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1674">1674</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setAnnotation(
+
+$entry, 
+$values, [
+$mailbox_name = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>****************************************************************
+</strong></p>
+<span class="description"><p>*                                                               ** *           ANNOTATEMORE METHODS                                ** *                                                               ** ****************************************************************</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$entry:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$values:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetMessagesQuota" id="setMessagesQuota"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setMessagesQuota</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1466">1466</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>true setMessagesQuota(
+string
+$mailbox_name, 
+$quota&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>sets MESSAGES quota details
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mailbox to get quota info.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$quota:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetStorageQuota" id="setStorageQuota"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setStorageQuota</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1444">1444</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>true setStorageQuota(
+string
+$mailbox_name, 
+$quota&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>sets STORAGE quota details
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox_name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mailbox to get quota info.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$quota:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>on success or PEAR_Error</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsubscribeMailbox" id="subscribeMailbox"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">subscribeMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1023">1023</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed subscribeMailbox(
+[string
+$mailbox = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Subscribes to the selected mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to subscribe</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodunsubscribeMailbox" id="unsubscribeMailbox"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">unsubscribeMailbox</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1047">1047</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed unsubscribeMailbox(
+[string
+$mailbox = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Removes the subscription to a mailbox
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mailbox:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> mailbox name to unsubscribe</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>true on Success/PearError on Failure</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Since:</strong>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_getSearchListFromArray" id="_getSearchListFromArray"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_getSearchListFromArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1770">1770</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _getSearchListFromArray(
+
+$arr&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$arr:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:47:07 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

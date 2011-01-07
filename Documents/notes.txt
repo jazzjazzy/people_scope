@@ -1,0 +1,8 @@
+//error hanadler
+//create exception
+
+throw new CustomException($error[2]);
+
+//database call
+
+$db = new db(); 

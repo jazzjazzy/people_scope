@@ -1,0 +1,314 @@
+.top
+{
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+padding: 10px;
+padding-bottom: 20px;
+background-color: #ffffff;
+font-size: 13pt;
+font-weight: bold;
+color: #333333;
+width: 90%;
+}
+ 
+.bottom
+{
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+padding: 10px;
+background-color: #f7f7f7;
+border: 1px solid silver;
+font-size: 10pt;
+text-align: right;
+}
+ 
+.chapter
+{
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+border-bottom: 1px solid silver;
+border-top: 1px solid silver;
+border-left: 1px solid silver;
+border-right: 1px solid silver;
+float: left;
+}
+ 
+.left
+{
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+padding: 5px;
+font-size: 10pt;
+width: 160px;
+}
+ 
+.right
+{
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+padding: 20px;
+background-color: #ffffff;
+font-size: 10pt;
+}
+ 
+.title
+{
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+color: #333333;
+padding-bottom: 10px;
+font-size: 13pt;
+font-style: bold;
+}
+ 
+#menu
+{
+width: 90%;
+padding: 3px 0;
+margin-left: 0px;
+margin-top: 0px;
+margin-bottom: 30px;
+border-bottom: 1px solid silver;
+color: #333333;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-style: normal;
+background-color: #E5ECF9;
+}
+ 
+#menu li
+{
+display: inline;
+list-style-type: none;
+padding-right: 5px;
+padding-left: 5px;
+}
+ 
+#menu a
+{
+margin-left: 0px;
+TEXT-DECORATION: underline;
+color: #008000;
+}
+ 
+#menu a:link
+{
+color: #008000;
+}
+ 
+#menu a:visited
+{
+color: #008000;
+}
+ 
+#menu a:hover
+{
+color: #000;
+}
+ 
+#menu a#current
+{
+color: #333333;
+TEXT-DECORATION: none;
+}
+ 
+.objectname
+{
+color: #333333;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+font-style: normal;
+font-decoration: none;
+text-align: left;
+margin-bottom: 5px;
+margin-top: 5px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 5px;
+background: #EFEFEF;
+}
+ 
+.details
+{
+color: #333333;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+text-align: left;
+margin-top: 0px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 5px;
+background: #ffffff;
+}
+ 
+.detailstable
+{
+border: 1pt solid #CCCCCC;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+}
+ 
+.fieldname
+{
+color: #333333;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: normal;
+font-style: normal;
+font-decoration: none;
+text-align: left;
+border: 0pt solid #000000;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 2px;
+padding-top: 3px;
+background: #FFF4C2;
+}
+ 
+.fielddata
+{
+color: #333333;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: normal;
+font-style: normal;
+font-decoration: none;
+text-align: left;
+border: 0pt solid #000000;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 2px;
+padding-top: 3px;
+background: #F8F8F8;
+}
+ 
+.fielddata A
+{
+color: #008000;
+TEXT-DECORATION: underline;
+}
+ 
+.fielddata A:hover
+{
+color: #008000;
+TEXT-DECORATION: underline;
+}
+ 
+.fielddata A:active
+{
+color: #008000;
+TEXT-DECORATION: underline;
+}
+ 
+div.row
+{
+clear: both;
+height:23px;
+font-size: 18pxpt;
+margin: 15px 0 1 1;
+}
+ 
+.activetab
+{
+padding-left: 8px;
+padding-top: 3px;
+padding-right: 8px;
+padding-bottom: 3px;
+border-left: 1px solid silver;
+border-top: 1px solid silver;
+border-right: 1px solid silver;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+color: #333333;
+TEXT-DECORATION: none;
+background: #ffffff;
+float: left;
+margin-left: 3px;
+}
+ 
+.tab
+{
+padding-left: 8px;
+padding-top: 3px;
+padding-right: 8px;
+padding-bottom: 3px;
+border-left: 1px solid silver;
+border-top: 1px solid silver;
+border-right: 1px solid silver;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+color: #333333;
+background: #e5ecf9;
+TEXT-DECORATION: underline;
+float: left;
+margin-left:3px;
+}
+ 
+.tab A
+{
+color: #008000;
+} 
+ 
+.tab A:link
+{
+color: #008000;
+}
+ 
+.tab A:visited
+{
+color: #008000;
+}
+ 
+.tab A:hover
+{
+color: #000;
+}
+ 
+#objectbrowser
+{
+padding: 3px 0;
+margin-left: 0px;
+margin-top: 20px;
+margin-bottom: 30px;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10ptpt;
+}
+ 
+#objectbrowser li
+{
+display: list-item;
+list-style-type: none;
+padding-right: 5px;
+padding-left: 5px;
+}
+ 
+#objectbrowser a
+{
+margin-left: 0px;
+TEXT-DECORATION: underline;
+color: #008000;
+}
+ 
+#objectbrowser a:link
+{
+color: #008000;
+}
+ 
+#objectbrowser a:visited
+{
+color: #008000;
+}
+ 
+#objectbrowser a:hover
+{
+color: #000;
+}
+ 
+#objectbrowser a#current
+{
+color: #333333;
+TEXT-DECORATION: none;
+}
+ 

@@ -1,0 +1,54 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<span style="position:absolute; left:130px; top:10px; width:270px; height:140px">
+<span id=ou0 style="position:absolute;left:0px;top:0px;width:270px;height:140px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Home_files/u0.png',sizingMethod='scale');
+"><img style="width:270px; height:140px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Home_files/u0.png" border="0" alt=""></span>
+</span>
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:130px; top:10px; width:270px; height:140px"   >
+
+<INPUT id=u1  type=text value="" style="position:absolute; left:190px; top:210px; width:95px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u2  type=text value="" style="position:absolute; left:190px; top:240px; width:95px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u3  type=submit value="Login" style="position:absolute; left:145px; top:270px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u4 style="position:absolute; left:190px; top:304px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u4_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Forgotten password</u></span></DIV></DIV>
+<DIV id=u5 style="position:absolute; left:350px; top:190px; width:430px; height:607px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u5_rtf><span style=" color:#000000; font-size:16px;"><u><b>Our Current Plans.</b></u><br><br><b>consequat, sagittis non leo</b></span><br><br><span style=" color:#000000; font-size:13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus eros, pharetra ut sollicitudin ut, imperdiet non mauris. Sed risus nisl, ultrices id semper consequat, sagittis non leo. Nullam viverra malesuada metus, eget molestie nibh pulvinar quis. Praesent varius consequat diam, quis vehicula arcu ullamcorper non. Mauris a metus lectus, id lobortis sapien. Fusce sapien purus, fermentum quis faucibus eu, ornare sit amet.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>$290 </b>per momth </span><br><br><br><b><span style=" color:#000000; font-size:16px;">consequat, sagittis non leo</span></b><br><br><span style=" color:#000000; font-size:13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus eros, pharetra ut sollicitudin ut, imperdiet non mauris. Sed risus nisl, ultrices id semper consequat, sagittis non leo. Nullam viverra malesuada metus, eget molestie nibh pulvinar <br><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $340 </b>per momth </span><br><br><br><b><span style=" color:#000000; font-size:16px;">consequat, sagittis non leo</span></b><br><br><span style=" color:#000000; font-size:13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus eros, pharetra ut sollicitudin ut, imperdiet non mauris. Sed risus nisl, ultrices id semper consequat, sagittis non leo. Nullam viverra malesuada metus, eget molestie nibh pulvinar quis. Praesent varius consequat diam, quis vehicula arcu ullamcorper non. Mauris a metus lectus, id lobortis sapien. Fusce sapien purus, fermentum quis faucibus eu, ornare sit amet.nibh pulvinar quis. Praesent varius consequat diam, quis vehicula arcu ullamcorper non. Mauris a metus lectus, id lobortis sapien. Fusce sapien purus, fermentum quis faucibus eu, ornare sit amet.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <b>$999 </b>per momth </span></DIV></DIV>
+<DIV id=u6 style="position:absolute; left:125px; top:214px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u6_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">UserName</span></DIV></DIV>
+<DIV id=u7 style="position:absolute; left:125px; top:244px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u7_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Password</span></DIV></DIV>
+<DIV id=u8 style="position:absolute; left:350px; top:378px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u8_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Basic Plan </u></span></DIV></DIV>
+<DIV id=u9 style="position:absolute; left:350px; top:544px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u9_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Silver plan</u></span></DIV></DIV>
+<DIV id=u10 style="position:absolute; left:350px; top:784px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u10_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Gold Plan</u></span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Home_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for errorhandler.class.php</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">PeopleScope<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../classtrees_PeopleScope.html" class="menu">class tree: PeopleScope</a> ]
+		[ <a href="../elementindex_PeopleScope.html" class="menu">index: PeopleScope</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">PeopleScope</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file errorhandler.class.php</h1>
+<p>Documentation is available at <a href="../PeopleScope/_base---errorhandler.class.php.html">errorhandler.class.php</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-key">class&nbsp;</span><a href="../PeopleScope/CustomException.html">CustomException</a>&nbsp;<span class="src-key">extends&nbsp;</span><span class="src-id">Exception</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a4"></a>&nbsp;&nbsp;&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><a href="../PeopleScope/CustomException.html#methodlogError">logError</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a5"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$trace&nbsp;</span>=&nbsp;<span class="src-str">&quot;&lt;pre&gt;&quot;</span>.<a href="http://www.php.net/print_r">print_r</a><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">getTrace</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-num">1</span><span class="src-sym">)</span>.<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a6"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a7"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$str&nbsp;</span>=&nbsp;<span class="src-str">&quot;&lt;div&nbsp;style=\&quot;font-family:&nbsp;Arial,&nbsp;Helvetica,&nbsp;sans-serif;&nbsp;font-size:&nbsp;8px;&nbsp;padding:10px;&nbsp;background-color:&nbsp;#ffcccc;&nbsp;width:100%;&nbsp;border:solid&nbsp;1px&nbsp;#000\&quot;&gt;&lt;h4&gt;Error&nbsp;Information&lt;/h4&gt;&quot;</span>.</div></li>
+<li><div class="src-line"><a name="a8"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;&lt;div&gt;&nbsp;Message&nbsp;::&nbsp;&quot;</span>.<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">getMessage</span><span class="src-sym">(</span><span class="src-sym">)</span>.<span class="src-str">&quot;&lt;/div&gt;</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;File&nbsp;::&quot;</span>.<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">getFile</span><span class="src-sym">(</span><span class="src-sym">)</span>.<span class="src-str">&quot;&lt;/div&gt;</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Line&nbsp;::&quot;</span>.<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">getLine</span><span class="src-sym">(</span><span class="src-sym">)</span>.<span class="src-str">&quot;&lt;/div&gt;&lt;/pre&gt;</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;style=\&quot;font-family:&nbsp;Arial,&nbsp;Helvetica,&nbsp;sans-serif;&nbsp;font-size:&nbsp;8px;&nbsp;padding:10px;&nbsp;background-color:&nbsp;#3399ff;&nbsp;width:100%;&nbsp;border:solid&nbsp;1px&nbsp;#000\&quot;&gt;&lt;h4&gt;Error&nbsp;Back&nbsp;Trace&lt;/h4&gt;&lt;pre&gt;&quot;</span>.</div></li>
+<li><div class="src-line"><a name="a13"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/htmlentities">htmlentities</a>&nbsp;<span class="src-sym">(</span><a href="http://www.php.net/print_r">print_r</a><span class="src-sym">(</span><span class="src-var">$trace</span><span class="src-sym">,</span><span class="src-num">1</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;&nbsp;</span><span class="src-id">ENT_COMPAT</span><span class="src-sym">)&nbsp;</span>.</div></li>
+<li><div class="src-line"><a name="a14"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&lt;/div&gt;&quot;</span><span class="src-sym">;&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a15"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$str</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a17"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a18"></a>&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a20"></a>&nbsp;&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><a href="../PeopleScope/CustomException.html#methodqueryError">queryError</a><span class="src-sym">(</span><span class="src-var">$query</span><span class="src-sym">)</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;&lt;div&nbsp;style=\&quot;font-family:&nbsp;Arial,&nbsp;Helvetica,&nbsp;sans-serif;&nbsp;font-size:&nbsp;8px;&nbsp;padding:10px;&nbsp;background-color:&nbsp;#eecc00;&nbsp;width:100%;&nbsp;border:solid&nbsp;1px&nbsp;#000\&quot;&gt;&lt;h2&gt;SQL&nbsp;Statement&lt;/h2&gt;&lt;pre&gt;&quot;</span>.<span class="src-var">$query</span>.<span class="src-str">&quot;&lt;/div&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a22"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/CustomException.html#methodlogError">logError</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-sym">}</span></div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 26 Apr 2010 13:38:47 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

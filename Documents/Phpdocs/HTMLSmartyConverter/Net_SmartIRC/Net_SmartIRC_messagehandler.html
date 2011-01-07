@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class Net_SmartIRC_messagehandler</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">Net_SmartIRC<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                                                                                                                                                                                                                                  
+                                                                                            		[ <a href="../classtrees_Net_SmartIRC.html" class="menu">class tree: Net_SmartIRC</a> ]
+		[ <a href="../elementindex_Net_SmartIRC.html" class="menu">index: Net_SmartIRC</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">Net_SmartIRC</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../Net_SmartIRC/_assets---PEAR---Net---SmartIRC.php.html">SmartIRC.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Net_SmartIRC/Net_SmartIRC.html">Net_SmartIRC</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_base.html">Net_SmartIRC_base</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html">Net_SmartIRC_messagehandler</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Net_SmartIRC_messagehandler</h1>
+Source Location: /assets/PEAR/Net/SmartIRC/messagehandler.php<br /><br />
+
+<h2 class="class-name">Class Net_SmartIRC_messagehandler</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+							| <a href="#sec-descendants">Descendants</a>
+				
+					| <a href="#sec-inherited">Inherited Properties, Constants, and Methods</a>
+											| <a href="#sec-vars">Properties</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>$Id: messagehandler.php,v 1.25.2.5 2004/09/23 23:24:22 meebey Exp $
+</strong></p>
+<span class="description"><p>$Revision: 1.25.2.5 $  $Author: meebey $  $Date: 2004/09/23 23:24:22 $</p><p>Copyright (c) 2002-2003 Mirco &quot;MEEBEY&quot; Bauer &lt;mail@meebey.net&gt; &lt;http://www.meebey.net&gt;</p><p>Full LGPL License: &lt;http://www.meebey.net/lgpl.txt&gt;</p><p>This library is free software; you can redistribute it and/or  modify it under the terms of the GNU Lesser General Public  License as published by the Free Software Foundation; either  version 2.1 of the License, or (at your option) any later version.</p><p>This library is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU  Lesser General Public License for more details.</p><p>You should have received a copy of the GNU Lesser General Public  License along with this library; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</p></span>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---SmartIRC---messagehandler.php.html">/assets/PEAR/Net/SmartIRC/messagehandler.php</a> [<span class="field">line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a27">27</a></span>]
+		</p>
+
+		
+		<pre><a href="../Net_SmartIRC/Net_SmartIRC_base.html">Net_SmartIRC_base</a>
+   |
+   --<a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a>
+      |
+      --Net_SmartIRC_messagehandler</pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Mirco 'meebey' Bauer &lt;<a href="mailto:mail@meebey.net">mail@meebey.net</a>&gt;</li>
+			 		  			 		  		</ul>
+		
+		
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+				<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>0.5.5</td></tr>
+	</table>
+		</td>
+
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_error">_event_error</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_err_nicknameinuse">_event_err_nicknameinuse</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_join">_event_join</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_kick">_event_kick</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_mode">_event_mode</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_nick">_event_nick</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_part">_event_part</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_ping">_event_ping</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_privmsg">_event_privmsg</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_quit">_event_quit</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_banlist">_event_rpl_banlist</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_channelmodeis">_event_rpl_channelmodeis</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_endofmotd">_event_rpl_endofmotd</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_motd">_event_rpl_motd</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_motdstart">_event_rpl_motdstart</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_namreply">_event_rpl_namreply</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_topic">_event_rpl_topic</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_umodeis">_event_rpl_umodeis</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_welcome">_event_rpl_welcome</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_rpl_whoreply">_event_rpl_whoreply</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html#method_event_topic">_event_topic</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+	<a name="sec-descendants"></a>
+	<div class="info-box">
+		<div class="info-box-title">Descendants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <span class="disabled">Descendants</span>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+												| <a href="#sec-vars">Properties</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+									</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Child Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Net_SmartIRC/Net_SmartIRC.html">Net_SmartIRC</a></td>
+					<td>
+											$Id: messagehandler.php,v 1.25.2.5 2004/09/23 23:24:22 meebey Exp $
+										</td>
+				</tr>
+							</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-inherited"></a>
+	<div class="info-box">
+		<div class="info-box-title">Inherited Properties, Constants, and Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+						| <span class="disabled">Inherited Properties, Constants, and Methods</span>
+												| <a href="#sec-vars">Properties</a>
+																			| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header" width="30%">Inherited Properties</th>
+					<th class="class-table-header" width="40%">Inherited Methods</th>
+					<th class="class-table-header" width="30%">Inherited Constants</th>
+				</tr>
+				<tr>
+					<td width="30%">
+													<p>Inherited From <span class="classname"><a href="../Net_SmartIRC/Net_SmartIRC_base.html">Net_SmartIRC_base</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$channel">Net_SmartIRC_base::$channel</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$nreplycodes">Net_SmartIRC_base::$nreplycodes</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$replycodes">Net_SmartIRC_base::$replycodes</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_actionhandler">Net_SmartIRC_base::$_actionhandler</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_actionhandlerid">Net_SmartIRC_base::$_actionhandlerid</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_address">Net_SmartIRC_base::$_address</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_autoreconnect">Net_SmartIRC_base::$_autoreconnect</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_autoretry">Net_SmartIRC_base::$_autoretry</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark">Net_SmartIRC_base::$_benchmark</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark_starttime">Net_SmartIRC_base::$_benchmark_starttime</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark_stoptime">Net_SmartIRC_base::$_benchmark_stoptime</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_channels">Net_SmartIRC_base::$_channels</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_channelsyncing">Net_SmartIRC_base::$_channelsyncing</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_ctcpversion">Net_SmartIRC_base::$_ctcpversion</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_debug">Net_SmartIRC_base::$_debug</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_disconnecttime">Net_SmartIRC_base::$_disconnecttime</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_lastrx">Net_SmartIRC_base::$_lastrx</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_lasttx">Net_SmartIRC_base::$_lasttx</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logdestination">Net_SmartIRC_base::$_logdestination</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logfile">Net_SmartIRC_base::$_logfile</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logfilefp">Net_SmartIRC_base::$_logfilefp</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_loggedin">Net_SmartIRC_base::$_loggedin</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_maxtimer">Net_SmartIRC_base::$_maxtimer</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_messagebuffer">Net_SmartIRC_base::$_messagebuffer</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_messagebuffersize">Net_SmartIRC_base::$_messagebuffersize</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_mintimer">Net_SmartIRC_base::$_mintimer</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_motd">Net_SmartIRC_base::$_motd</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_nick">Net_SmartIRC_base::$_nick</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_password">Net_SmartIRC_base::$_password</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_port">Net_SmartIRC_base::$_port</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_realname">Net_SmartIRC_base::$_realname</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_receivedelay">Net_SmartIRC_base::$_receivedelay</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_rxtimeout">Net_SmartIRC_base::$_rxtimeout</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_selecttimeout">Net_SmartIRC_base::$_selecttimeout</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_senddelay">Net_SmartIRC_base::$_senddelay</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_socket">Net_SmartIRC_base::$_socket</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_state">Net_SmartIRC_base::$_state</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_timehandler">Net_SmartIRC_base::$_timehandler</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_timehandlerid">Net_SmartIRC_base::$_timehandlerid</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_txtimeout">Net_SmartIRC_base::$_txtimeout</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_usermode">Net_SmartIRC_base::$_usermode</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_username">Net_SmartIRC_base::$_username</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_usesockets">Net_SmartIRC_base::$_usesockets</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="40%">
+													<p>Inherited From <span class="classname"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodban">Net_SmartIRC_irccommands::ban()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">bans a hostmask for the given channel or requests the current banlist</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodchangeNick">Net_SmartIRC_irccommands::changeNick()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">changes the own nickname</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodchannel">Net_SmartIRC_irccommands::channel()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">returns an object reference to the specified channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methoddeop">Net_SmartIRC_irccommands::deop()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">deops an user in the given channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methoddevoice">Net_SmartIRC_irccommands::devoice()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">devoice a user in the given channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodgetList">Net_SmartIRC_irccommands::getList()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">gets a list of one ore more channels</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodgetTopic">Net_SmartIRC_irccommands::getTopic()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">gets the topic of a channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodinvite">Net_SmartIRC_irccommands::invite()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">invites a user to the specified channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodjoin">Net_SmartIRC_irccommands::join()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Joins one or more IRC channels with an optional key.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodkick">Net_SmartIRC_irccommands::kick()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Kicks one or more user from an IRC channel with an optional reason.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodmessage">Net_SmartIRC_irccommands::message()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sends a new message</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodmode">Net_SmartIRC_irccommands::mode()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sets or gets the mode of an user or channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodnames">Net_SmartIRC_irccommands::names()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">requests all nicknames of one or more channels</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodop">Net_SmartIRC_irccommands::op()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">ops an user in the given channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodpart">Net_SmartIRC_irccommands::part()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">parts from one or more IRC channels with an optional reason</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodquit">Net_SmartIRC_irccommands::quit()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sends QUIT to IRC server and disconnects</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodsetTopic">Net_SmartIRC_irccommands::setTopic()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sets a new topic of a channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodunban">Net_SmartIRC_irccommands::unban()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">unbans a hostmask on the given channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodvoice">Net_SmartIRC_irccommands::voice()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">voice a user in the given channel</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodwho">Net_SmartIRC_irccommands::who()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">requests a 'WHO' from the specified target</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodwhois">Net_SmartIRC_irccommands::whois()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">requests a 'WHOIS' from the specified target</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html#methodwhowas">Net_SmartIRC_irccommands::whowas()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">requests a 'WHOWAS' from the specified target  (if he left the IRC network)</span>
+										</dd>
+																	</dl>
+							</blockquote>
+													<p>Inherited From <span class="classname"><a href="../Net_SmartIRC/Net_SmartIRC_base.html">Net_SmartIRC_base</a></span></p>
+							<blockquote>
+								<dl>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodNet_SmartIRC_base">Net_SmartIRC_base::Net_SmartIRC_base()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Constructor. Initiales the messagebuffer and &quot;links&quot; the replycodes from  global into properties. Also some PHP runtime settings are configured.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodconnect">Net_SmartIRC_base::connect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Creates the sockets and connects to the IRC server on the given port.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methoddisconnect">Net_SmartIRC_base::disconnect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Disconnects from the IRC server nicely with a QUIT or just destroys the socket.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodgetMotd">Net_SmartIRC_base::getMotd()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Returns the full motd.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodgetUsermode">Net_SmartIRC_base::getUsermode()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Returns the usermode.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisBanned">Net_SmartIRC_base::isBanned()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Checks if the hostmask is on the specified channel banned and returns the result.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisError">Net_SmartIRC_base::isError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisJoined">Net_SmartIRC_base::isJoined()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">checks if we or the given user is joined to the specified channel and returns the result  ChannelSyncing is required for this.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisOpped">Net_SmartIRC_base::isOpped()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Checks if we or the given user is opped on the specified channel and returns the result.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisVoiced">Net_SmartIRC_base::isVoiced()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Checks if we or the given user is voiced on the specified channel and returns the result.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlisten">Net_SmartIRC_base::listen()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">goes into receive mode</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlistenFor">Net_SmartIRC_base::listenFor()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">waits for a special message type and puts the answer in $result</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlog">Net_SmartIRC_base::log()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Adds an entry to the log.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlogin">Net_SmartIRC_base::login()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">login and register nickname on the IRC network</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodobjListenFor">Net_SmartIRC_base::objListenFor()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">waits for a special message type and puts the answer in $result</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodreconnect">Net_SmartIRC_base::reconnect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Reconnects to the IRC server with the same login info,  it also rejoins the channels</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodregisterActionhandler">Net_SmartIRC_base::registerActionhandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">registers a new actionhandler and returns the assigned id</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodregisterTimehandler">Net_SmartIRC_base::registerTimehandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">registers a timehandler and returns the assigned id</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetAutoReconnect">Net_SmartIRC_base::setAutoReconnect()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Enables/disables autoreconnecting.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetAutoRetry">Net_SmartIRC_base::setAutoRetry()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Enables/disables autoretry for connecting to a server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetBenchmark">Net_SmartIRC_base::setBenchmark()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Enables/disables the benchmark engine.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSynching">Net_SmartIRC_base::setChannelSynching()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Deprecated, use setChannelSyncing() instead!</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Enables/disables channel syncing.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetCtcpVersion">Net_SmartIRC_base::setCtcpVersion()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the CTCP version reply string.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetDebug">Net_SmartIRC_base::setDebug()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the level of debug messages.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetDisconnecttime">Net_SmartIRC_base::setDisconnecttime()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the delaytime before closing the socket when disconnect.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogdestination">Net_SmartIRC_base::setLogdestination()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the destination of all log messages.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogfile">Net_SmartIRC_base::setLogfile()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the file for the log if the destination is set to file.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetReceivedelay">Net_SmartIRC_base::setReceivedelay()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the delay for receiving data from the IRC server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetReceiveTimeout">Net_SmartIRC_base::setReceiveTimeout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the receive timeout.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetSenddelay">Net_SmartIRC_base::setSenddelay()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the delay for sending data to the IRC server.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetTransmitTimeout">Net_SmartIRC_base::setTransmitTimeout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Sets the transmit timeout.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetUseSockets">Net_SmartIRC_base::setUseSockets()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Enables/disables the usage of real sockets.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodshowBenchmark">Net_SmartIRC_base::showBenchmark()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Shows the benchmark result.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodstartBenchmark">Net_SmartIRC_base::startBenchmark()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Starts the benchmark (sets the counters).</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodstopBenchmark">Net_SmartIRC_base::stopBenchmark()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Stops the benchmark and displays the result.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodthrowError">Net_SmartIRC_base::throwError()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterActionhandler">Net_SmartIRC_base::unregisterActionhandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">unregisters an existing actionhandler</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterActionid">Net_SmartIRC_base::unregisterActionid()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">unregisters an existing actionhandler via the id</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterTimeid">Net_SmartIRC_base::unregisterTimeid()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">unregisters an existing timehandler via the id</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_adduser">Net_SmartIRC_base::_adduser()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">adds an user to the channelobject or updates his info</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_calculateselecttimeout">Net_SmartIRC_base::_calculateselecttimeout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">calculates the selecttimeout value</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checkbuffer">Net_SmartIRC_base::_checkbuffer()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">checks the buffer if there are messages to send</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checkPHPVersion">Net_SmartIRC_base::_checkPHPVersion()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition"></span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checktimeout">Net_SmartIRC_base::_checktimeout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Checks if a receive or transmit timeout occured and reconnects if configured</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checktimer">Net_SmartIRC_base::_checktimer()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Checks the running timers and calls the registered timehandler,  when the interval is reached.</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_gettype">Net_SmartIRC_base::_gettype()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">determines the messagetype of $line</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_handleactionhandler">Net_SmartIRC_base::_handleactionhandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tries to find a actionhandler for the received message ($ircdata) and calls it</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_handlemessage">Net_SmartIRC_base::_handlemessage()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">tries to find a messagehandler for the received message ($ircdata) and calls it</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_isValidType">Net_SmartIRC_base::_isValidType()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">checks if the passed handlertype is valid</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_microint">Net_SmartIRC_base::_microint()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">getting current microtime, needed for benchmarks</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_nicknameinuse">Net_SmartIRC_base::_nicknameinuse()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">changes a already used nickname to a new nickname plus 3 random digits</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_pong">Net_SmartIRC_base::_pong()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sends the pong for keeping alive</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_rawreceive">Net_SmartIRC_base::_rawreceive()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">goes into main idle loop for waiting messages from the IRC server</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_rawsend">Net_SmartIRC_base::_rawsend()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sends a raw message to the IRC server (don't use this!!)</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_removeuser">Net_SmartIRC_base::_removeuser()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">removes an user from one channel or all if he quits</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reorderactionhandler">Net_SmartIRC_base::_reorderactionhandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">reorders the actionhandler array, needed after removing one</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reordermodules">Net_SmartIRC_base::_reordermodules()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">reorders the modules array, needed after removing one</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reordertimehandler">Net_SmartIRC_base::_reordertimehandler()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">reorders the timehandler array, needed after removing one</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_selecttimeout">Net_SmartIRC_base::_selecttimeout()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">returns the calculated selecttimeout value</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_send">Net_SmartIRC_base::_send()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">sends an IRC message</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_state">Net_SmartIRC_base::_state()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">returns the current connection state</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_updatemintimer">Net_SmartIRC_base::_updatemintimer()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">updates _mintimer to the smallest timer interval</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_updatestate">Net_SmartIRC_base::_updatestate()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">updates the current connection state</span>
+										</dd>
+																	</dl>
+							</blockquote>
+											</td>
+					<td width="30%">
+											</td>
+				</tr>
+			</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-vars">Properties</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																																																																																																								<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_error" title="details" class="method-name">_event_error</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_err_nicknameinuse" title="details" class="method-name">_event_err_nicknameinuse</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_join" title="details" class="method-name">_event_join</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_kick" title="details" class="method-name">_event_kick</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_mode" title="details" class="method-name">_event_mode</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_nick" title="details" class="method-name">_event_nick</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_part" title="details" class="method-name">_event_part</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_ping" title="details" class="method-name">_event_ping</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_privmsg" title="details" class="method-name">_event_privmsg</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_quit" title="details" class="method-name">_event_quit</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_banlist" title="details" class="method-name">_event_rpl_banlist</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_channelmodeis" title="details" class="method-name">_event_rpl_channelmodeis</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_endofmotd" title="details" class="method-name">_event_rpl_endofmotd</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_motd" title="details" class="method-name">_event_rpl_motd</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_motdstart" title="details" class="method-name">_event_rpl_motdstart</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_namreply" title="details" class="method-name">_event_rpl_namreply</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_topic" title="details" class="method-name">_event_rpl_topic</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_umodeis" title="details" class="method-name">_event_rpl_umodeis</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_welcome" title="details" class="method-name">_event_rpl_welcome</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_rpl_whoreply" title="details" class="method-name">_event_rpl_whoreply</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_event_topic" title="details" class="method-name">_event_topic</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+										| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+					</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+										| <a href="#sec-inherited">Inherited Properties and Methods</a>
+															| <a href="#sec-vars">Properties</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="method_event_error" id="_event_error"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_error</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a35">35</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_error(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_err_nicknameinuse" id="_event_err_nicknameinuse"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_err_nicknameinuse</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a406">406</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_err_nicknameinuse(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_join" id="_event_join"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_join</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a44">44</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_join(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_kick" id="_event_kick"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_kick</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a77">77</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_kick(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_mode" id="_event_mode"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_mode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a131">131</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_mode(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_nick" id="_event_nick"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_nick</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a91">91</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_nick(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_part" id="_event_part"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_part</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a70">70</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_part(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_ping" id="_event_ping"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_ping</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a30">30</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_ping(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_privmsg" id="_event_privmsg"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_privmsg</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a231">231</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_privmsg(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_quit" id="_event_quit"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_quit</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a84">84</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_quit(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_banlist" id="_event_rpl_banlist"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_banlist</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a387">387</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_banlist(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_channelmodeis" id="_event_rpl_channelmodeis"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_channelmodeis</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a279">279</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_channelmodeis(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_endofmotd" id="_event_rpl_endofmotd"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_endofmotd</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a269">269</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_endofmotd(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_motd" id="_event_rpl_motd"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_motd</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a264">264</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_motd(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_motdstart" id="_event_rpl_motdstart"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_motdstart</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a259">259</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_motdstart(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_namreply" id="_event_rpl_namreply"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_namreply</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a358">358</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_namreply(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_topic" id="_event_rpl_topic"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_topic</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a396">396</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_topic(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_umodeis" id="_event_rpl_umodeis"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_umodeis</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a274">274</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_umodeis(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_welcome" id="_event_rpl_welcome"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_welcome</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a250">250</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_welcome(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_rpl_whoreply" id="_event_rpl_whoreply"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_event_rpl_whoreply</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a298">298</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_rpl_whoreply(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_event_topic" id="_event_topic"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_event_topic</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__assetsPEARNetSmartIRCmessagehandler.php.html#a223">223</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _event_topic(
+
+&$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:50:15 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_Ident</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_Ident</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Net_Ident - Identification Protocol implementation according to RFC 1413</p>
+<p class="description"><p>The Identification Protocol (a.k.a., &quot;ident&quot;, a.k.a., &quot;the Ident Protocol&quot;)  provides a means to determine the identity of a user of a particular TCP  connection.  Given a TCP port number pair, it returns a character string  which identifies the owner of that connection on the server's system.</p><p>You can find out more about the Ident protocol at</p><p>http://www.ietf.org/rfc/rfc1413.txt</p><p>Usage:    &lt;?php        require_once 'Net/Ident.php';        $ident   = new Net_Ident;        $user    = $ident-&gt;getUser();        $os_type = $ident-&gt;getOsType();        echo &quot;user: $user, operating system: $os_type\n&quot;;    ?&gt;</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ondrej Jombik &lt;<a href="mailto:nepto@platon.sk">nepto@platon.sk</a>&gt;</li>
+				<li><span class="field">version:</span> 1.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---Ident.php.html">/assets/PEAR/Net/Ident.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a72">72</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_data" title="details" class="var-name">$_data</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_error" title="details" class="var-name">$_error</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_props" title="details" class="var-name">$_props</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">enum</span>
+					<a href="#$_status" title="details" class="var-name">$_status</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#Net_Ident" title="details" class="method-name">Net_Ident</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$remote_addr</span> = <span class="var-default">''</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$remote_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$local_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ident_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getOsType" title="details" class="method-name">getOsType</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getUser" title="details" class="method-name">getUser</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#identError" title="details" class="method-name">identError</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#query" title="details" class="method-name">query</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#setIdentPort" title="details" class="method-name">setIdentPort</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$ident_port</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#setLocalPort" title="details" class="method-name">setLocalPort</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$local_port</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#setRemoteAddr" title="details" class="method-name">setRemoteAddr</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$remote_addr</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#setRemotePort" title="details" class="method-name">setRemotePort</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$remote_port</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">none</span>
+										<a href="#setTimeout" title="details" class="method-name">setTimeout</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#_parseIdentResponse" title="details" class="method-name">_parseIdentResponse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_data" id="$_data"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_data</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a108">108</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Data array (contains ident username, ident operating system type, and  raw line returned from ident server)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_error" id="$_error"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_error</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a91">91</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Error message string;</p>
+<p class="description"><p>if $_status is &quot;error&quot;, $_error contains system error message;    if $_status is &quot;ok&quot;, $_error contains ident error message  or it is empty</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_props" id="$_props"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_props</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a99">99</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Properties array (contains remote host, remote port, ident port, etc.)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_status" id="$_status"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">enum</span>
+			<span class="var-name">$_status</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a80">80</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Current object state (undef, ok, error)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_Ident" id="Net_Ident"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_Ident</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a124">124</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Net_Ident object constructor</p>
+<p class="description"><p>Initializes class properties. Use empty string '' for any string  parameter and value of 0 for any int parameter to set default value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			Net_Ident
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$remote_addr</span> = <span class="var-default">''</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$remote_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$local_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ident_port</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$remote_addr</span><span class="var-description">: Remote host address (IP or hostname)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$remote_port</span><span class="var-description">: Remote port (default $REMOTE_PORT)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$local_port</span><span class="var-description">: Local port  (default $SERVER_PORT)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$ident_port</span><span class="var-description">: Ident port  (default 113)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$timeout</span><span class="var-description">: Socket timeout (default 30 seconds)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOsType" id="getOsType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getOsType</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a279">279</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns ident operating system type</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PEAR_Error on connection error                   false boolean on ident protocol error                   operating system type string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getOsType
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUser" id="getUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getUser</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a262">262</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns ident username</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PEAR_Error on connection error                   false boolean on ident protocol error                   username string on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getUser
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodidentError" id="identError"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">identError</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a295">295</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns ident protocol error</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> error string if ident protocol error had occured                   false otherwise</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			identError
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">query</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a215">215</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Performs network socket ident query</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PEAR_Error on connection error                   rawdata read from socket on success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			query
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetIdentPort" id="setIdentPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setIdentPort</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a187">187</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets ident port</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			setIdentPort
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$ident_port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$ident_port</span><span class="var-description">: Ident port  (default 113)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLocalPort" id="setLocalPort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setLocalPort</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a173">173</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets local port</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			setLocalPort
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$local_port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$local_port</span><span class="var-description">: Local port  (default $SERVER_PORT)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRemoteAddr" id="setRemoteAddr"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setRemoteAddr</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a146">146</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets remote host address (IP or hostname)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			setRemoteAddr
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$remote_addr</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$remote_addr</span><span class="var-description">: Remote host address (IP or hostname)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRemotePort" id="setRemotePort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setRemotePort</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a159">159</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets remote port</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			setRemotePort
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$remote_port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$remote_port</span><span class="var-description">: Remote port (default $REMOTE_PORT)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTimeout" id="setTimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setTimeout</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a201">201</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets socket timeout</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			setTimeout
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$timeout</span><span class="var-description">: Socket timeout (default 30 seconds)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_parseIdentResponse" id="_parseIdentResponse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_parseIdentResponse</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_Ident__assetsPEARNetIdent.php.html#a313">313</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parses response from indent server and sets internal data structures  with ident username and ident operating system type</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if no ident protocol error had occured                   false otherwise</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_parseIdentResponse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: ident server response</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:03:58 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

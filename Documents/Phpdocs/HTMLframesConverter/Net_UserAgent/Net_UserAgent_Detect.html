@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_UserAgent_Detect</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_UserAgent_Detect</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The Net_UserAgent_Detect object does a number of tests on an HTTP user</p>
+<p class="description"><p>agent string.  The results of these tests are available via methods of  the object.  Note that all methods in this class can be called  statically.  The constructor and singleton methods are only retained  for BC.</p><p>This module is based upon the JavaScript browser detection code  available at http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.  This module had many influences from the lib/Browser.php code in  version 1.3 of Horde.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Jason Rust &lt;<a href="mailto:jrust@php.net">jrust@php.net</a>&gt;</li>
+				<li><span class="field">author:</span> Dan Allen &lt;<a href="mailto:dan@mojavelinux.com">dan@mojavelinux.com</a>&gt;</li>
+				<li><span class="field">author:</span> Chuck Hagenbuch &lt;<a href="mailto:chuck@horde.org">chuck@horde.org</a>&gt;</li>
+				<li><span class="field">author:</span> Jon Parise &lt;<a href="mailto:jon@horde.org">jon@horde.org</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---UserAgent---Detect.php.html">/assets/PEAR/Net/UserAgent/Detect.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a56">56</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_UserAgent_Detect</span>
+										<a href="#Net_UserAgent_Detect" title="details" class="method-name">Net_UserAgent_Detect</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#detect" title="details" class="method-name">detect</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getAcceptType" title="details" class="method-name">getAcceptType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_expectList</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getBrowser" title="details" class="method-name">getBrowser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$in_expectList</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getBrowserString" title="details" class="method-name">getBrowserString</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$in_vendorStrings</span> = <span class="var-default">array (
+        'ie'       =&gt; 'Microsoft Internet Explorer',
+        'ie4up'    =&gt; 'Microsoft Internet Explorer 4.x',
+        'ie5up'    =&gt; 'Microsoft Internet Explorer 5.x',
+        'ie6up'    =&gt; 'Microsoft Internet Explorer 6.x',
+        'opera4'   =&gt; 'Opera 4.x',
+        'opera5up' =&gt; 'Opera 5.x',
+        'nav'      =&gt; 'Netscape Navigator',
+        'ns4'      =&gt; 'Netscape 4.x',
+        'ns6up'    =&gt; 'Mozilla/Netscape 6.x',
+        'firefox0.x' =&gt; 'Firefox 0.x',
+        'firefox1.x' =&gt; 'Firefox 1.x',
+        'konq'     =&gt; 'Konqueror/Safari',
+        'netgem'   =&gt; 'Netgem/iPlayer',
+    )</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getFeature" title="details" class="method-name">getFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getOS" title="details" class="method-name">getOS</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$in_expectList</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getOSString" title="details" class="method-name">getOSString</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$in_osStrings</span> = <span class="var-default">array(
+       'win'   =&gt; 'Microsoft Windows',
+       'win9x' =&gt; 'Microsoft Windows 9x',
+       'winme' =&gt; 'Microsoft Windows Millenium',
+       'win2k' =&gt; 'Microsoft Windows 2000',
+       'winnt' =&gt; 'Microsoft Windows NT',
+       'winxp' =&gt; 'Microsoft Windows XP',
+       'win2003' =&gt; 'Microsoft Windows 2003',
+       'mac'   =&gt; 'Macintosh',
+       'unix'  =&gt; 'Linux/Unix',
+    )</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getQuirk" title="details" class="method-name">getQuirk</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getUserAgent" title="details" class="method-name">getUserAgent</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#hasAcceptType" title="details" class="method-name">hasAcceptType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_value</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#hasFeature" title="details" class="method-name">hasFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#hasQuirk" title="details" class="method-name">hasQuirk</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isBrowser" title="details" class="method-name">isBrowser</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_match</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#isIE" title="details" class="method-name">isIE</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#isNavigator" title="details" class="method-name">isNavigator</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#isNetscape" title="details" class="method-name">isNetscape</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isOS" title="details" class="method-name">isOS</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_match</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setAcceptType" title="details" class="method-name">setAcceptType</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$in_values</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFeature" title="details" class="method-name">setFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$in_hasFeature</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setOption" title="details" class="method-name">setOption</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$in_value</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setQuirk" title="details" class="method-name">setQuirk</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$in_hasQuirk</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_UserAgent/Net_UserAgent_Detect.html">object Net_UserAgent_Detect</a></span>
+										<a href="#singleton" title="details" class="method-name">&amp;singleton</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_getStaticProperty" title="details" class="method-name">&amp;_getStaticProperty</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_UserAgent_Detect" id="Net_UserAgent_Detect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_UserAgent_Detect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a59">59</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">Net_UserAgent_Detect</span>
+		<span class="method-name">
+			Net_UserAgent_Detect
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$in_userAgent</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$in_detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddetect" id="detect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">detect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a105">105</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Detect the user agent and prepare flags, features and quirks  based on what is found</p>
+<p class="description"><p>This is the core of the Net_UserAgent_Detect class.  It moves its  way through the user agent string setting up the flags based on  the vendors and versions of the browsers, determining the OS and  setting up the features and quirks owned by each of the relevant  clients.  Note that if you are going to be calling methods of  this class statically then set all the parameters using th  setOption()</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			detect
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_userAgent</span><span class="var-description">: (optional) User agent override.</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$in_detect</span><span class="var-description">: (optional) The level of checking to do.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAcceptType" id="getAcceptType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getAcceptType</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a819">819</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrive the accept type for the current browser.</p>
+<p class="description"><p>To keep track of the mime-types, languages, charsets and encodings  that each browser accepts we use associative arrays for each type.  This function works like getBrowser() as it takes an expect list  and returns the first match.  For instance, to find the language  you would pass in your allowed languages and see if any of the  languages set in the browser match.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the first matched value</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getAcceptType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_expectList</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_expectList</span><span class="var-description">: values to check</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_type</span><span class="var-description">: type of accept</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBrowser" id="getBrowser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getBrowser</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a472">472</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Since simply returning the &quot;browser&quot; is somewhat ambiguous since there  are different ways to classify the browser, this function works by taking  an expect list and returning the string of the first match, so put the important  ones first in the array.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> first flag that matches</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBrowser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$in_expectList</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$in_expectList</span><span class="var-description">: the browser flags to search for</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBrowserString" id="getBrowserString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getBrowserString</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a500">500</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the vendor string corresponding to the flag.</p>
+<p class="description"><p>Either use the default matches or pass in an associative array of  flags and corresponding vendor strings.  This function will find  the highest version flag and return the vendor string corresponding  to the appropriate flag.  Be sure to pass in the flags in ascending order  if you want a basic matches first, followed by more detailed matches.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> vendor string matches appropriate flag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBrowserString
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$in_vendorStrings</span> = <span class="var-default">array (
+        'ie'       =&gt; 'Microsoft Internet Explorer',
+        'ie4up'    =&gt; 'Microsoft Internet Explorer 4.x',
+        'ie5up'    =&gt; 'Microsoft Internet Explorer 5.x',
+        'ie6up'    =&gt; 'Microsoft Internet Explorer 6.x',
+        'opera4'   =&gt; 'Opera 4.x',
+        'opera5up' =&gt; 'Opera 5.x',
+        'nav'      =&gt; 'Netscape Navigator',
+        'ns4'      =&gt; 'Netscape 4.x',
+        'ns6up'    =&gt; 'Mozilla/Netscape 6.x',
+        'firefox0.x' =&gt; 'Firefox 0.x',
+        'firefox1.x' =&gt; 'Firefox 1.x',
+        'konq'     =&gt; 'Konqueror/Safari',
+        'netgem'   =&gt; 'Netgem/iPlayer',
+    )</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$in_vendorStrings</span><span class="var-description">: (optional) array of flags matched with vendor strings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFeature" id="getFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getFeature</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a793">793</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the capabilities for the current browser.</p>
+<p class="description"><p>Since the capabilities of client browsers vary widly, this interface  helps keep track of the core features of a client, such as if the client  supports dhtml, dom, javascript, etc.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> value of the feature requested</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_feature</span><span class="var-description">: The feature to detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOS" id="getOS"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getOS</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a618">618</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Since simply returning the &quot;os&quot; is somewhat ambiguous since there  are different ways to classify the browser, this function works by taking  an expect list and returning the string of the first match, so put the important  ones first in the array.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> first flag that matches</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getOS
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$in_expectList</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$in_expectList</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOSString" id="getOSString"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getOSString</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a646">646</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the os string corresponding to the flag.</p>
+<p class="description"><p>Either use the default matches or pass in an associative array of  flags and corresponding os strings.  This function will find  the highest version flag and return the os string corresponding  to the appropriate flag.  Be sure to pass in the flags in ascending order  if you want a basic matches first, followed by more detailed matches.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> os string matches appropriate flag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getOSString
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$in_osStrings</span> = <span class="var-default">array(
+       'win'   =&gt; 'Microsoft Windows',
+       'win9x' =&gt; 'Microsoft Windows 9x',
+       'winme' =&gt; 'Microsoft Windows Millenium',
+       'win2k' =&gt; 'Microsoft Windows 2000',
+       'winnt' =&gt; 'Microsoft Windows NT',
+       'winxp' =&gt; 'Microsoft Windows XP',
+       'win2003' =&gt; 'Microsoft Windows 2003',
+       'mac'   =&gt; 'Macintosh',
+       'unix'  =&gt; 'Linux/Unix',
+    )</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$in_osStrings</span><span class="var-description">: (optional) array of flags matched with os strings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetQuirk" id="getQuirk"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getQuirk</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a729">729</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the unique behavior for the current browser.</p>
+<p class="description"><p>Many client browsers do some really funky things, and this  mechanism allows the coder to determine if an excepetion must  be made with the current client.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> value of the quirk, in this case usually a boolean</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getQuirk
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_quirk</span><span class="var-description">: The quirk to detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUserAgent" id="getUserAgent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getUserAgent</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a896">896</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the user agent string that is being worked on</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> user agent</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUserAgent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhasAcceptType" id="hasAcceptType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">hasAcceptType</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a882">882</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check the accept types for the current browser.</p>
+<p class="description"><p>To keep track of the mime-types, languages, charsets and encodings  that each browser accepts we use associative arrays for each type.  This function checks the array for the given type and determines if  the browser accepts it.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not the value is accept for this type</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasAcceptType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_value</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_value</span><span class="var-description">: values to check</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_type</span><span class="var-description">: type of accept</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhasFeature" id="hasFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">hasFeature</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a773">773</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check the capabilities for the current browser.</p>
+<p class="description"><p>Since the capabilities of client browsers vary widly, this interface  helps keep track of the core features of a client, such as if the client  supports dhtml, dom, javascript, etc.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not the current client has this feature</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_feature</span><span class="var-description">: The feature to detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhasQuirk" id="hasQuirk"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">hasQuirk</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a709">709</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check a unique behavior for the current browser.</p>
+<p class="description"><p>Many client browsers do some really funky things, and this  mechanism allows the coder to determine if an excepetion must  be made with the current client.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not browser has this quirk</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasQuirk
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_quirk</span><span class="var-description">: The quirk to detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisBrowser" id="isBrowser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isBrowser</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a451">451</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Look up the provide browser flag and return a boolean value</p>
+<p class="description"><p>Given one of the flags listed in the properties, this function will return  the value associated with that flag.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not the browser satisfies this flag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isBrowser
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_match</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_match</span><span class="var-description">: flag to lookup</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisIE" id="isIE"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isIE</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a542">542</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determine if the browser is an Internet Explorer browser</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not this browser is an ie browser</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isIE
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisNavigator" id="isNavigator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isNavigator</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a558">558</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determine if the browser is a Netscape Navigator browser</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not this browser is a Netscape Navigator browser</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isNavigator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisNetscape" id="isNetscape"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isNetscape</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a578">578</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determine if the browser is a Netscape or Mozilla browser</p>
+<p class="description"><p>Note that this function is not the same as isNavigator, since the  new Mozilla browsers are still sponsered by Netscape, and hence are  Netscape products, but not the original Navigators</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not this browser is a Netscape product</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isNetscape
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisOS" id="isOS"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isOS</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a599">599</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Look up the provide OS flag and return a boolean value</p>
+<p class="description"><p>Given one of the flags listed in the properties, this function will return  the value associated with that flag for the operating system.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> whether or not the OS satisfies this flag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isOS
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_match</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_match</span><span class="var-description">: flag to lookup</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAcceptType" id="setAcceptType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setAcceptType</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a853">853</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the accept types for the current browser.</p>
+<p class="description"><p>To keep track of the mime-types, languages, charsets and encodings  that each browser accepts we use associative arrays for each type.  This function takes and array of accepted values for the type and  records them for retrieval.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAcceptType
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$in_values</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$in_type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$in_values</span><span class="var-description">: values of the accept type</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_type</span><span class="var-description">: type of accept</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFeature" id="setFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFeature</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a752">752</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set capabilities for the current browser.</p>
+<p class="description"><p>Since the capabilities of client browsers vary widly, this interface  helps keep track of the core features of a client, such as if the client  supports dhtml, dom, javascript, etc.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_feature</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$in_hasFeature</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_feature</span><span class="var-description">: The feature to set</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_hasFeature</span><span class="var-description">: (optional) Does the browser have the feature?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOption" id="setOption"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setOption</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a431">431</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a class option.  The available settings are: <ul><li>'userAgent' =&gt; The user agent string to detect (useful for</li></ul> checking a string manually).</p>
+<p class="description"><p><ul><li>'detectOptions' =&gt; The level of checking to do.  A single level</li><li>r an array of options.  Default is NET_USERAGENT_DETECT_ALL.</li></ul></p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setOption
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$in_value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_field</span><span class="var-description">: The option field (userAgent or detectOptions)</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$in_value</span><span class="var-description">: The value for the field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetQuirk" id="setQuirk"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setQuirk</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a687">687</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a unique behavior for the current browser.</p>
+<p class="description"><p>Many client browsers do some really funky things, and this  mechanism allows the coder to determine if an excepetion must  be made with the current client.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setQuirk
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$in_quirk</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$in_hasQuirk</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_quirk</span><span class="var-description">: The quirk to set</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$in_hasQuirk</span><span class="var-description">: (optional) Does the browser have the quirk?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsingleton" id="singleton"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">singleton</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a73">73</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">To be used in place of the contructor to return only open instance.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> instance</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_UserAgent/Net_UserAgent_Detect.html">object Net_UserAgent_Detect</a></span>
+		<span class="method-name">
+			&amp;singleton
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$in_userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$in_detect</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$in_userAgent</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$in_detect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getStaticProperty" id="_getStaticProperty"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_getStaticProperty</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_UserAgent__assetsPEARNetUserAgentDetect.php.html#a915">915</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Copy of getStaticProperty() from PEAR.php to avoid having to  include PEAR.php</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A reference to the variable. If not set it will be                  auto initialised to NULL.</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			&amp;_getStaticProperty
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$var</span><span class="var-description">: The variable to retrieve.</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:01:42 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

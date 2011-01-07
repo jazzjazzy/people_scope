@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for null.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file null.php</h1>
+<p>Documentation is available at <a href="../Mail/_assets---PEAR---Mail---null.php.html">null.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-comm">//</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-comm">//&nbsp;+----------------------------------------------------------------------+</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-comm">//&nbsp;|&nbsp;PHP&nbsp;Version&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-comm">//&nbsp;+----------------------------------------------------------------------+</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-comm">//&nbsp;|&nbsp;Copyright&nbsp;(c)&nbsp;1997-2003&nbsp;The&nbsp;PHP&nbsp;Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-comm">//&nbsp;+----------------------------------------------------------------------+</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-comm">//&nbsp;|&nbsp;This&nbsp;source&nbsp;file&nbsp;is&nbsp;subject&nbsp;to&nbsp;version&nbsp;2.02&nbsp;of&nbsp;the&nbsp;PHP&nbsp;license,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-comm">//&nbsp;|&nbsp;that&nbsp;is&nbsp;bundled&nbsp;with&nbsp;this&nbsp;package&nbsp;in&nbsp;the&nbsp;file&nbsp;LICENSE,&nbsp;and&nbsp;is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-comm">//&nbsp;|&nbsp;available&nbsp;at&nbsp;through&nbsp;the&nbsp;world-wide-web&nbsp;at&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-comm">//&nbsp;|&nbsp;http://www.php.net/license/2_02.txt.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-comm">//&nbsp;|&nbsp;If&nbsp;you&nbsp;did&nbsp;not&nbsp;receive&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;PHP&nbsp;license&nbsp;and&nbsp;are&nbsp;unable&nbsp;to&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-comm">//&nbsp;|&nbsp;obtain&nbsp;it&nbsp;through&nbsp;the&nbsp;world-wide-web,&nbsp;please&nbsp;send&nbsp;a&nbsp;note&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-comm">//&nbsp;|&nbsp;license@php.net&nbsp;so&nbsp;we&nbsp;can&nbsp;mail&nbsp;you&nbsp;a&nbsp;copy&nbsp;immediately.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-comm">//&nbsp;+----------------------------------------------------------------------+</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-comm">//&nbsp;|&nbsp;Author:&nbsp;Phil&nbsp;Kernick&nbsp;&lt;philk@rotfl.com.au&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-comm">//&nbsp;+----------------------------------------------------------------------+</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-comm">//</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-comm">//&nbsp;$Id:&nbsp;null.php,v&nbsp;1.2&nbsp;2004/04/06&nbsp;05:19:03&nbsp;jon&nbsp;Exp&nbsp;$</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-comm">//</span></div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-doc">&nbsp;*&nbsp;Null&nbsp;implementation&nbsp;of&nbsp;the&nbsp;PEAR&nbsp;Mail::&nbsp;interface.</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@access</span><span class="src-doc">&nbsp;public</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;Mail</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;$Revision:&nbsp;1.2&nbsp;$</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-key">class&nbsp;</span><a href="../Mail/Mail_null.html">Mail_null</a>&nbsp;<span class="src-key">extends&nbsp;</span><a href="../Mail/Mail.html">Mail</a>&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Implements&nbsp;Mail_null::send()&nbsp;function.&nbsp;Silently&nbsp;discards&nbsp;all</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;mail.</span></div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">mixed&nbsp;</span><span class="src-doc-var">$recipients&nbsp;</span><span class="src-doc">Either&nbsp;a&nbsp;comma-seperated&nbsp;list&nbsp;of&nbsp;recipients</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(RFC822&nbsp;compliant),&nbsp;or&nbsp;an&nbsp;array&nbsp;of&nbsp;recipients,</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;each&nbsp;RFC822&nbsp;valid.&nbsp;This&nbsp;may&nbsp;contain&nbsp;recipients&nbsp;not</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;specified&nbsp;in&nbsp;the&nbsp;headers,&nbsp;for&nbsp;Bcc:,&nbsp;resending</span></div></li>
+<li><div class="src-line"><a name="a38"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messages,&nbsp;etc.</span></div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">array&nbsp;</span><span class="src-doc-var">$headers&nbsp;</span><span class="src-doc">The&nbsp;array&nbsp;of&nbsp;headers&nbsp;to&nbsp;send&nbsp;with&nbsp;the&nbsp;mail,&nbsp;in&nbsp;an</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;associative&nbsp;array,&nbsp;where&nbsp;the&nbsp;array&nbsp;key&nbsp;is&nbsp;the</span></div></li>
+<li><div class="src-line"><a name="a42"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header&nbsp;name&nbsp;(ie,&nbsp;'Subject'),&nbsp;and&nbsp;the&nbsp;array&nbsp;value</span></div></li>
+<li><div class="src-line"><a name="a43"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;the&nbsp;header&nbsp;value&nbsp;(ie,&nbsp;'test').&nbsp;The&nbsp;header</span></div></li>
+<li><div class="src-line"><a name="a44"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;produced&nbsp;from&nbsp;those&nbsp;values&nbsp;would&nbsp;be&nbsp;'Subject:</span></div></li>
+<li><div class="src-line"><a name="a45"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test'.</span></div></li>
+<li><div class="src-line"><a name="a46"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a47"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$body&nbsp;</span><span class="src-doc">The&nbsp;full&nbsp;text&nbsp;of&nbsp;the&nbsp;message&nbsp;body,&nbsp;including&nbsp;any</span></div></li>
+<li><div class="src-line"><a name="a48"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mime&nbsp;parts,&nbsp;etc.</span></div></li>
+<li><div class="src-line"><a name="a49"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a50"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">mixed&nbsp;</span><span class="src-doc">Returns&nbsp;true&nbsp;on&nbsp;success,&nbsp;or&nbsp;a&nbsp;PEAR_Error</span></div></li>
+<li><div class="src-line"><a name="a51"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;containing&nbsp;a&nbsp;descriptive&nbsp;error&nbsp;message&nbsp;on</span></div></li>
+<li><div class="src-line"><a name="a52"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;failure.</span></div></li>
+<li><div class="src-line"><a name="a53"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@access</span><span class="src-doc">&nbsp;public</span></div></li>
+<li><div class="src-line"><a name="a54"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../Mail/Mail_null.html#methodsend">send</a><span class="src-sym">(</span><span class="src-var">$recipients</span><span class="src-sym">,&nbsp;</span><span class="src-var">$headers</span><span class="src-sym">,&nbsp;</span><span class="src-var">$body</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a56"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a57"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-id">true</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a59"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a60"></a><span class="src-sym">}</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:08:29 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

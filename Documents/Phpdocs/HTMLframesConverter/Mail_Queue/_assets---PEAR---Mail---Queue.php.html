@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs for page Queue.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="file-name"><img src="../media/images/Page_logo.png" alt="File" style="vertical-align: middle">/assets/PEAR/Mail/Queue.php</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-classes">Classes</a>
+			|							<a href="#sec-includes">Includes</a>
+			|							<a href="#sec-constants">Constants</a>
+										</div>
+	<div class="info-box-body">	
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class for handle mail queue managment.</p>
+<p class="description"><p>Wrapper for Pear::Mail and Pear::DB.  Could load, save and send saved mails in background  and also backup some mails.</p><p>Mail queue class put mails in a temporary  container waiting to be fed to the MTA (Mail Transport Agent)  and send them later (eg. every few minutes) by crontab or in other way.</p><p>-------------------------------------------------------------------------  A basic usage example:  -------------------------------------------------------------------------</p><p>$container_options = array(    'type'        =&gt; 'db',    'database'    =&gt; 'dbname',    'phptype'     =&gt; 'mysql',    'username'    =&gt; 'root',    'password'    =&gt; '',    'mail_table'  =&gt; 'mail_queue'  );    //optionally, a 'dns' string can be provided instead of db parameters.    //look at DB::connect() method or at DB or MDB docs for details.    //you could also use mdb container instead db</p><p>$mail_options = array(    'driver'   =&gt; 'smtp',    'host'     =&gt; 'your_smtp_server.com',    'port'     =&gt; 25,    'auth'     =&gt; false,    'username' =&gt; '',    'password' =&gt; ''  );</p><p>$mail_queue =&amp; new Mail_Queue($container_options, $mail_options);  *****************************************************************  // Here the code differentiates wrt you want to add an email to the queue  // or you want to send the emails that already are in the queue.  *****************************************************************  // TO ADD AN EMAIL TO THE QUEUE  *****************************************************************  $from             = 'user@server.com';  $from_name        = 'admin';  $recipient        = 'recipient@other_server.com';  $recipient_name   = 'recipient';  $message          = 'Test message';  $from_params      = empty($from_name) ? '&quot;'.$from_name.'&quot; &lt;'.$from.'&gt;' : '&lt;'.$from.'&gt;';  $recipient_params = empty($recipient_name) ? '&quot;'.$recipient_name.'&quot; &lt;'.$recipient.'&gt;' : '&lt;'.$recipient.'&gt;';  $hdrs = array( 'From'    =&gt; $from_params,                 'To'      =&gt; $recipient_params,                 'Subject' =&gt; &quot;test message body&quot;  );  $mime =&amp; new Mail_mime();  $mime-&gt;setTXTBody($message);  $body = $mime-&gt;get();  $hdrs = $mime-&gt;headers($hdrs);</p><p>// Put message to queue  $mail_queue-&gt;put( $from, $recipient, $hdrs, $body );  //Also you could put this msg in more advanced mode [look at Mail_Queue docs for details]  $seconds_to_send = 3600;  $delete_after_send = false;  $id_user = 7;  $mail_queue-&gt;put( $from, $recipient, $hdrs, $body, $seconds_to_send, $delete_after_send, $id_user );</p><p>*****************************************************************  // TO SEND EMAILS IN THE QUEUE  *****************************************************************  // How many mails could we send each time  $max_ammount_mails = 50;  $mail_queue =&amp; new Mail_Queue($container_options, $mail_options);  $mail_queue-&gt;sendMailsInQueue($max_ammount_mails);  *****************************************************************</p><p>// for more examples look to docs directory</p><p>// end usage example  -------------------------------------------------------------------------</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Radek Maciaszek &lt;<a href="mailto:chief@php.net">chief@php.net</a>&gt;</li>
+				<li><span class="field">version:</span> $Revision: 1.15 $  $Id: Queue.php,v 1.15 2004/07/27 08:58:03 quipo Exp $</li>
+				<li><span class="field">filesource:</span> <a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html">Source Code for this file</a></li>
+			</ul>
+		
+			</div>
+</div>
+		
+	<a name="sec-classes"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Classes</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Classes</span>
+			|							<a href="#sec-includes">Includes</a>
+				|										<a href="#sec-constants">Constants</a>
+															</div>
+		<div class="info-box-body">	
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"/>
+						<a href="../Mail_Queue/Mail_Queue.html">Mail_Queue</a>
+					</td>
+					<td>
+											Mail_Queue - base class for mail queue managment.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; vertical-align: top; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"/>
+						<a href="../Mail_Queue/Mail_Queue_Error.html">Mail_Queue_Error</a>
+					</td>
+					<td>
+											Mail_Queue_Error implements a class for reporting error  messages.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-includes"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Includes</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-classes">Classes</a>
+				|						<span class="disabled">Includes</span>
+			|							<a href="#sec-constants">Constants</a>
+															</div>
+		<div class="info-box-body">	
+			<a name="_Mail/mime_php"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Page.png" alt=" " />
+		<span class="include-title">
+			<span class="include-type">require_once</span>
+			(<span class="include-name">'Mail/mime.php'</span>)
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a146">146</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+</div>
+<a name="_Mail_php"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Page.png" alt=" " />
+		<span class="include-title">
+			<span class="include-type">require_once</span>
+			(<span class="include-name"><a href="../Mail/_assets---PEAR---Mail.php.html">Mail.php</a></span>)
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a145">145</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+</div>
+<a name="_PEAR_php"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Page.png" alt=" " />
+		<span class="include-title">
+			<span class="include-type">require_once</span>
+			(<span class="include-name"><a href="../PEAR/_assets---PEAR---PEAR.php.html">PEAR.php</a></span>)
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a144">144</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+</div>
+		</div>
+	</div>
+	
+	<a name="sec-constants"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-classes">Classes</a>
+				|										<a href="#sec-includes">Includes</a>
+				|						<span class="disabled">Constants</span>
+											</div>
+		<div class="info-box-body">	
+			<a name="defineMAILQUEUE_ALL"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ALL</span> = -1
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a116">116</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">You can specify how many mails will be loaded to  queue else object use this constant for load all mails from db.</p>
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR</span> = -1
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a134">134</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">MAILQUEUE_ERROR constants</p>
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_CANNOT_CONNECT"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_CANNOT_CONNECT</span> = -6
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a139">139</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_CANNOT_INITIALIZE"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_CANNOT_INITIALIZE</span> = -4
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a137">137</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_CANNOT_SEND_MAIL"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_CANNOT_SEND_MAIL</span> = -9
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a142">142</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_NO_CONTAINER"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_NO_CONTAINER</span> = -3
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a136">136</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_NO_DRIVER"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_NO_DRIVER</span> = -2
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a135">135</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_NO_OPTIONS"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_NO_OPTIONS</span> = -5
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a138">138</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_QUERY_FAILED"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_QUERY_FAILED</span> = -7
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a140">140</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_ERROR_UNEXPECTED"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_ERROR_UNEXPECTED</span> = -8
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a141">141</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineMAILQUEUE_START"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_START</span> = 0
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a110">110</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is special constant define start offset for limit sql queries to  get mails.</p>
+	
+		
+</div>
+<a name="defineMAILQUEUE_SYSTEM"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_SYSTEM</span> = -1
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a122">122</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">When you put new mail to queue you could specify user id who send e-mail.</p>
+<p class="description"><p>Else you could use system id: MAILQUEUE_SYSTEM or user unknown id: MAILQUEUE_UNKNOWN</p></p>
+	
+		
+</div>
+<a name="defineMAILQUEUE_TRY"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_TRY</span> = 25
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a129">129</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This constant tells Mail_Queue how many times should try  to send mails again if was any errors before.</p>
+	
+		
+</div>
+<a name="defineMAILQUEUE_UNKNOWN"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">MAILQUEUE_UNKNOWN</span> = -2
+			(line <span class="line-number"><a href="../__filesource/fsource_Mail_Queue__assetsPEARMailQueue.php.html#a123">123</a></span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+		</div>
+	</div>
+	
+	
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:10:08 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_DNS_Resolver</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_DNS_Resolver</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A DNS Resolver library</p>
+<p class="description"><p>Resolver library.  Builds a DNS query packet, sends  the packet to the  server and parses the reponse.</p></p>
+	<ul class="tags">
+				<li><span class="field">filesource:</span> <a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html">Source Code for this file</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---DNS---Resolver.php.html">/assets/PEAR/Net/DNS/Resolver.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a33">33</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$answerfrom" title="details" class="var-name">$answerfrom</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$answersize" title="details" class="var-name">$answersize</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$confpath" title="details" class="var-name">$confpath</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$debug" title="details" class="var-name">$debug</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$defnames" title="details" class="var-name">$defnames</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$dnsrch" title="details" class="var-name">$dnsrch</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$domain" title="details" class="var-name">$domain</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$dotfile" title="details" class="var-name">$dotfile</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$errorstring" title="details" class="var-name">$errorstring</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$igntc" title="details" class="var-name">$igntc</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$nameservers" title="details" class="var-name">$nameservers</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$port" title="details" class="var-name">$port</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$recurse" title="details" class="var-name">$recurse</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$resolv_conf" title="details" class="var-name">$resolv_conf</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$retrans" title="details" class="var-name">$retrans</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$retry" title="details" class="var-name">$retry</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$searchlist" title="details" class="var-name">$searchlist</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$stayopen" title="details" class="var-name">$stayopen</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$tcp_timeout" title="details" class="var-name">$tcp_timeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$useEnhancedSockets" title="details" class="var-name">$useEnhancedSockets</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$usevc" title="details" class="var-name">$usevc</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_DNS_Resolver</span>
+										<a href="#Net_DNS_Resolver" title="details" class="method-name">Net_DNS_Resolver</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#axfr" title="details" class="method-name">axfr</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$dname</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#bgisready" title="details" class="method-name">bgisready</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#bgread" title="details" class="method-name">bgread</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#bgsend" title="details" class="method-name">bgsend</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#cname_addr" title="details" class="method-name">cname_addr</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#make_query_packet" title="details" class="method-name">make_query_packet</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$packetORname</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#nameservers" title="details" class="method-name">nameservers</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nsa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#nextid" title="details" class="method-name">nextid</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#printhex" title="details" class="method-name">printhex</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#query" title="details" class="method-name">query</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;A&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#read_config" title="details" class="method-name">read_config</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#read_env" title="details" class="method-name">read_env</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#read_tcp" title="details" class="method-name">read_tcp</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#res_init" title="details" class="method-name">res_init</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#search" title="details" class="method-name">search</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;A&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#send" title="details" class="method-name">send</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$packetORname</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$qtype</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$qclass</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#send_tcp" title="details" class="method-name">send_tcp</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#send_udp" title="details" class="method-name">send_udp</a>
+											(<span class="var-type"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#send_udp_no_sock_lib" title="details" class="method-name">send_udp_no_sock_lib</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+										<a href="#send_udp_with_sock_lib" title="details" class="method-name">send_udp_with_sock_lib</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#string" title="details" class="method-name">string</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$answerfrom" id="$answerfrom"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$answerfrom</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a153">153</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The origin of the packet.</p>
+<p class="description"><p>This contains a string containing the IP address of the name server  from which the answer was given.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$answersize" id="$answersize"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$answersize</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a163">163</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The size of the answer packet.</p>
+<p class="description"><p>This contains a integer containing the size of the DNS packet the  server responded with.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$confpath" id="$confpath"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$confpath</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a198">198</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A array of directories to search for the user's resolver config</p>
+<p class="description"><p>A array of directories to search for the user's resolver config</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#var$dotfile">Net_DNS_Resolver::$dotfile</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$debug" id="$debug"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$debug</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a208">208</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">debugging flag</p>
+<p class="description"><p>If set to TRUE (non-zero), debugging code will be displayed as the  resolver makes the request.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$defnames" id="$defnames"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$defnames</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a130">130</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$dnsrch" id="$dnsrch"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$dnsrch</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a134">134</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$domain" id="$domain"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$domain</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a62">62</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The domain in which the resolver client host resides.</p>
+<p class="description"><p>The domain in which the resolver client host resides.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$dotfile" id="$dotfile"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$dotfile</span>
+			 = <span class="var-default"> &quot;.resolv.conf&quot;</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a189">189</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The name of the user defined resolv.conf</p>
+<p class="description"><p>The resolver will attempt to look in both the current directory as  well as the user's home directory for a user defined resolver  configuration file</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#var$confpath">Net_DNS_Resolver::$confpath</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errorstring" id="$errorstring"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$errorstring</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a143">143</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contains the value of the last error returned by the resolver.</p>
+<p class="description"><p>Contains the value of the last error returned by the resolver.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$igntc" id="$igntc"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$igntc</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a115">115</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ignore TC (truncated) bit</p>
+<p class="description"><p>If the server responds with the TC bit set on a response, and $igntc  is set to 0, the resolver will automatically retransmit the request  using virtual circuits (TCP).</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$nameservers" id="$nameservers"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$nameservers</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">An array of all nameservers to query</p>
+<p class="description"><p>An array of all nameservers to query</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$port" id="$port"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$port</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a53">53</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The UDP port to use for the query (default = 53)</p>
+<p class="description"><p>The UDP port to use for the query (default = 53)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$recurse" id="$recurse"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$recurse</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a126">126</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Recursion Desired</p>
+<p class="description"><p>Sets the value of the RD (recursion desired) bit in the header. If  the RD bit is set to 0, the server will not perform recursion on the  request.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$resolv_conf" id="$resolv_conf"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$resolv_conf</span>
+			 = <span class="var-default"> &quot;/etc/resolv.conf&quot;</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a178">178</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The location of the system resolv.conf file.</p>
+<p class="description"><p>The location of the system resolv.conf file.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$retrans" id="$retrans"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$retrans</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a81">81</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of seconds between retransmission of unaswered queries</p>
+<p class="description"><p>The number of seconds between retransmission of unaswered queries</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$retry" id="$retry"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$retry</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a90">90</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of times unanswered requests should be retried</p>
+<p class="description"><p>The number of times unanswered requests should be retried</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$searchlist" id="$searchlist"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$searchlist</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a72">72</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The searchlist to apply to unqualified hosts</p>
+<p class="description"><p>An array of strings containg domains to apply to unqualified hosts  passed to the resolver.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$stayopen" id="$stayopen"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$stayopen</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a104">104</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$tcp_timeout" id="$tcp_timeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$tcp_timeout</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a170">170</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of seconds after which a TCP connetion should timeout</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$useEnhancedSockets" id="$useEnhancedSockets"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$useEnhancedSockets</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a218">218</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">use the (currently) experimental PHP socket library</p>
+<p class="description"><p>If set to TRUE (non-zero), the Resolver will attempt to use the  much more effecient PHP sockets extension (if available).</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$usevc" id="$usevc"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$usevc</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a100">100</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not to use TCP (Virtual Circuits) instead of UDP</p>
+<p class="description"><p>If set to 0, UDP will be used unless TCP is required.  TCP is  required for questions or responses greater than 512 bytes.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_DNS_Resolver" id="Net_DNS_Resolver"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_DNS_Resolver</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a225">225</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initializes the Resolver Object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Net_DNS_Resolver</span>
+		<span class="method-name">
+			Net_DNS_Resolver
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodaxfr" id="axfr"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">axfr</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a1056">1056</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Performs an AXFR query (zone transfer)</p>
+<p class="description"><p>Requests a zone transfer from the nameservers. Note that zone  transfers will ALWAYS use TCP regardless of the setting of the  Net_DNS_Resolver::$usevc flag</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			axfr
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$dname</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dname</span><span class="var-description">: The domain (zone) to transfer</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$class</span><span class="var-description">: The class in which to look for the zone.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbgisready" id="bgisready"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">bgisready</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a1000">1000</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			bgisready
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbgread" id="bgread"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">bgread</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a992">992</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			bgread
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbgsend" id="bgsend"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">bgsend</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a983">983</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			bgsend
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcname_addr" id="cname_addr"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">cname_addr</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a451">451</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			cname_addr
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmake_query_packet" id="make_query_packet"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">make_query_packet</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a1008">1008</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			make_query_packet
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$packetORname</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$packetORname</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$class</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnameservers" id="nameservers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">nameservers</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a408">408</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			nameservers
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nsa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nsa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnextid" id="nextid"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">nextid</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a397">397</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the next request Id to be used for the DNS packet header</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			nextid
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodprinthex" id="printhex"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">printhex</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a620">620</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet via TCP to the list of name servers.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			printhex
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">query</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a547">547</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Queries nameservers for an answer</p>
+<p class="description"><p>Queries the nameservers listed in the resolver configuration for  an  answer to a question packet.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> an object of type Net_DNS_Packet on success,                   or FALSE on failure.</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS.html#methodtypesbyname">Net_DNS::typesbyname()</a>, <a href="../Net_DNS/Net_DNS.html#methodclassesbyname">Net_DNS::classesbyname()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			query
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;A&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The name (LHS) of a resource record to query.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The type of record to query.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$class</span><span class="var-description">: The class of record to query.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodread_config" id="read_config"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">read_config</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a298">298</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reads and parses a resolver configuration file</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			read_config
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: The name of the file to open and parse</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodread_env" id="read_env"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">read_env</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a335">335</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Examines the environment for resolver config information</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			read_env
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodread_tcp" id="read_tcp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">read_tcp</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a1079">1079</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unknown - not ported yet</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			read_tcp
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodres_init" id="res_init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">res_init</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a267">267</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initalizes the resolver library</p>
+<p class="description"><p>res_init() searches for resolver library configuration files  an  initializes the various properties of the resolver object.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#var$resolv_conf">Net_DNS_Resolver::$resolv_conf</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#var$dotfile">Net_DNS_Resolver::$dotfile</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#var$confpath">Net_DNS_Resolver::$confpath</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#var$searchlist">Net_DNS_Resolver::$searchlist</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#var$domain">Net_DNS_Resolver::$domain</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#var$nameservers">Net_DNS_Resolver::$nameservers</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			res_init
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">search</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a470">470</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Searches nameservers for an answer</p>
+<p class="description"><p>Goes through the search list and attempts to resolve name based on  the information in the search list.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> an object of type Net_DNS_Packet on success,                   or FALSE on failure.</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS.html#methodtypesbyname">Net_DNS::typesbyname()</a>, <a href="../Net_DNS/Net_DNS.html#methodclassesbyname">Net_DNS::classesbyname()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			search
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;A&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$class</span> = <span class="var-default">&quot;IN&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The name (LHS) of a resource record to query.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The type of record to query.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$class</span><span class="var-description">: The class of record to query.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend" id="send"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a595">595</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet to a nameserver</p>
+<p class="description"><p>Determines the appropriate communication method (UDP or TCP) and  send a DNS packet to a nameserver.  Use of the this function  directly  is discouraged. $packetORname should always be a properly  formatted binary DNS packet.  However, it is possible to send  a  query here and bypass Net_DNS_Resolver::query()</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> An answer packet object</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			send
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$packetORname</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$qtype</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$qclass</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packetORname</span><span class="var-description">: A binary DNS packet stream or a                                   hostname to query</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$qtype</span><span class="var-description">: This should not be used</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$qclass</span><span class="var-description">: This should not be used</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend_tcp" id="send_tcp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send_tcp</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a655">655</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet via TCP to the list of name servers.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns an answer packet object</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp">Net_DNS_Resolver::send_udp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend">Net_DNS_Resolver::send()</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			send_tcp
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet</span><span class="var-description">: A packet object to send to the NS list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet_data</span><span class="var-description">: The data in the packet as returned by                               the Net_DNS_Packet::data() method</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend_udp" id="send_udp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send_udp</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a963">963</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet via UDP to the list of name servers.</p>
+<p class="description"><p>This function sends a packet to a nameserver.  send_udp calls  either Net_DNS_Resolver::send_udp_no_sock_lib() or  Net_DNS_Resolver::send_udp_with_sock_lib() depending on whether or  not the sockets extension is compiled into PHP.  Note that using the  sockets extension is MUCH more effecient.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns an answer packet object</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_tcp">Net_DNS_Resolver::send_tcp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend">Net_DNS_Resolver::send()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp">Net_DNS_Resolver::send_udp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp_no_sock_lib">Net_DNS_Resolver::send_udp_no_sock_lib()</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			send_udp
+		</span>
+					(<span class="var-type"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+				<span class="var-name">$packet</span><span class="var-description">: A packet object to send to the NS list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet_data</span><span class="var-description">: The data in the packet as returned by                               the Net_DNS_Packet::data() method</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend_udp_no_sock_lib" id="send_udp_no_sock_lib"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send_udp_no_sock_lib</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a759">759</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet via UDP to the list of name servers.</p>
+<p class="description"><p>This function sends a packet to a nameserver.  It is called by  send_udp if the sockets PHP extension is not compiled into PHP.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns an answer packet object</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_tcp">Net_DNS_Resolver::send_tcp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend">Net_DNS_Resolver::send()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp">Net_DNS_Resolver::send_udp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp_with_sock_lib">Net_DNS_Resolver::send_udp_with_sock_lib()</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			send_udp_no_sock_lib
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet</span><span class="var-description">: A packet object to send to the NS list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet_data</span><span class="var-description">: The data in the packet as returned by                               the Net_DNS_Packet::data() method</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend_udp_with_sock_lib" id="send_udp_with_sock_lib"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send_udp_with_sock_lib</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a869">869</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a packet via UDP to the list of name servers.</p>
+<p class="description"><p>This function sends a packet to a nameserver.  It is called by  send_udp if the sockets PHP extension is compiled into PHP.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns an answer packet object</li>
+				<li><span class="field">see:</span> <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_tcp">Net_DNS_Resolver::send_tcp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend">Net_DNS_Resolver::send()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp">Net_DNS_Resolver::send_udp()</a>, <a href="../Net_DNS/Net_DNS_Resolver.html#methodsend_udp_no_sock_lib">Net_DNS_Resolver::send_udp_no_sock_lib()</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Net_DNS/Net_DNS_Packet.html">object Net_DNS_Packet</a></span>
+		<span class="method-name">
+			send_udp_with_sock_lib
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$packet</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$packet_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet</span><span class="var-description">: A packet object to send to the NS list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$packet_data</span><span class="var-description">: The data in the packet as returned by                               the Net_DNS_Packet::data() method</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstring" id="string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">string</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_DNS__assetsPEARNetDNSResolver.php.html#a371">371</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds a string containing the current state of the resolver</p>
+<p class="description"><p>Builds formatted string containing the state of the resolver library suited  for display.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			string
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:10:53 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

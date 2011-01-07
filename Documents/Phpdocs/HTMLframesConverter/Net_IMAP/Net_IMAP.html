@@ -1,0 +1,2374 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_IMAP</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_IMAP</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides an implementation of the IMAP protocol using PEAR's  Net_Socket:: class.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Damian Alejandro Fernandez Sosa &lt;<a href="mailto:damlists@cnba.uba.ar">damlists@cnba.uba.ar</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---IMAP.php.html">/assets/PEAR/Net/IMAP.php</a> (line <span class="field"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a30">30</a></span>)
+		</p>
+		
+				
+		<pre><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a>
+   |
+   --Net_IMAP</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_IMAP</span>
+										<a href="#Net_IMAP" title="details" class="method-name">Net_IMAP</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">143</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">2</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#appendMessage" title="details" class="method-name">appendMessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$rfc_message</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">true</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$port</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#copyMessages" title="details" class="method-name">copyMessages</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$dest_mailbox</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$source_mailbox</span> = <span class="var-default">null</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message_set</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#createMailbox" title="details" class="method-name">createMailbox</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#deleteACL" title="details" class="method-name">deleteACL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteAnnotation" title="details" class="method-name">deleteAnnotation</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#deleteMailbox" title="details" class="method-name">deleteMailbox</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteMessages" title="details" class="method-name">deleteMessages</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteMsg" title="details" class="method-name">deleteMsg</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$expungeOnExit</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#examineMailbox" title="details" class="method-name">examineMailbox</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#expunge" title="details" class="method-name">expunge</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getACL" title="details" class="method-name">getACL</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getACLRights" title="details" class="method-name">getACLRights</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getAnnotation" title="details" class="method-name">getAnnotation</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$entries</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getBody" title="details" class="method-name">getBody</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getEnvelope" title="details" class="method-name">getEnvelope</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getFlags" title="details" class="method-name">getFlags</a>
+											([<span class="var-type">mixes</span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getHierarchyDelimiter" title="details" class="method-name">getHierarchyDelimiter</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getListing" title="details" class="method-name">getListing</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getMailboxes" title="details" class="method-name">getMailboxes</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$reference</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$restriction_search</span> = <span class="var-default">0</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$returnAttributes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_base</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getMailboxSize" title="details" class="method-name">getMailboxSize</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getMessages" title="details" class="method-name">getMessages</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$indexIsMessageNumber</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getMessagesList" title="details" class="method-name">getMessagesList</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">assoc</span>
+										<a href="#getMessagesQuota" title="details" class="method-name">getMessagesQuota</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getMsg" title="details" class="method-name">getMsg</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#getMyRights" title="details" class="method-name">getMyRights</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getNumberOfMessages" title="details" class="method-name">getNumberOfMessages</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getNumberOfRecentMessages" title="details" class="method-name">getNumberOfRecentMessages</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getNumberOfUnSeenMessages" title="details" class="method-name">getNumberOfUnSeenMessages</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getParsedHeaders" title="details" class="method-name">getParsedHeaders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getRawHeaders" title="details" class="method-name">getRawHeaders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getSize" title="details" class="method-name">getSize</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">assoc</span>
+										<a href="#getStorageQuota" title="details" class="method-name">getStorageQuota</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getSummary" title="details" class="method-name">getSummary</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#hasFlag" title="details" class="method-name">hasFlag</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$message_nro</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$flag</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#isAnswered" title="details" class="method-name">isAnswered</a>
+											(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#isDeleted" title="details" class="method-name">isDeleted</a>
+											(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#isDraft" title="details" class="method-name">isDraft</a>
+											(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#isFlagged" title="details" class="method-name">isFlagged</a>
+											(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#isSeen" title="details" class="method-name">isSeen</a>
+											(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#listsubscribedMailboxes" title="details" class="method-name">listsubscribedMailboxes</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$reference</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$restriction_search</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$returnAttributes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_base</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">true</span>
+										<a href="#login" title="details" class="method-name">login</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$useauthenticate</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$selectMailbox</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#mailboxExist" title="details" class="method-name">mailboxExist</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#numMsg" title="details" class="method-name">numMsg</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#renameMailbox" title="details" class="method-name">renameMailbox</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$oldmailbox</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$newmailbox</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#search" title="details" class="method-name">search</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$search_list</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$uidSearch</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#selectMailbox" title="details" class="method-name">selectMailbox</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#setACL" title="details" class="method-name">setACL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$acl</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setAnnotation" title="details" class="method-name">setAnnotation</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">true</span>
+										<a href="#setMessagesQuota" title="details" class="method-name">setMessagesQuota</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$quota</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">true</span>
+										<a href="#setStorageQuota" title="details" class="method-name">setStorageQuota</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$quota</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#subscribeMailbox" title="details" class="method-name">subscribeMailbox</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#unsubscribeMailbox" title="details" class="method-name">unsubscribeMailbox</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_getSearchListFromArray" title="details" class="method-name">_getSearchListFromArray</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$arr</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a></span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$currentMailbox">Net_IMAPProtocol::$currentMailbox</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$dbgDialog">Net_IMAPProtocol::$dbgDialog</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$supportedAuthMethods">Net_IMAPProtocol::$supportedAuthMethods</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$supportedSASLAuthMethods">Net_IMAPProtocol::$supportedSASLAuthMethods</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_cmd_counter">Net_IMAPProtocol::$_cmd_counter</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_connected">Net_IMAPProtocol::$_connected</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_debug">Net_IMAPProtocol::$_debug</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_lastCmdID">Net_IMAPProtocol::$_lastCmdID</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_serverAuthMethods">Net_IMAPProtocol::$_serverAuthMethods</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_serverSupportedCapabilities">Net_IMAPProtocol::$_serverSupportedCapabilities</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_socket">Net_IMAPProtocol::$_socket</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_unParsedReturn">Net_IMAPProtocol::$_unParsedReturn</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#var$_useUTF_7">Net_IMAPProtocol::$_useUTF_7</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_IMAP" id="Net_IMAP"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_IMAP</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a43">43</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+<p class="description"><p>Instantiates a new Net_SMTP object, overriding any defaults  with parameters that are passed in.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">Net_IMAP</span>
+		<span class="method-name">
+			Net_IMAP
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">143</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">2</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">2</span><span class="var-description">: The value to give when sending EHLO or HELO.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span><span class="var-description">: The server to connect to.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$port</span><span class="var-description">: The port to connect to.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodappendMessage" id="appendMessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">appendMessage</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a756">756</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Appends a mail to  a mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			appendMessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$rfc_message</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$rfc_message</span><span class="var-description">: the message to append in RFC822 format</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to append to</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">connect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a66">66</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Attempt to connect to the IMAP server located at $host $port</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			connect
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span><span class="var-description">: The IMAP server</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$port</span><span class="var-description">: <p>The IMAP port</p><p>It is only useful in a very few circunstances           because the contructor already makes this job</p></span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcopyMessages" id="copyMessages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">copyMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a705">705</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Copies mail from one folder to another</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			copyMessages
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$dest_mailbox</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$source_mailbox</span> = <span class="var-default">null</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message_set</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dest_mailbox</span><span class="var-description">: mailbox name to copy sessages to</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$message_set</span><span class="var-description">: the messages that I want to copy (all by default) it also                                   can be an array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source_mailbox</span><span class="var-description">: mailbox name from where the messages are copied</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateMailbox" id="createMailbox"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">createMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a942">942</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the mailbox $mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			createMailbox
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to create</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteACL" id="deleteACL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteACL</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1564">1564</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">deletes the ACL on a mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, or PEAR_Error on false</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			deleteACL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: the mailbox</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: user to set the ACL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteAnnotation" id="deleteAnnotation"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteAnnotation</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1694">1694</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteAnnotation
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$entry</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteMailbox" id="deleteMailbox"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a962">962</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deletes the mailbox $mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			deleteMailbox
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to delete</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteMessages" id="deleteMessages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a655">655</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteMessages
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteMsg" id="deleteMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1830">1830</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteMsg
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">disconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a170">170</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$expungeOnExit</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$expungeOnExit</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexamineMailbox" id="examineMailbox"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">examineMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a219">219</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			examineMailbox
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexpunge" id="expunge"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">expunge</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1311">1311</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">****************************************************************</p>
+<p class="description"><p>*                                                               ** *           MISC METHODS                                        ** *                                                               ** ****************************************************************</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			expunge
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetACL" id="getACL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getACL</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1504">1504</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get the Access Control List details</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getACL
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: Mailbox to get ACL info.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetACLRights" id="getACLRights"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getACLRights</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1628">1628</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns an array containing the rights that a user logged on has on the mailbox  this method can be used by any user, not only the administrator</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> string contailing the list of rights on success, or PEAR_Error on failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getACLRights
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: the mailbox to query rights</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAnnotation" id="getAnnotation"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getAnnotation</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1714">1714</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAnnotation
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$entries</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$entries</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBody" id="getBody"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getBody</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a379">379</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getBody
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetEnvelope" id="getEnvelope"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getEnvelope</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a538">538</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getEnvelope
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFlags" id="getFlags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getFlags</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1156">1156</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Lists the flags of the selected messages</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getFlags
+		</span>
+					([<span class="var-type">mixes</span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$msg_id</span><span class="var-description">: the message list</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetHierarchyDelimiter" id="getHierarchyDelimiter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getHierarchyDelimiter</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a802">802</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the HierachyDelimiter character used to create subfolders  cyrus users &quot;.&quot;    and wu-imapd uses &quot;/&quot;</p>
+<p class="description"><p>$param  string  the mailbox to get the hierarchy from</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the hierarchy delimiter</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getHierarchyDelimiter
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetListing" id="getListing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getListing</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1824">1824</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getListing
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMailboxes" id="getMailboxes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMailboxes</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a846">846</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array containing the names of the selected mailboxes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getMailboxes
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$reference</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$restriction_search</span> = <span class="var-default">0</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$returnAttributes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_base</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_base</span><span class="var-description">: base mailbox to start the search                    $mailbox_base     if $mailbox_base == ''     then $mailbox_base is the curent selected mailbox</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$restriction_search</span><span class="var-description">: false or 0 means return all mailboxes  true or 1 return only the mailbox that contains that exact name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$returnAttributes</span><span class="var-description">: true means return an assoc array containing mailbox names and mailbox attributes</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$reference</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMailboxSize" id="getMailboxSize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMailboxSize</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a588">588</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMailboxSize
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMessages" id="getMessages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a403">403</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMessages
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$indexIsMessageNumber</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$indexIsMessageNumber</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMessagesList" id="getMessagesList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMessagesList</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a303">303</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMessagesList
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMessagesQuota" id="getMessagesQuota"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMessagesQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1408">1408</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns MESSAGES quota details</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array contaning the quota info  on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">assoc</span>
+		<span class="method-name">
+			getMessagesQuota
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: Mailbox to get quota info.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMsg" id="getMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1811">1811</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMsg
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMyRights" id="getMyRights"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMyRights</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1587">1587</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the rights that the user logged on has on the mailbox  this method can be used by any user, not only the administrator</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> string contailing the list of rights on success, or PEAR_Error on failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getMyRights
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: the mailbox to query rights</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNumberOfMessages" id="getNumberOfMessages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getNumberOfMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a451">451</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNumberOfMessages
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNumberOfRecentMessages" id="getNumberOfRecentMessages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getNumberOfRecentMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a506">506</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNumberOfRecentMessages
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNumberOfUnSeenMessages" id="getNumberOfUnSeenMessages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getNumberOfUnSeenMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a479">479</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNumberOfUnSeenMessages
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetParsedHeaders" id="getParsedHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getParsedHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a267">267</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getParsedHeaders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRawHeaders" id="getRawHeaders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getRawHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a244">244</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getRawHeaders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSize" id="getSize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSize</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1794">1794</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">***************************************************</p>
+<p class="description"><p>*******************************************************</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSize
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStorageQuota" id="getStorageQuota"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getStorageQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1372">1372</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns STORAGE quota details</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array contaning the quota info  on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">assoc</span>
+		<span class="method-name">
+			getStorageQuota
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: Mailbox to get quota info.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSummary" id="getSummary"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSummary</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a333">333</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSummary
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhasFlag" id="hasFlag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">hasFlag</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1276">1276</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasFlag
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$message_nro</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$message_nro</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisAnswered" id="isAnswered"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isAnswered</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1212">1212</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check the Answered flag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true or false if the flag is sert PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			isAnswered
+		</span>
+					(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$message_nro</span><span class="var-description">: the message to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisDeleted" id="isDeleted"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isDeleted</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1266">1266</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check the Deleted flag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true or false if the flag is sert PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			isDeleted
+		</span>
+					(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$message_nro</span><span class="var-description">: the message to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisDraft" id="isDraft"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isDraft</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1247">1247</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check the Draft flag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true or false if the flag is sert PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			isDraft
+		</span>
+					(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$message_nro</span><span class="var-description">: the message to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisFlagged" id="isFlagged"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isFlagged</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1229">1229</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check the flagged flag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true or false if the flag is sert PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			isFlagged
+		</span>
+					(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$message_nro</span><span class="var-description">: the message to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisSeen" id="isSeen"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isSeen</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1196">1196</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check the Seen flag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true or false if the flag is sert PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			isSeen
+		</span>
+					(<span class="var-type">mixes</span>&nbsp;<span class="var-name">$message_nro</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixes</span>
+				<span class="var-name">$message_nro</span><span class="var-description">: the message to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistsubscribedMailboxes" id="listsubscribedMailboxes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">listsubscribedMailboxes</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1071">1071</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Lists the subscription to mailboxes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			listsubscribedMailboxes
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$reference</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$restriction_search</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$returnAttributes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_base</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_base</span><span class="var-description">: mailbox name start the search (see to getMailboxes() )</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: mailbox name filter the search (see to getMailboxes() )</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$reference</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$restriction_search</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$returnAttributes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a111">111</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Attempt to authenticate to the IMAP server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			login
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$useauthenticate</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$selectMailbox</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: The userid to authenticate as.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pass</span><span class="var-description">: The password to authenticate with.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$useauthenticate</span><span class="var-description">: true: authenticate using         the IMAP AUTHENTICATE command. false: authenticate using         the IMAP AUTHENTICATE command. 'string': authenticate using         the IMAP AUTHENTICATE command but using the authMethod in 'string'</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$selectMailbox</span><span class="var-description">: automaticaly select inbox on login (false does not)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmailboxExist" id="mailboxExist"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">mailboxExist</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a916">916</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check if the mailbox name exists</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/false on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			mailboxExist
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to check existance</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnumMsg" id="numMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">numMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1799">1799</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			numMsg
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrenameMailbox" id="renameMailbox"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">renameMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a988">988</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Renames the mailbox $mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			renameMailbox
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$oldmailbox</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$newmailbox</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to rename</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$oldmailbox</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$newmailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">search</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1332">1332</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$search_list</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$uidSearch</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$search_list</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uidSearch</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselectMailbox" id="selectMailbox"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">selectMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a198">198</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			selectMailbox
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetACL" id="setACL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setACL</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1542">1542</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set ACL on a mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, or PEAR_Error on false</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			setACL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$acl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: the mailbox</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: user to set the ACL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$acl</span><span class="var-description">: ACL list</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAnnotation" id="setAnnotation"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setAnnotation</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1674">1674</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">****************************************************************</p>
+<p class="description"><p>*                                                               ** *           ANNOTATEMORE METHODS                                ** *                                                               ** ****************************************************************</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAnnotation
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mailbox_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$entry</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mailbox_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMessagesQuota" id="setMessagesQuota"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setMessagesQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1466">1466</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets MESSAGES quota details</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			setMessagesQuota
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$quota</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: Mailbox to get quota info.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$quota</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetStorageQuota" id="setStorageQuota"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setStorageQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1444">1444</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets STORAGE quota details</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> on success or PEAR_Error</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			setStorageQuota
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$quota</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox_name</span><span class="var-description">: Mailbox to get quota info.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$quota</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubscribeMailbox" id="subscribeMailbox"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">subscribeMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1023">1023</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subscribes to the selected mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			subscribeMailbox
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to subscribe</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunsubscribeMailbox" id="unsubscribeMailbox"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">unsubscribeMailbox</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1047">1047</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes the subscription to a mailbox</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on Success/PearError on Failure</li>
+				<li><span class="field">since:</span> 1.0</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			unsubscribeMailbox
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mailbox</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mailbox</span><span class="var-description">: mailbox name to unsubscribe</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getSearchListFromArray" id="_getSearchListFromArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_getSearchListFromArray</span> (line <span class="line-number"><a href="../__filesource/fsource_Net_IMAP__assetsPEARNetIMAP.php.html#a1770">1770</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_getSearchListFromArray
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$arr</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$arr</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html">Net_IMAPProtocol</a></span></p>
+					<blockquote>
+													<img src="../media/images/Constructor.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodNet_IMAPProtocol">Net_IMAPProtocol::Net_IMAPProtocol()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdAppend">Net_IMAPProtocol::cmdAppend()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdAuthenticate">Net_IMAPProtocol::cmdAuthenticate()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCapability">Net_IMAPProtocol::cmdCapability()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCheck">Net_IMAPProtocol::cmdCheck()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdClose">Net_IMAPProtocol::cmdClose()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdConnect">Net_IMAPProtocol::cmdConnect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCopy">Net_IMAPProtocol::cmdCopy()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdCreate">Net_IMAPProtocol::cmdCreate()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDelete">Net_IMAPProtocol::cmdDelete()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDeleteACL">Net_IMAPProtocol::cmdDeleteACL()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdDeleteAnnotation">Net_IMAPProtocol::cmdDeleteAnnotation()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdExamine">Net_IMAPProtocol::cmdExamine()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdExpunge">Net_IMAPProtocol::cmdExpunge()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdFetch">Net_IMAPProtocol::cmdFetch()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetACL">Net_IMAPProtocol::cmdGetACL()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetAnnotation">Net_IMAPProtocol::cmdGetAnnotation()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetQuota">Net_IMAPProtocol::cmdGetQuota()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdGetQuotaRoot">Net_IMAPProtocol::cmdGetQuotaRoot()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdList">Net_IMAPProtocol::cmdList()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdListRights">Net_IMAPProtocol::cmdListRights()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLogin">Net_IMAPProtocol::cmdLogin()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLogout">Net_IMAPProtocol::cmdLogout()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdLsub">Net_IMAPProtocol::cmdLsub()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdMyRights">Net_IMAPProtocol::cmdMyRights()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdNoop">Net_IMAPProtocol::cmdNoop()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdRename">Net_IMAPProtocol::cmdRename()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSearch">Net_IMAPProtocol::cmdSearch()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSelect">Net_IMAPProtocol::cmdSelect()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetACL">Net_IMAPProtocol::cmdSetACL()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetAnnotation">Net_IMAPProtocol::cmdSetAnnotation()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetQuota">Net_IMAPProtocol::cmdSetQuota()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSetQuotaRoot">Net_IMAPProtocol::cmdSetQuotaRoot()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdStatus">Net_IMAPProtocol::cmdStatus()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdStore">Net_IMAPProtocol::cmdStore()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdSubscribe">Net_IMAPProtocol::cmdSubscribe()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidCopy">Net_IMAPProtocol::cmdUidCopy()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidFetch">Net_IMAPProtocol::cmdUidFetch()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidSearch">Net_IMAPProtocol::cmdUidSearch()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUidStore">Net_IMAPProtocol::cmdUidStore()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdUnsubscribe">Net_IMAPProtocol::cmdUnsubscribe()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodcmdX">Net_IMAPProtocol::cmdX()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetCurrentMailbox">Net_IMAPProtocol::getCurrentMailbox()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetDebugDialog">Net_IMAPProtocol::getDebugDialog()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetLastCmdId">Net_IMAPProtocol::getLastCmdId()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetServerAuthMethods">Net_IMAPProtocol::getServerAuthMethods()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodgetUnparsedResponse">Net_IMAPProtocol::getUnparsedResponse()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasAclSupport">Net_IMAPProtocol::hasAclSupport()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasAnnotateMoreSupport">Net_IMAPProtocol::hasAnnotateMoreSupport()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasCapability">Net_IMAPProtocol::hasCapability()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodhasQuotaSupport">Net_IMAPProtocol::hasQuotaSupport()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodsetDebug">Net_IMAPProtocol::setDebug()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodsetUnparsedResponse">Net_IMAPProtocol::setUnparsedResponse()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodutf_7_decode">Net_IMAPProtocol::utf_7_decode()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#methodutf_7_encode">Net_IMAPProtocol::utf_7_encode()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_arrayfy_content">Net_IMAPProtocol::_arrayfy_content()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authCRAM_MD5">Net_IMAPProtocol::_authCRAM_MD5()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authDigest_MD5">Net_IMAPProtocol::_authDigest_MD5()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_authLOGIN">Net_IMAPProtocol::_authLOGIN()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_genericCommand">Net_IMAPProtocol::_genericCommand()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_genericImapResponseParser">Net_IMAPProtocol::_genericImapResponseParser()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getAddressList">Net_IMAPProtocol::_getAddressList()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getBestAuthMethod">Net_IMAPProtocol::_getBestAuthMethod()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getClosingBracesPos">Net_IMAPProtocol::_getClosingBracesPos()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getCmdId">Net_IMAPProtocol::_getCmdId()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getEXTarray">Net_IMAPProtocol::_getEXTarray()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getNextToken">Net_IMAPProtocol::_getNextToken()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getRawResponse">Net_IMAPProtocol::_getRawResponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_getToEOL">Net_IMAPProtocol::_getToEOL()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseBodyResponse">Net_IMAPProtocol::_parseBodyResponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseContentresponse">Net_IMAPProtocol::_parseContentresponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseENVELOPEresponse">Net_IMAPProtocol::_parseENVELOPEresponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseFLAGSresponse">Net_IMAPProtocol::_parseFLAGSresponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseOneStringResponse">Net_IMAPProtocol::_parseOneStringResponse()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseSpace">Net_IMAPProtocol::_parseSpace()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_parseString">Net_IMAPProtocol::_parseString()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_prot_error">Net_IMAPProtocol::_prot_error()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_putCMD">Net_IMAPProtocol::_putCMD()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_recvLn">Net_IMAPProtocol::_recvLn()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_retrParsedResponse">Net_IMAPProtocol::_retrParsedResponse()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Net_IMAP-Protocol/Net_IMAPProtocol.html#method_send">Net_IMAPProtocol::_send()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:04:30 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

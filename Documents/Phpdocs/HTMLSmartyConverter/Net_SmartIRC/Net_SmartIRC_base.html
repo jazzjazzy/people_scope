@@ -1,0 +1,4817 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class Net_SmartIRC_base</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">Net_SmartIRC<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                                                                                                                                                                                                                                  
+                                                                                            		[ <a href="../classtrees_Net_SmartIRC.html" class="menu">class tree: Net_SmartIRC</a> ]
+		[ <a href="../elementindex_Net_SmartIRC.html" class="menu">index: Net_SmartIRC</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">Net_SmartIRC</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../Net_SmartIRC/_assets---PEAR---Net---SmartIRC.php.html">SmartIRC.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Net_SmartIRC/Net_SmartIRC.html">Net_SmartIRC</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_base.html">Net_SmartIRC_base</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a>    	 <br />
+	    		<a href="../Net_SmartIRC/Net_SmartIRC_messagehandler.html">Net_SmartIRC_messagehandler</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Net_SmartIRC_base</h1>
+Source Location: /assets/PEAR/Net/SmartIRC.php<br /><br />
+
+<h2 class="class-name">Class Net_SmartIRC_base</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+							| <a href="#sec-descendants">Descendants</a>
+				
+											| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>main SmartIRC class
+</strong></p>
+
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---SmartIRC.php.html">/assets/PEAR/Net/SmartIRC.php</a> [<span class="field">line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a60">60</a></span>]
+		</p>
+
+		
+		<pre></pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Mirco 'meebey' Bauer &lt;<a href="mailto:mail@meebey.net">mail@meebey.net</a>&gt;</li>
+			 		  			 		  			 		  		</ul>
+		
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+				<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>0.5.5</td></tr>
+	</table>
+		</td>
+
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_vars">Properties</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$channel">$channel</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$nreplycodes">$nreplycodes</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$replycodes">$replycodes</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_actionhandler">$_actionhandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_actionhandlerid">$_actionhandlerid</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_address">$_address</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_autoreconnect">$_autoreconnect</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_autoretry">$_autoretry</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark">$_benchmark</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark_starttime">$_benchmark_starttime</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_benchmark_stoptime">$_benchmark_stoptime</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_channels">$_channels</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_channelsyncing">$_channelsyncing</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_ctcpversion">$_ctcpversion</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_debug">$_debug</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_disconnecttime">$_disconnecttime</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_lastrx">$_lastrx</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_lasttx">$_lasttx</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logdestination">$_logdestination</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logfile">$_logfile</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_logfilefp">$_logfilefp</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_loggedin">$_loggedin</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_maxtimer">$_maxtimer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_messagebuffer">$_messagebuffer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_messagebuffersize">$_messagebuffersize</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_mintimer">$_mintimer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_motd">$_motd</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_nick">$_nick</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_password">$_password</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_port">$_port</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_realname">$_realname</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_receivedelay">$_receivedelay</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_rxtimeout">$_rxtimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_selecttimeout">$_selecttimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_senddelay">$_senddelay</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_socket">$_socket</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_state">$_state</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_timehandler">$_timehandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_timehandlerid">$_timehandlerid</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_txtimeout">$_txtimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_usermode">$_usermode</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_username">$_username</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#var$_usesockets">$_usesockets</a></li>
+		  		</ul>
+		</td>
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodNet_SmartIRC_base">Net_SmartIRC_base</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodconnect">connect</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methoddisconnect">disconnect</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodgetMotd">getMotd</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodgetUsermode">getUsermode</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisBanned">isBanned</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisError">isError</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisJoined">isJoined</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisOpped">isOpped</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodisVoiced">isVoiced</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlisten">listen</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlistenFor">listenFor</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlog">log</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodlogin">login</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodobjListenFor">objListenFor</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodreconnect">reconnect</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodregisterActionhandler">registerActionhandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodregisterTimehandler">registerTimehandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetAutoReconnect">setAutoReconnect</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetAutoRetry">setAutoRetry</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetBenchmark">setBenchmark</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSynching">setChannelSynching</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">setChannelSyncing</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetCtcpVersion">setCtcpVersion</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetDebug">setDebug</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetDisconnecttime">setDisconnecttime</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogdestination">setLogdestination</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogfile">setLogfile</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetReceivedelay">setReceivedelay</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetReceiveTimeout">setReceiveTimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetSenddelay">setSenddelay</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetTransmitTimeout">setTransmitTimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetUseSockets">setUseSockets</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodshowBenchmark">showBenchmark</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodstartBenchmark">startBenchmark</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodstopBenchmark">stopBenchmark</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodthrowError">throwError</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterActionhandler">unregisterActionhandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterActionid">unregisterActionid</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodunregisterTimeid">unregisterTimeid</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_adduser">_adduser</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_calculateselecttimeout">_calculateselecttimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checkbuffer">_checkbuffer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checkPHPVersion">_checkPHPVersion</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checktimeout">_checktimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_checktimer">_checktimer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_gettype">_gettype</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_handleactionhandler">_handleactionhandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_handlemessage">_handlemessage</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_isValidType">_isValidType</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_microint">_microint</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_nicknameinuse">_nicknameinuse</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_pong">_pong</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_rawreceive">_rawreceive</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_rawsend">_rawsend</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_removeuser">_removeuser</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reorderactionhandler">_reorderactionhandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reordermodules">_reordermodules</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_reordertimehandler">_reordertimehandler</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_selecttimeout">_selecttimeout</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_send">_send</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_state">_state</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_updatemintimer">_updatemintimer</a></li>
+		  		  <li><a href="../Net_SmartIRC/Net_SmartIRC_base.html#method_updatestate">_updatestate</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+	<a name="sec-descendants"></a>
+	<div class="info-box">
+		<div class="info-box-title">Descendants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <span class="disabled">Descendants</span>
+															| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+									</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Child Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Net_SmartIRC/Net_SmartIRC_irccommands.html">Net_SmartIRC_irccommands</a></td>
+					<td>
+											$Id: irccommands.php,v 1.1.2.1 2003/10/10 20:20:58 meebey Exp $
+										</td>
+				</tr>
+							</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Property Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+									| <span class="disabled">Property Summary</span> | <a href="#sec-vars">Properties Detail</a>
+												| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
+																																																																																																																																																																																																																																																																															<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$channel" title="details" class="var-name-summary">$channel</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">Stores all channels in this array where we are joined, works only if channelsyncing is activated.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$nreplycodes" title="details" class="var-name-summary">$nreplycodes</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">All numeric IRC replycodes, the index is the numeric replycode.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$replycodes" title="details" class="var-name-summary">$replycodes</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description">All IRC replycodes, the index is the replycode name.</td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_actionhandler" title="details" class="var-name-summary">$_actionhandler</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_actionhandlerid" title="details" class="var-name-summary">$_actionhandlerid</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_address" title="details" class="var-name-summary">$_address</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_autoreconnect" title="details" class="var-name-summary">$_autoreconnect</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_autoretry" title="details" class="var-name-summary">$_autoretry</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_benchmark" title="details" class="var-name-summary">$_benchmark</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_benchmark_starttime" title="details" class="var-name-summary">$_benchmark_starttime</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_benchmark_stoptime" title="details" class="var-name-summary">$_benchmark_stoptime</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_channels" title="details" class="var-name-summary">$_channels</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_channelsyncing" title="details" class="var-name-summary">$_channelsyncing</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_ctcpversion" title="details" class="var-name-summary">$_ctcpversion</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_debug" title="details" class="var-name-summary">$_debug</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_disconnecttime" title="details" class="var-name-summary">$_disconnecttime</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_lastrx" title="details" class="var-name-summary">$_lastrx</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_lasttx" title="details" class="var-name-summary">$_lasttx</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_logdestination" title="details" class="var-name-summary">$_logdestination</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_logfile" title="details" class="var-name-summary">$_logfile</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">resource</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_logfilefp" title="details" class="var-name-summary">$_logfilefp</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_loggedin" title="details" class="var-name-summary">$_loggedin</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_maxtimer" title="details" class="var-name-summary">$_maxtimer</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_messagebuffer" title="details" class="var-name-summary">$_messagebuffer</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_messagebuffersize" title="details" class="var-name-summary">$_messagebuffersize</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_mintimer" title="details" class="var-name-summary">$_mintimer</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_motd" title="details" class="var-name-summary">$_motd</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_nick" title="details" class="var-name-summary">$_nick</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_password" title="details" class="var-name-summary">$_password</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_port" title="details" class="var-name-summary">$_port</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_realname" title="details" class="var-name-summary">$_realname</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_receivedelay" title="details" class="var-name-summary">$_receivedelay</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_rxtimeout" title="details" class="var-name-summary">$_rxtimeout</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_selecttimeout" title="details" class="var-name-summary">$_selecttimeout</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_senddelay" title="details" class="var-name-summary">$_senddelay</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">resource</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_socket" title="details" class="var-name-summary">$_socket</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_state" title="details" class="var-name-summary">$_state</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_timehandler" title="details" class="var-name-summary">$_timehandler</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_timehandlerid" title="details" class="var-name-summary">$_timehandlerid</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_txtimeout" title="details" class="var-name-summary">$_txtimeout</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_usermode" title="details" class="var-name-summary">$_usermode</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_username" title="details" class="var-name-summary">$_username</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">boolean</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$_usesockets" title="details" class="var-name-summary">$_usesockets</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+										</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#Net_SmartIRC_base" title="details" class="method-name">Net_SmartIRC_base</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Constructor. Initiales the messagebuffer and &quot;links&quot; the replycodes from  global into properties. Also some PHP runtime settings are configured.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#connect" title="details" class="method-name">connect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Creates the sockets and connects to the IRC server on the given port.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#disconnect" title="details" class="method-name">disconnect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Disconnects from the IRC server nicely with a QUIT or just destroys the socket.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMotd" title="details" class="method-name">getMotd</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns the full motd.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getUsermode" title="details" class="method-name">getUsermode</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Returns the usermode.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isBanned" title="details" class="method-name">isBanned</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Checks if the hostmask is on the specified channel banned and returns the result.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isError" title="details" class="method-name">isError</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isJoined" title="details" class="method-name">isJoined</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">checks if we or the given user is joined to the specified channel and returns the result  ChannelSyncing is required for this.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isOpped" title="details" class="method-name">isOpped</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Checks if we or the given user is opped on the specified channel and returns the result.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#isVoiced" title="details" class="method-name">isVoiced</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Checks if we or the given user is voiced on the specified channel and returns the result.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#listen" title="details" class="method-name">listen</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">goes into receive mode</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#listenFor" title="details" class="method-name">listenFor</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">waits for a special message type and puts the answer in $result</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#log" title="details" class="method-name">log</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Adds an entry to the log.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#login" title="details" class="method-name">login</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">login and register nickname on the IRC network</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#objListenFor" title="details" class="method-name">objListenFor</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">waits for a special message type and puts the answer in $result</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#reconnect" title="details" class="method-name">reconnect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Reconnects to the IRC server with the same login info,  it also rejoins the channels</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#registerActionhandler" title="details" class="method-name">registerActionhandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">registers a new actionhandler and returns the assigned id</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#registerTimehandler" title="details" class="method-name">registerTimehandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">registers a timehandler and returns the assigned id</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setAutoReconnect" title="details" class="method-name">setAutoReconnect</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Enables/disables autoreconnecting.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setAutoRetry" title="details" class="method-name">setAutoRetry</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Enables/disables autoretry for connecting to a server.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setBenchmark" title="details" class="method-name">setBenchmark</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Enables/disables the benchmark engine.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setChannelSynching" title="details" class="method-name">setChannelSynching</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Deprecated, use setChannelSyncing() instead!</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setChannelSyncing" title="details" class="method-name">setChannelSyncing</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Enables/disables channel syncing.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setCtcpVersion" title="details" class="method-name">setCtcpVersion</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the CTCP version reply string.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setDebug" title="details" class="method-name">setDebug</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the level of debug messages.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setDisconnecttime" title="details" class="method-name">setDisconnecttime</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the delaytime before closing the socket when disconnect.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setLogdestination" title="details" class="method-name">setLogdestination</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the destination of all log messages.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setLogfile" title="details" class="method-name">setLogfile</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the file for the log if the destination is set to file.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setReceivedelay" title="details" class="method-name">setReceivedelay</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the delay for receiving data from the IRC server.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setReceiveTimeout" title="details" class="method-name">setReceiveTimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the receive timeout.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setSenddelay" title="details" class="method-name">setSenddelay</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the delay for sending data to the IRC server.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setTransmitTimeout" title="details" class="method-name">setTransmitTimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Sets the transmit timeout.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#setUseSockets" title="details" class="method-name">setUseSockets</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Enables/disables the usage of real sockets.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#showBenchmark" title="details" class="method-name">showBenchmark</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Shows the benchmark result.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#startBenchmark" title="details" class="method-name">startBenchmark</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Starts the benchmark (sets the counters).</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#stopBenchmark" title="details" class="method-name">stopBenchmark</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Stops the benchmark and displays the result.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#throwError" title="details" class="method-name">&amp;throwError</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#unregisterActionhandler" title="details" class="method-name">unregisterActionhandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">unregisters an existing actionhandler</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#unregisterActionid" title="details" class="method-name">unregisterActionid</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">unregisters an existing actionhandler via the id</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#unregisterTimeid" title="details" class="method-name">unregisterTimeid</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">unregisters an existing timehandler via the id</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_adduser" title="details" class="method-name">_adduser</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">adds an user to the channelobject or updates his info</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_calculateselecttimeout" title="details" class="method-name">_calculateselecttimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">calculates the selecttimeout value</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_checkbuffer" title="details" class="method-name">_checkbuffer</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">checks the buffer if there are messages to send</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_checkPHPVersion" title="details" class="method-name">_checkPHPVersion</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_checktimeout" title="details" class="method-name">_checktimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Checks if a receive or transmit timeout occured and reconnects if configured</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_checktimer" title="details" class="method-name">_checktimer</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Checks the running timers and calls the registered timehandler,  when the interval is reached.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_gettype" title="details" class="method-name">_gettype</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">determines the messagetype of $line</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_handleactionhandler" title="details" class="method-name">_handleactionhandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">tries to find a actionhandler for the received message ($ircdata) and calls it</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_handlemessage" title="details" class="method-name">_handlemessage</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">tries to find a messagehandler for the received message ($ircdata) and calls it</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_isValidType" title="details" class="method-name">_isValidType</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">checks if the passed handlertype is valid</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">float</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_microint" title="details" class="method-name">_microint</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">getting current microtime, needed for benchmarks</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_nicknameinuse" title="details" class="method-name">_nicknameinuse</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">changes a already used nickname to a new nickname plus 3 random digits</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_pong" title="details" class="method-name">_pong</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">sends the pong for keeping alive</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_rawreceive" title="details" class="method-name">_rawreceive</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">goes into main idle loop for waiting messages from the IRC server</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_rawsend" title="details" class="method-name">_rawsend</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">sends a raw message to the IRC server (don't use this!!)</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_removeuser" title="details" class="method-name">_removeuser</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">removes an user from one channel or all if he quits</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_reorderactionhandler" title="details" class="method-name">_reorderactionhandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">reorders the actionhandler array, needed after removing one</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_reordermodules" title="details" class="method-name">_reordermodules</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">reorders the modules array, needed after removing one</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_reordertimehandler" title="details" class="method-name">_reordertimehandler</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">reorders the timehandler array, needed after removing one</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_selecttimeout" title="details" class="method-name">_selecttimeout</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">returns the calculated selecttimeout value</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_send" title="details" class="method-name">_send</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">sends an IRC message</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">integer</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_state" title="details" class="method-name">_state</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">returns the current connection state</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_updatemintimer" title="details" class="method-name">_updatemintimer</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">updates _mintimer to the smallest timer interval</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">boolean</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#_updatestate" title="details" class="method-name">_updatestate</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">updates the current connection state</td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+													| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+			<a name="var$channel" id="$channel"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$channel</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a331">331</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>Stores all channels in this array where we are joined, works only if channelsyncing is activated.
+</strong></p>
+<span class="description"><p>Eg. for accessing a user, use it like this: (in this example the SmartIRC object is stored in $irc)  $irc-&gt;channel['#test']-&gt;users['meebey']-&gt;nick;</p></span>	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/Net_SmartIRC_channeluser.html">Net_SmartIRC_channeluser</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/Net_SmartIRC_channel.html">Net_SmartIRC_channel</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$nreplycodes" id="$nreplycodes"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$nreplycodes</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a318">318</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>All numeric IRC replycodes, the index is the numeric replycode.
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>$SMARTIRC_nreplycodes</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$replycodes" id="$replycodes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$replycodes</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a309">309</a>]</span>
+		</span>
+	</div>
+
+	<p align="center" class="short-description"><strong>All IRC replycodes, the index is the replycode name.
+</strong></p>
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>$SMARTIRC_replycodes</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_actionhandler" id="$_actionhandler"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_actionhandler</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a120">120</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_actionhandlerid" id="$_actionhandlerid"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_actionhandlerid</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a216">216</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_address" id="$_address"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_address</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a72">72</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_autoreconnect" id="$_autoreconnect"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_autoreconnect</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a294">294</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_autoretry" id="$_autoretry"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_autoretry</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a300">300</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_benchmark" id="$_benchmark"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_benchmark</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a198">198</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_benchmark_starttime" id="$_benchmark_starttime"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_benchmark_starttime</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a204">204</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_benchmark_stoptime" id="$_benchmark_stoptime"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_benchmark_stoptime</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a210">210</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_channels" id="$_channels"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_channels</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a234">234</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_channelsyncing" id="$_channelsyncing"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_channelsyncing</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a240">240</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_ctcpversion" id="$_ctcpversion"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_ctcpversion</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a246">246</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_debug" id="$_debug"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_debug</span>
+			 = <span class="var-default"> SMARTIRC_DEBUG_NOTICE</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a132">132</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_disconnecttime" id="$_disconnecttime"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_disconnecttime</span>
+			 = <span class="var-default"> 1000</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a186">186</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_lastrx" id="$_lastrx"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_lastrx</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a282">282</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_lasttx" id="$_lasttx"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_lasttx</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a288">288</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_logdestination" id="$_logdestination"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_logdestination</span>
+			 = <span class="var-default"> SMARTIRC_STDOUT</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a168">168</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_logfile" id="$_logfile"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_logfile</span>
+			 = <span class="var-default"> 'Net_SmartIRC.log'</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a180">180</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_logfilefp" id="$_logfilefp"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">resource</span>&nbsp;&nbsp;
+			<span class="var-name">$_logfilefp</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a174">174</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_loggedin" id="$_loggedin"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_loggedin</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a192">192</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_maxtimer" id="$_maxtimer"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_maxtimer</span>
+			 = <span class="var-default"> 300000</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a258">258</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_messagebuffer" id="$_messagebuffer"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_messagebuffer</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a138">138</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_messagebuffersize" id="$_messagebuffersize"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_messagebuffersize</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a144">144</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_mintimer" id="$_mintimer"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$_mintimer</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a252">252</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_motd" id="$_motd"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_motd</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a228">228</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_nick" id="$_nick"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_nick</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a84">84</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_password" id="$_password"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_password</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a108">108</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_port" id="$_port"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_port</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a78">78</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_realname" id="$_realname"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_realname</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a96">96</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_receivedelay" id="$_receivedelay"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_receivedelay</span>
+			 = <span class="var-default"> 100</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a156">156</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_rxtimeout" id="$_rxtimeout"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_rxtimeout</span>
+			 = <span class="var-default"> 300</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a270">270</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_selecttimeout" id="$_selecttimeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_selecttimeout</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a276">276</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_senddelay" id="$_senddelay"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_senddelay</span>
+			 = <span class="var-default"> 250</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a162">162</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_socket" id="$_socket"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">resource</span>&nbsp;&nbsp;
+			<span class="var-name">$_socket</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a66">66</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_state" id="$_state"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_state</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a114">114</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_timehandler" id="$_timehandler"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$_timehandler</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a126">126</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_timehandlerid" id="$_timehandlerid"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_timehandlerid</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a222">222</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_txtimeout" id="$_txtimeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>&nbsp;&nbsp;
+			<span class="var-name">$_txtimeout</span>
+			 = <span class="var-default"> 300</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a264">264</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_usermode" id="$_usermode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_usermode</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a102">102</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_username" id="$_username"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$_username</span>
+						<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a90">90</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$_usesockets" id="$_usesockets"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>&nbsp;&nbsp;
+			<span class="var-name">$_usesockets</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a150">150</a>]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="methodNet_SmartIRC_base" id="Net_SmartIRC_base"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">Constructor Net_SmartIRC_base</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a340">340</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void Net_SmartIRC_base(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Constructor. Initiales the messagebuffer and &quot;links&quot; the replycodes from  global into properties. Also some PHP runtime settings are configured.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">connect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a828">828</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void connect(
+string
+$address, integer
+$port&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Creates the sockets and connects to the IRC server on the given port.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$address:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$port:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">disconnect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a896">896</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean disconnect(
+[boolean
+$quickdisconnect = false]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Disconnects from the IRC server nicely with a QUIT or just destroys the socket.
+</strong></p>
+<span class="description"><p>Disconnects from the IRC server in the given quickness mode.  $quickdisconnect:  true, just close the socket  false, send QUIT and wait $_disconnectime before closing the socket</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$quickdisconnect:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> default: false</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMotd" id="getMotd"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMotd</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a804">804</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getMotd(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns the full motd.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetUsermode" id="getUsermode"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getUsermode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a815">815</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getUsermode(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Returns the usermode.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisBanned" id="isBanned"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">isBanned</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1108">1108</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean isBanned(
+string
+$channel, string
+$hostmask&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Checks if the hostmask is on the specified channel banned and returns the result.
+</strong></p>
+<span class="description"><p>ChannelSyncing is required for this.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$hostmask:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisError" id="isError"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isError</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2196">2196</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void isError(
+
+$object&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisJoined" id="isJoined"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">isJoined</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1020">1020</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean isJoined(
+string
+$channel, [string
+$nickname = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>checks if we or the given user is joined to the specified channel and returns the result  ChannelSyncing is required for this.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$nickname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisOpped" id="isOpped"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">isOpped</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1048">1048</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean isOpped(
+string
+$channel, [string
+$nickname = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Checks if we or the given user is opped on the specified channel and returns the result.
+</strong></p>
+<span class="description"><p>ChannelSyncing is required for this.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$nickname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisVoiced" id="isVoiced"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">isVoiced</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1078">1078</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean isVoiced(
+string
+$channel, [string
+$nickname = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Checks if we or the given user is voiced on the specified channel and returns the result.
+</strong></p>
+<span class="description"><p>ChannelSyncing is required for this.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$nickname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetChannelSyncing">Net_SmartIRC_base::setChannelSyncing()</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlisten" id="listen"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">listen</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1135">1135</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean listen(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>goes into receive mode
+</strong></p>
+<span class="description"><p>Goes into receive and idle mode. Only call this if you want to &quot;spawn&quot; the bot.  No further lines of PHP code will be processed after this call, only the bot methods!</p></span>
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlistenFor" id="listenFor"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">listenFor</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1156">1156</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array listenFor(
+integer
+$messagetype&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>waits for a special message type and puts the answer in $result
+</strong></p>
+<span class="description"><p>Creates a special actionhandler for that given TYPE and returns the answer.  This will only receive the requested type, immediately quit and disconnect from the IRC server.  Made for showing IRC statistics on your homepage, or other IRC related information.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$messagetype:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> see in the documentation 'Message Types'</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>answer from the IRC server for this $messagetype</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlog" id="log"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">log</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a741">741</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void log(
+integer
+$level, string
+$entry, [
+$file = null], [
+$line = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Adds an entry to the log.
+</strong></p>
+<span class="description"><p>Adds an entry to the log with Linux style log format.  Possible $level constants (can also be combined with &quot;|&quot;s)  SMARTIRC_DEBUG_NONE  SMARTIRC_DEBUG_NOTICE  SMARTIRC_DEBUG_CONNECTION  SMARTIRC_DEBUG_SOCKET  SMARTIRC_DEBUG_IRCMESSAGES  SMARTIRC_DEBUG_MESSAGETYPES  SMARTIRC_DEBUG_ACTIONHANDLER  SMARTIRC_DEBUG_TIMEHANDLER  SMARTIRC_DEBUG_MESSAGEHANDLER  SMARTIRC_DEBUG_CHANNELSYNCING  SMARTIRC_DEBUG_MODULES  SMARTIRC_DEBUG_USERSYNCING  SMARTIRC_DEBUG_ALL</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$level:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> bit constants (SMARTIRC_DEBUG_*)</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$entry:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the new log entry</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$file:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$line:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_DEBUG_NOTICE">SMARTIRC_DEBUG_NOTICE</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a981">981</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void login(
+string
+$nick, string
+$realname, [integer
+$usermode = 0], [string
+$username = null], [string
+$password = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>login and register nickname on the IRC network
+</strong></p>
+<span class="description"><p>Registers the nickname and user information on the IRC network.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$nick:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$realname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$usermode:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$username:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$password:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodobjListenFor" id="objListenFor"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">objListenFor</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1182">1182</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array objListenFor(
+integer
+$messagetype&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>waits for a special message type and puts the answer in $result
+</strong></p>
+<span class="description"><p>Creates a special actionhandler for that given TYPE and returns the answer.  This will only receive the requested type, immediately quit and disconnect from the IRC server.  Made for showing IRC statistics on your homepage, or other IRC related information.  This special version of listenFor() stores the whole ircdata object, not just the message!</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$messagetype:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> see in the documentation 'Message Types'</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>answer from the IRC server for this $messagetype</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodreconnect" id="reconnect"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">reconnect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a940">940</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void reconnect(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Reconnects to the IRC server with the same login info,  it also rejoins the channels
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodregisterActionhandler" id="registerActionhandler"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">registerActionhandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1210">1210</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer registerActionhandler(
+integer
+$handlertype, string
+$regexhandler, 
+&$object, string
+$methodname, object
+$object&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>registers a new actionhandler and returns the assigned id
+</strong></p>
+<span class="description"><p>Registers an actionhandler in Net_SmartIRC for calling it later.  The actionhandler id is needed for unregistering the actionhandler.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$handlertype:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> bits constants, see in this documentation Message Types</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$regexhandler:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the message that has to be in the IRC message in regex syntax</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> a reference to the objects of the method</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$methodname:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the methodname that will be called when the handler happens</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>assigned actionhandler id</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/_assets---raintpl---example.php.html">example.php</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodregisterTimehandler" id="registerTimehandler"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">registerTimehandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1318">1318</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer registerTimehandler(
+integer
+$interval, 
+&$object, string
+$methodname, object
+$object&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>registers a timehandler and returns the assigned id
+</strong></p>
+<span class="description"><p>Registers a timehandler in Net_SmartIRC, which will be called in the specified interval.  The timehandler id is needed for unregistering the timehandler.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$interval:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> interval time in milliseconds</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> a reference to the objects of the method</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$methodname:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the methodname that will be called when the handler happens</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>assigned timehandler id</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>example7.php</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetAutoReconnect" id="setAutoReconnect"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setAutoReconnect</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a614">614</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setAutoReconnect(
+boolean
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Enables/disables autoreconnecting.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetAutoRetry" id="setAutoRetry"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setAutoRetry</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a630">630</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setAutoRetry(
+boolean
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Enables/disables autoretry for connecting to a server.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetBenchmark" id="setBenchmark"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setBenchmark</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a445">445</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setBenchmark(
+boolean
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Enables/disables the benchmark engine.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetChannelSynching" id="setChannelSynching"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setChannelSynching</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a462">462</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setChannelSynching(
+boolean
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Deprecated, use setChannelSyncing() instead!
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Deprecated:</strong>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetChannelSyncing" id="setChannelSyncing"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setChannelSyncing</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a478">478</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setChannelSyncing(
+boolean
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Enables/disables channel syncing.
+</strong></p>
+<span class="description"><p>Channel syncing means, all users on all channel we are joined are tracked in the  channel array. This makes it very handy for botcoding.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">boolean</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetCtcpVersion" id="setCtcpVersion"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setCtcpVersion</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a500">500</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setCtcpVersion(
+string
+$versionstring&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the CTCP version reply string.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$versionstring:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetDebug" id="setDebug"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setDebug</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a433">433</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setDebug(
+integer
+$level&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the level of debug messages.
+</strong></p>
+<span class="description"><p>Sets the debug level (bitwise), useful for testing/developing your code.  Here the list of all possible debug levels:  SMARTIRC_DEBUG_NONE  SMARTIRC_DEBUG_NOTICE  SMARTIRC_DEBUG_CONNECTION  SMARTIRC_DEBUG_SOCKET  SMARTIRC_DEBUG_IRCMESSAGES  SMARTIRC_DEBUG_MESSAGETYPES  SMARTIRC_DEBUG_ACTIONHANDLER  SMARTIRC_DEBUG_TIMEHANDLER  SMARTIRC_DEBUG_MESSAGEHANDLER  SMARTIRC_DEBUG_CHANNELSYNCING  SMARTIRC_DEBUG_MODULES  SMARTIRC_DEBUG_USERSYNCING  SMARTIRC_DEBUG_ALL</p><p>Default: SMARTIRC_DEBUG_NOTICE</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$level:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>DOCUMENTATION</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_DEBUG_NOTICE">SMARTIRC_DEBUG_NOTICE</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetDisconnecttime" id="setDisconnecttime"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setDisconnecttime</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a558">558</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setDisconnecttime(
+integer
+$milliseconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the delaytime before closing the socket when disconnect.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$milliseconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetLogdestination" id="setLogdestination"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setLogdestination</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a520">520</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setLogdestination(
+integer
+$type&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the destination of all log messages.
+</strong></p>
+<span class="description"><p>Sets the destination of log messages.  $type can be:  SMARTIRC_FILE for saving the log into a file  SMARTIRC_STDOUT for echoing the log to stdout  SMARTIRC_SYSLOG for sending the log to the syslog  Default: SMARTIRC_STDOUT</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$type:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> must be on of the constants</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PeopleScope/_assets---PEAR---Net---SmartIRC---defines.php.html#defineSMARTIRC_STDOUT">SMARTIRC_STDOUT</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetLogfile" id="setLogfile"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setLogfile</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a546">546</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setLogfile(
+string
+$file&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the file for the log if the destination is set to file.
+</strong></p>
+<span class="description"><p>Sets the logfile, if <a href="../Net_SmartIRC/Net_SmartIRC_base.html#methodsetLogdestination">logdestination</a> is set to SMARTIRC_FILE.  This should be only used with full path!</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$file:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetReceivedelay" id="setReceivedelay"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setReceivedelay</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a578">578</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setReceivedelay(
+integer
+$milliseconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the delay for receiving data from the IRC server.
+</strong></p>
+<span class="description"><p>Sets the delaytime between messages that are received, this reduces your CPU load.  Don't set this too low (min 100ms).  Default: 100</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$milliseconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetReceiveTimeout" id="setReceiveTimeout"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setReceiveTimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a649">649</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setReceiveTimeout(
+integer
+$seconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the receive timeout.
+</strong></p>
+<span class="description"><p>If the timeout occurs, the connection will be reinitialized  Default: 300 seconds</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$seconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetSenddelay" id="setSenddelay"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setSenddelay</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a598">598</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setSenddelay(
+integer
+$milliseconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the delay for sending data to the IRC server.
+</strong></p>
+<span class="description"><p>Sets the delaytime between messages that are sent, because IRC servers doesn't like floods.  This will avoid sending your messages too fast to the IRC server.  Default: 250</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$milliseconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetTransmitTimeout" id="setTransmitTimeout"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">setTransmitTimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a668">668</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setTransmitTimeout(
+integer
+$seconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Sets the transmit timeout.
+</strong></p>
+<span class="description"><p>If the timeout occurs, the connection will be reinitialized  Default: 300 seconds</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$seconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodsetUseSockets" id="setUseSockets"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">setUseSockets</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a378">378</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void setUseSockets(
+bool
+$boolean&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Enables/disables the usage of real sockets.
+</strong></p>
+<span class="description"><p>Enables/disables the usage of real sockets instead of fsocks  (works only if your PHP build has loaded the PHP socket extension)  Default: false</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">bool</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$boolean:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodshowBenchmark" id="showBenchmark"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">showBenchmark</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a711">711</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void showBenchmark(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Shows the benchmark result.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodstartBenchmark" id="startBenchmark"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">startBenchmark</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a683">683</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void startBenchmark(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Starts the benchmark (sets the counters).
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodstopBenchmark" id="stopBenchmark"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">stopBenchmark</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a695">695</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void stopBenchmark(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Stops the benchmark and displays the result.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodthrowError" id="throwError"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">throwError</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2200">2200</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void &amp;throwError(
+
+$message&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodunregisterActionhandler" id="unregisterActionhandler"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">unregisterActionhandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1242">1242</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean unregisterActionhandler(
+integer
+$handlertype, string
+$regexhandler, 
+&$object, string
+$methodname, object
+$object&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>unregisters an existing actionhandler
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$handlertype:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$regexhandler:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$methodname:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodunregisterActionid" id="unregisterActionid"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">unregisterActionid</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1283">1283</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean unregisterActionid(
+integer
+$id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>unregisters an existing actionhandler via the id
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodunregisterTimeid" id="unregisterTimeid"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">unregisterTimeid</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1347">1347</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean unregisterTimeid(
+integer
+$id&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>unregisters an existing timehandler via the id
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>example7.php</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_adduser" id="_adduser"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_adduser</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2043">2043</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _adduser(
+
+&$channel, 
+&$newuser, object
+$channel, object
+$newuser&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>adds an user to the channelobject or updates his info
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$newuser:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$channel:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$newuser:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_calculateselecttimeout" id="_calculateselecttimeout"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_calculateselecttimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1720">1720</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _calculateselecttimeout(
+
+$microseconds&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>calculates the selecttimeout value
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$microseconds:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_checkbuffer" id="_checkbuffer"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_checkbuffer</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1423">1423</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _checkbuffer(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>checks the buffer if there are messages to send
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_checkPHPVersion" id="_checkPHPVersion"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_checkPHPVersion</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2174">2174</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _checkPHPVersion(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_checktimeout" id="_checktimeout"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_checktimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1494">1494</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _checktimeout(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Checks if a receive or transmit timeout occured and reconnects if configured
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_checktimer" id="_checktimer"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_checktimer</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1465">1465</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _checktimer(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Checks the running timers and calls the registered timehandler,  when the interval is reached.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_gettype" id="_gettype"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_gettype</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1802">1802</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer _gettype(
+string
+$line&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>determines the messagetype of $line
+</strong></p>
+<span class="description"><p>Analyses the type of an IRC message and returns the type.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$line:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>SMARTIRC_TYPE_* constant</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_handleactionhandler" id="_handleactionhandler"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_handleactionhandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1988">1988</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _handleactionhandler(
+
+&$ircdata, object
+$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>tries to find a actionhandler for the received message ($ircdata) and calls it
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_handlemessage" id="_handlemessage"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_handlemessage</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1942">1942</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _handlemessage(
+string
+$messagecode, 
+&$ircdata, object
+$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>tries to find a messagehandler for the received message ($ircdata) and calls it
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$messagecode:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_isValidType" id="_isValidType"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_isValidType</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2186">2186</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean _isValidType(
+integer
+$handlertype&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>checks if the passed handlertype is valid
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$handlertype:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_microint" id="_microint"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_microint</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2027">2027</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>float _microint(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>getting current microtime, needed for benchmarks
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_nicknameinuse" id="_nicknameinuse"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_nicknameinuse</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1377">1377</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _nicknameinuse(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>changes a already used nickname to a new nickname plus 3 random digits
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_pong" id="_pong"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_pong</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1683">1683</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _pong(
+string
+$data&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>sends the pong for keeping alive
+</strong></p>
+<span class="description"><p>Sends the PONG signal as reply of the PING from the IRC server.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$data:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_rawreceive" id="_rawreceive"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_rawreceive</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1546">1546</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _rawreceive(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>goes into main idle loop for waiting messages from the IRC server
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_rawsend" id="_rawsend"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_rawsend</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1517">1517</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean _rawsend(
+string
+$data&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>sends a raw message to the IRC server (don't use this!!)
+</strong></p>
+<span class="description"><p>Use message() or _send() instead.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$data:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_removeuser" id="_removeuser"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_removeuser</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a2104">2104</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _removeuser(
+
+&$ircdata, object
+$ircdata&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>removes an user from one channel or all if he quits
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ircdata:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_reorderactionhandler" id="_reorderactionhandler"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_reorderactionhandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1754">1754</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _reorderactionhandler(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>reorders the actionhandler array, needed after removing one
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_reordermodules" id="_reordermodules"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_reordermodules</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1784">1784</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _reordermodules(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>reorders the modules array, needed after removing one
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_reordertimehandler" id="_reordertimehandler"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_reordertimehandler</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1769">1769</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _reordertimehandler(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>reorders the timehandler array, needed after removing one
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_selecttimeout" id="_selecttimeout"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_selecttimeout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1695">1695</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer _selecttimeout(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>returns the calculated selecttimeout value
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>selecttimeout in microseconds</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_send" id="_send"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_send</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1398">1398</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean _send(
+string
+$data, [integer
+$priority = SMARTIRC_MEDIUM]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>sends an IRC message
+</strong></p>
+<span class="description"><p>Adds a message to the messagequeue, with the optional priority.  $priority:  SMARTIRC_CRITICAL  SMARTIRC_HIGH  SMARTIRC_MEDIUM  SMARTIRC_LOW</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$data:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$priority:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> must be one of the priority constants</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_state" id="_state"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_state</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1923">1923</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>integer _state(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>returns the current connection state
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>SMARTIRC_STATE_CONNECTED or SMARTIRC_STATE_DISCONNECTED</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_updatemintimer" id="_updatemintimer"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">_updatemintimer</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1733">1733</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void _updatemintimer(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>updates _mintimer to the smallest timer interval
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="method_updatestate" id="_updatestate"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">_updatestate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_SmartIRC__assetsPEARNetSmartIRC.php.html#a1901">1901</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>boolean _updatestate(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>updates the current connection state
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:56:49 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

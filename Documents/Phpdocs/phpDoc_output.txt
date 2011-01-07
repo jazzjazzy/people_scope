@@ -1,0 +1,713 @@
+if [ -z "$PHP" ]; then
+   PHP=`which php`
+fi
+(exec $PHP -C -q -d output_buffering=1 "$0" "$@") 2>/dev/null
+if [ "$?" -ne "0" ]; then
+	echo "FAILED:  Bad environment variable \$PHP (set to \"$PHP\")"
+	exit 1
+fi
+exit 0
+
+Notice: ob_end_clean(): failed to delete buffer. No buffer to delete. in /usr/local/bin/PhpDocumentor/phpdoc on line 50
+PHP Version 5.1.6
+phpDocumentor version 1.4.3
+
+Parsing configuration file phpDocumentor.ini...
+   (found in /usr/local/bin/PhpDocumentor/)...
+
+done
+Maximum memory usage set at 256M after considering php.ini...
+using tokenizer Parser
+File /usr/local/www/apache22/data/jason/people_scope/class/.svn/entries Ignored
+File /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/entries Ignored
+
+
+Grabbing README/INSTALL/CHANGELOG
+
+done
+
+
+Tutorial/Extended Documentation Parsing Stage
+
+done
+
+
+General Parsing Stage
+
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/.svn/text-base/question.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/database.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/email.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/form.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/table.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/template.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/tools.function.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/.svn/text-base/errorhandler.class.php.svn-base -- File not parsed, not a php file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/table.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/form.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/database.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/template.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/tools.function.php -- Parsing file
+
+	ERROR in tools.function.php on line 67: global variable $GLOBAL['trace'] specified in @global tag was never found
+
+	ERROR in tools.function.php on line 82: global variable $trace return Void specified in @global tag was never found
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/base/email.class.php -- Parsing file
+Reading file /usr/local/www/apache22/data/jason/people_scope/class/question.class.php -- Parsing file
+WARNING in question.class.php on line 0: File "/usr/local/www/apache22/data/jason/people_scope/class/question.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+done
+
+Converting From Abstract Parsed Data
+
+Processing Class Inheritance
+
+
+Processing Root Trees
+
+
+Processing leftover classes (classes that extend root classes not found in the same package)
+Processing CustomException in file /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php
+done processing leftover classes
+
+Processing Procedural Page Element Name Conflicts
+
+
+Sorting page elements...done
+Formatting @uses list...done
+
+creating /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/media
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/media/background.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/media/empty.png
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/media/logo.png
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/media/style.css
+Building indexes...done
+
+Sorting Indexes...done
+
+Sorting @todo list...done
+Converting tutorials/extended docs
+Formatting Package Indexes...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/elementindex_PeopleScope.html
+
+done
+Formatting Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/elementindex.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/li_PeopleScope.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/index.html
+done
+
+Formatting Left Quick Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/classtrees_PeopleScope.html
+
+done
+
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/database.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/db.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---database.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/email.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/email.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---email.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/CustomException.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---errorhandler.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/form.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/form.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---form.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/question.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope__question.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope__question.class.php.html
+ Procedural Page Elements... Classes... done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/_question.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/table.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/table.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---table.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/template.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/template.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---template.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/tools.function.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+ Procedural Page Elements... Classes... done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/PeopleScope/Base/_base---tools.function.php.html
+
+Converting @todo List...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/todolist.html
+done
+
+Converting Error Log...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/errors.html
+
+
+To view errors and warnings, look at /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLSmartyConverter/errors.html
+done
+creating /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/banner.cs
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/stylesheet.cs
+creating /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractClass.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractClass_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractMethod.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractPrivateClass.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractPrivateClass_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/AbstractPrivateMethod.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/blank.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Class.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/class_folder.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Class_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Constant.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Constructor.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Destructor.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/empty.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/file.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/folder.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Function.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/function_folder.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Global.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/I.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Index.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Interface.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Interface_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/L.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Lminus.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Lplus.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Method.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/next_button.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/next_button_disabled.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/package.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/package_folder.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Page.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Page_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/previous_button.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/previous_button_disabled.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/PrivateClass.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/PrivateClass_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/PrivateMethod.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/PrivateVariable.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/private_class_logo.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/StaticMethod.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/StaticVariable.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/T.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Tminus.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Tplus.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/tutorial.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/tutorial_folder.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/up_button.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/media/images/Variable.pn
+Building indexes...done
+
+Sorting Indexes...done
+
+Sorting @todo list...done
+Converting tutorials/extended docs
+Formatting Package Indexes...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/elementindex_PeopleScope.html
+
+done
+Formatting Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/elementindex.html
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/blank.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/index.html
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/packages.html
+done
+
+Formatting Left Quick Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/li_PeopleScope.html
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/classtrees_PeopleScope.html
+
+done
+
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/database.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/db.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---database.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/email.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/email.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---email.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/CustomException.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---errorhandler.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/form.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/form.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---form.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/question.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope__question.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope__question.class.php.html
+ Procedural Page Elements... Classes... done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/_question.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/table.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/table.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---table.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/template.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/template.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---template.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/tools.function.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+ Procedural Page Elements... Classes... done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/PeopleScope/Base/_base---tools.function.php.html
+
+Converting @todo List...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/todolist.html
+done
+
+Converting Error Log...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/errors.html
+
+
+To view errors and warnings, look at /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/HTMLframesConverter/errors.html
+done
+Building indexes...done
+
+Sorting Indexes...done
+
+Sorting @todo list...done
+Converting tutorials/extended docs
+Formatting Package Indexes...done
+Formatting Index...done
+
+Formatting Left Quick Index...done
+
+Converting /usr/local/www/apache22/data/jason/people_scope/class/question.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/database.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/email.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/form.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/table.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/template.class.php Procedural Page Elements...done
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/tools.function.php Procedural Page Elements...done
+Converting CustomException...Variables/methods/Class constants...
+done
+Converting db...Variables/methods/Class constants...
+done
+Converting email...Variables/methods/Class constants...
+done
+Converting form...Variables/methods/Class constants...
+done
+Converting table...Variables/methods/Class constants...
+done
+Converting template...Variables/methods/Class constants...
+done
+
+Converting @todo List...done
+
+Converting Error Log...done
+Generating PDF file.....
+Notice: Undefined index:  fsource_PeopleScope__question.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  40fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  36fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  20fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  16fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_baseerrorhandler.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  35fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  356fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  371fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  283fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  179fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  325fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  341fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  120fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  241fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  219fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  144fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  38fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  83fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  93fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  161fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  68fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  19fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  24fsource_PeopleScope_Base_basetools.function.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  34fsource_PeopleScope_Base_baseerrorhandler.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  40fsource_PeopleScope_Base_baseerrorhandler.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  63fsource_PeopleScope_Base_baseerrorhandler.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  49fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  52fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  51fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  53fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  61fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  125fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  80fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  108fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  190fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  160fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  90fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  142fsource_PeopleScope_Base_basedatabase.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  28fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  34fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  58fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  46fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  40fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  52fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  73fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  102fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  83fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  92fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  195fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  231fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  159fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  177fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  113fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  128fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  167fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  65fsource_PeopleScope_Base_baseemail.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  42fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  87fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  95fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  103fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  48fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  60fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  109fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  78fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  72fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  54fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  66fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  117fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  127fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  212fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  198fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  163fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  142fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  151fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  254fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  334fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  243fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  346fsource_PeopleScope_Base_baseform.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  21fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  69fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  51fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  39fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  100fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  33fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  57fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  27fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  88fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  94fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  63fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  107fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  45fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  82fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  75fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  113fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  516fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  548fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  300fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  458fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  502fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  184fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  263fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  194fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  175fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  151fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  141fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  209fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  224fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  235fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  244fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  272fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  289fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  281fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  253fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  126fsource_PeopleScope_Base_basetable.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  43fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  54fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  67fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  60fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  48fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  75fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  86fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  122fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  176fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  138fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  164fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  202fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  307fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  275fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  190fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+
+Notice: Undefined index:  99fsource_PeopleScope_Base_basetemplate.class.php in /usr/local/bin/PhpDocumentor/phpDocumentor/Converters/PDF/default/class.pdf.php on line 750
+done
+    Writing binary file /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/PDFdefaultConverter/documentation.pdf
+creating /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/media
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/media/bg_left.pn
+copying /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/media/stylesheet.cs
+Building indexes...done
+
+Sorting Indexes...done
+
+Sorting @todo list...done
+Converting tutorials/extended docs
+Formatting Package Indexes...    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/elementindex_PeopleScope.html
+
+done
+Formatting Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/elementindex.html
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/blank.html
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/index.html
+
+done
+
+Formatting Left Quick Index...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/classtrees_PeopleScope.html
+
+done
+
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/database.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/db.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---database.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/email.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseemail.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/email.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---email.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/errorhandler.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseerrorhandler.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/CustomException.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---errorhandler.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/form.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_baseform.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/form.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---form.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/question.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope__question.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope__question.class.php.html
+ Procedural Page Elements... Classes... done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/_question.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/table.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetable.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/table.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---table.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/template.class.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetemplate.class.php.html
+ Procedural Page Elements... Classes...
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/template.html
+ done
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/PeopleScope/Base/_base---template.class.php.html
+Converting /usr/local/www/apache22/data/jason/people_scope/class/base/tools.function.php
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+
+    Writing /usr/local/www/apache22/data/jason/people_scope/Documents/Phpdocs/CHMdefaultConverter/__filesource/fsource_PeopleScope_Base_basetools.function.php.html
+ Procedural Page Elements...
+Fatal error: Call to undefined method stdClass::Convert() in /usr/local/bin/PhpDocumentor/phpDocumentor/Converter.inc on line 4481

@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Net_POP3</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Net_POP3</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Net---POP3.php.html">/assets/PEAR/Net/POP3.php</a> (line <span class="field"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a58">58</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$supportedAuthMethods" title="details" class="var-name">$supportedAuthMethods</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$supportedSASLAuthMethods" title="details" class="var-name">$supportedSASLAuthMethods</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_capability" title="details" class="var-name">$_capability</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$_debug" title="details" class="var-name">$_debug</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_host" title="details" class="var-name">$_host</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_maildrop" title="details" class="var-name">$_maildrop</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_port" title="details" class="var-name">$_port</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_socket" title="details" class="var-name">$_socket</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_state" title="details" class="var-name">$_state</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_timeout" title="details" class="var-name">$_timeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_timestamp" title="details" class="var-name">$_timestamp</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Net_POP3</span>
+										<a href="#Net_POP3" title="details" class="method-name">Net_POP3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">110</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteMsg" title="details" class="method-name">deleteMsg</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getBody" title="details" class="method-name">getBody</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getListing" title="details" class="method-name">getListing</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getMsg" title="details" class="method-name">getMsg</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getParsedHeaders" title="details" class="method-name">getParsedHeaders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getRawHeaders" title="details" class="method-name">getRawHeaders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getSize" title="details" class="method-name">getSize</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#login" title="details" class="method-name">login</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$apop</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#numMsg" title="details" class="method-name">numMsg</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDebug" title="details" class="method-name">setDebug</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$debug</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_authCRAM_MD5" title="details" class="method-name">_authCRAM_MD5</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_authDigest_MD5" title="details" class="method-name">_authDigest_MD5</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_authLOGIN" title="details" class="method-name">_authLOGIN</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_authPLAIN" title="details" class="method-name">_authPLAIN</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_authUSER" title="details" class="method-name">_authUSER</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_checkResponse" title="details" class="method-name">_checkResponse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$response</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdApop" title="details" class="method-name">_cmdApop</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdAuthenticate" title="details" class="method-name">_cmdAuthenticate</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$userMethod</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdDele" title="details" class="method-name">_cmdDele</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdList" title="details" class="method-name">_cmdList</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdNoop" title="details" class="method-name">_cmdNoop</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdPass" title="details" class="method-name">_cmdPass</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdQuit" title="details" class="method-name">_cmdQuit</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdRetr" title="details" class="method-name">_cmdRetr</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdRset" title="details" class="method-name">_cmdRset</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdStat" title="details" class="method-name">_cmdStat</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdTop" title="details" class="method-name">_cmdTop</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$num_lines</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdUidl" title="details" class="method-name">_cmdUidl</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_cmdUser" title="details" class="method-name">_cmdUser</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_getBestAuthMethod" title="details" class="method-name">_getBestAuthMethod</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$userMethod</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_getMultiline" title="details" class="method-name">_getMultiline</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_parseCapability" title="details" class="method-name">_parseCapability</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result"><a href="../PEAR/PEAR_Error.html">PEAR_Error</a></span>
+										<a href="#_raiseError" title="details" class="method-name">_raiseError</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$code</span> = <span class="var-default">-1</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_recvLn" title="details" class="method-name">_recvLn</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#_send" title="details" class="method-name">_send</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_sendCmd" title="details" class="method-name">_sendCmd</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$cmd</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$supportedAuthMethods" id="$supportedAuthMethods"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$supportedAuthMethods</span>
+			 = <span class="var-default">array( 'CRAM-MD5', 'APOP' , 'PLAIN' , 'LOGIN', 'USER')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a124">124</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The auth methods this class support</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$supportedSASLAuthMethods" id="$supportedSASLAuthMethods"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$supportedSASLAuthMethods</span>
+			 = <span class="var-default">array('DIGEST-MD5', 'CRAM-MD5')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a133">133</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The auth methods this class support</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_capability" id="$_capability"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_capability</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a140">140</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The capability response</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_debug" id="$_debug"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_debug</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a115">115</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">To allow class debuging</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_host" id="$_host"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_host</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a102">102</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_maildrop" id="$_maildrop"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_maildrop</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a66">66</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_port" id="$_port"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_port</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a109">109</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_socket" id="$_socket"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_socket</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a87">87</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_state" id="$_state"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_state</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a95">95</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_timeout" id="$_timeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_timeout</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a80">80</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$_timestamp" id="$_timestamp"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_timestamp</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a73">73</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodNet_POP3" id="Net_POP3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Net_POP3</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a149">149</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">Net_POP3</span>
+		<span class="method-name">
+			Net_POP3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">connect</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a203">203</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">110</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$host</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$port</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteMsg" id="deleteMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a814">814</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteMsg
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">disconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a236">236</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBody" id="getBody"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getBody</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a744">744</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getBody
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetListing" id="getListing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getListing</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a830">830</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getListing
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMsg" id="getMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a760">760</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMsg
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetParsedHeaders" id="getParsedHeaders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getParsedHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a712">712</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getParsedHeaders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRawHeaders" id="getRawHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getRawHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a693">693</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getRawHeaders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSize" id="getSize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSize</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a774">774</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSize
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a251">251</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			login
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$apop</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$apop</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnumMsg" id="numMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">numMsg</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a793">793</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			numMsg
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetDebug" id="setDebug"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setDebug</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1142">1142</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the bebug state</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDebug
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$debug</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$debug</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_authCRAM_MD5" id="_authCRAM_MD5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_authCRAM_MD5</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a548">548</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_authCRAM_MD5
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uid</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pwd</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_authDigest_MD5" id="_authDigest_MD5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_authDigest_MD5</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a594">594</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_authDigest_MD5
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uid</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pwd</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_authLOGIN" id="_authLOGIN"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_authLOGIN</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a501">501</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_authLOGIN
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_authPLAIN" id="_authPLAIN"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_authPLAIN</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a472">472</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_authPLAIN
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_authUSER" id="_authUSER"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_authUSER</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a444">444</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_authUSER
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_checkResponse" id="_checkResponse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_checkResponse</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1205">1205</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks de server Response</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success or a PEAR_Error object on failure.</li>
+				<li><span class="field">since:</span> 1.3.3</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_checkResponse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$response</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$response</span><span class="var-description">: the response</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdApop" id="_cmdApop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdApop</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a658">658</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdApop
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdAuthenticate" id="_cmdAuthenticate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdAuthenticate</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a390">390</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdAuthenticate
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pwd</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$userMethod</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uid</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pwd</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$userMethod</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdDele" id="_cmdDele"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdDele</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a972">972</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdDele
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdList" id="_cmdList"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdList</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a915">915</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdList
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdNoop" id="_cmdNoop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdNoop</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a987">987</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdNoop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_cmdPass" id="_cmdPass"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdPass</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a878">878</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdPass
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdQuit" id="_cmdQuit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdQuit</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1019">1019</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdQuit
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_cmdRetr" id="_cmdRetr"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdRetr</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a953">953</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdRetr
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdRset" id="_cmdRset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdRset</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1003">1003</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdRset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_cmdStat" id="_cmdStat"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdStat</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a893">893</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdStat
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_cmdTop" id="_cmdTop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdTop</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1036">1036</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdTop
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$num_lines</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$num_lines</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdUidl" id="_cmdUidl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdUidl</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1054">1054</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdUidl
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_cmdUser" id="_cmdUser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_cmdUser</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a863">863</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_cmdUser
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getBestAuthMethod" id="_getBestAuthMethod"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_getBestAuthMethod</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a323">323</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the name of the best authentication method that the server  has advertised.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns a string containing the name of the best                   supported authentication method or a PEAR_Error object                   if a failure condition is encountered.</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_getBestAuthMethod
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$userMethod</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userMethod</span><span class="var-description">: if !=null,authenticate with this method ($userMethod).</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getMultiline" id="_getMultiline"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_getMultiline</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1119">1119</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_getMultiline
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_parseCapability" id="_parseCapability"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_parseCapability</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a275">275</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parses the response from the capability command. Stores  the result in $this-&gt;_capability</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_parseCapability
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_raiseError" id="_raiseError"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_raiseError</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a186">186</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Handles the errors the class can find  on the server</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../PEAR/PEAR_Error.html">PEAR_Error</a></span>
+		<span class="method-name">
+			_raiseError
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$code</span> = <span class="var-default">-1</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_recvLn" id="_recvLn"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_recvLn</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1183">1183</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Receive the given string of data from the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> a line of response on success or a PEAR_Error object on failure.</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_recvLn
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_send" id="_send"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_send</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1161">1161</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send the given string of data to the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success or a PEAR_Error object on failure.</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_send
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span><span class="var-description">: The string of data to send.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_sendCmd" id="_sendCmd"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_sendCmd</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__assetsPEARNetPOP3.php.html#a1096">1096</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_sendCmd
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$cmd</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$cmd</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:10:00 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

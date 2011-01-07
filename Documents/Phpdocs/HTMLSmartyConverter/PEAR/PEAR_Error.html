@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs For Class PEAR_Error</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">PEAR<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                                                                                                                                                                                                                                                                                                                                            
+                                                  		[ <a href="../classtrees_PEAR.html" class="menu">class tree: PEAR</a> ]
+		[ <a href="../elementindex_PEAR.html" class="menu">index: PEAR</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">PEAR</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../PEAR/_assets---PEAR---PEAR.php.html">PEAR.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../PEAR/Net_Dig.html">Net_Dig</a>    	 <br />
+	    		<a href="../PEAR/Net_Socket.html">Net_Socket</a>    	 <br />
+	    		<a href="../PEAR/PEAR.html">PEAR</a>    	 <br />
+	    		<a href="../PEAR/PEAR_Error.html">PEAR_Error</a>    	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: PEAR_Error</h1>
+Source Location: /assets/PEAR/PEAR.php<br /><br />
+
+<h2 class="class-name">Class PEAR_Error</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Class Overview</div>
+	<div class="nav-bar">
+					<span class="disabled">Class Overview</span>
+							| <a href="#sec-descendants">Descendants</a>
+				
+											| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+								</div>
+	<div class="info-box-body">
+		<table width="100%" border="0">
+		<tr><td valign="top" width="60%" class="class-overview">
+
+        		<p align="center" class="short-description"><strong>Standard PEAR error class for PHP 4
+</strong></p>
+<span class="description"><p>This class is supserseded by PEAR_Exception in PHP 5</p></span>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---PEAR.php.html">/assets/PEAR/PEAR.php</a> [<span class="field">line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a810">810</a></span>]
+		</p>
+
+		
+		<pre></pre>
+
+		
+				<strong>Author(s):</strong>
+		<ul>
+		  			 			 <li>Stig Bakken &lt;<a href="mailto:ssb@php.net">ssb@php.net</a>&gt;</li>
+			 		  			 			 <li>Tomas V.V. Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+			 		  			 			 <li>Gregory Beaver &lt;<a href="mailto:cellog@php.net">cellog@php.net</a>&gt;</li>
+			 		  			 		  			 		  			 		  			 		  			 		  			 		  		</ul>
+		
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td><a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a>, <a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a></td>
+  </tr>
+</table>
+<br />
+
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+						<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>Release: 1.4.5</td></tr>
+				<tr><td><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>1997-2005 The PHP Group</td></tr>
+				<tr><td><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://pear.php.net/manual/en/core.pear.pear-error.php">http://pear.php.net/manual/en/core.pear.pear-error.php</a></td></tr>
+				<tr><td><strong>Since:</strong>&nbsp;&nbsp;</td><td>Class available since PHP 4.0.2</td></tr>
+				<tr><td><strong>License:</strong>&nbsp;&nbsp;</td><td><a href="http://www.php.net/license/3_0.txt">PHP License 3.0</a></td></tr>
+	</table>
+		</td>
+
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_vars">Properties</a></strong></p>
+		<ul>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$backtrace">$backtrace</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$code">$code</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$error_message_prefix">$error_message_prefix</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$level">$level</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$message">$message</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$mode">$mode</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#var$userinfo">$userinfo</a></li>
+		  		</ul>
+		</td>
+		
+				<td valign="top" width="20%" class="class-overview">
+		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
+		<ul>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodPEAR_Error">PEAR_Error</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodaddUserInfo">addUserInfo</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetBacktrace">getBacktrace</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetCallback">getCallback</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetCode">getCode</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetDebugInfo">getDebugInfo</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetMessage">getMessage</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetMode">getMode</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetType">getType</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodgetUserInfo">getUserInfo</a></li>
+		  		  <li><a href="../PEAR/PEAR_Error.html#methodtoString">toString</a></li>
+		  		</ul>
+		</td>
+		
+		</tr></table>
+		<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+</div>
+
+	<a name="sec-descendants"></a>
+	<div class="info-box">
+		<div class="info-box-title">Descendants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <span class="disabled">Descendants</span>
+															| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+														| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+									</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Child Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Mail_Queue/Mail_Queue_Error.html">Mail_Queue_Error</a></td>
+					<td>
+											Mail_Queue_Error implements a class for reporting error  messages.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Services_JSON/Services_JSON_Error.html">Services_JSON_Error</a></td>
+					<td>
+											Standard PEAR error class for PHP 4
+										</td>
+				</tr>
+							</table>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Property Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+									| <span class="disabled">Property Summary</span> | <a href="#sec-vars">Properties Detail</a>
+												| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+							    				</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
+																																																							<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$backtrace" title="details" class="var-name-summary">$backtrace</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$code" title="details" class="var-name-summary">$code</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$error_message_prefix" title="details" class="var-name-summary">$error_message_prefix</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$level" title="details" class="var-name-summary">$level</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$message" title="details" class="var-name-summary">$message</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$mode" title="details" class="var-name-summary">$mode</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$userinfo" title="details" class="var-name-summary">$userinfo</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+										</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+							    					| <span class="disabled">Method Summary</span> | <a href="#sec-methods">Methods Detail</a>
+		</div>
+		<div class="info-box-body">
+			<div class="method-summary">
+				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
+																																																																																																								<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">PEAR_Error</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#PEAR_Error" title="details" class="method-name">PEAR_Error</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">PEAR_Error constructor</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#addUserInfo" title="details" class="method-name">addUserInfo</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">array</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getBacktrace" title="details" class="method-name">getBacktrace</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get the call backtrace from where the error was generated.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">mixed</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getCallback" title="details" class="method-name">getCallback</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get the callback function/method from an error object.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">int</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getCode" title="details" class="method-name">getCode</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get error code from an error object</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getDebugInfo" title="details" class="method-name">getDebugInfo</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get additional debug information supplied by the application.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMessage" title="details" class="method-name">getMessage</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get the error message from an error object.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">int</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getMode" title="details" class="method-name">getMode</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get the error mode from an error object.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getType" title="details" class="method-name">getType</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get the name of this error/exception.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#getUserInfo" title="details" class="method-name">getUserInfo</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Get additional user-supplied information.</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#toString" title="details" class="method-name">toString</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Make a string representation of this object.</td></tr>
+				</div>
+												</table>
+			</div>
+			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
+		</div>
+	</div>
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Properties</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+													| <a href="#sec-var-summary">Property Summary</a> | <span class="disabled">Properties Detail</span>
+															| <a href="#sec-method-summary">Method Summary</a> | <a href="#sec-methods">Methods Detail</a>
+												</div>
+		<div class="info-box-body">
+			<a name="var$backtrace" id="$backtrace"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$backtrace</span>
+			 = <span class="var-default"> null</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a820">820</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$code" id="$code"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$code</span>
+			 = <span class="var-default"> -1</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a817">817</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$error_message_prefix" id="$error_message_prefix"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$error_message_prefix</span>
+			 = <span class="var-default"> ''</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a814">814</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$level" id="$level"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$level</span>
+			 = <span class="var-default"> E_USER_NOTICE</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a816">816</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$message" id="$message"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$message</span>
+			 = <span class="var-default"> ''</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a818">818</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$mode" id="$mode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$mode</span>
+			 = <span class="var-default"> PEAR_ERROR_RETURN</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a815">815</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$userinfo" id="$userinfo"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$userinfo</span>
+			 = <span class="var-default"> ''</span>			<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a819">819</a>]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Class Overview</a>
+							| <a href="#sec-descendants">Descendants</a>
+																		| <a href="#sec-var-summary">Property Summary</a> | <a href="#sec-vars">Properties Detail</a>
+																	| <a href="#sec-method-summary">Method Summary</a> | <span class="disabled">Methods Detail</span>
+					</div>
+		<div class="info-box-body">
+			<a name='method_detail'></a>
+
+<a name="methodPEAR_Error" id="PEAR_Error"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">Constructor PEAR_Error</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a845">845</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>PEAR_Error PEAR_Error(
+[string
+$message = 'unknown error'], [int
+$code = null], [int
+$mode = null], [mixed
+$options = null], [string
+$userinfo = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>PEAR_Error constructor
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$message:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> message</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$code:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) error code</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$mode:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) error mode, one of: PEAR_ERROR_RETURN,  PEAR_ERROR_PRINT, PEAR_ERROR_DIE, PEAR_ERROR_TRIGGER,  PEAR_ERROR_CALLBACK or PEAR_ERROR_EXCEPTION</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">mixed</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$options:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) error level, _OR_ in the case of  PEAR_ERROR_CALLBACK, the callback function or object/method  tuple.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$userinfo:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) additional user/debug info</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodaddUserInfo" id="addUserInfo"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">addUserInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a1027">1027</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void addUserInfo(
+
+$info&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$info:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetBacktrace" id="getBacktrace"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getBacktrace</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a1013">1013</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>array getBacktrace(
+[int
+$frame = null]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get the call backtrace from where the error was generated.
+</strong></p>
+<span class="description"><p>Supported with PHP 4.3.0 or newer.</p></span>
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$frame:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> (optional) what frame to fetch</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Backtrace, or NULL if not available.</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetCallback" id="getCallback"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getCallback</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a926">926</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>mixed getCallback(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get the callback function/method from an error object.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>callback function or object/method array</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetCode" id="getCode"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getCode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a955">955</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>int getCode(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get error code from an error object
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>error code</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetDebugInfo" id="getDebugInfo"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getDebugInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a997">997</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getDebugInfo(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get additional debug information supplied by the application.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>debug information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMessage" id="getMessage"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getMessage</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a940">940</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getMessage(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get the error message from an error object.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>full error message</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetMode" id="getMode"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getMode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a913">913</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>int getMode(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get the error mode from an error object.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>error mode</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetType" id="getType"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">getType</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a969">969</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getType(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get the name of this error/exception.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>error/exception name (type)</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodgetUserInfo" id="getUserInfo"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">getUserInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a983">983</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string getUserInfo(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Get additional user-supplied information.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>user-supplied information</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodtoString" id="toString"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">toString</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../__filesource/fsource_PEAR__assetsPEARPEAR.php.html#a1045">1045</a>]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>string toString(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Make a string representation of this object.
+</strong></p>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>a string with an object summary</td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+		</div>
+	</div>
+
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:52:04 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

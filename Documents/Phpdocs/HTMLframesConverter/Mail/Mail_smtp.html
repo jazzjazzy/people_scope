@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Mail_smtp</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Mail_smtp</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SMTP implementation of the PEAR Mail interface. Requires the Net_SMTP class.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> $Revision: 1.25 $</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_assets---PEAR---Mail---smtp.php.html">/assets/PEAR/Mail/smtp.php</a> (line <span class="field"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a26">26</a></span>)
+		</p>
+		
+				
+		<pre><a href="../Mail/Mail.html">Mail</a>
+   |
+   --Mail_smtp</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$auth" title="details" class="var-name">$auth</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$debug" title="details" class="var-name">$debug</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$host" title="details" class="var-name">$host</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$localhost" title="details" class="var-name">$localhost</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$password" title="details" class="var-name">$password</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">boolean</span>
+					<a href="#$persist" title="details" class="var-name">$persist</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$port" title="details" class="var-name">$port</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$timeout" title="details" class="var-name">$timeout</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$username" title="details" class="var-name">$username</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$verp" title="details" class="var-name">$verp</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">object</span>
+					<a href="#$_smtp" title="details" class="var-name">$_smtp</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Mail_smtp</span>
+										<a href="#Mail_smtp" title="details" class="method-name">Mail_smtp</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#send" title="details" class="method-name">send</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$headers</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$body</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#_error" title="details" class="method-name">_error</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$error</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$error</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_Mail_smtp" title="details" class="method-name">_Mail_smtp</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$auth" id="$auth"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$auth</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a59">59</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Should SMTP authentication be used?</p>
+<p class="description"><p>This value may be set to true, false or the name of a specific  authentication method.</p><p>If the value is set to true, the Net_SMTP package will attempt to use  the best authentication method advertised by the remote SMTP server.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$debug" id="$debug"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$debug</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a101">101</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turn on Net_SMTP debugging?</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$host" id="$host"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$host</span>
+			 = <span class="var-default"> 'localhost'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The SMTP host to connect to.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$localhost" id="$localhost"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$localhost</span>
+			 = <span class="var-default"> 'localhost'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a79">79</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Hostname or domain that will be sent to the remote SMTP server in the  HELO / EHLO message.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$password" id="$password"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$password</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a71">71</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The password to use if the SMTP server requires authentication.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$persist" id="$persist"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$persist</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a109">109</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Indicates whether or not the SMTP connection should persist over  multiple calls to the send() method.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$port" id="$port"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$port</span>
+			 = <span class="var-default"> 25</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The port the SMTP server is on.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$timeout" id="$timeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$timeout</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a86">86</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SMTP connection timeout value.  NULL indicates no timeout.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$username" id="$username"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$username</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a65">65</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The username to use if the SMTP server requires authentication.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$verp" id="$verp"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$verp</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a94">94</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether to use VERP or not. If not a boolean, the string value  will be used as the VERP separators.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> boolean or string</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_smtp" id="$_smtp"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">object</span>
+			<span class="var-name">$_smtp</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a34">34</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SMTP connection object.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Mail/Mail.html">Mail</a></span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Mail/Mail.html#var$sep">Mail::$sep</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodMail_smtp" id="Mail_smtp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor Mail_smtp</span> (line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a134">134</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+<p class="description"><p>Instantiates a new Mail_smtp:: object based on the parameters  passed in. It looks for the following parameters:      host        The server to connect to. Defaults to localhost.      port        The port to connect to. Defaults to 25.      auth        SMTP authentication.  Defaults to none.      username    The username to use for SMTP auth. No default.      password    The password to use for SMTP auth. No default.      localhost   The local hostname / domain. Defaults to localhost.      timeout     The SMTP connection timeout. Defaults to none.      verp        Whether to use VERP or not. Defaults to false.      debug       Activate SMTP debug mode? Defaults to false.      persist     Should the SMTP connection persist?</p><p>If a parameter is present in the $params array, it replaces the  default.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Mail_smtp</span>
+		<span class="method-name">
+			Mail_smtp
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$params</span><span class="var-description">: Hash containing any parameters different from the               defaults.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">disconnect</span> (line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a289">289</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disconnect and destroy the current SMTP connection.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if the SMTP connection no longer exists.</li>
+				<li><span class="field">since:</span> 1.1.9</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			disconnect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsend" id="send"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">send</span> (line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a183">183</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Implements Mail::send() function using SMTP.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns true on success, or a PEAR_Error                containing a descriptive error message on                failure.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			send
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$headers</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$body</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$recipients</span><span class="var-description">: Either a comma-seperated list of recipients               (RFC822 compliant), or an array of recipients,               each RFC822 valid. This may contain recipients not               specified in the headers, for Bcc:, resending               messages, etc.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$headers</span><span class="var-description">: The array of headers to send with the mail, in an               associative array, where the array key is the               header name (e.g., 'Subject'), and the array value               is the header value (e.g., 'test'). The header               produced from those values would be 'Subject:               test'.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$body</span><span class="var-description">: The full text of the message body, including any                Mime parts, etc.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Mail/Mail.html#methodsend">Mail::send()</a></dt>
+						<dd>Implements Mail::send() function using php's built-in mail()  command.</dd>
+					</dl>
+			
+	</div>
+<a name="method_error" id="_error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">_error</span> (line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a311">311</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Build a standardized string describing the current SMTP error.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A string describing the current SMTP error.</li>
+				<li><span class="field">since:</span> 1.1.7</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_error
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$error</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$error</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: Custom string describing the error context.</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$error</span><span class="var-description">: Reference to the current PEAR_Error object.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$error</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_Mail_smtp" id="_Mail_smtp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">_Mail_smtp</span> (line <span class="line-number"><a href="../__filesource/fsource_Mail__assetsPEARMailsmtp.php.html#a154">154</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Destructor implementation to ensure that we disconnect from any  potentially-alive persistent SMTP connections.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_Mail_smtp
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Mail/Mail.html">Mail</a></span></p>
+					<blockquote>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Mail/Mail.html#methodfactory">Mail::factory()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Mail/Mail.html#methodparseRecipients">Mail::parseRecipients()</a></span><br>
+													<img src="../media/images/PrivateMethod.png" alt=" "/>
+							<span class="method-name"><a href="../Mail/Mail.html#methodprepareHeaders">Mail::prepareHeaders()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Mail/Mail.html#methodsend">Mail::send()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 02 May 2010 19:14:27 +1000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for fckeditor_php4.php</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">PeopleScope<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                                                                                                                                                                                                                                                                                                                                                                      		[ <a href="../classtrees_PeopleScope.html" class="menu">class tree: PeopleScope</a> ]
+		[ <a href="../elementindex_PeopleScope.html" class="menu">index: PeopleScope</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">PeopleScope</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_PeopleScope.html">PeopleScope</a><br />
+              <a href="../li_DNSBL.html">DNSBL</a><br />
+              <a href="../li_FTP.html">FTP</a><br />
+              <a href="../li_Mail.html">Mail</a><br />
+              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
+              <a href="../li_Net.html">Net</a><br />
+              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
+              <a href="../li_Net_Curl.html">Net_Curl</a><br />
+              <a href="../li_Net_DNS.html">Net_DNS</a><br />
+              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
+              <a href="../li_Net_Ident.html">Net_Ident</a><br />
+              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
+              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
+              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
+              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
+              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
+              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
+              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
+              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
+              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
+              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
+              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
+              <a href="../li_PEAR.html">PEAR</a><br />
+              <a href="../li_RainTPL.html">RainTPL</a><br />
+              <a href="../li_Services_JSON.html">Services_JSON</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file fckeditor_php4.php</h1>
+<p>Documentation is available at <a href="../PeopleScope/_assets---fckeditor---fckeditor_php4.php.html">fckeditor_php4.php</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-comm">/*</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-comm">&nbsp;*&nbsp;FCKeditor&nbsp;-&nbsp;The&nbsp;text&nbsp;editor&nbsp;for&nbsp;Internet&nbsp;-&nbsp;http://www.fckeditor.net</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-comm">&nbsp;*&nbsp;Copyright&nbsp;(C)&nbsp;2003-2007&nbsp;Frederico&nbsp;Caldeira&nbsp;Knabben</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-comm">&nbsp;*&nbsp;==&nbsp;BEGIN&nbsp;LICENSE&nbsp;==</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-comm">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;terms&nbsp;of&nbsp;any&nbsp;of&nbsp;the&nbsp;following&nbsp;licenses&nbsp;at&nbsp;your</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-comm">&nbsp;*&nbsp;choice:</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;-&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;Version&nbsp;2&nbsp;or&nbsp;later&nbsp;(the&nbsp;&quot;GPL&quot;)</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/gpl.html</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;-&nbsp;GNU&nbsp;Lesser&nbsp;General&nbsp;Public&nbsp;License&nbsp;Version&nbsp;2.1&nbsp;or&nbsp;later&nbsp;(the&nbsp;&quot;LGPL&quot;)</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/lgpl.html</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;-&nbsp;Mozilla&nbsp;Public&nbsp;License&nbsp;Version&nbsp;1.1&nbsp;or&nbsp;later&nbsp;(the&nbsp;&quot;MPL&quot;)</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-comm">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.mozilla.org/MPL/MPL-1.1.html</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-comm">&nbsp;*&nbsp;==&nbsp;END&nbsp;LICENSE&nbsp;==</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-comm">&nbsp;*&nbsp;This&nbsp;is&nbsp;the&nbsp;integration&nbsp;file&nbsp;for&nbsp;PHP&nbsp;4.</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-comm">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-comm">&nbsp;*&nbsp;It&nbsp;defines&nbsp;the&nbsp;FCKeditor&nbsp;class&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;create&nbsp;editor</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-comm">&nbsp;*&nbsp;instances&nbsp;in&nbsp;PHP&nbsp;pages&nbsp;on&nbsp;server&nbsp;side.</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-comm">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-key">class&nbsp;</span><a href="../PeopleScope/FCKeditor.html">FCKeditor</a></div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">$InstanceName</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a31"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$BasePath">$BasePath</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a32"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$Width">$Width</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$Height">$Height</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a34"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$ToolbarSet">$ToolbarSet</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a35"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$Value">$Value</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a36"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">var&nbsp;</span><a href="../PeopleScope/FCKeditor.html#var$Config">$Config</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a37"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;PHP&nbsp;4&nbsp;Constructor</span></div></li>
+<li><div class="src-line"><a name="a39"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">FCKeditor</span><span class="src-sym">(&nbsp;</span><span class="src-var">$instanceName&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a40"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a41"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a>&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-var">$instanceName&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$BasePath">BasePath</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-str">'/fckeditor/'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Width">Width</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-str">'100%'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a44"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Height">Height</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-str">'200'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a45"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$ToolbarSet">ToolbarSet</a>&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-str">'Default'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Value">Value</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-str">''&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a47"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a48"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Config">Config</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a49"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a50"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a51"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../PeopleScope/FCKeditor.html#methodCreate">Create</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a52"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a53"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodCreateHtml">CreateHtml</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a54"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a56"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../PeopleScope/FCKeditor.html#methodCreateHtml">CreateHtml</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a57"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$HtmlValue&nbsp;</span>=&nbsp;<a href="http://www.php.net/htmlspecialchars">htmlspecialchars</a><span class="src-sym">(&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Value">Value</a>&nbsp;<span class="src-sym">)&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a59"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a60"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html&nbsp;</span>=&nbsp;<span class="src-str">'&lt;div&gt;'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a61"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-sym">!</span>isset<span class="src-sym">(&nbsp;</span><span class="src-var">$_GET&nbsp;</span><span class="src-sym">)&nbsp;)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a63"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$HTTP_GET_VARS&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a64"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$_GET&nbsp;</span>=&nbsp;<span class="src-var">$HTTP_GET_VARS&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a65"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a66"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a67"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodIsCompatible">IsCompatible</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span></div></li>
+<li><div class="src-line"><a name="a68"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a69"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span>isset<span class="src-sym">(&nbsp;</span><span class="src-var">$_GET</span><span class="src-sym">[</span><span class="src-str">'fcksource'</span><span class="src-sym">]&nbsp;</span><span class="src-sym">)&nbsp;</span>&amp;&amp;&nbsp;<span class="src-var">$_GET</span><span class="src-sym">[</span><span class="src-str">'fcksource'</span><span class="src-sym">]&nbsp;</span>==&nbsp;<span class="src-str">&quot;true&quot;&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a70"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$File&nbsp;</span>=&nbsp;<span class="src-str">'fckeditor.original.html'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a71"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></div></li>
+<li><div class="src-line"><a name="a72"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$File&nbsp;</span>=&nbsp;<span class="src-str">'fckeditor.html'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a73"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a74"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Link&nbsp;</span>=&nbsp;<span class="src-str">&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$BasePath">BasePath</a><span class="src-sym">}</span><span class="src-id">editor</span>/{<span class="src-var">$File<span class="src-str"></span><span class="src-sym">}</span>?<span class="src-id">InstanceName</span>=</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}<span class="src-str"></span><span class="src-str">"</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a75"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a76"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span>&nbsp;<span class="src-sym">(</span>&nbsp;<span class="src-var">$this</span></span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$ToolbarSet">ToolbarSet</a>&nbsp;!=&nbsp;<span class="src-str">''&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a77"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Link&nbsp;</span>.=&nbsp;<span class="src-str"><span class="src-str">"</span>&amp;<span class="src-id">amp</span>;<span class="src-id">Toolbar</span>=</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$ToolbarSet">ToolbarSet</a><span class="src-sym">}<span class="src-str"></span><span class="src-str">"</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a78"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a79"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Render&nbsp;the&nbsp;linked&nbsp;hidden&nbsp;field.</span></span></div></li>
+<li><div class="src-line"><a name="a80"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html</span>&nbsp;.=&nbsp;<span class="src-str">"</span>&lt;<span class="src-id">input</span>&nbsp;<span class="src-id">type</span>=\&quot;<span class="src-id">hidden</span>\&quot;&nbsp;<span class="src-id">id</span>=\&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">name</span>=\&quot;{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">value</span>=\&quot;{<span class="src-var">$HtmlValue<span class="src-str"></span><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">style</span>=\&quot;<span class="src-id">display</span>:<span class="src-id">none</span>\&quot;&nbsp;/&gt;<span class="src-str">"</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a81"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a82"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Render&nbsp;the&nbsp;configurations&nbsp;hidden&nbsp;field.</span></span></div></li>
+<li><div class="src-line"><a name="a83"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html</span>&nbsp;.=&nbsp;<span class="src-str">"</span>&lt;<span class="src-id">input</span>&nbsp;<span class="src-id">type</span>=\&quot;<span class="src-id">hidden</span>\&quot;&nbsp;<span class="src-id">id</span>=\&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}</span><span class="src-id">___Config</span>\&quot;&nbsp;<span class="src-id">value</span>=\&quot;<span class="src-str"><span class="src-str">"</span>&nbsp;.&nbsp;<span class="src-var">$this</span></span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodGetConfigFieldString">GetConfigFieldString</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">&quot;\&quot;&nbsp;style=\&quot;display:none\&quot;&nbsp;/&gt;&quot;&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a84"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a85"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Render&nbsp;the&nbsp;editor&nbsp;IFRAME.</span></div></li>
+<li><div class="src-line"><a name="a86"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html&nbsp;</span>.=&nbsp;<span class="src-str"><span class="src-str">"</span>&lt;<span class="src-id">iframe</span>&nbsp;<span class="src-id">id</span>=\&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}</span><span class="src-id">___Frame</span>\&quot;&nbsp;<span class="src-id">src</span>=\&quot;{<span class="src-var">$Link<span class="src-str"></span><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">width</span>=\&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Width">Width</a><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">height</span>=\&quot;{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Height">Height</a><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">frameborder</span>=\&quot;0\&quot;&nbsp;<span class="src-id">scrolling</span>=\&quot;<span class="src-id">no</span>\&quot;&gt;&lt;/<span class="src-id">iframe</span>&gt;<span class="src-str"><span class="src-str">"</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a87"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a88"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></span></div></li>
+<li><div class="src-line"><a name="a89"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></span></div></li>
+<li><div class="src-line"><a name="a90"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span>&nbsp;<span class="src-sym">(</span>&nbsp;<span class="src-id">strpos</span><span class="src-sym">(</span>&nbsp;<span class="src-var">$this</span></span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Width">Width</a><span class="src-sym">,&nbsp;</span><span class="src-str">'%'&nbsp;</span><span class="src-sym">)&nbsp;</span>===&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a91"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WidthCSS&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Width">Width</a>&nbsp;.&nbsp;<span class="src-str">'px'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a92"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></div></li>
+<li><div class="src-line"><a name="a93"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WidthCSS&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Width">Width</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a94"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a95"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-id">strpos</span><span class="src-sym">(&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Height">Height</a><span class="src-sym">,&nbsp;</span><span class="src-str">'%'&nbsp;</span><span class="src-sym">)&nbsp;</span>===&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a96"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$HeightCSS&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Height">Height</a>&nbsp;.&nbsp;<span class="src-str">'px'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a97"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></div></li>
+<li><div class="src-line"><a name="a98"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$HeightCSS&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Height">Height</a>&nbsp;<span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a99"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a100"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html&nbsp;</span>.=&nbsp;<span class="src-str"><span class="src-str">"</span>&lt;<span class="src-id">textarea</span>&nbsp;<span class="src-id">name</span>=\&quot;</span>{<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$InstanceName">InstanceName</a><span class="src-sym">}</span>\&quot;&nbsp;<span class="src-id">rows</span>=\&quot;4\&quot;&nbsp;<span class="src-id">cols</span>=\&quot;40\&quot;&nbsp;<span class="src-id">style</span>=\&quot;<span class="src-id">width</span>:&nbsp;{<span class="src-var">$WidthCSS<span class="src-str"></span><span class="src-sym">}</span>;&nbsp;<span class="src-id">height</span>:&nbsp;</span>{<span class="src-var">$HeightCSS<span class="src-str"></span><span class="src-sym">}</span>\&quot;&gt;</span>{<span class="src-var">$HtmlValue<span class="src-str"></span><span class="src-sym">}</span>&lt;/<span class="src-id">textarea</span>&gt;<span class="src-str">"</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a101"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a102"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a103"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$Html</span>&nbsp;.=&nbsp;<span class="src-str">'&lt;/div&gt;'</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a104"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a105"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return</span>&nbsp;<span class="src-var">$Html</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a106"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a107"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a108"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function</span>&nbsp;<span class="src-id">IsCompatible</span><span class="src-sym">(</span><span class="src-sym">)</span></span></div></li>
+<li><div class="src-line"><a name="a109"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></span></div></li>
+<li><div class="src-line"><a name="a110"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return</span>&nbsp;<span class="src-id">FCKeditor_IsCompatibleBrowser</span><span class="src-sym">(</span><span class="src-sym">)</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a111"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a112"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a113"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function</span>&nbsp;<span class="src-id">GetConfigFieldString</span><span class="src-sym">(</span><span class="src-sym">)</span></span></div></li>
+<li><div class="src-line"><a name="a114"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></span></div></li>
+<li><div class="src-line"><a name="a115"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$sParams</span>&nbsp;=&nbsp;<span class="src-str">''</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a116"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$bFirst</span>&nbsp;=&nbsp;<span class="src-id">true</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a117"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a118"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">foreach</span>&nbsp;<span class="src-sym">(</span>&nbsp;<span class="src-var">$this</span></span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#var$Config">Config</a>&nbsp;<span class="src-key">as&nbsp;</span><span class="src-var">$sKey&nbsp;</span>=&gt;&nbsp;<span class="src-var">$sValue&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a119"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str"><span class="src-sym">{</span></span></div></li>
+<li><div class="src-line"><a name="a120"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span>&nbsp;<span class="src-sym">(</span>&nbsp;<span class="src-var">$bFirst</span>&nbsp;==&nbsp;<span class="src-id">false</span>&nbsp;<span class="src-sym">)</span></span></div></li>
+<li><div class="src-line"><a name="a121"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$sParams</span>&nbsp;.=&nbsp;<span class="src-str">'&amp;amp;'</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a122"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></span></div></li>
+<li><div class="src-line"><a name="a123"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$bFirst</span>&nbsp;=&nbsp;<span class="src-id">false</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a124"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a125"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span>&nbsp;<span class="src-sym">(</span>&nbsp;<span class="src-var">$sValue</span>&nbsp;===&nbsp;<span class="src-id">true</span>&nbsp;<span class="src-sym">)</span></span></div></li>
+<li><div class="src-line"><a name="a126"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$sParams</span>&nbsp;.=&nbsp;<span class="src-var">$this</span></span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodEncodeConfig">EncodeConfig</a><span class="src-sym">(&nbsp;</span><span class="src-var">$sKey&nbsp;</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">'=true'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a127"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else&nbsp;</span><span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$sValue&nbsp;</span>===&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a128"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$sParams&nbsp;</span>.=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodEncodeConfig">EncodeConfig</a><span class="src-sym">(&nbsp;</span><span class="src-var">$sKey&nbsp;</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">'=false'&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a129"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">else</span></div></li>
+<li><div class="src-line"><a name="a130"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$sParams&nbsp;</span>.=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodEncodeConfig">EncodeConfig</a><span class="src-sym">(&nbsp;</span><span class="src-var">$sKey&nbsp;</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">'='&nbsp;</span>.&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../PeopleScope/FCKeditor.html#methodEncodeConfig">EncodeConfig</a><span class="src-sym">(&nbsp;</span><span class="src-var">$sValue&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a131"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str"><span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a132"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a133"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return</span>&nbsp;<span class="src-var">$sParams</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a134"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a135"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a136"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function</span>&nbsp;<span class="src-id">EncodeConfig</span><span class="src-sym">(</span>&nbsp;<span class="src-var">$valueToEncode</span>&nbsp;<span class="src-sym">)</span></span></div></li>
+<li><div class="src-line"><a name="a137"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></span></div></li>
+<li><div class="src-line"><a name="a138"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$chars</span>&nbsp;=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></span></div></li>
+<li><div class="src-line"><a name="a139"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'&amp;'</span>&nbsp;=&gt;&nbsp;<span class="src-str">'%26'</span><span class="src-sym">,</span></span></div></li>
+<li><div class="src-line"><a name="a140"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'='</span>&nbsp;=&gt;&nbsp;<span class="src-str">'%3D'</span><span class="src-sym">,</span></span></div></li>
+<li><div class="src-line"><a name="a141"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'&quot;'</span>&nbsp;=&gt;&nbsp;<span class="src-str">'%22'</span>&nbsp;<span class="src-sym">)</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a142"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a143"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return</span>&nbsp;<span class="src-id">strtr</span><span class="src-sym">(</span>&nbsp;<span class="src-var">$valueToEncode</span><span class="src-sym">,</span>&nbsp;&nbsp;<span class="src-var">$chars</span>&nbsp;<span class="src-sym">)</span>&nbsp;<span class="src-sym">;</span></span></div></li>
+<li><div class="src-line"><a name="a144"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a145"></a><span class="src-str"><span class="src-sym">}</span></span></div></li>
+<li><div class="src-line"><a name="a146"></a>&nbsp;</div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Sun, 02 May 2010 18:44:56 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

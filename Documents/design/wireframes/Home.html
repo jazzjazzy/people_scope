@@ -1,0 +1,112 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<DIV id=ou0 style="position:absolute; left:105px; top:10px; width:166px; height:51px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:174px; height:59px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Home_files/u0.png',sizingMethod='scale');
+"><img style="width:174px; height:59px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Home_files/u0.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u0container style="position:absolute; left:105px; top:10px; width:166px; height:51px;; overflow:visible;">
+
+<DIV id=u1 style="position:absolute; left:2px; top:17px; width:161px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u1_rtf><div style="text-align:center"><span style=" color:#000000; font-size:13px;">Logo</span></div></DIV></DIV>
+</DIV>
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:105px; top:10px; width:165px; height:50px"  >
+
+<DIV id=u2 style="position:absolute; left:290px; top:20px; width:210px; height:29px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u2_rtf><span style=" font-family:'Arial'; color:#000000; font-size:24px;"><b>eRecruitment</b></span></DIV></DIV>
+<DIV id=ou3 style="position:absolute; left:105px; top:105px; width:356px; height:346px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:364px; height:354px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Home_files/u3.png',sizingMethod='scale');
+"><img style="width:364px; height:354px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Home_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u3container style="position:absolute; left:105px; top:105px; width:356px; height:346px;; overflow:visible;">
+
+<DIV id=u4 style="position:absolute; left:2px; top:164.5px; width:351px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u4_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:105px; top:105px; width:355px; height:345px"  >
+
+<INPUT id=u5  type=text value="Username" style="position:absolute; left:195px; top:190px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<DIV id=u5ann style="font-size:1px; position:absolute; left:361px; top:186px; width:1px; height:1px; overflow:visible"></DIV>
+
+<INPUT id=u6  type=password value="Password" style="position:absolute; left:195px; top:230px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u7  type=submit value="Login" style="position:absolute; left:232.5px; top:265px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u8 style="position:absolute; left:222.5px; top:325px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u8_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>forgotten password</u></span></DIV></DIV>
+<DIV id=ou9 style="position:absolute; left:475px; top:105px; width:356px; height:346px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:364px; height:354px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Home_files/u3.png',sizingMethod='scale');
+"><img style="width:364px; height:354px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Home_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u9container style="position:absolute; left:475px; top:105px; width:356px; height:346px;; overflow:visible;">
+
+<DIV id=u10 style="position:absolute; left:2px; top:164.5px; width:351px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u10_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u9 src="Resources/transparent.gif" style="position:absolute; left:475px; top:105px; width:355px; height:345px"  >
+
+<DIV id=u11 style="position:absolute; left:120px; top:480px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u11_rtf>&nbsp;</DIV></DIV>
+<DIV id=u12 style="position:absolute; left:480px; top:110px; width:300px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u12_rtf><span style=" font-family:'Arial'; color:#000000; font-size:27px;">Sign up for test account</span></DIV></DIV>
+<DIV id=u13 style="position:absolute; left:112px; top:110px; width:150px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u13_rtf><span style=" font-family:'Arial'; color:#000000; font-size:27px;">Login</span></DIV></DIV>
+<DIV id=u14 style="position:absolute; left:500px; top:150px; width:310px; height:48px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u14_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Sign up for a test account, this account will allow you to see function the eRecuiment ablilities you can use to best organized your recuitment details</span></DIV></DIV>
+<INPUT id=u15  type=text value="enter text..." style="position:absolute; left:605px; top:219px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u16  type=text value="enter text..." style="position:absolute; left:605px; top:254px; width:175px; height:25px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u17  style="position:absolute; left:605px; top:288px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION  value="Victoira">Victoira</OPTION>
+<OPTION  value="South Australia">South Australia</OPTION>
+<OPTION  value="Western Australia">Western Australia</OPTION>
+<OPTION  value="New South Wales ">New South Wales </OPTION>
+<OPTION  value="Queensland">Queensland</OPTION>
+<OPTION  value="Capital Teritory">Capital Teritory</OPTION>
+<OPTION  value="Northen Teritory ">Northen Teritory </OPTION>
+<OPTION  value="Tasmania">Tasmania</OPTION>
+</SELECT>
+
+<DIV id=u18 style="position:absolute; left:535px; top:223px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u18_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Name</span></DIV></DIV>
+<DIV id=u19 style="position:absolute; left:535px; top:258.5px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u19_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Company</span></DIV></DIV>
+<DIV id=u20 style="position:absolute; left:535px; top:291px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<DIV id=u20_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">State</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Home_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

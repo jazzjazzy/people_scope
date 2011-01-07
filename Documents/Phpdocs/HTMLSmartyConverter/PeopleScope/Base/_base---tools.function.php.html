@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Docs for page tools.function.php</title>
+	<link rel="stylesheet" type="text/css" href="../../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">PeopleScope<br /><div class="header-top-right-subpackage">Base</div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../../classtrees_PeopleScope.html" class="menu">class tree: PeopleScope</a> ]
+		[ <a href="../../elementindex_PeopleScope.html" class="menu">index: PeopleScope</a> ]
+            [ <a href="../../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">PeopleScope</div>
+  <div class="package">
+	<div id="todolist">
+			<p><a href="../../todolist.html">Todo List</a></p>
+	</div>
+	</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../../li_PeopleScope.html">PeopleScope</a><br />
+      	</div>
+      <br />
+                        <b>Files:</b><br />
+        <div class="package">
+				<span style="padding-left: 1em;"><a href="../../PeopleScope/_question.class.php.html">question.class.php</a></span><br />
+	  </div>
+  <div class="package">
+	<strong>Base</strong><br />			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---database.class.php.html">database.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---email.class.php.html">email.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---errorhandler.class.php.html">errorhandler.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---form.class.php.html">form.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---table.class.php.html">table.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---template.class.php.html">template.class.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../PeopleScope/Base/_base---tools.function.php.html">tools.function.php</a></span><br />
+	  </div>
+            <br />
+                  <b>Classes:</b><br />
+        <div class="package">
+	Base<br />	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/CustomException.html">CustomException</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/db.html">db</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/email.html">email</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/form.html">form</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/table.html">table</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../PeopleScope/Base/template.html">template</a>    </span>	 <br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Procedural File: tools.function.php</h1>
+Source Location: /base/tools.function.php<br /><br />
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Page Details</div>
+	<div class="nav-bar">
+					<span class="disabled">Page Details</span> |
+													<a href="#sec-variables">Globals</a>
+			|							<a href="#sec-functions">Functions</a>
+			</div>
+	<div class="info-box-body">
+		<p align="center" class="short-description"><strong>Tools Function,  <br />  At set of general tool to help with development<br />
+</strong></p>
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr><td><strong>Author:</strong>&nbsp;&nbsp;</td><td>Jason Stewart &lt;<a href="mailto:jason@lexxcom.com.au">jason@lexxcom.com.au</a>&gt;</td></tr>
+			<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>1.0</td></tr>
+			<tr><td><strong>Filesource:</strong>&nbsp;&nbsp;</td><td><a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html">Source Code for this file</a></td></tr>
+	</table>
+
+			</div>
+</div>
+
+
+
+
+	<a name="sec-variables"></a>
+	<div class="info-box">
+		<div class="info-box-title">Globals</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Page Details</a> |
+												<span class="disabled">Globals</span>
+			|							<a href="#sec-functions">Functions</a>
+					</div>
+		<div class="info-box-body">
+			<a name="global$GLOBALS['style']" id="global$GLOBALS['style']"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$GLOBALS['style']</span>
+			<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a19">19</a>]</span>
+		</span>
+	</div>
+
+  	<p align="center" class="short-description"><strong>Global style for error messages
+</strong></p>
+  
+  <b>Default value:</b>&nbsp;&nbsp;<span class="var-default">&quot;style=\&quot;font-family:&nbsp;Arial,&nbsp;Helvetica,&nbsp;sans-serif;&nbsp;font-size:&nbsp;11px;&nbsp;padding:10px;&nbsp;background-color:&nbsp;#ffcccc;&nbsp;width:100%;&nbsp;border:solid&nbsp;1px&nbsp;#000\&quot;&quot;</span>
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	<br />
+</div>
+<a name="global$GLOBALS['trace']" id="global$GLOBALS['trace']"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$GLOBALS['trace']</span>
+			<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a24">24</a>]</span>
+		</span>
+	</div>
+
+  	<p align="center" class="short-description"><strong>Global trace debugging
+</strong></p>
+  
+  <b>Default value:</b>&nbsp;&nbsp;<span class="var-default">array()</span>
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	<br />
+</div>
+		</div>
+	</div><br />
+
+	<a name="sec-functions"></a>
+	<div class="info-box">
+		<div class="info-box-title">Functions</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Page Details</a> |
+																<a href="#sec-variables">Globals</a>
+				|						<span class="disabled">Functions</span>
+		</div>
+		<div class="info-box-body">
+			<a name="functionconvertDecimalToMinutes" id="functionconvertDecimalToMinutes"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">convertDecimalToMinutes</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a356">356</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Integer convertDecimalToMinutes(
+Integer $percent&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will take in a percent amount and return values in mins
+</strong></p>
+<span class="description"><p>eg. 50% = 30mins</p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">Integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$percent:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Minutes</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionconvertMinutes2Hours" id="functionconvertMinutes2Hours"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">convertMinutes2Hours</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a371">371</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String convertMinutes2Hours(
+Integer $Minutes&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will take in a amount in minutes and return the value in the amount of hours : minute
+</strong></p>
+<span class="description"><p>124 minutes = 2:04</p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">Integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$Minutes:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>hh:mm</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionconvertUIdate" id="functionconvertUIdate"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">convertUIdate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a283">283</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void convertUIdate(
+String $start, String $end, Array &$ARRAY&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will convert the output from a Jquery UI date field format
+</strong></p>
+<span class="description"><p>format must be in Au date format</p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$start:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> start date</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$end:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> end date</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$ARRAY:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> returns by referance</span>			</td></tr>
+				</table>
+	
+<br />
+	
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://docs.jquery.com/UI/Datepicker">http://docs.jquery.com/UI/Datepicker</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://docs.jquery.com/UI/Datepicker/formatDate">http://docs.jquery.com/UI/Datepicker/formatDate</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Todo:</strong>&nbsp;&nbsp;</td><td>remember how this works :S</td>
+  </tr>
+</table>
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functioncreateDateField" id="functioncreateDateField"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">createDateField</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a179">179</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>an createDateField(
+String $date, [Integer $yearRange = 10], [Integer $startyear = NULL], String $name&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>This will take in a name for the field types and a date that you wish and format  an option list for select boxes, and return them in an associated array for year, month and day
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Name used for selection box</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$date:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Date That should be selected</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$yearRange:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> How many years should be displayed</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Integer</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$startyear:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> What year should the list start at</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Array of day,month,Year holding the required option list for select box</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functiondatabaseToUI" id="functiondatabaseToUI"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">databaseToUI</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a325">325</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String databaseToUI(
+String $dbdate&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>converts a database date value and conversts to Au date format
+</strong></p>
+<span class="description"><p>2001-04-02 = 02/04/2001</p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$dbdate:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> database date format yyyy-mm-dd</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Date dd/mm/yyyy</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionfileExt" id="functionfileExt"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">fileExt</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a341">341</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String fileExt(
+String $type&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>return file extention based on Mime type for common doc types  doc, docx, pdf
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$type:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Mime type</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>Document extention</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionformatArray" id="functionformatArray"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">formatArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a120">120</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void formatArray(
+Array $array, String $name&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will input an associate array and output in a readable format
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">Array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$array:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Array to read</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> name you want to give the array</span>			</td></tr>
+				</table>
+	
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionformatDateResponce" id="functionformatDateResponce"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">formatDateResponce</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a241">241</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String formatDateResponce(
+String $name, [Array &$listArray = NULL]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>This will take in an Array or if no array give will default to the $_REQUEST
+</strong></p>
+<span class="description"><p>global looking for accociated name type and remove the elements and replace the with a $name field with a value of the compiled date,  if none found then will put in todays date  accociated name types :<br />  $name.'__day'<br />  $name.'__month'<br />  $name.'__year'<br />  <br />  $name = $name.'__year-'$name.'__month-'$name.'__day 00::00::00' <br />  <br /></p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> the name ofthe fields we are looking for</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$listArray:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> alternate array to look at, $_REQUEST by default</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>database date format</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionformatDateUI" id="functionformatDateUI"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">formatDateUI</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a219">219</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void formatDateUI(
+String $date&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will take a Au date from jQuery Datepicker and convert to a database date format
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$date:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> database date format</span>			</td></tr>
+				</table>
+	
+<br />
+	
+<strong>Information Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://docs.jquery.com/UI/Datepicker/formatDate">http://docs.jquery.com/UI/Datepicker/formatDate</a></td>
+  </tr>
+  <tr>
+    <td class="indent"><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://docs.jquery.com/UI/Datepicker">http://docs.jquery.com/UI/Datepicker</a></td>
+  </tr>
+</table>
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionparseArray" id="functionparseArray"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">parseArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a144">144</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Array parseArray(
+String $string, String $beg_tag, String $close_tag, [Bool $remove_tag = true]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will take in a String and a start and end delimiter and will return the content between the delimiter
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$string:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> String to parse</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$beg_tag:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> start delimiter</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$close_tag:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> end delimiter</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Bool</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$remove_tag:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> true return content without delimiter</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>all content found between delimiters</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionpp" id="functionpp"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">pp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a38">38</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void pp(
+Mixed $var, [bool $tracer = false]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>A debuging tool
+</strong></p>
+<span class="description"><p>This will produce a error message to the screen displaying the value enter  it will take in vars | arrays | object  it will show the page | Line | function that the echo accured  and can be turned off thought the constant TURN_ON_PP</p></span>
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">Mixed</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$var:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Value that will be echoed out</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">bool</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tracer:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> true display to screen, false store in global $trace  return void</span>			</td></tr>
+				</table>
+	
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionshowTrace" id="functionshowTrace"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">showTrace</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a83">83</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void showTrace(
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Output $GLOBAL['trace'] Trace
+</strong></p>
+
+    
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionshowVars" id="functionshowVars"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">showVars</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a93">93</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String showVars(
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will return a html form with all the results of the $GLOBAL vars
+</strong></p>
+<span class="description"><p>$_POST, $_GET, $_COOKIE, $_SESSION, $trace</p></span>
+    
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>html vars</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functionstripElements" id="functionstripElements"><!-- --></a>
+<div class="oddrow">
+
+	<div>
+		<span class="method-title">stripElements</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a161">161</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void stripElements(
+String $elements,  &$array, Array $array&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Will take in a list of accociated array names and remove  from that array via referance
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">String</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$elements:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Comma seperated list of names</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Array</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$array:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The array to remove them from via referance</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">&$array:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+	
+<br />
+	
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+<a name="functiontrace" id="functiontrace"><!-- --></a>
+<div class="evenrow">
+
+	<div>
+		<span class="method-title">trace</span>&nbsp;&nbsp;<span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basetools.function.php.html#a68">68</a>]</span>
+	</div>
+<br />
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void trace(
+Mixed $var, [Bool $newline = true]&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table>
+
+		<p align="center" class="short-description"><strong>Debuging tool that that will store the outcomes into a $GLOBAL['trace'] var
+</strong></p>
+
+    		<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">Mixed</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$var:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> Value that will be echoed out</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">Bool</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$newline:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> If type strip tags from string</span>			</td></tr>
+				</table>
+	
+<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>See:</strong>&nbsp;&nbsp;</td><td>showTrace for output</td>
+  </tr>
+</table>
+<br />
+
+
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+	</div>
+	</div>
+		</div>
+	</div><br />
+
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 25 Oct 2010 01:00:30 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

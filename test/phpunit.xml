@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<phpunit>
+	<php>
+		<server name="HTTP_HOST" value="DEV"/>
+	</php>
+</phpunit>
