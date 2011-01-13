@@ -5,7 +5,7 @@
 # Project name:                                                          #
 # Author:                                                                #
 # Script type:           Database creation script                        #
-# Created on:            2010-12-30 15:38                                #
+# Created on:            2011-01-10 10:32                                #
 # ---------------------------------------------------------------------- #
 
 
@@ -14,11 +14,11 @@
 # ---------------------------------------------------------------------- #
 
 # ---------------------------------------------------------------------- #
-# Add table "jobs"                                                       #
+# Add table "advertisement"                                              #
 # ---------------------------------------------------------------------- #
 
-CREATE TABLE `jobs` (
-    `job_id` BIGINT NOT NULL AUTO_INCREMENT,
+CREATE TABLE `advertisement` (
+    `advertisement_id` BIGINT NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(255),
     `catagory_id` INTEGER NOT NULL,
     `template_id` INTEGER,
@@ -40,9 +40,11 @@ CREATE TABLE `jobs` (
     `create_by` INTEGER,
     `modifiy_date` DATETIME,
     `modifiy_by` INTEGER,
-    `question_id` INTEGER NOT NULL,
+    `delete_date` VARCHAR(40),
+    `delete_by` VARCHAR(40),
     `tracking_id` INTEGER NOT NULL,
-    CONSTRAINT `PK_jobs` PRIMARY KEY (`job_id`, `catagory_id`, `office_id`, `dept_id`, `role_id`, `state_id`, `store_location_id`, `storerole_id`, `question_id`, `tracking_id`)
+    `question_id` INTEGER NOT NULL,
+    CONSTRAINT `PK_advertisement` PRIMARY KEY (`advertisement_id`, `catagory_id`, `office_id`, `dept_id`, `role_id`, `state_id`, `store_location_id`, `storerole_id`, `tracking_id`, `question_id`)
 );
 
 # ---------------------------------------------------------------------- #
@@ -120,10 +122,11 @@ CREATE TABLE `store` (
 
 CREATE TABLE `question` (
     `question_id` INTEGER NOT NULL AUTO_INCREMENT,
+    `question_catagory_id` INTEGER,
+    `advertisement_id` INTEGER NOT NULL,
     `label` VARCHAR(255),
     `type` VARCHAR(40),
-    `question_catagory_id` INTEGER,
-    CONSTRAINT `PK_question` PRIMARY KEY (`question_id`)
+    CONSTRAINT `PK_question` PRIMARY KEY (`question_id`, `advertisement_id`)
 );
 
 # ---------------------------------------------------------------------- #
@@ -139,14 +142,14 @@ CREATE TABLE `question_multi` (
 );
 
 # ---------------------------------------------------------------------- #
-# Add table "jobs_question"                                              #
+# Add table "advertisement_question"                                     #
 # ---------------------------------------------------------------------- #
 
-CREATE TABLE `jobs_question` (
-    `job_id` BIGINT NOT NULL,
+CREATE TABLE `advertisement_question` (
+    `advertisement_id` BIGINT NOT NULL,
     `question_id` INTEGER NOT NULL,
     `sort` BIGINT,
-    CONSTRAINT `PK_jobs_question` PRIMARY KEY (`job_id`, `question_id`)
+    CONSTRAINT `PK_advertisement_question` PRIMARY KEY (`advertisement_id`, `question_id`)
 );
 
 # ---------------------------------------------------------------------- #
@@ -158,7 +161,9 @@ CREATE TABLE `applications_question` (
     `question_id` INTEGER NOT NULL,
     `multi_id` INTEGER NOT NULL,
     `value` TEXT,
-    CONSTRAINT `PK_applications_question` PRIMARY KEY (`application_id`, `question_id`, `multi_id`)
+    `tracking_id` INTEGER NOT NULL,
+    `advertisement_id` INTEGER NOT NULL,
+    CONSTRAINT `PK_applications_question` PRIMARY KEY (`application_id`, `question_id`, `multi_id`, `tracking_id`, `advertisement_id`)
 );
 
 # ---------------------------------------------------------------------- #
@@ -177,11 +182,10 @@ CREATE TABLE `office_department` (
 
 CREATE TABLE `questionTracking` (
     `tracking_id` INTEGER NOT NULL AUTO_INCREMENT,
-    `job_id` INTEGER,
-    `question_id` INTEGER,
+    `advertisement_id` INTEGER NOT NULL,
     `multi_id` INTEGER,
     `responce_value` VARCHAR(255),
-    CONSTRAINT `PK_questionTracking` PRIMARY KEY (`tracking_id`)
+    CONSTRAINT `PK_questionTracking` PRIMARY KEY (`tracking_id`, `advertisement_id`)
 );
 
 # ---------------------------------------------------------------------- #
@@ -202,9 +206,9 @@ CREATE TABLE `applicants` (
 # ---------------------------------------------------------------------- #
 
 CREATE TABLE `application` (
-    `application_id` INTEGER NOT NULL AUTO_INCREMENT,
-    `applicant_id` INTEGER NOT NULL,
-    `job_id` INTEGER NOT NULL,
+    `application_id` INTEGER NOT NULL AUTO_INCREMENT COMMENT 'Primary key for applications table ',
+    `applicant_id` INTEGER NOT NULL COMMENT 'The key for applicants table, so we can group together applicants by there email address and/or cookie information ',
+    `advertisement_id` INTEGER NOT NULL,
     `catagory_id` INTEGER NOT NULL,
     `viewed` BOOL DEFAULT 0,
     `create_date` DATETIME,
@@ -221,6 +225,8 @@ CREATE TABLE `application` (
     `coverletter_text` VARCHAR(255),
     `resume_file` VARCHAR(255),
     `resume_type` VARCHAR(255),
+    `tracking_id` INTEGER NOT NULL,
+    `question_id` INTEGER NOT NULL,
     CONSTRAINT `PK_application` PRIMARY KEY (`application_id`)
 ) COMMENT = 'This table covers the recording of application for a position or responce to a job';
 
@@ -328,6 +334,8 @@ CREATE TABLE `template` (
     `discription` TEXT,
     `requirments` TEXT,
     `status` VARCHAR(40),
+    `tracking_id` INTEGER NOT NULL,
+    `advertisement_id` INTEGER NOT NULL,
     CONSTRAINT `PK_template` PRIMARY KEY (`template_id`)
 );
 
@@ -339,7 +347,9 @@ CREATE TABLE `template_question` (
     `template_id` BIGINT NOT NULL,
     `question_id` INTEGER NOT NULL,
     `sort` BIGINT,
-    CONSTRAINT `PK_template_question` PRIMARY KEY (`template_id`, `question_id`)
+    `tracking_id` INTEGER NOT NULL,
+    `advertisement_id` INTEGER NOT NULL,
+    CONSTRAINT `PK_template_question` PRIMARY KEY (`template_id`, `question_id`, `tracking_id`, `advertisement_id`)
 );
 
 CREATE INDEX `IDX_rec_template_question_1` ON `template_question` (`template_id`,`question_id`);
@@ -363,21 +373,21 @@ CREATE TABLE `applicantion_notes` (
 # ---------------------------------------------------------------------- #
 
 CREATE TABLE `users` (
-    `user_id` INTEGER NOT NULL AUTO_INCREMENT,
-    `username` VARCHAR(40) NOT NULL,
-    `password` VARCHAR(40) NOT NULL,
-    `name` VARCHAR(40) NOT NULL,
-    `surname` VARCHAR(40),
-    `email` VARCHAR(40) NOT NULL,
-    `active` BOOL DEFAULT 1,
-    `last_login` DATETIME,
-    `division_id` INTEGER NOT NULL,
-    `administration_id` INTEGER NOT NULL,
-    `create_date` DATETIME,
-    `modified_date` DATETIME,
-    `delete_date` DATETIME,
+    `user_id` INTEGER NOT NULL AUTO_INCREMENT COMMENT 'Primary Key for the users table, does not use auto increament, as we define the key based on the matching user id in the ps_admin.users table',
+    `username` VARCHAR(40) NOT NULL COMMENT 'The login users name ',
+    `password` VARCHAR(40) NOT NULL COMMENT 'the password for the user',
+    `name` VARCHAR(40) NOT NULL COMMENT 'The firstname of the user',
+    `surname` VARCHAR(40) COMMENT 'the surname of the user',
+    `email` VARCHAR(40) NOT NULL COMMENT 'the email addess of the user ',
+    `active` BOOL DEFAULT 1 COMMENT 'An active flag, that can turn on or off this user from the system',
+    `last_login` DATETIME COMMENT 'A time stamp of the last tie this user logged in ',
+    `division_id` INTEGER NOT NULL COMMENT 'key field to the division table',
+    `administration_id` INTEGER NOT NULL COMMENT 'key field to the administration table',
+    `create_date` DATETIME COMMENT 'row create date',
+    `modified_date` DATETIME COMMENT 'row modified date',
+    `delete_date` DATETIME COMMENT 'row delete date',
     CONSTRAINT `PK_users` PRIMARY KEY (`user_id`, `division_id`, `administration_id`)
-);
+) COMMENT = 'Users table listing all the users within the system';
 INSERT INTO `rec_admin` ( `username` , `password` , `name` , `email` , `level` )
 VALUES (
  'full admin', 'fa', 'Full Admin', 'jstewart@neopurple.com', '1'
@@ -411,12 +421,13 @@ INSERT INTO rec_storerole (storerole_id, name) VALUES
 
 CREATE TABLE `referral_cost` (
     `referal_cost_id` INTEGER NOT NULL AUTO_INCREMENT,
-    `job_id` INTEGER NOT NULL,
+    `advertisement_id` INTEGER NOT NULL,
     `referral_id` INTEGER,
     `value` INTEGER,
     `application_id` INTEGER NOT NULL,
     `question_id` INTEGER NOT NULL,
     `multi_id` INTEGER NOT NULL,
+    `tracking_id` INTEGER NOT NULL,
     CONSTRAINT `PK_referral_cost` PRIMARY KEY (`referal_cost_id`, `application_id`, `question_id`, `multi_id`)
 );
 
@@ -425,63 +436,66 @@ CREATE TABLE `referral_cost` (
 # ---------------------------------------------------------------------- #
 
 CREATE TABLE `division` (
-    `division_id` INTEGER NOT NULL,
-    `name` VARCHAR(40),
-    `description` VARCHAR(40),
+    `division_id` INTEGER NOT NULL COMMENT 'The Division key for the divisions table ',
+    `name` VARCHAR(40) COMMENT 'the name of the division ',
+    `description` VARCHAR(40) COMMENT 'A short discription of the division',
+    `create_date` DATETIME COMMENT 'row create date ',
+    `modify_date` DATETIME COMMENT 'row modified date',
+    `delete_date` DATETIME COMMENT 'row delete date ',
     CONSTRAINT `PK_division` PRIMARY KEY (`division_id`)
-);
+) COMMENT = 'This table shows the type of division are available for this client, Devisions allow use you limit control of which users can see or edit which type of postions';
 
 # ---------------------------------------------------------------------- #
 # Add table "administration"                                             #
 # ---------------------------------------------------------------------- #
 
 CREATE TABLE `administration` (
-    `administration_id` INTEGER NOT NULL,
-    `group_name` VARCHAR(40),
-    `create_advert` BOOL,
-    `edit_advert` BOOL,
-    `remove_advert` BOOL,
-    `create_template` BOOL,
-    `edit_template` BOOL,
-    `remove_template` BOOL,
-    `add_user` BOOL,
-    `edit_user` BOOL,
-    `delete_user` BOOL,
-    `edit_status` BOOL,
-    `edit_referral` BOOL,
+    `administration_id` INTEGER NOT NULL COMMENT 'primary id for the table',
+    `group_name` VARCHAR(40) COMMENT 'The group name for the administrators',
+    `create_advert` BOOL COMMENT 'can a user create an advertisment',
+    `edit_advert` BOOL COMMENT 'can a user edit an advertisment',
+    `remove_advert` BOOL COMMENT 'can a user remove an advertisment',
+    `create_template` BOOL COMMENT 'can a user create a template',
+    `edit_template` BOOL COMMENT 'can a user edit a template',
+    `remove_template` BOOL COMMENT 'can a user remove a template',
+    `add_user` BOOL COMMENT 'can a user add a user ',
+    `edit_user` BOOL COMMENT 'can a user edit a user ',
+    `delete_user` BOOL COMMENT 'can a user delete a user ',
+    `edit_status` BOOL COMMENT 'can a user edit entrys in the status table ',
+    `edit_referral` BOOL COMMENT 'can a user edit entrys in the referral table ',
     CONSTRAINT `PK_administration` PRIMARY KEY (`administration_id`)
-);
+) COMMENT = 'This table shows the type of administration privliages a group of admnistrators can have for editing or creating information';
 
 # ---------------------------------------------------------------------- #
 # Foreign key constraints                                                #
 # ---------------------------------------------------------------------- #
 
-ALTER TABLE `jobs` ADD CONSTRAINT `role_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `role_advertisement` 
     FOREIGN KEY (`role_id`, `dept_id`, `office_id`) REFERENCES `role` (`role_id`,`dept_id`,`office_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `category_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `category_advertisement` 
     FOREIGN KEY (`catagory_id`) REFERENCES `category` (`catagory_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `office_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `office_advertisement` 
     FOREIGN KEY (`office_id`) REFERENCES `office` (`office_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `department_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `department_advertisement` 
     FOREIGN KEY (`dept_id`, `office_id`) REFERENCES `department` (`dept_id`,`office_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `state_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `state_advertisement` 
     FOREIGN KEY (`state_id`) REFERENCES `state` (`state_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `store_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `store_advertisement` 
     FOREIGN KEY (`store_location_id`, `state_id`) REFERENCES `store` (`store_location_id`,`state_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `jobs_question_jobs` 
-    FOREIGN KEY (`job_id`, `question_id`) REFERENCES `jobs_question` (`job_id`,`question_id`);
+ALTER TABLE `advertisement` ADD CONSTRAINT `advertisement_question_advertisement` 
+    FOREIGN KEY (`advertisement_id`) REFERENCES `advertisement_question` (`advertisement_id`);
 
-ALTER TABLE `jobs` ADD CONSTRAINT `questionTracking_jobs` 
-    FOREIGN KEY (`tracking_id`) REFERENCES `questionTracking` (`tracking_id`);
-
-ALTER TABLE `jobs` ADD CONSTRAINT `storerole_jobs` 
+ALTER TABLE `advertisement` ADD CONSTRAINT `storerole_advertisement` 
     FOREIGN KEY (`storerole_id`) REFERENCES `storerole` (`storerole_id`);
+
+ALTER TABLE `advertisement` ADD CONSTRAINT `questionTracking_advertisement` 
+    FOREIGN KEY (`tracking_id`, `advertisement_id`) REFERENCES `questionTracking` (`tracking_id`,`advertisement_id`);
 
 ALTER TABLE `department` ADD CONSTRAINT `office_department_department` 
     FOREIGN KEY (`dept_id`, `office_id`) REFERENCES `office_department` (`dept_id`,`office_id`);
@@ -495,26 +509,26 @@ ALTER TABLE `store` ADD CONSTRAINT `state_store`
 ALTER TABLE `question` ADD CONSTRAINT `question_multi_question` 
     FOREIGN KEY (`question_id`) REFERENCES `question_multi` (`question_id`);
 
-ALTER TABLE `question` ADD CONSTRAINT `jobs_question_question` 
-    FOREIGN KEY (`question_id`) REFERENCES `jobs_question` (`question_id`);
-
-ALTER TABLE `question` ADD CONSTRAINT `questionTracking_question` 
-    FOREIGN KEY (`question_id`) REFERENCES `questionTracking` (`question_id`);
+ALTER TABLE `question` ADD CONSTRAINT `advertisement_question_question` 
+    FOREIGN KEY (`question_id`) REFERENCES `advertisement_question` (`question_id`);
 
 ALTER TABLE `question` ADD CONSTRAINT `question_catagory_question` 
     FOREIGN KEY (`question_catagory_id`) REFERENCES `question_catagory` (`question_catagory_id`);
 
+ALTER TABLE `question` ADD CONSTRAINT `questionTracking_question` 
+    FOREIGN KEY (`advertisement_id`) REFERENCES `questionTracking` (`advertisement_id`);
+
 ALTER TABLE `applications_question` ADD CONSTRAINT `question_applications_question` 
-    FOREIGN KEY (`question_id`) REFERENCES `question` (`question_id`);
+    FOREIGN KEY (`question_id`, `advertisement_id`) REFERENCES `question` (`question_id`,`advertisement_id`);
 
 ALTER TABLE `office_department` ADD CONSTRAINT `office_office_department` 
     FOREIGN KEY (`office_id`) REFERENCES `office` (`office_id`);
 
 ALTER TABLE `application` ADD CONSTRAINT `applications_question_application` 
-    FOREIGN KEY (`application_id`) REFERENCES `applications_question` (`application_id`);
+    FOREIGN KEY (`application_id`, `tracking_id`, `advertisement_id`) REFERENCES `applications_question` (`application_id`,`tracking_id`,`advertisement_id`);
 
-ALTER TABLE `application` ADD CONSTRAINT `jobs_application` 
-    FOREIGN KEY (`job_id`, `catagory_id`) REFERENCES `jobs` (`job_id`,`catagory_id`);
+ALTER TABLE `application` ADD CONSTRAINT `advertisement_application` 
+    FOREIGN KEY (`advertisement_id`, `catagory_id`, `tracking_id`, `question_id`) REFERENCES `advertisement` (`advertisement_id`,`catagory_id`,`tracking_id`,`question_id`);
 
 ALTER TABLE `application` ADD CONSTRAINT `referral_application` 
     FOREIGN KEY (`referral_id`) REFERENCES `referral` (`referral_id`);
@@ -529,7 +543,7 @@ ALTER TABLE `application` ADD CONSTRAINT `applicants_application`
     FOREIGN KEY (`applicant_id`) REFERENCES `applicants` (`applicant_id`);
 
 ALTER TABLE `template` ADD CONSTRAINT `template_question_template` 
-    FOREIGN KEY (`template_id`) REFERENCES `template_question` (`template_id`);
+    FOREIGN KEY (`template_id`, `tracking_id`, `advertisement_id`) REFERENCES `template_question` (`template_id`,`tracking_id`,`advertisement_id`);
 
 ALTER TABLE `template` ADD CONSTRAINT `category_template` 
     FOREIGN KEY (`catagory_id`) REFERENCES `category` (`catagory_id`);
@@ -550,7 +564,7 @@ ALTER TABLE `template` ADD CONSTRAINT `department_template`
     FOREIGN KEY (`dept_id`, `office_id`) REFERENCES `department` (`dept_id`,`office_id`);
 
 ALTER TABLE `template_question` ADD CONSTRAINT `question_template_question` 
-    FOREIGN KEY (`question_id`) REFERENCES `question` (`question_id`);
+    FOREIGN KEY (`question_id`, `advertisement_id`) REFERENCES `question` (`question_id`,`advertisement_id`);
 
 ALTER TABLE `applicantion_notes` ADD CONSTRAINT `application_applicantion_notes` 
     FOREIGN KEY (`application_id`) REFERENCES `application` (`application_id`);
@@ -564,8 +578,8 @@ ALTER TABLE `users` ADD CONSTRAINT `division_users`
 ALTER TABLE `users` ADD CONSTRAINT `administration_users` 
     FOREIGN KEY (`administration_id`) REFERENCES `administration` (`administration_id`);
 
-ALTER TABLE `referral_cost` ADD CONSTRAINT `jobs_referral_cost` 
-    FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`);
+ALTER TABLE `referral_cost` ADD CONSTRAINT `advertisement_referral_cost` 
+    FOREIGN KEY (`advertisement_id`, `tracking_id`, `question_id`) REFERENCES `advertisement` (`advertisement_id`,`tracking_id`,`question_id`);
 
 ALTER TABLE `referral_cost` ADD CONSTRAINT `referral_referral_cost` 
     FOREIGN KEY (`referral_id`) REFERENCES `referral` (`referral_id`);
