@@ -1,279 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title>Docs for page IPv4.php</title>
-	<link rel="stylesheet" type="text/css" href="../media/style.css">
-	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
-</head>
-<body>
-
-<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
-  <tr>
-	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
-    <td class="header-top-right">Net_IPv4<br /><div class="header-top-right-subpackage"></div></td>
-  </tr>
-  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
-  <tr>
-    <td colspan="2" class="header-menu">
-      
-                                                                                                                                                                                                              
-                                                                                                                                                                                		[ <a href="../classtrees_Net_IPv4.html" class="menu">class tree: Net_IPv4</a> ]
-		[ <a href="../elementindex_Net_IPv4.html" class="menu">index: Net_IPv4</a> ]
-            [ <a href="../elementindex.html" class="menu">all elements</a> ]
-    </td>
-  </tr>
-  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
-</table>
-
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr valign="top">
-    <td width="195" class="menu">
-		<div class="package-title">Net_IPv4</div>
-  <div class="package">
-	<div id="todolist">
-			<p><a href="../todolist.html">Todo List</a></p>
-	</div>
-	</div>
-      <b>Packages:</b><br />
-  <div class="package">
-              <a href="../li_PeopleScope.html">PeopleScope</a><br />
-              <a href="../li_DNSBL.html">DNSBL</a><br />
-              <a href="../li_FTP.html">FTP</a><br />
-              <a href="../li_Mail.html">Mail</a><br />
-              <a href="../li_Mail_Queue.html">Mail_Queue</a><br />
-              <a href="../li_Net.html">Net</a><br />
-              <a href="../li_Net_CheckIP.html">Net_CheckIP</a><br />
-              <a href="../li_Net_Curl.html">Net_Curl</a><br />
-              <a href="../li_Net_DNS.html">Net_DNS</a><br />
-              <a href="../li_Net_DNSBL.html">Net_DNSBL</a><br />
-              <a href="../li_Net_Ident.html">Net_Ident</a><br />
-              <a href="../li_Net_IMAP.html">Net_IMAP</a><br />
-              <a href="../li_Net_IMAP-Protocol.html">Net_IMAP-Protocol</a><br />
-              <a href="../li_Net_IPv4.html">Net_IPv4</a><br />
-              <a href="../li_Net_IPv6.html">Net_IPv6</a><br />
-              <a href="../li_Net_LMTP.html">Net_LMTP</a><br />
-              <a href="../li_Net_NNTP.html">Net_NNTP</a><br />
-              <a href="../li_Net_Portscan.html">Net_Portscan</a><br />
-              <a href="../li_Net_Sieve.html">Net_Sieve</a><br />
-              <a href="../li_Net_SmartIRC.html">Net_SmartIRC</a><br />
-              <a href="../li_Net_SMTP.html">Net_SMTP</a><br />
-              <a href="../li_Net_UserAgent.html">Net_UserAgent</a><br />
-              <a href="../li_PEAR.html">PEAR</a><br />
-              <a href="../li_RainTPL.html">RainTPL</a><br />
-              <a href="../li_Services_JSON.html">Services_JSON</a><br />
-      	</div>
-      <br />
-                        <b>Files:</b><br />
-        <div class="package">
-				<span style="padding-left: 1em;"><a href="../Net_IPv4/_assets---PEAR---Net---IPv4.php.html">IPv4.php</a></span><br />
-	  </div>
-            <br />
-                  <b>Classes:</b><br />
-        <div class="package">
-		    		<a href="../Net_IPv4/Net_IPv4.html">Net_IPv4</a>    	 <br />
-	  </div>
-                </td>
-    <td>
-      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
-
-<h1>Procedural File: IPv4.php</h1>
-Source Location: /assets/PEAR/Net/IPv4.php<br /><br />
-
-<a name="sec-description"></a>
-<div class="info-box">
-	<div class="info-box-title">Page Details</div>
-	<div class="nav-bar">
-					<span class="disabled">Page Details</span> |
-							<a href="#sec-classes">Classes</a>
-			|							<a href="#sec-includes">Includes</a>
-			|									<a href="#sec-variables">Globals</a>
-								</div>
-	<div class="info-box-body">
-		<p align="center" class="short-description"><strong>Class to provide IPv4 calculations
-</strong></p>
-<span class="description"><p>PHP versions 4 and 5</p><p>LICENSE: This source file is subject to version 3.01 of the PHP license  that is available through the world-wide-web at the following URI:  http://www.php.net/license/3_01.txt.  If you did not receive a copy of  the PHP License and are unable to obtain it through the web, please  send a note to license@php.net so we can mail you a copy immediately.</p></span>		<table border="0" cellspacing="0" cellpadding="0">
-			<tr><td><strong>Author:</strong>&nbsp;&nbsp;</td><td>Florian Anderiasch &lt;<a href="mailto:fa@php.net">fa@php.net</a>&gt;</td></tr>
-			<tr><td><strong>Author:</strong>&nbsp;&nbsp;</td><td>Eric Kilfoil &lt;<a href="mailto:edk@ypass.net">edk@ypass.net</a>&gt;</td></tr>
-			<tr><td><strong>Author:</strong>&nbsp;&nbsp;</td><td>Marco Kaiser &lt;<a href="mailto:bate@php.net">bate@php.net</a>&gt;</td></tr>
-			<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>CVS: $Id: IPv4.php,v 1.11 2005/11/29 12:56:35 fa Exp $</td></tr>
-			<tr><td><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>1997-2005 The PHP Group</td></tr>
-			<tr><td><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://pear.php.net/package/Net_IPv4">http://pear.php.net/package/Net_IPv4</a></td></tr>
-			<tr><td><strong>Filesource:</strong>&nbsp;&nbsp;</td><td><a href="../__filesource/fsource_Net_IPv4__assetsPEARNetIPv4.php.html">Source Code for this file</a></td></tr>
-			<tr><td><strong>License:</strong>&nbsp;&nbsp;</td><td><a href="http://www.php.net/license/3_01.txt">PHP License 3.01</a></td></tr>
-	</table>
-
-			</div>
-</div>
-
-	<a name="sec-classes"></a>
-	<div class="info-box">
-		<div class="info-box-title">Classes</div>
-		<div class="nav-bar">
-			<a href="#sec-description">Page Details</a> |
-			<span class="disabled">Classes</span>
-			|							<a href="#sec-includes">Includes</a>
-				|													<a href="#sec-variables">Globals</a>
-												</div>
-		<div class="info-box-body">
-			<table cellpadding="2" cellspacing="0" class="class-table">
-				<tr>
-					<th class="class-table-header">Class</th>
-					<th class="class-table-header">Description</th>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em; vertical-align: top">
-						<a href="../Net_IPv4/Net_IPv4.html">Net_IPv4</a>
-					</td>
-					<td>
-											Class to provide IPv4 calculations
-										</td>
-				</tr>
-							</table>
-		</div>
-	</div>
-
-	<a name="sec-includes"></a>
-	<div class="info-box">
-		<div class="info-box-title">Includes</div>
-		<div class="nav-bar">
-			<a href="#sec-description">Page Details</a> |
-							<a href="#sec-classes">Classes</a>
-				|						<span class="disabled">Includes</span>
-			|										<a href="#sec-variables">Globals</a>
-												</div>
-		<div class="info-box-body">
-			<a name="_PEAR_php"><!-- --></a>
-<div class="oddrow">
-
-	<div>
-		<span class="include-title">
-			<span class="include-type">require_once</span>
-			(<span class="include-name"><a href="../PEAR/_assets---PEAR---PEAR.php.html">PEAR.php</a></span>)
-			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IPv4__assetsPEARNetIPv4.php.html#a24">24</a>]</span>
-		</span>
-	</div>
-
-	<p align="center" class="short-description"><strong>Class to provide IPv4 calculations
-</strong></p>
-<span class="description"><p>PHP versions 4 and 5</p><p>LICENSE: This source file is subject to version 3.01 of the PHP license  that is available through the world-wide-web at the following URI:  http://www.php.net/license/3_01.txt.  If you did not receive a copy of  the PHP License and are unable to obtain it through the web, please  send a note to license@php.net so we can mail you a copy immediately.</p></span>	<strong>API Tags:</strong><br />
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td class="indent"><strong>Filesource:</strong>&nbsp;&nbsp;</td><td><a href="../__filesource/fsource_Net_IPv4__assetsPEARNetIPv4.php.html">Source Code for this file</a></td>
-  </tr>
-</table>
-<br />
-
-<strong>Information Tags:</strong><br />
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td class="indent"><strong>Author:</strong>&nbsp;&nbsp;</td><td>Florian Anderiasch &lt;<a href="mailto:fa@php.net">fa@php.net</a>&gt;</td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>Author:</strong>&nbsp;&nbsp;</td><td>Eric Kilfoil &lt;<a href="mailto:edk@ypass.net">edk@ypass.net</a>&gt;</td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>Author:</strong>&nbsp;&nbsp;</td><td>Marco Kaiser &lt;<a href="mailto:bate@php.net">bate@php.net</a>&gt;</td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>Version:</strong>&nbsp;&nbsp;</td><td>CVS: $Id: IPv4.php,v 1.11 2005/11/29 12:56:35 fa Exp $</td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>1997-2005 The PHP Group</td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>Link:</strong>&nbsp;&nbsp;</td><td><a href="http://pear.php.net/package/Net_IPv4">http://pear.php.net/package/Net_IPv4</a></td>
-  </tr>
-  <tr>
-    <td class="indent"><strong>License:</strong>&nbsp;&nbsp;</td><td><a href="http://www.php.net/license/3_01.txt">PHP License 3.01</a></td>
-  </tr>
-</table>
-		<div class="top">[ <a href="#top">Top</a> ]</div>
-		<br />
-</div>
-		</div>
-	</div><br />
-
-
-	<a name="sec-variables"></a>
-	<div class="info-box">
-		<div class="info-box-title">Globals</div>
-		<div class="nav-bar">
-			<a href="#sec-description">Page Details</a> |
-							<a href="#sec-classes">Classes</a>
-				|										<a href="#sec-includes">Includes</a>
-				|									<span class="disabled">Globals</span>
-										<a href="#sec-functions">Functions</a>
-					</div>
-		<div class="info-box-body">
-			<a name="global$GLOBALS['Net_IPv4_Netmask_Map']" id="global$GLOBALS['Net_IPv4_Netmask_Map']"><!-- --></a>
-<div class="evenrow">
-
-	<div>
-		<span class="var-title">
-			<span class="var-type">array</span>&nbsp;&nbsp;
-			<span class="var-name">$GLOBALS['Net_IPv4_Netmask_Map']</span>
-			<span class="smalllinenumber">[line <a href="../__filesource/fsource_Net_IPv4__assetsPEARNetIPv4.php.html#a35">35</a>]</span>
-		</span>
-	</div>
-
-  	<p align="center" class="short-description"><strong>Map of bitmasks to subnets
-</strong></p>
-<span class="description"><p>This array contains every valid netmask.  The index of the dot quad  netmask value is the corresponding CIDR notation (bitmask).</p></span>  
-  <b>Default value:</b>&nbsp;&nbsp;<span class="var-default">array(<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;=&gt;&nbsp;&quot;0.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;=&gt;&nbsp;&quot;128.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;=&gt;&nbsp;&quot;192.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;=&gt;&nbsp;&quot;224.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;=&gt;&nbsp;&quot;240.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;=&gt;&nbsp;&quot;248.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;=&gt;&nbsp;&quot;252.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;=&gt;&nbsp;&quot;254.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;=&gt;&nbsp;&quot;255.0.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;=&gt;&nbsp;&quot;255.128.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;=&gt;&nbsp;&quot;255.192.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;=&gt;&nbsp;&quot;255.224.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;=&gt;&nbsp;&quot;255.240.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;=&gt;&nbsp;&quot;255.248.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14&nbsp;=&gt;&nbsp;&quot;255.252.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15&nbsp;=&gt;&nbsp;&quot;255.254.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16&nbsp;=&gt;&nbsp;&quot;255.255.0.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17&nbsp;=&gt;&nbsp;&quot;255.255.128.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18&nbsp;=&gt;&nbsp;&quot;255.255.192.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;=&gt;&nbsp;&quot;255.255.224.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;=&gt;&nbsp;&quot;255.255.240.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21&nbsp;=&gt;&nbsp;&quot;255.255.248.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22&nbsp;=&gt;&nbsp;&quot;255.255.252.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23&nbsp;=&gt;&nbsp;&quot;255.255.254.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;=&gt;&nbsp;&quot;255.255.255.0&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;=&gt;&nbsp;&quot;255.255.255.128&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26&nbsp;=&gt;&nbsp;&quot;255.255.255.192&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27&nbsp;=&gt;&nbsp;&quot;255.255.255.224&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28&nbsp;=&gt;&nbsp;&quot;255.255.255.240&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29&nbsp;=&gt;&nbsp;&quot;255.255.255.248&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30&nbsp;=&gt;&nbsp;&quot;255.255.255.252&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31&nbsp;=&gt;&nbsp;&quot;255.255.255.254&quot;,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32&nbsp;=&gt;&nbsp;&quot;255.255.255.255&quot;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span>
-<br />
-	
-
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-	<br />
-</div>
-		</div>
-	</div><br />
-
-
-        <div class="credit">
-		    <hr class="separator" />
-		    Documentation generated on Sun, 02 May 2010 18:48:07 +1000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
-	      </div>
-      </td></tr></table>
-    </td>
-  </tr>
-</table>
-
-</body>
-</html>
