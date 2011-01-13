@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>Docs For Class db</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">PeopleScope</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                                        
+                              		  [ <a href="../../classtrees_PeopleScope.html" class="menu">class tree: PeopleScope</a> ]
+		  [ <a href="../../elementindex_PeopleScope.html" class="menu">index: PeopleScope</a> ]
+		  	    [ <a href="../../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../../li_default.html">default</a><br />
+              <a href="../../li_PeopleScope.html">PeopleScope</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../PeopleScope/_department.class.php.html">		department.class.php
+		</a><br>
+			<a href="../../PeopleScope/_department.old.class.php.html">		department.old.class.php
+		</a><br>
+			<a href="../../PeopleScope/_base---errorhandler.class.php.html">		errorhandler.class.php
+		</a><br>
+			<a href="../../PeopleScope/_base---template.old.class.php.html">		template.old.class.php
+		</a><br>
+	  </div><br />
+	subpackage <b>Base</b><br>  <div class="package">
+			<a href="../../PeopleScope/Base/_base---database.class.php.html">		database.class.php
+		</a><br>
+			<a href="../../PeopleScope/Base/_base---email.class.php.html">		email.class.php
+		</a><br>
+			<a href="../../PeopleScope/Base/_base---form.class.php.html">		form.class.php
+		</a><br>
+			<a href="../../PeopleScope/Base/_base---table.class.php.html">		table.class.php
+		</a><br>
+			<a href="../../PeopleScope/Base/_base---tools.function.php.html">		tools.function.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+	Base<br />	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/CustomException.html">CustomException</a><br />
+	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/db.html">db</a><br />
+	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/email.html">email</a><br />
+	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/form.html">form</a><br />
+	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/table.html">table</a><br />
+	    &nbsp;&nbsp;		<a href="../../PeopleScope/Base/template.html">template</a><br />
+	  </div>
+  <div class="package">
+		    		<a href="../../PeopleScope/department.html">department</a><br />
+	    		<a href="../../PeopleScope/department2.html">department2</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: db</h1>
+Source Location: /base/database.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">This class is Database abstraction layer</div><br /><br />
+
+
+
+
+
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../PeopleScope/Base/db.html#var$dbh">$dbh</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#var$dsn">$dsn</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#var$lastQuery">$lastQuery</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../PeopleScope/Base/db.html#method__construct">__construct</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methoddelete">delete</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodgetDNSString">getDNSString</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodinsert">insert</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodprepareToQuery">prepareToQuery</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodquery">query</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodselect">select</a></li>
+    <li><a href="../../PeopleScope/Base/db.html#methodupdate">update</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a74">74</a>]<br />
+This class is Database abstraction layer<br /><br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$dbh"></a>
+	<p></p>
+	<h4>$dbh = <span class="value"></span></h4>
+	<p>[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a77">77</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$dsn"></a>
+	<p></p>
+	<h4>$dsn = <span class="value"></span></h4>
+	<p>[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a76">76</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$lastQuery"></a>
+	<p></p>
+	<h4>$lastQuery = <span class="value"></span></h4>
+	<p>[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a78">78</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a86">86</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Void __construct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		constructor to initiate database conection<br /><br /><br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddelete"></a>
+	<h3>method delete <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a151">151</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Array delete(
+string
+$sql)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Will instigate a DELETE query and return true if no problems;<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$sql</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDNSString"></a>
+	<h3>method getDNSString <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a105">105</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String getDNSString(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns current DSN string used to connect ot the server<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinsert"></a>
+	<h3>method insert <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a133">133</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Array insert(
+String
+$sql, [
+$exec = NULL])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Will instigate a INSERT query and return the inserts autocomplete Id;<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$sql</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$exec</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprepareToQuery"></a>
+	<h3>method prepareToQuery <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a227">227</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string prepareToQuery(
+string
+$query, array
+$params)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Merge query template with array<br /><br /><p>Query template and array set merger function  Will taken in the Query string template and the array of query elements  and combine the to show the fully converted string used in the prepare  Note: only use as example for debugging purposes</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>Query template</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>Array of inputs</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodquery"></a>
+	<h3>method query <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a185">185</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array query(
+string
+$sql, [
+$exec = NULL])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Will instegate a query and return a recordset;<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$sql</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$exec</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodselect"></a>
+	<h3>method select <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a115">115</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Array select(
+String
+$sql)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Will instigate a SELECT query and return and an array of responses<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$sql</b>&nbsp;&nbsp;</td>
+        <td>select sql string to be executed</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodupdate"></a>
+	<h3>method update <span class="smalllinenumber">[line <a href="../../__filesource/fsource_PeopleScope_Base_basedatabase.class.php.html#a168">168</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array update(
+string
+$sql, [
+$exec = NULL])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Will instigate a UPDATE query and return true if no problems;<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$sql</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$exec</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Thu, 13 Jan 2011 21:44:48 +1100 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

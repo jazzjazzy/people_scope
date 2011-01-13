@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Docs For Class department2</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+						<script src="../media/lib/classTree.js"></script>
+												<script language="javascript" type="text/javascript">
+				var imgPlus = new Image();
+				var imgMinus = new Image();
+				imgPlus.src = "../media/images/plus.png";
+				imgMinus.src = "../media/images/minus.png";
+				
+				function showNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgMinus.src;
+					oTable.style.display = "block";
+				}
+				
+				function hideNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgPlus.src;
+					oTable.style.display = "none";
+				}
+				
+				function nodeIsVisible(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+									break;
+							}
+					return (oTable && oTable.style.display == "block");
+				}
+				
+				function toggleNodeVisibility(Node){
+					if (nodeIsVisible(Node)){
+						hideNode(Node);
+					}else{
+						showNode(Node);
+					}
+				}
+			</script>
+					</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> department2</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">{$ucfClass}2 Class,  <br />  This class is based on the table {$table}</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Jason Stewart &lt;<a href="mailto:jason@lexxcom.com.au">jason@lexxcom.com.au</a>&gt;</li>
+				<li><span class="field">version:</span> <p>{$version}</p><p>&lt;div style=&quot;color:red&quot;&gt;NOTE: This is generated information from the framework and will need to be corrected if there are any changes&lt;/div&gt;  <br /></p></li>
+				<li><span class="field">version:</span> {$version} of the Framework generator</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_department.old.class.php.html">/department.old.class.php</a> (line <span class="field"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a17">17</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Object</span>
+					<a href="#$db" title="details" class="var-name">$db</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Object</span>
+					<a href="#$db_connect" title="details" class="var-name">$db_connect</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Array</span>
+					<a href="#$fields" title="details" class="var-name">$fields</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Array|null</span>
+					<a href="#$fields_required" title="details" class="var-name">$fields_required</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Array|null</span>
+					<a href="#$fields_validation_type" title="details" class="var-name">$fields_validation_type</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">Object</span>
+					<a href="#$table" title="details" class="var-name">$table</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">Object</span>
+					<a href="#$template" title="details" class="var-name">$template</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">Array</span>
+					<a href="#$validation_error" title="details" class="var-name">$validation_error</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																							
+				<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">department2</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">Integer</span>
+										<a href="#create" title="details" class="method-name">create</a>
+											(<span class="var-type">Array</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#createDepartmentDetails" title="details" class="method-name">createDepartmentDetails</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteDepartmentDetails" title="details" class="method-name">deleteDepartmentDetails</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#editDepartmentDetails" title="details" class="method-name">editDepartmentDetails</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getDepartmentList" title="details" class="method-name">getDepartmentList</a>
+											([<span class="var-type">String</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'TABLE'</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$orderby</span> = <span class="var-default">NULL</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">'ASC'</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#lists" title="details" class="method-name">lists</a>
+											([<span class="var-type">String</span>&nbsp;<span class="var-name">$orderby</span> = <span class="var-default">NULL</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">'ASC'</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#read" title="details" class="method-name">read</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">Boolean</span>
+										<a href="#remove" title="details" class="method-name">remove</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#saveDepartmentDetails" title="details" class="method-name">saveDepartmentDetails</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#showDepartmentDetails" title="details" class="method-name">showDepartmentDetails</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#templateDepartmentLayout" title="details" class="method-name">templateDepartmentLayout</a>
+											(<span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">Integer</span>
+										<a href="#update" title="details" class="method-name">update</a>
+											(<span class="var-type">Array</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#updateDepartmentDetails" title="details" class="method-name">updateDepartmentDetails</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#Validate" title="details" class="method-name">Validate</a>
+											(<span class="var-type">Array</span>&nbsp;<span class="var-name">$request</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$db" id="$db"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Object</span>
+			<span class="var-name">$db</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a28">28</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Database class object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$db_connect" id="$db_connect"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Object</span>
+			<span class="var-name">$db_connect</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a22">22</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to PDO object through database class</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$fields" id="$fields"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Array</span>
+			<span class="var-name">$fields</span>
+			 = <span class="var-default">array('dept_id', 'name', 'office_id')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of field used in the database if not in this list is dropped from insert or update</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$fields_required" id="$fields_required"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Array|null</span>
+			<span class="var-name">$fields_required</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a52">52</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of feilds require information when validating</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$fields_validation_type" id="$fields_validation_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Array|null</span>
+			<span class="var-name">$fields_validation_type</span>
+			 = <span class="var-default">array ('dept_id'=&gt;'INT', 'name'=&gt;'TEXT', 'office_id'=&gt;'INT')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a58">58</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of feilds and there types that are check when validating</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$table" id="$table"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">Object</span>
+			<span class="var-name">$table</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a34">34</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Table class object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$template" id="$template"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">Object</span>
+			<span class="var-name">$template</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template class object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$validation_error" id="$validation_error"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">Array</span>
+			<span class="var-name">$validation_error</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a64">64</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array use to store any error found during Validation function</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a82">82</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contructor for this method</p>
+<p class="description"><p><pre> The constructor will setup the required object for this class
+ will initiate the database class, the table class and the template
+ for this class to use
+
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$template">department2::$template</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$table">department2::$table</a></li>
+				<li><span class="field">see:</span> db::</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">department2</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcreate" id="create"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">create</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a175">175</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method will take an array and insert it in the database</p>
+<p class="description"><p><pre> This method will insert the formated information into a database, the format for the array
+ should be an associated array being the first key should be the table inserting with the keys
+ for child array the fields that are being inserted too and the values to insert
+
+ Array
+(
+	[users] => Array
+		(
+			[name] => Dave
+			[surname] => Smith
+			[email] => dave@dave.com
+		)
+	[staff] => Array
+		(
+			[staff_id] => 1245
+			[office_number] => 22
+			[drown_code] => bee223
+		)
+ )
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Return last inserted primary id</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Integer</span>
+		<span class="method-name">
+			create
+		</span>
+					(<span class="var-type">Array</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateDepartmentDetails" id="createDepartmentDetails"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">createDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a517">517</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method will provide a page to the to add a single row {$ucfClass} to the {$table} table</p>
+<p class="description"><p><pre> The method using the template class to format the information ready to display the
+ the user, so that they may be able to add any of the fields releated to a row in the database.
+ The method uses the template class to format the information ready to display the
+ the user
+
+<div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createDepartmentDetails
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddeleteDepartmentDetails" id="deleteDepartmentDetails"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">deleteDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a601">601</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a row to be marked as deleted</p>
+<p class="description"><p><pre> This method will take the id and set the delete_date field to
+ the current datetime, which will marking it as deleted
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteDepartmentDetails
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to marked as delete</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodeditDepartmentDetails" id="editDepartmentDetails"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">editDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a431">431</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Show the details ready to edit of a single {$ucfClass} from the {$table}</p>
+<p class="description"><p><pre> This method is used to display and editable page to the use, so that they
+ maybe able to edit any of the fields releated to the row in question.
+ The method uses the template class to format the information ready to display the
+ the user
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			editDepartmentDetails
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to show</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDepartmentList" id="getDepartmentList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDepartmentList</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a359">359</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Show list of information corresponding the to this class</p>
+<p class="description"><p><pre>This Method will produce a list of all the element corresponding to the result of {$ucfClass}
+ using the base/table.class.php file, which will format the list into a filtable table that
+ uses ajax class to change the content on filtering
+
+ There are to response type for this table for the parameter $type
+
+ 	TABLE = Will return the content in a table with a filter row and a heading row
+ 	AJAX = Will return just the content after evaluating the filter or heading infomation
+
+ The parameter $filter expects an array with the key being the field to look for and the
+ value being the the information to filter on
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getDepartmentList
+		</span>
+					([<span class="var-type">String</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'TABLE'</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$orderby</span> = <span class="var-default">NULL</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">'ASC'</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$type</span><span class="var-description">: Option of type of response for the output of the list</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$orderby</span><span class="var-description">: Which single field is used to oder the output</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$direction</span><span class="var-description">: Which direction os required for the orderby output</span>			</li>
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$filter</span><span class="var-description">: A array of fields to filter, key=$val set (eg array('tile='=&gt;'this title'))</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlists" id="lists"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">lists</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a116">116</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Show will pull a list from the corresponding {$ucfClass} {$table}</p>
+<p class="description"><p><pre> This Method will produce a list of all the element corresponding to the result of {$ucfClass}
+
+ I will only pull rows that are not considered delete
+ eg. the delete_date field is not "0000-00-00 00:00:00" or set to NULL
+
+ The parameter $filter expects an array with the key being the field to look for and the
+ value being the the information to filter on
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			lists
+		</span>
+					([<span class="var-type">String</span>&nbsp;<span class="var-name">$orderby</span> = <span class="var-default">NULL</span>], [<span class="var-type">String</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">'ASC'</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$orderby</span><span class="var-description">: Which single field is used to oder the output</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$direction</span><span class="var-description">: Which direction os required for the orderby output</span>			</li>
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$filter</span><span class="var-description">: A array of fields to filter, key=$val set (eg array('tile='=&gt;'this title'))</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodread" id="read"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">read</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a218">218</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method will return information as row</p>
+<p class="description"><p><pre> This method is you to get a single row of information from the database
+ based ith the primary id and return it as an array
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			read
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to show</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremove" id="remove"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">remove</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a317">317</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method will update a row and make the recored as deleted</p>
+<p class="description"><p><pre> This method will take the id and set the delete_date field to
+ the current datetime, which will marking it as deleted
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success or failed</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Boolean</span>
+		<span class="method-name">
+			remove
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to show</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveDepartmentDetails" id="saveDepartmentDetails"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">saveDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a550">550</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">save the information in a single {$ucfClass} to the {$table} table</p>
+<p class="description"><p><pre> This method is used to take the information from createDepartmentDetails and try to validate it thought the
+ validation method and on success will format it ready for inserted into the datebase through the insert method
+
+ if the validate fails then the user is show a page that mimics the createDepartmentDetails method and point out
+ error in there input
+
+<div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodupdate">department2::update()</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodValidate">department2::Validate()</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodcreateDepartmentDetails">department2::createDepartmentDetails()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveDepartmentDetails
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to updated</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowDepartmentDetails" id="showDepartmentDetails"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">showDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a404">404</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Show details of a single {$ucfClass} from the {$table}</p>
+<p class="description"><p><pre>This method will return a template page of the information requested
+ the method use the template class to format the information ready to display the
+ the user
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			showDepartmentDetails
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: the primary id of the row to show</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtemplateDepartmentLayout" id="templateDepartmentLayout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">templateDepartmentLayout</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a620">620</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method assigns the associate array values to the template</p>
+<p class="description"><p><pre> This method is used to incorperate the standards elements of the templates to a single
+ function across all tempatled methods
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> find out what $inputArray is used for</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			templateDepartmentLayout
+		</span>
+					(<span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$fielddata</span><span class="var-description">: An associative array of fields that need to be assigned to the template object</span>			</li>
+					<li>
+				<span class="var-type">Boolean</span>
+				<span class="var-name">$input</span><span class="var-description">: If false then just assign the value if true the add the value to corresponding form element</span>			</li>
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$inputArray</span><span class="var-description">: Not sure :S</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdate" id="update"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">update</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a272">272</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method will take an array and update a row in the database</p>
+<p class="description"><p><pre> This method will update the formated information into the database, the format for the array
+ should be an associated array being the first key should be the table to be updated with the keys
+ for child array the fields that are being updated too and the values to be updated
+
+ Array
+(
+	[users] => Array
+		(
+			[name] => Dave
+			[surname] => Smith
+			[email] => dave@dave.com
+		)
+	[staff] => Array
+		(
+			[staff_id] => 1245
+			[office_number] => 22
+			[drown_code] => bee223
+		)
+ )
+
+<div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Return last inserted primary id</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Integer</span>
+		<span class="method-name">
+			update
+		</span>
+					(<span class="var-type">Array</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$source</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateDepartmentDetails" id="updateDepartmentDetails"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">updateDepartmentDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a465">465</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">update the information in a single {$ucfClass} from the {$table}</p>
+<p class="description"><p><pre> This method is used to take the information from editDepartmentDetails and try to validate it thought the
+ validation method and on success will format it ready for input into the datebase through the update method
+
+ if the validate fails then the user is show a page that mimics the editDepartmentDetails method and point out
+ error in there input
+
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodupdate">department2::update()</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodValidate">department2::Validate()</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#methodeditDepartmentDetails">department2::editDepartmentDetails()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			updateDepartmentDetails
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: The primary id of the row to updated</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodValidate" id="Validate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">Validate</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__department.old.class.php.html#a651">651</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This medthod is used to validate inputs from form information</p>
+<p class="description"><p><pre> This method will first check the if the fields are in the valid_field array and strip out any that are not
+ Then it check that fields that require a value in them from the fields_required have a value, if not add an error to validation_error array
+ Then it will check all the values to find out if the value match the type found in the fields_validation_type array, if not add an error to validation_error array
+ <div style="color:red">NOTE: This is generated information from the framework and will need to be corrected if there are any changes</div></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$validation_error">department2::$validation_error</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$fields">department2::$fields</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$fields_validation_type">department2::$fields_validation_type</a></li>
+				<li><span class="field">see:</span> <a href="../PeopleScope/department2.html#var$fields_required">department2::$fields_required</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Validate
+		</span>
+					(<span class="var-type">Array</span>&nbsp;<span class="var-name">$request</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">$request</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 13 Jan 2011 21:44:33 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
