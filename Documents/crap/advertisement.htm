@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title><style type="text/css">
+<!--
+
+body {
+	background-color: #160e0e;
+	background-image: url(images/bg-Image.jpg);
+	background-repeat: repeat-x;
+	font-family: arial;
+}
+
+a:LINK, a:VISITED{
+	color:#fff;
+}
+a:HOVER{
+	/*color:#CCC;*/
+}
+h1{
+	margin:0px 0px 0px 0px;
+}
+
+#title-input{
+	width:95%;
+	height: 40px;
+	font-family: arial;
+	font-size: 35px;
+}
+
+#title {
+	height: 100px;
+}
+
+#main {
+	margin:0px 0px; 
+	padding:0px;
+	text-align:center;
+	width: 100%;
+}
+
+.tab{
+	padding-top:10px;
+	margin-left:0px;
+	float:left;
+}
+
+#tab-header {
+	background-image: url(images/tab-header.png);
+	height: 38px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	vertical-align:middle;
+	padding-top:1px;
+}
+#tab-text {
+	background-image: url(images/tab-text.jpg);
+	height: 28px;
+	font-size:10px;
+	padding:10px 10px 0 10px;
+}
+
+#tab-body {
+	font-size:13px;
+	background-color:black;
+	padding-left:10px;
+	padding-right:20px;
+}
+
+#tab-foot {
+	background-image: url(images/tab-foot.png);
+	height: 20px;
+}
+
+#content {
+	width: 1024px;
+	text-align:left;
+	margin:0px auto;
+}
+
+#col-left{
+
+	float:left;
+	padding: 0px 10px;
+	text-align: left;
+	width:750px;
+}
+#col-right{
+	width:224px;
+	float:left;
+	padding: 16px 10px;
+}
+
+body,td,th {
+	color: #FFFFFF;
+}
+
+.label{
+	float:left;
+	width:130px;
+	height:20px;
+}
+
+.value{
+	float:left;
+	width:200px;
+	height:20px;
+}
+
+.menu li{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	float: left;
+	color: #fff;
+	padding-top: 10px;
+	margin: 5px 5px 5px 5px;
+	font-size: 15px;
+	cursor: pointer;
+	list-style: none;
+	background-image: url("images/button.png");
+}
+
+.new-account{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	float: left;
+	color: #fff;
+	padding-top: 10px;
+	margin: 5px 5px;
+	font-size: 15px;
+	font-weight:700;
+	cursor: pointer;
+	list-style: none;
+	background-image: url("images/button.png");
+}
+
+.menu li:hover{
+	background-image: url("images/button-selected.png");
+	color: #000;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #fff;
+	font-weight:700;
+}
+
+.clear{
+	clear:both;
+}
+
+.button {
+	width: 75px;
+	height: 19px;
+	text-align: center;
+	float: left;
+	padding-top: 2px;
+	margin: 10px 2px;
+	color: #fff;
+	font-size: 10px;
+	cursor: pointer;
+	background-image: url("images/button-small.png");
+}
+
+.button a:link,.button a:visited,.button a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-image: url("images/button-small-ov.png");
+}
+/****filter******/
+table.table_lists {
+	/*width: 1192px;*/
+	border: 0.1pt solid #000;
+}
+
+tr.table_lists {
+	min-width: 400px;
+}
+
+.table_lists tr.row:hover {
+	background-color: #C0C0C0;
+	border-top: 5px solid #C0C0C0;
+	cursor: pointer;
+}
+
+.table_lists th {
+	padding: 5px 10px;
+	background-color: #000;
+}
+
+.table_lists td {
+	border: 1px solid #eee;
+	padding:2px 3px 2px 3px;
+}
+
+.table_lists tr.recognised td {
+	background: rgb(255, 239, 252);
+}
+
+.table_lists tr.recognised.even td {
+	background: rgb(255, 223, 248);
+}
+
+.table_lists td.recognised.even {
+	background: rgb(255, 223, 248);
+}
+
+.table_lists tr{
+	cursor: pointer;
+}
+
+.table_lists tr:hover{
+	background-color: #ab9c9c;
+}
+
+.filter input, .filter select {
+	width:95%;
+}  
+
+.even{
+	background-color: #999898;
+}
+
+.selectedRow{
+	background-color: rgb(0, 0, 252) !important;
+}
+
+.warning{
+ 	color:#FEFF5F;
+ 	/*background-color:#EEEFB3; 
+ 	border:solid 1px red; 
+ 	width:100%*/
+}
+-->
+</style>
+<script type="text/javascript" src="advertisement_files/jquery-latest.js"></script>
+<script type="text/javascript" src="advertisement_files/jQuery-Lint.htm"></script>
+<script type="text/javascript" src="advertisement_files/table-layout.js"></script>
+</head><body>
+<div id="title"><img src="advertisement_files/title.png" height="82" width="356"></div>
+<div id="main">
+		<div id="content">
+		<ul class="menu">
+		<li onclick="location.href='administration.php'">administration</li>
+		<li onclick="location.href='users.php'">Users</li>
+		<li onclick="location.href='division.php'">division</li>
+		<li onclick="location.href='advertisement.php'">advertisement</li>
+		</ul>
+		
+		<br class="clear">
+		<div id="col-left">
+			
+
+<style>
+
+</style>
+<link media="print" rel="stylesheet" href="advertisement_files/bulkprint.htm" type="text/css">
+<div id="row1">
+<h1><div id="staff-title"></div><div style="clear: both;"></div></h1>
+<div class="container">
+	<div class="tab">
+			<div id="tab-header">
+				<h1>User Details</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+				<div class="noprint"><div class="button" onclick="location.href='advertisement.php?action=edit&amp;id=254354353543'">Edit</div></div><br class="clear">
+								<div class="label">advertisement_id :</div> <div class="value">2</div><br class="clear">
+				<div class="label">title :</div> <div class="value">Reginal Employment Manager</div><br class="clear">
+				<div class="label">catagory_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">template_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">office_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">dept_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">role_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">state_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">store_location_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">storerole_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">start_date :</div> <div class="value">2010-12-22</div><br class="clear">
+				<div class="label">end_date :</div> <div class="value">2010-12-22</div><br class="clear">
+				<div class="label">discription :</div> <div class="value">1</div><br class="clear">
+				<div class="label">requirments :</div> <div class="value">1</div><br class="clear">
+				<div class="label">upload_resume :</div> <div class="value">Yes</div><br class="clear">
+				<div class="label">cover_letter :</div> <div class="value">Yes</div><br class="clear">
+				<div class="label">status :</div> <div class="value">Yes</div><br class="clear">
+				<div class="label">employmenttype :</div> <div class="value">1</div><br class="clear">
+				<div class="label">create_by :</div> <div class="value"></div><br class="clear">
+				<div class="label">modify_by :</div> <div class="value"></div><br class="clear">
+				<div class="label">delete_by :</div> <div class="value"></div><br class="clear">
+				<div class="label">tracking_id :</div> <div class="value">1</div><br class="clear">
+				<div class="label">question_id :</div> <div class="value">1</div><br class="clear">
+
+			<br class="clear">
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	<div class="tab">
+	<div id="tab-header">
+			<h1>Account Details</h1>
+		</div>
+		<div id="tab-text">
+			Information about the element, create, Modify and delete dates 
+		</div>
+		<div id="tab-body">
+			<div style="width: 120px;">Created on : </div>2011-01-17 09:08:27<br>
+			<div style="width: 120px;">Modified on :</div><br>
+			<div style="width: 120px;">Deleted on :</div><br>
+			<br class="clear">
+		</div>
+		<div id="tab-foot"></div>
+	</div>
+</div>
+<br class="clear">
+
+</div>
+
+
+			</div>
+		</div><br class="clear:both">
+</div> 
+ 
+
+</body></html>
