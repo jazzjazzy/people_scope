@@ -1,4 +1,34 @@
 <?php
+/**
+ * Template Class, 
+ * <br />
+ * This class is used to take a input to generate templates<br /> 
+ * 
+ * Example:<br />
+ * <br />
+ * $template = new template('template/index.html');<br />
+ * <br />
+ * $template->assign('var1', 'Employment list');<br />
+ * $template->assignArray(array{'var2'=>'John', 'var3'=>'mary', 'var4'=>'<strong>frank</strong>'});<br />
+ * <br />
+ * $ArrayVars[0]['name'] = 'john';<br />
+ * $ArrayVars[0]['age'] = '14';<br />
+ * $ArrayVars[1]['name'] = 'mary';<br />
+ * $ArrayVars[1]['age'] = '42';<br />
+ * $ArrayVars[2]['name'] = 'frank';<br />
+ * $ArrayVars[2]['age'] = '98';<br />
+ * <br />
+ * $template->assignRepeat('agelist', $ArrayVars);<br />
+ * $template->replace('../', '../../');<br />
+ * <br />
+ * $template->display();<br />
+ * <br />
+ *  
+ * @author Jason Stewart <jason@lexxcom.com.au>
+ * @version 1.0
+ * @package PeopleScope
+ * @subpackage Base
+ */
 
 
 class table{

@@ -5,7 +5,7 @@
 # Project name:                                                          #
 # Author:                                                                #
 # Script type:           Database creation script                        #
-# Created on:            2011-01-10 10:32                                #
+# Created on:            2011-01-14 12:11                                #
 # ---------------------------------------------------------------------- #
 
 
@@ -38,8 +38,8 @@ CREATE TABLE `advertisement` (
     `employmenttype` INTEGER,
     `create_date` DATETIME,
     `create_by` INTEGER,
-    `modifiy_date` DATETIME,
-    `modifiy_by` INTEGER,
+    `modify_date` DATETIME,
+    `modify_by` INTEGER,
     `delete_date` VARCHAR(40),
     `delete_by` VARCHAR(40),
     `tracking_id` INTEGER NOT NULL,
@@ -384,7 +384,7 @@ CREATE TABLE `users` (
     `division_id` INTEGER NOT NULL COMMENT 'key field to the division table',
     `administration_id` INTEGER NOT NULL COMMENT 'key field to the administration table',
     `create_date` DATETIME COMMENT 'row create date',
-    `modified_date` DATETIME COMMENT 'row modified date',
+    `modify_date` DATETIME COMMENT 'row modified date',
     `delete_date` DATETIME COMMENT 'row delete date',
     CONSTRAINT `PK_users` PRIMARY KEY (`user_id`, `division_id`, `administration_id`)
 ) COMMENT = 'Users table listing all the users within the system';
@@ -438,7 +438,7 @@ CREATE TABLE `referral_cost` (
 CREATE TABLE `division` (
     `division_id` INTEGER NOT NULL COMMENT 'The Division key for the divisions table ',
     `name` VARCHAR(40) COMMENT 'the name of the division ',
-    `description` VARCHAR(40) COMMENT 'A short discription of the division',
+    `description` TEXT COMMENT 'A short discription of the division',
     `create_date` DATETIME COMMENT 'row create date ',
     `modify_date` DATETIME COMMENT 'row modified date',
     `delete_date` DATETIME COMMENT 'row delete date ',

@@ -234,6 +234,7 @@ function createDateField($date, $yearRange = 10, $startyear = NULL){
  * @param String $date database date format
  */
 function formatDateUI($date){
+	//exit(print_r(debug_backtrace()));
 	list($day, $month, $year) = explode('/', $date);
 	$year = (strlen($year) == 2)?'20'.$year: $year;
 	return $year.'-'.$month.'-'.$day.' 00:00:00' ;
@@ -429,6 +430,14 @@ function Box($content, $header, $discription){
 				'.$content.'<br class="clear">
 			</div>
 			<div id="tab-foot"></div>
+		</div>';
+	return $html;
+	
+}
+
+function warning($content){
+	$html ='<div class="warning"><img src="images/warning.png" />
+			'.$content.'
 		</div>';
 	return $html;
 	

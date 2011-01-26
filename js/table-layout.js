@@ -111,11 +111,11 @@ $(document).ready(function(){
 			  $(obj2).addClass( 'selectedRow' );
 		  }
 		  
-		  if(e.which == 13){
+		  /*if(e.which == 13){
 			  var id = $('.selectedRow').attr('id');
 			  var page = ($('.selectedRow').parents('table').attr('page')); 
 			  location.href=page+'.php?action=show&id='+id;
-		  }
+		  }*/
 	  });
 });
 

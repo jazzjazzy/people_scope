@@ -32,23 +32,32 @@
  * @subpackage Base
  */
 class CustomException extends Exception{
+	
+	public function messageError(){
+		$str = $this->getMessage()." File: ".$this->getFile()." line: ".$this->getLine();
+		return $str;
+	}
+	
 	/**
 	 * Generate a formated excption error
 	 *
 	 * @return string Html Format
 	 */
 	public function logError(){
-		$trace = "<pre>".print_r($this->getTrace(),1)."</pre>";
 
-		$str = "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding:10px; color:#000; background-color: #ffcccc; width:100%; border:solid 1px #000\"><h4>Error Information</h4>".
+		$str = "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding:10px; color:#000; background-color: #ffcccc; width:100%; border:solid 1px #000\"><h4>CustomException Error Information</h4>".
 			"<div> Message :: ".$this->getMessage()."</div>
 			<div>File ::".$this->getFile()."</div>
 			<div>Line ::".$this->getLine()."</div></pre>
-			</div>
-			<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
-		htmlentities (print_r($trace,1),  ENT_COMPAT) .
-			"</pre></div>"; 
-			
+			</div>";
+		
+		if(DEBUG){
+			$trace = "<pre>".print_r($this->getTrace(),1)."</pre>";
+			$str = "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+					htmlentities (print_r($trace,1),  ENT_COMPAT) .
+					"</pre></div>"; 
+		}	
+		
 		return $str;
 
 	}
@@ -60,7 +69,7 @@ class CustomException extends Exception{
 	 *
 	 * @param $query Sql query that was being used at the time of execution
 	 */
-	public function queryError($query){
+	 public function queryError($query){
 		$lines = explode("\n",$query);
 		$count = 1;
 		$lineQuery = '';
@@ -91,54 +100,67 @@ function myErrorHandler($errno, $errstr, $errfile, $errline)
 		// This error code is not included in error_reporting
 		return;
 	}
-
-	$trace = "<pre>".print_r(debug_backtrace(),1)."</pre>";
-
+	
 	switch ($errno) {
-		case E_USER_ERROR:
-			 
-			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #ffcccc; width:100%; border:solid 3px red\"><h4>Error Information[".$errno."]</h4>".
+		case E_ERROR:
+		case E_CORE_ERROR :
+		case E_USER_ERROR: 
+			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #8AE234; width:100%; border:solid 3px red\"><h4>PHP ERROR:: Error Information[".$errno."]</h4>".
 			"<div> Message :: <strong>".$errstr."</strong></div><br />
 			<div>File :: ".$errfile."</div>
 			<div>Line :: ".$errline."</div></pre>
-			</div>
-			<div style=\"font-family: Arial, Helvetica, sans-serif; font-size:12px; padding:10px; background-color: #3399ff; width:100%; border:solid 3px green\"><h4>Error Back Trace</h4><pre>".
-			htmlentities (print_r($trace,1),  ENT_COMPAT) .
-			"</pre></div>";
+			</div>";
+			if(DEBUG){
+				$trace = "<pre>".print_r(debug_backtrace(),1)."</pre>";
+				$str .= "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+						htmlentities (print_r($trace,1),  ENT_COMPAT) .
+						"</pre></div>"; 
+			}
 			return ($str);
 			break;
-
+		case E_WARNING:
+		case E_CORE_WARNING:
 		case E_USER_WARNING:
-			$str = "<div style=\"border: green 3px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #ffcccc; width:100%; border:solid 3px green\"><h4>Error Information[".$errno."]</h4>".
+			$str = "<div style=\"border: green 3px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #8AE234; width:100%; border:solid 3px green\"><h4>PHP WARNING:: Error Information[".$errno."]</h4>".
 			"<div> Message :: <strong>".$errstr."</strong></div><br />
 			<div>File :: ".$errfile."</div>
 			<div>Line :: ".$errline."</div></pre>
-			</div>
-			<!--<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding:10px; background-color: #3399ff; width:100%; border:solid 3px green\"><h4>Error Back Trace</h4><pre>".
-			htmlentities (print_r($trace,1),  ENT_COMPAT) .
-			"</pre></div>-->";
+			</div>";
+			if(DEBUG){
+				$trace = "<pre>".print_r(debug_backtrace(),1)."</pre>";
+				$str .= "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+						htmlentities (print_r($trace,1),  ENT_COMPAT) .
+						"</pre></div>"; 
+			}
 			break;
-
+		case E_NOTICE:
+		case E_CORE_NOTICE:
 		case E_USER_NOTICE:
-			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #ffcccc; width:100%; border:solid 3px green\"><h4>Error Information[".$errno."]</h4>".
+			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #8AE234; width:100%; border:solid 3px green\"><h4>PHP NOTICE:: Error Information[".$errno."]</h4>".
 			"<div> Message :: <strong>".$errstr."</strong></div><br />
 			<div>File :: ".$errfile."</div>
 			<div>Line :: ".$errline."</div></pre>
-			</div>
-			<!--<div style=\"font-family: Arial, Helvetica, sans-serif; font-size:12px; padding:10px; background-color: #3399ff; width:100%; border:solid 3px green\"><h4>Error Back Trace</h4><pre>".
-			htmlentities (print_r($trace,1),  ENT_COMPAT) .
-			"</pre></div>-->";
+			</div>";
+			if(DEBUG){
+				$trace = "<pre>".print_r(debug_backtrace(),1)."</pre>";
+				$str .= "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+						htmlentities (print_r($trace,1),  ENT_COMPAT) .
+						"</pre></div>"; 
+			}
 			break;
 
 		default:
-			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #ffcccc; width:100%; border:solid 3px green\"><h4>Error Information[".$errno."]</h4>".
+			$str = "<div style=\"border: green 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color:#000; padding:10px; background-color: #8AE234; width:100%; border:solid 3px green\"><h4>PHP OTHER:: Error Information[".$errno."]</h4>".
 			"<div> Message :: <strong>".$errstr."</strong></div><br />
 			<div>File :: ".$errfile."</div>
 			<div>Line :: ".$errline."</div></pre>
-			</div>
-			<!--<div style=\"font-family: Arial, Helvetica, sans-serif; font-size:12px; padding:10px; background-color: #3399ff; width:100%; border:solid 3px green\"><h4>Error Back Trace</h4><pre>".
-			htmlentities (print_r($trace,1),  ENT_COMPAT) .
-			"</pre></div>-->";
+			</div>";
+			if(DEBUG){
+				$trace = "<pre>".print_r(debug_backtrace(),1)."</pre>";
+				$str .= "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+						htmlentities (print_r($trace,1),  ENT_COMPAT) .
+						"</pre></div>"; 
+			}
 			break;
 	}
 	echo $str;

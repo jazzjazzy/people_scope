@@ -28,7 +28,7 @@ if($_SERVER['HTTP_HOST'] == 'people_scope.server'){ //INTERNAL HOME STAGEING
 	define('DB_USER','root');
 	define('DB_PASS','password');
 	define('DB_HOST','localhost');
-	define('DB_DBASE','client_77');
+	define('DB_DBASE','client_10000000');
 	define('DB_TYPE','mysql');
 	define('DB_PORT','3306');
 	define('DEBUG', true);

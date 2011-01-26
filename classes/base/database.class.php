@@ -28,6 +28,7 @@
  * @author Jason Stewart <jason@lexxcom.com.au>
  * @version 1.0
  * @package PeopleScope
+ * @subpackage Base
  */
 
 if (isset($_SESSION['dbaccess']['server_host'])) {
@@ -202,9 +203,12 @@ class db {
 				$error = $stmt->errorInfo();
 			}else{
 				$error = $stmt->errorInfo();
-				$error .= $stmt->debugDumpParams();
+				ob_start();	
+				$stmt->debugDumpParams();
+				$error[2] .= "<br /><pre>". ob_get_contents()."</pre>";
+				ob_end_clean();
 			}
-		  	$error = $stmt->errorInfo();
+		  	//$error = $stmt->errorInfo();
 		  	throw new CustomException($error[2]);
 		}
 

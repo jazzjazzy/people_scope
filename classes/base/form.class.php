@@ -31,6 +31,7 @@
  * @author Jason Stewart <jason@lexxcom.com.au>
  * @version 1.0
  * @package PeopleScope
+ * @subpackage Base
  */
 
 /**
