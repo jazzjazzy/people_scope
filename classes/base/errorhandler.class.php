@@ -53,7 +53,7 @@ class CustomException extends Exception{
 		
 		if(DEBUG){
 			$trace = "<pre>".print_r($this->getTrace(),1)."</pre>";
-			$str = "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
+			$str .= "<div style=\"font-family: Arial, Helvetica, sans-serif; font-size: 8px; padding:10px; background-color: #3399ff; width:100%; border:solid 1px #000\"><h4>Error Back Trace</h4><pre>".
 					htmlentities (print_r($trace,1),  ENT_COMPAT) .
 					"</pre></div>"; 
 		}	

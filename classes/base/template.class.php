@@ -31,7 +31,10 @@ class template{
 		}else{
 			$this->template->layout = fread(fopen( DIR_ROOT."/templates/layout.tpl.html", 'r'), filesize(DIR_ROOT."/templates/layout.tpl.html"));
 		}
-		//$this->template->layout = str_replace("{*SITE_TYPE*}", SITE_TYPE, $this->template->layout );
+		
+		if(DEBUG){
+			$this->template->layout = str_replace("{*showVars*}",  showVars(), $this->template->layout );
+		}
 	}
 	
 	public function __destruct(){

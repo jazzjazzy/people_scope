@@ -1,0 +1,144 @@
+{*FORM-HEADER*}
+
+<style>
+ #title{
+ 	width:750px;
+ 	height:20px;
+ 	font-size: 24px;
+ 	padding:10px;
+ }
+ 
+ .indent{
+ 	padding-left:10px;
+ 	
+ }
+ 
+ #info div.value, #info div.label{
+ 	width:100%;
+ 	
+ }
+ 
+.value{
+  	font-weight: bold;
+  	height:auto;
+ }
+ 
+ #account div.value, #account div.label{
+ 	width:50%;
+ }
+
+</style>
+<link media="print" rel="stylesheet" href="css/bulkprint.css" type="text/css">
+<div id="row1">
+<h1><div id="staff-title">{*page_title*}</div><div style="clear:both;"></div></h1>
+<div class="container">
+	<div class="tab" style="width:800px;padding-left:5px">
+			<div id="tab-header">
+				<h1>User Details</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+
+			<div id="tab-body">
+					<div class="noprint">{*FUNCTION*}</div><br class="clear"/>
+					
+					<div class="value">{*title*}{*err_title*}</div>
+					<br /><br />
+					<br />
+					
+					<div class="tab" style="width:100%">
+						<div id="tab-header">
+							<h1>Position Discription</h1>
+						</div>
+						<div id="tab-body" style="min-height:394px">
+							<div>{*discription*}{*err_discription*}</div>
+						</div>
+						<div id="tab-foot"></div>
+					</div>
+				
+					<div class="tab" style="width:100%;min-height:394px">
+						<div id="tab-header">
+							<h1>Position Requirements</h1>
+						</div>
+						<div id="tab-body" style="min-height:394px">
+							<div>{*requirments*}{*err_requirments*}</div>
+						</div>
+						<div id="tab-foot"></div>
+					</div>
+					
+					<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+			
+	</div>
+	<div class="tab" id="info" style="font-size:5px;width:210px;padding-left:5px">
+			<div id="tab-header">
+				<h1>Relevant Information</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+				<div class="label" style="width:140px">Request&nbsp;Resume :</div> <div class="value" style="width:10px">{*upload_resume*}{*err_upload_resume*}</div><br class="clear"/>
+				<div class="label" style="width:140px">Request&nbsp;Cover&nbsp;Letter :</div> <div class="value" style="width:10px">{*cover_letter*}{*err_cover_letter*}</div><br class="clear"/>
+				<div class="label" style="width:140px">Status :</div> <div class="value" style="width:10px">{*status*}{*err_status*}</div><br class="clear"/>
+				<div class="label" style="width:100%">Employment :{*err_employmenttype_id*}</div><br class="clear"/><div class="value">{*employmenttype*}</div><br class="clear"/>
+				<div class="label" style="width:100%">State :{*err_state_id*}</div><br class="clear"/><div class="value">{*state_name*}</div><br class="clear"/>
+				<div class="label" style="width:100%">Catagory:{*err_catagory_id*}</div><br class="clear"/><div class="value">{*catagory_name*}</div><br class="clear"/>
+				<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	<div class="tab"  style="font-size:5px;width:210px;padding-left:5px">
+			<div id="tab-header">
+				<h1>Active Display Range</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+					<div class="label">Start Date :</div> <div class="value">{*start_date*}{*err_start_date*}</div><br class="clear"/>
+					<div class="label">End Date :</div> <div class="value">{*end_date*}{*err_end_date*}</div><br class="clear"/>
+				<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	
+	<div class="tab" style="font-size:5px;width:210px;padding-left:5px">
+			<div id="tab-header">
+				<h1>Templates</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+					<div class="value">{*template_title*}</div>
+				<br class="clear"/>
+				<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	<div class="tab" id="account" style="font-size:5px;width:210px;padding-left:5px">
+	<div id="tab-header">
+			<h1>Account Details</h1>
+		</div>
+		<div id="tab-text">
+			Information about the element, create, Modify and delete dates 
+		</div>
+		<div id="tab-body">
+			<div>Created on : {*create_date*}</div>
+			<div class="label">create_by :</div> <div class="value">{*create_by*}{*err_create_by*}</div><br class="clear"/>
+			<div>Modified on :{*modify_date*}</div>
+			<div class="label">modify_by :</div> <div class="value">{*modify_by*}{*err_modify_by*}</div><br class="clear"/>
+			<div>Deleted on :{*delete_date*}</div>
+			<div class="label">delete_by :</div> <div class="value">{*delete_by*}{*err_delete_by*}</div><br class="clear"/>
+			<br class="clear"/>
+		</div>
+		<div id="tab-foot"></div>
+	</div>
+</div>
+<br class="clear"/>
+{*FORM-FOOTER*}
+</div>
+{*pbreak*}{*pbreakend*}

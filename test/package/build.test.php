@@ -62,7 +62,7 @@ class clientDatabaseTest extends PHPUnit_Framework_TestCase
 		}
 		
 		
-		$sql = "INSERT into users (user_id, username, password, name, surname, email, create_date) values('1', 'ADMIN', 'PASSWORD', 'Jennifer' 'Erator', 'jason@lexxcom.com', NOW())";	
+		$sql = "INSERT into users (user_id, username, password, name, surname, email, create_date) values('1', 'ADMIN', 'PASSWORD', 'Jennifer', 'Erator', 'jason@lexxcom.com', NOW())";	
 		
 		try{
 			$stmt = $conn->prepare($sql);

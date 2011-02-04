@@ -40,9 +40,7 @@
 		</a><br>
 			<a href="../PeopleScope/_category.class.php.html">		category.class.php
 		</a><br>
-			<a href="../PeopleScope/_department.class.php.html">		department.class.php
-		</a><br>
-			<a href="../PeopleScope/_department.old.class.php.html">		department.old.class.php
+			<a href="../PeopleScope/_employmenttype.class.php.html">		employmenttype.class.php
 		</a><br>
 			<a href="../PeopleScope/_base---errorhandler.class.php.html">		errorhandler.class.php
 		</a><br>
@@ -68,8 +66,7 @@
 		    		<a href="../PeopleScope/advertisement.html">advertisement</a><br />
 	    		<a href="../PeopleScope/advertTemplate.html">advertTemplate</a><br />
 	    		<a href="../PeopleScope/category.html">category</a><br />
-	    		<a href="../PeopleScope/department.html">department</a><br />
-	    		<a href="../PeopleScope/department2.html">department2</a><br />
+	    		<a href="../PeopleScope/employmenttype.html">employmenttype</a><br />
 	  </div>
   <div class="package">
 	Base<br />	    &nbsp;&nbsp;		<a href="../PeopleScope/Base/CustomException.html">CustomException</a><br />
@@ -233,7 +230,7 @@ Category Class<br /><br /><p>&lt;div style=&quot;color:red&quot;&gt;NOTE: This i
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="var$fields"></a>
 	<p></p>
-	<h4>$fields = <span class="value">array('catagory_id',&nbsp;'catagory_name',&nbsp;'create_date')</span></h4>
+	<h4>$fields = <span class="value">array('catagory_id',&nbsp;'catagory_name',&nbsp;'create_date',&nbsp;'modify_date',&nbsp;'delete_date')</span></h4>
 	<p>[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a45">45</a>]</p>
   Array of field used in the database if not in this list is dropped from insert or update<br /><br /><br /><br />
 <h4>Tags:</h4>
@@ -281,7 +278,7 @@ Category Class<br /><br /><p>&lt;div style=&quot;color:red&quot;&gt;NOTE: This i
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="var$fields_validation_type"></a>
 	<p></p>
-	<h4>$fields_validation_type = <span class="value">array&nbsp;('catagory_id'=&gt;'INT',&nbsp;'catagory_name'=&gt;'TEXT',&nbsp;'create_date'=&gt;'TEXT')</span></h4>
+	<h4>$fields_validation_type = <span class="value">array&nbsp;('catagory_id'=&gt;'INT',&nbsp;'catagory_name'=&gt;'TEXT',&nbsp;'create_date'=&gt;'TEXT',&nbsp;'modify_date'=&gt;'TEXT',&nbsp;'delete_date'=&gt;'TEXT')</span></h4>
 	<p>[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a57">57</a>]</p>
   Array of feilds and there types that are check when validating<br /><br /><br /><br />
 <h4>Tags:</h4>
@@ -426,7 +423,7 @@ Category Class<br /><br /><p>&lt;div style=&quot;color:red&quot;&gt;NOTE: This i
   </div>
   <hr />
 	<a name="methodcreate"></a>
-	<h3>method create <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a174">174</a>]</span></h3>
+	<h3>method create <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a176">176</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -485,7 +482,7 @@ $source)</code>
   </div>
   <hr />
 	<a name="methodcreateCategoryDetails"></a>
-	<h3>method createCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a522">522</a>]</span></h3>
+	<h3>method createCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a528">528</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -515,7 +512,7 @@ $source)</code>
   </div>
   <hr />
 	<a name="methoddeleteCategoryDetails"></a>
-	<h3>method deleteCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a606">606</a>]</span></h3>
+	<h3>method deleteCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a612">612</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -554,7 +551,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodeditCategoryDetails"></a>
-	<h3>method editCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a437">437</a>]</span></h3>
+	<h3>method editCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a443">443</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -595,7 +592,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodgetCategoryList"></a>
-	<h3>method getCategoryList <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a363">363</a>]</span></h3>
+	<h3>method getCategoryList <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a365">365</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -717,7 +714,7 @@ $filter = NULL])</code>
   </div>
   <hr />
 	<a name="methodread"></a>
-	<h3>method read <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a220">220</a>]</span></h3>
+	<h3>method read <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a221">221</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -756,7 +753,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodremove"></a>
-	<h3>method remove <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a320">320</a>]</span></h3>
+	<h3>method remove <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a322">322</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -798,7 +795,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodsaveCategoryDetails"></a>
-	<h3>method saveCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a555">555</a>]</span></h3>
+	<h3>method saveCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a561">561</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -849,7 +846,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodshowCategoryDetails"></a>
-	<h3>method showCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a409">409</a>]</span></h3>
+	<h3>method showCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a415">415</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -889,13 +886,13 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodtemplateCategoryLayout"></a>
-	<h3>method templateCategoryLayout <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a625">625</a>]</span></h3>
+	<h3>method templateCategoryLayout <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a631">631</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void templateCategoryLayout(
 
-$staffMember, [Boolean
+$fieldMember, [Boolean
 $input = false], [Array
 $inputArray = array()], Array
 $fielddata)</code>
@@ -939,7 +936,7 @@ $fielddata)</code>
       </tr>
           <tr>
         <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$staffMember</b>&nbsp;&nbsp;</td>
+        <td><b>$fieldMember</b>&nbsp;&nbsp;</td>
         <td></td>
       </tr>
         </table>
@@ -948,7 +945,7 @@ $fielddata)</code>
   </div>
   <hr />
 	<a name="methodupdate"></a>
-	<h3>method update <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a273">273</a>]</span></h3>
+	<h3>method update <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a276">276</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1013,7 +1010,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodupdateCategoryDetails"></a>
-	<h3>method updateCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a471">471</a>]</span></h3>
+	<h3>method updateCategoryDetails <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a477">477</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1064,7 +1061,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodValidate"></a>
-	<h3>method Validate <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a657">657</a>]</span></h3>
+	<h3>method Validate <span class="smalllinenumber">[line <a href="../__filesource/fsource_PeopleScope__category.class.php.html#a665">665</a>]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1118,7 +1115,7 @@ $request)</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Wed, 19 Jan 2011 16:36:59 +1100 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 28 Jan 2011 13:51:58 +1100 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>

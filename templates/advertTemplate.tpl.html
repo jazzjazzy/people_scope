@@ -1,0 +1,59 @@
+{*FORM-HEADER*}
+
+<style>
+
+</style>
+<link media="print" rel="stylesheet" href="css/bulkprint.css" type="text/css">
+<div id="row1">
+<h1><div id="staff-title">{*page_title*}</div><div style="clear:both;"></div></h1>
+<div class="container">
+	<div class="tab">
+			<div id="tab-header">
+				<h1>User Details</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+				<div class="noprint">{*FUNCTION*}</div><br class="clear"/>
+				
+				<div class="label">title :</div> <div class="value">{*title*}{*err_title*}</div><br class="clear"/>
+				<div class="label">employmenttype_id :</div> <div class="value">{*employmenttype_id*}{*err_employmenttype_id*}</div><br class="clear"/>
+				<div class="label">catagory_id :</div> <div class="value">{*catagory_id*}{*err_catagory_id*}</div><br class="clear"/>
+				<div class="label">office_id :</div> <div class="value">{*office_id*}{*err_office_id*}</div><br class="clear"/>
+				<div class="label">dept_id :</div> <div class="value">{*dept_id*}{*err_dept_id*}</div><br class="clear"/>
+				<div class="label">role_id :</div> <div class="value">{*role_id*}{*err_role_id*}</div><br class="clear"/>
+				<div class="label">state_id :</div> <div class="value">{*state_id*}{*err_state_id*}</div><br class="clear"/>
+				<div class="label">storeLoc_id :</div> <div class="value">{*storeLoc_id*}{*err_storeLoc_id*}</div><br class="clear"/>
+				<div class="label">start_date :</div> <div class="value">{*start_date*}{*err_start_date*}</div><br class="clear"/>
+				<div class="label">end_date :</div> <div class="value">{*end_date*}{*err_end_date*}</div><br class="clear"/>
+				<div>discription :</div> <div>{*discription*}{*err_discription*}</div><br class="clear"/>
+				<div>requirments :</div> <div>{*requirments*}{*err_requirments*}</div><br class="clear"/>
+				<div class="label">status :</div> <div class="value">{*status*}{*err_status*}</div><br class="clear"/>
+				<div class="label">tracking_id :</div> <div class="value">{*tracking_id*}{*err_tracking_id*}</div><br class="clear"/>
+				<div class="label">advertisement_id :</div> <div class="value">{*advertisement_id*}{*err_advertisement_id*}</div><br class="clear"/>
+
+			<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	<div  class="tab">
+	<div id="tab-header">
+			<h1>Account Details</h1>
+		</div>
+		<div id="tab-text">
+			Information about the element, create, Modify and delete dates 
+		</div>
+		<div id="tab-body">
+			<div style="width:120px">Created on : </div>{*create_date*}<br />
+			<div style="width:120px">Modified on :</div>{*modify_date*}<br />
+			<div style="width:120px">Deleted on :</div>{*delete_date*}<br />
+			<br class="clear"/>
+		</div>
+		<div id="tab-foot"></div>
+	</div>
+</div>
+<br class="clear"/>
+{*FORM-FOOTER*}
+</div>
+{*pbreak*}{*pbreakend*}

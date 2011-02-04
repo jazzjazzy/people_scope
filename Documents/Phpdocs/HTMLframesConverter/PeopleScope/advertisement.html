@@ -187,7 +187,7 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																							
+																																																																																																																																																																															
 				<div class="method-definition">
 					<img src="../media/images/Constructor.png" alt=" "/>
 											<span class="method-result">advertisement</span>
@@ -231,6 +231,41 @@
 									</div>
 															
 				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getSelectListOfCategory" title="details" class="method-name">getSelectListOfCategory</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getSelectListOfEmploymentType" title="details" class="method-name">getSelectListOfEmploymentType</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getSelectListOfStates" title="details" class="method-name">getSelectListOfStates</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getSelectListOfTemplate" title="details" class="method-name">getSelectListOfTemplate</a>
+											(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">String</span>
+										<a href="#getUserById" title="details" class="method-name">getUserById</a>
+											([<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
+									</div>
+															
+				<div class="method-definition">
 					<img src="../media/images/PrivateMethod.png" alt=" "/>
 											<span class="method-result">void</span>
 										<a href="#lists" title="details" class="method-name">lists</a>
@@ -269,7 +304,7 @@
 					<img src="../media/images/PrivateMethod.png" alt=" "/>
 											<span class="method-result">void</span>
 										<a href="#templateAdvertisementLayout" title="details" class="method-name">templateAdvertisementLayout</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$staffMember</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>], <span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>)
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$fieldMember</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>], <span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>)
 									</div>
 															
 				<div class="method-definition">
@@ -364,7 +399,7 @@
 		<span class="var-title">
 			<span class="var-type">Array</span>
 			<span class="var-name">$fields</span>
-			 = <span class="var-default">array('advertisement_id', 'title', 'catagory_id', 'template_id', 'office_id', 'dept_id', 'role_id', 'state_id', 'store_location_id', 'storerole_id', 'start_date', 'end_date', 'discription', 'requirments', 'upload_resume', 'cover_letter', 'status', 'employmenttype', 'create_date', 'create_by', 'modify_date', 'modify_by', 'delete_date', 'delete_by', 'tracking_id', 'question_id')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a45">45</a></span>)
+			 = <span class="var-default">array('advertisement_id', 'title', 'catagory_id', 'template_id', 'office_id', 'dept_id', 'role_id', 'state_id', 'store_location_id', 'storerole_id', 'start_date', 'end_date', 'discription', 'requirments', 'upload_resume', 'cover_letter', 'status', 'employmenttype_id', 'create_date', 'create_by', 'modify_date', 'modify_by', 'delete_date', 'delete_by')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a45">45</a></span>)
 		</span>
 	</div>
 
@@ -410,7 +445,7 @@
 		<span class="var-title">
 			<span class="var-type">Array|null</span>
 			<span class="var-name">$fields_validation_type</span>
-			 = <span class="var-default">array ('advertisement_id'=&gt;'TEXT', 'title'=&gt;'TEXT', 'catagory_id'=&gt;'INT', 'template_id'=&gt;'INT', 'office_id'=&gt;'INT', 'dept_id'=&gt;'INT', 'role_id'=&gt;'INT', 'state_id'=&gt;'INT', 'store_location_id'=&gt;'INT', 'storerole_id'=&gt;'INT', 'start_date'=&gt;'DATE', 'end_date'=&gt;'DATE', 'discription'=&gt;'TEXT', 'requirments'=&gt;'TEXT', 'upload_resume'=&gt;'BOOL', 'cover_letter'=&gt;'BOOL', 'status'=&gt;'BOOL', 'employmenttype'=&gt;'INT', 'create_date'=&gt;'TEXT', 'create_by'=&gt;'INT', 'modify_date'=&gt;'TEXT', 'modify_by'=&gt;'INT', 'delete_date'=&gt;'TEXT', 'delete_by'=&gt;'TEXT', 'tracking_id'=&gt;'INT', 'question_id'=&gt;'INT')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a57">57</a></span>)
+			 = <span class="var-default">array ('advertisement_id'=&gt;'TEXT', 'title'=&gt;'TEXT', 'catagory_id'=&gt;'INT', 'template_id'=&gt;'INT', 'office_id'=&gt;'INT', 'dept_id'=&gt;'INT', 'role_id'=&gt;'INT', 'state_id'=&gt;'INT', 'store_location_id'=&gt;'INT', 'storerole_id'=&gt;'INT', 'start_date'=&gt;'DATE', 'end_date'=&gt;'DATE', 'discription'=&gt;'TEXT', 'requirments'=&gt;'TEXT', 'upload_resume'=&gt;'BOOL', 'cover_letter'=&gt;'BOOL', 'status'=&gt;'BOOL', 'employmenttype_id'=&gt;'INT', 'create_date'=&gt;'TEXT', 'create_by'=&gt;'INT', 'modify_date'=&gt;'TEXT', 'modify_by'=&gt;'INT', 'delete_date'=&gt;'TEXT', 'delete_by'=&gt;'TEXT')</span>			(line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a57">57</a></span>)
 		</span>
 	</div>
 
@@ -549,7 +584,7 @@
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
-		<span class="method-title">create</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a199">199</a></span>)
+		<span class="method-title">create</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a204">204</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -601,7 +636,7 @@
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">createAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a639">639</a></span>)
+		<span class="method-title">createAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a622">622</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -632,7 +667,7 @@
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">deleteAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a744">744</a></span>)
+		<span class="method-title">deleteAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a723">723</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -666,7 +701,7 @@
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">editAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a533">533</a></span>)
+		<span class="method-title">editAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a520">520</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -702,7 +737,7 @@
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">getAdvertisementList</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a413">413</a></span>)
+		<span class="method-title">getAdvertisementList</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a417">417</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -749,8 +784,181 @@
 		
 			
 	</div>
-<a name="methodlists" id="lists"><!-- --></a>
+<a name="methodgetSelectListOfCategory" id="getSelectListOfCategory"><!-- --></a>
 <div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSelectListOfCategory</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a889">889</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This Method will either the catagory_name feild or a select box of catagory_name fields</p>
+<p class="description"><p>This Methos is based in the catagory_id of the category table, it will return either the information  in the catagory_name field as a string or a select box with the id selected</p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> move this to its own class for all classes to use</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectListOfCategory
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: the id of the row we are looking for</span>			</li>
+					<li>
+				<span class="var-type">Boolean</span>
+				<span class="var-name">$selectBox</span><span class="var-description">: True will return it as a select box with field selected, else just the field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSelectListOfEmploymentType" id="getSelectListOfEmploymentType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSelectListOfEmploymentType</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a939">939</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This Method will either the employmenttype feild or a select box of employmenttype fields</p>
+<p class="description"><p>This Methos is based in the employmenttype_id of the employmenttype table, it will reurn either the information  in the employmenttype field as a string or a select box with the id selected</p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> move this to its own class for all classes to use</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectListOfEmploymentType
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: the id of the row we are looking for</span>			</li>
+					<li>
+				<span class="var-type">Boolean</span>
+				<span class="var-name">$selectBox</span><span class="var-description">: True will return it as a select box with field selected, else just the field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSelectListOfStates" id="getSelectListOfStates"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSelectListOfStates</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a914">914</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This Method will either the name feild or a select box of state fields</p>
+<p class="description"><p>This Methos is based in the state_id of the state table, it will reurn either the information  in the state name field as a string or a select box with the id selected</p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> move this to its own class for all classes to use</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectListOfStates
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: the id of the row we are looking for</span>			</li>
+					<li>
+				<span class="var-type">Boolean</span>
+				<span class="var-name">$selectBox</span><span class="var-description">: True will return it as a select box with field selected, else just the field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSelectListOfTemplate" id="getSelectListOfTemplate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getSelectListOfTemplate</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a965">965</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This Method will either the employmenttype feild or a select box of employmenttype fields</p>
+<p class="description"><p>This Methos is based in the employmenttype_id of the employmenttype table, it will reurn either the information  in the employmenttype field as a string or a select box with the id selected</p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> move this to its own class for all classes to use</li>
+				<li><span class="field">todo:</span> move this as a function in advertTemplate class</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectListOfTemplate
+		</span>
+					(<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$selectBox</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span><span class="var-description">: the id of the row we are looking for</span>			</li>
+					<li>
+				<span class="var-type">Boolean</span>
+				<span class="var-name">$selectBox</span><span class="var-description">: True will return it as a select box with field selected, else just the field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUserById" id="getUserById"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getUserById</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a1002">1002</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Will get name of the user based on id</p>
+<p class="description"><p>This will return the name and surname concatinated of a user by their id</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The user name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">String</span>
+		<span class="method-name">
+			getUserById
+		</span>
+					([<span class="var-type">Integer</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Integer</span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlists" id="lists"><!-- --></a>
+<div class="oddrow">
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
@@ -795,11 +1003,11 @@
 			
 	</div>
 <a name="methodread" id="read"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
-		<span class="method-title">read</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a245">245</a></span>)
+		<span class="method-title">read</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a249">249</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -829,11 +1037,11 @@
 			
 	</div>
 <a name="methodremove" id="remove"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
-		<span class="method-title">remove</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a370">370</a></span>)
+		<span class="method-title">remove</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a374">374</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -864,11 +1072,11 @@
 			
 	</div>
 <a name="methodsaveAdvertisementDetails" id="saveAdvertisementDetails"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">saveAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a672">672</a></span>)
+		<span class="method-title">saveAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a655">655</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -904,11 +1112,11 @@
 			
 	</div>
 <a name="methodshowAdvertisementDetails" id="showAdvertisementDetails"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">showAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a505">505</a></span>)
+		<span class="method-title">showAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a492">492</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -939,11 +1147,11 @@
 			
 	</div>
 <a name="methodtemplateAdvertisementLayout" id="templateAdvertisementLayout"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
-		<span class="method-title">templateAdvertisementLayout</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a763">763</a></span>)
+		<span class="method-title">templateAdvertisementLayout</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a742">742</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -961,7 +1169,7 @@
 		<span class="method-name">
 			templateAdvertisementLayout
 		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$staffMember</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>], <span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>)
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$fieldMember</span>, [<span class="var-type">Boolean</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">false</span>], [<span class="var-type">Array</span>&nbsp;<span class="var-name">$inputArray</span> = <span class="var-default">array()</span>], <span class="var-type">Array</span>&nbsp;<span class="var-name">$fielddata</span>)
 			</div>
 	
 			<ul class="parameters">
@@ -976,17 +1184,17 @@
 				<span class="var-name">$inputArray</span><span class="var-description">: Not sure :S</span>			</li>
 					<li>
 				<span class="var-type"></span>
-				<span class="var-name">$staffMember</span>			</li>
+				<span class="var-name">$fieldMember</span>			</li>
 				</ul>
 		
 			
 	</div>
 <a name="methodupdate" id="update"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<img src="../media/images/PrivateMethod.png" />
-		<span class="method-title">update</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a323">323</a></span>)
+		<span class="method-title">update</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a328">328</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1037,11 +1245,11 @@
 			
 	</div>
 <a name="methodupdateAdvertisementDetails" id="updateAdvertisementDetails"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">updateAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a567">567</a></span>)
+		<span class="method-title">updateAdvertisementDetails</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a554">554</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1077,11 +1285,11 @@
 			
 	</div>
 <a name="methodValidate" id="Validate"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<img src="../media/images/Method.png" />
-		<span class="method-title">Validate</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a818">818</a></span>)
+		<span class="method-title">Validate</span> (line <span class="line-number"><a href="../__filesource/fsource_PeopleScope__advertisement.class.php.html#a794">794</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1120,7 +1328,7 @@
 
 	
 	<p class="notes" id="credit">
-		Documentation generated on Wed, 19 Jan 2011 16:36:34 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Fri, 28 Jan 2011 13:51:40 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

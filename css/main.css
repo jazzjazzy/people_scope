@@ -8,6 +8,11 @@ body {
 	font-family: arial;
 }
 
+ input,textarea,select{
+ 	font-family:sans-serif;
+ 	font-size: 1em;
+ }
+
 a:LINK, a:VISITED{
 	color:#fff;
 }
@@ -16,6 +21,7 @@ a:HOVER{
 }
 h1{
 	margin:0px 0px 0px 0px;
+	font-size: 19px;
 }
 
 #title-input{
@@ -25,7 +31,7 @@ h1{
 	font-size: 35px;
 }
 
-#title {
+#main-heading {
 	height: 100px;
 }
 
@@ -44,12 +50,12 @@ h1{
 
 #tab-header {
 	background-image: url(../images/tab-header.png);
-	height: 38px;
+	height: 30px;
 	text-align:center;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:10px;
 	vertical-align:middle;
-	padding-top:1px;
+	padding-top:8px;
 }
 #tab-text {
 	background-image: url(../images/tab-text.jpg);
@@ -233,4 +239,29 @@ tr.table_lists {
  	/*background-color:#EEEFB3; 
  	border:solid 1px red; 
  	width:100%*/
+}
+
+.blur{
+	color:#D3D3D3;
+}
+
+.template-list a:link,
+.template-list a:visited,
+.template-list a:active
+{
+	color:green;
+	text-decoration: none;
+}
+
+
+.template-selected a:link,
+.template-selected a:visited,
+.template-selected a:active
+{
+	color:orange;
+	text-decoration: none;
+}
+
+.error{
+	color:#FF2F2F;
 }
