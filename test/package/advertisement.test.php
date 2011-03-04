@@ -25,6 +25,7 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
 	{	
 		// setup array to insert 
     	$_SESSION['user']['client_id'] = '10000000';
+    	$_SESSION['user']['user_id'] = 1;
 
 		self::$_REQUEST['title'] = "This is a TEST";
 		self::$_REQUEST['catagory_id'] = "2";
@@ -86,7 +87,7 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
     	//Assertions check for all information put in 
     	PHPUnit_Framework_Assert::assertEquals($_REQUEST['title'], $fields[0]['title'], 'this is title');
 		PHPUnit_Framework_Assert::assertEquals($_REQUEST['catagory_id'], $fields[0]['catagory_id'], 'this is catagory_id');
-		PHPUnit_Framework_Assert::assertEquals($_REQUEST['template_id'], $fields[0]['template_id'], 'this is template_id');
+		//PHPUnit_Framework_Assert::assertEquals($_REQUEST['template_id'], $fields[0]['template_id'], 'this is template_id');
 		/*PHPUnit_Framework_Assert::assertEquals($_REQUEST['office_id'], $fields[0]['office_id'], 'this is office_id');
 		PHPUnit_Framework_Assert::assertEquals($_REQUEST['dept_id'], $fields[0]['dept_id'], 'this is dept_id');
 		PHPUnit_Framework_Assert::assertEquals($_REQUEST['role_id'], $fields[0]['role_id'], 'this is role_id');*/
@@ -113,6 +114,7 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
 	public function testShowAdvertisementDetails(){
     	$this->expectOutputRegex('/'.self::$_REQUEST[self::$fieldtest].'/');
     	$this->expectOutputRegex('/<div class="button" onclick="location.href=\'(.+?)\.php\?action=edit&id=([0-9]+)\'">Edit<\/div>/');
+    	//$this->expectOutputRegex('/<input class="button" type="image" value="Update">/');
     	self::$advertisement->showAdvertisementDetails(self::$id);
     }
 	
@@ -130,7 +132,8 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
 	 */
 	public function testCreateAdvertisementDetails(){
     	$this->expectOutputRegex('/value=\"\"/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Save">/');
     	self::$advertisement->createAdvertisementDetails(self::$id);
     }
     
@@ -139,7 +142,8 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
 	 */
     public function testEditAdvertisementDetails(){
     	$this->expectOutputRegex('/'.self::$_REQUEST[self::$fieldtest].'/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Update">/');
     	self::$advertisement->editAdvertisementDetails(self::$id);
     }
 	
@@ -179,7 +183,7 @@ class AdvertisementTest extends PHPUnit_Extensions_OutputTestCase
     	
     	//mark entry as delete
     	self::$advertisement->deleteAdvertisementDetails(self::$id);
-    	
+
     	//select the entry to confirm it has changed and confirm it is deleted 
     	$fields = self::$db->select("SELECT delete_date FROM advertisement WHERE advertisement_id = ".self::$id );
     	PHPUnit_Framework_Assert::assertEquals(true, ($fields[0]['delete_date'] != '0000-00-00 00:00:00' && !empty($fields[0]['delete_date'])));
@@ -202,51 +206,53 @@ class SeleniumAdvertisementTest extends PHPUnit_Extensions_SeleniumTestCase
 	 */
   public function testWebAdvertisementDetails()
   {
-    $this->open("/people_scope/category.php");
-    $this->click("//li[@onclick=\"location.href='advertisement.php'\"]");
-    $this->waitForPageToLoad("30000");
+    $this->open("http://dev/people_scope/advertisement.php");
     $this->click("link=Click Here");
-    $this->waitForPageToLoad("30000");
-    $this->type("//input[@id='title']", "This is the first");
-    $this->type("catagory_id", "1");
-    $this->type("template_id", "1");
-    //$this->type("office_id", "1");
-    //$this->type("dept_id", "1");
-   // $this->type("role_id", "1");
-    $this->type("state_id", "1");
-    //$this->type("store_location_id", "1");
-    //$this->type("storerole_id", "1");
-    $this->type("start_date", "12/12/2010");
-    $this->type("end_date", "12/12/2011");
-    $this->type("discription", "this is a discription");
-    $this->type("requirments", "This is a requirement");
-    $this->type("discription", "This is a discription");
+    $this->waitForPageToLoad("10000");
+    $this->click("link=Whare Housing");
+    $this->doubleClick("//li[@id='list_4']/div/div[1]");
+    $this->doubleClick("//li[@id='list_2']/div/div[1]");
+    $this->doubleClick("//li[@id='list_3']/div/div[1]");
+    $this->doubleClick("//li[@id='list_5']/div/div[1]");
     $this->click("upload_resume");
     $this->click("cover_letter");
     $this->click("status");
-    $this->type("employmenttype_id", "1");
-   	//$this->type("create_by", "1");
-   	//$this->type("modify_by", "1");
-   	//$this->type("delete_by", "1");*/
-    $this->click("//div[@onclick='document.createAdvertisement.submit(); return false']");
-    $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is the first", $this->getText("//div[@id='tab-body']/div[3]"));
-    $this->assertEquals("This is a discription", $this->getText("//div[@id='tab-body']/div[15]"));
-    $this->assertEquals("This is a requirement", $this->getText("//div[@id='tab-body']/div[17]"));
-    $this->click("//div[@onclick=\"location.href='advertisement.php?action=edit&id=2'\"]");
-    $this->waitForPageToLoad("30000");
-    $this->type("discription", "This is a discription too");
-    $this->type("requirments", "This is a requirement too");
-    $this->type("start_date", "12/12/2010");
-    $this->type("end_date", "12/12/2011");
-    $this->click("//div[@onclick='document.editAdvertisement.submit(); return false']");
-    $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is a discription too", $this->getText("//div[@id='tab-body']/div[15]"));
-    $this->assertEquals("This is a requirement too", $this->getText("//div[@id='tab-body']/div[17]"));
-    $this->click("//li[@onclick=\"location.href='advertisement.php'\"]");
-    $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is the first", $this->getText("//tr[@id='2']/td[1]"));
-    $this->assertEquals("Store Management", $this->getText("//tr[@id='2']/td[2]"));
+    $this->select("employmenttype_id", "label=Full-Time");
+    $this->select("state_id", "label=New South Wales");
+    $this->select("catagory_id", "label=Store Management");
+    $this->type("title", "**Senior Drupal PHP developer**");
+    $this->runScript("CKEDITOR.instances['discription'].setData('<p>Drupal PHP Senior Developer for&nbsp;immediate 6 month contract with possible to extend or move to a&nbsp;permanent&nbsp;role.<br> <br> The right&nbsp;candidate&nbsp;will have both back-end and front-end experience. <br> <br> Want to work on exciting projects&nbsp;work with&nbsp;household&nbsp;name brands? <br> Apply for instant feedback!</p>')");
+    $this->runScript("CKEDITOR.instances['requirments'].setData('<p> <strong> Key skills:</strong><br> &bull; PHP 5<br> &bull; Drupal<br> &bull; XHTML&nbsp;<br> &bull; CSS<br> &bull; JavaScript<br> &bull; AJAX<br> </p>')");
+    $moveValue = $this->getText("css=.question li:nth-child(1)");
+    $this->mouseDownAt("css=.question li:nth-child(1)", "10,10");
+    $this->mouseMoveAt("css=.question li:nth-child(4)", "10,20");
+    $this->mouseOver("css=.question li:nth-child(4)");
+    $this->mouseUpAt("css=.question li:nth-child(4)", "10,10");
+    $this->assertEquals($moveValue, $this->getText("css=.question li:nth-child(4)"));
+    $this->waitForPageToLoad("");
+    $this->click("css=.question li:nth-child(2)");
+    $this->click("css=.question li:nth-child(2)");
+    $this->waitForPageToLoad("");
+    $this->assertTrue($this->isTextPresent("How you worked for more the 10 years"));
+    $this->clickAt("//li[@id='q_3']/div/div[1]", "");
+    for ($second = 0; ; $second++) {
+        if ($second >= 60) $this->fail("timeout");
+        try {
+            if ("Surname" == $this->getText("//div[@id='tabs-1']/div[2]/div[1]/div[1]")) break;
+        } catch (Exception $e) {}
+        sleep(1);
+    }
+
+    $this->assertEquals("Surname", $this->getText("//div[@id='tabs-1']/div[2]/div[1]/div[1]"));
+    $this->click("link=Tracking");
+    $this->type("//div[@id='tabs-2']/div/textarea", "this, is a test");
+    $this->click("link=Setting");
+    $this->assertEquals("Is this field required: yes no", $this->getText("//div[@id='tabs-3']/div"));
+    $this->click("required");
+    $this->click("//input[@name='required' and @value='no']");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("10000");
+  	
   }
 }
  

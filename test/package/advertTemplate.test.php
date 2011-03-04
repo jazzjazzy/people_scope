@@ -120,6 +120,7 @@ class AdvertTemplateTest extends PHPUnit_Extensions_OutputTestCase
 	public function testCreateAdvertTemplateDetails(){
     	$this->expectOutputRegex('/value=\"\"/');
     	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Save">/');
     	self::$advertTemplate->createAdvertTemplateDetails(self::$id);
     }
     
@@ -128,7 +129,8 @@ class AdvertTemplateTest extends PHPUnit_Extensions_OutputTestCase
 	 */
     public function testEditAdvertTemplateDetails(){
     	$this->expectOutputRegex('/'.self::$_REQUEST[self::$fieldtest].'/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Update">/');
     	self::$advertTemplate->editAdvertTemplateDetails(self::$id);
     }
 	
@@ -192,63 +194,57 @@ class SeleniumAdvertTemplateTest extends PHPUnit_Extensions_SeleniumTestCase
 	 */
   public function testWebAdvertTemplateDetails()
   {
-  	$this->open("/people_scope/advertTemplate.php");
+  	    $this->open("/people_scope/");
     $this->click("//li[@onclick=\"location.href='advertTemplate.php'\"]");
     $this->waitForPageToLoad("30000");
     $this->click("link=Click Here");
     $this->waitForPageToLoad("30000");
     $this->type("title", "This is template 1");
-    $this->select("employmenttype_id", "label=Full-Time");
-    $this->select("catagory_id", "label=Warehouseing Department");
-    $this->type("office_id", "1");
-    $this->type("dept_id", "1");
-    $this->type("role_id", "1");
+    $this->select("employmenttype_id", "label=Casual Full time");
+    $this->select("catagory_id", "label=Store Management");
+    $this->type("office_id", "2");
+    $this->type("dept_id", "2");
+    $this->type("role_id", "2");
     $this->select("state_id", "label=Victoria");
     $this->type("storeLoc_id", "1");
-    $this->type("start_date", "12/12/2010");
-    $this->type("end_date", "12/12/2011");
+    $this->click("start_date");
+    $this->click("link=2");
+    $this->click("end_date");
+    $this->click("link=25");
     $this->type("status", "1");
     $this->type("tracking_id", "1");
     $this->type("advertisement_id", "1");
-    $this->click("//div[@onclick='document.createAdvertTemplate.submit(); return false']");
+    $this->click("//input[@value='Save']");
     $this->waitForPageToLoad("30000");
     $this->assertEquals("This is template 1", $this->getText("//div[@id='tab-body']/div[3]"));
-    $this->assertEquals("Full-Time", $this->getText("//div[@id='tab-body']/div[5]"));
-    $this->assertEquals("Warehouseing Department", $this->getText("//div[@id='tab-body']/div[7]"));
-    $this->assertEquals("Victoria", $this->getText("//div[@id='tab-body']/div[15]"));
+    //$this->assertEquals("This is a job", $this->getText("//div[@id='tab-body']/div[23]/p"));
+    //$this->assertEquals("this is also a job", $this->getText("//div[@id='tab-body']/div[25]/p"));
     $this->click("//li[@onclick=\"location.href='advertTemplate.php'\"]");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is template 1", $this->getText("//tr[@id='2']/td[1]"));
-    $this->assertEquals("Warehouseing Department", $this->getText("//tr[@id='2']/td[5]"));
-    $this->assertEquals("Full-Time", $this->getText("//tr[@id='2']/td[3]"));
-    $this->assertEquals("Victoria", $this->getText("//tr[@id='2']/td[9]"));
     $this->click("link=Click Here");
     $this->waitForPageToLoad("30000");
     $this->type("title", "This is template 2");
-    $this->select("employmenttype_id", "label=Full-Time");
-    $this->select("catagory_id", "label=Store Management");
+    $this->select("employmenttype_id", "label=Full-time");
+    $this->select("catagory_id", "label=IT Department");
     $this->type("office_id", "1");
     $this->type("dept_id", "1");
     $this->type("role_id", "1");
-    $this->select("state_id", "label=South Australia");
+    $this->select("state_id", "label=New South Wales");
     $this->type("storeLoc_id", "1");
-    $this->type("start_date", "12/12/2010");
-    $this->type("end_date", "12/12/2011");
+    $this->click("start_date");
+    $this->click("link=1");
+    $this->click("end_date");
+    $this->click("link=28");
+    $this->click("status");
     $this->type("status", "1");
     $this->type("tracking_id", "1");
     $this->type("advertisement_id", "1");
-    $this->click("//div[@onclick='document.createAdvertTemplate.submit(); return false']");
+    $this->click("//input[@value='Save']");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is template 2", $this->getText("//div[@id='tab-body']/div[3]"));
-    $this->assertEquals("Full-Time", $this->getText("//div[@id='tab-body']/div[5]"));
-    $this->assertEquals("Store Management", $this->getText("//div[@id='tab-body']/div[7]"));
-    $this->assertEquals("South Australia", $this->getText("//div[@id='tab-body']/div[15]"));
     $this->click("//li[@onclick=\"location.href='advertTemplate.php'\"]");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("This is template 2", $this->getText("//tr[@id='3']/td[1]"));
-    $this->assertEquals("Full-Time", $this->getText("//tr[@id='3']/td[3]"));
-    $this->assertEquals("Store Management", $this->getText("//tr[@id='3']/td[5]"));
-    $this->assertEquals("South Australia", $this->getText("//tr[@id='3']/td[9]"));
+    $this->assertEquals("Store Management", $this->getText("//tr[@id='2']/td[5]"));
+    $this->assertEquals("IT Department", $this->getText("//tr[@id='3']/td[5]"));
   }
 }
  

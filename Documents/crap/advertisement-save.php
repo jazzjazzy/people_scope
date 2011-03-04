@@ -261,7 +261,7 @@ tr.table_lists {
 		
 		<br class="clear" />
 		<div id="col-left">
-			<form action="advertisement.php?action=save" method="POST" name="createAdvertisement">
+			<form action="advertisement.php?action=save" method="post" name="createAdvertisement">
 
 <style>
 

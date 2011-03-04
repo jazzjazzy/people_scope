@@ -12,6 +12,8 @@
  * @package PeopleScope
  */
 
+require_once('questionCatagory.class.php');
+
 class question {
 	
 	/**
@@ -42,19 +44,19 @@ class question {
 	 * Array of field used in the database if not in this list is dropped from insert or update
 	 * @var Array
 	 */
-	private $fields =array('question_id', 'question_catagory_id', 'advertisement_id', 'label', 'type');
+	private $fields =array('question_id', 'question_catagory_id', 'label', 'type','options' );
 	
 	/**
 	 * Array of feilds require information when validating 
 	 * @var Array|null
 	 */
-	private $fields_required = NULL;
+	private $fields_required = array('label');
 	
 	/**
 	 * Array of feilds and there types that are check when validating 
 	 * @var Array|null
 	 */
-	private $fields_validation_type = array ('question_id'=>'INT', 'question_catagory_id'=>'INT', 'advertisement_id'=>'INT', 'label'=>'TEXT', 'type'=>'TEXT');
+	private $fields_validation_type = array ('question_id'=>'INT', 'question_catagory_id'=>'INT', 'label'=>'TEXT', 'type'=>'TEXT','options'=>'ARRAY' );
 	
 	/**
 	 * Array use to store any error found during Validation function 
@@ -62,6 +64,8 @@ class question {
 	 * @var Array
 	 */
 	private $validation_error = array();
+	
+	private $questionCatagory;
 	
 	/**
 	 * Contructor for this method 
@@ -90,6 +94,7 @@ class question {
 		
 		$this->table = new table();
 		$this->template = new template();
+		$this->questionCatagory=new questionCatagory();
 	
 	}
 	
@@ -115,10 +120,12 @@ class question {
 	Private function lists($orderby=NULL, $direction='ASC', $filter=NULL){
 		
 		$sql = "SELECT question_id,
-question_catagory_id,
-advertisement_id,
-label,
-type FROM question WHERE (delete_date ='00-00-0000 00:00:00' OR delete_date IS NULL)";
+				question.question_catagory_id,
+				question_catagory_name,
+				label,
+				type FROM question 
+				LEFT JOIN question_catagory ON question.question_catagory_id= question_catagory.question_catagory_id
+				WHERE (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL)";
 		
 		if(is_array($filter)){
 		  	foreach($filter AS $key=>$value){
@@ -193,6 +200,30 @@ type FROM question WHERE (delete_date ='00-00-0000 00:00:00' OR delete_date IS N
 				}catch(CustomException $e){
 					throw new CustomException($e->queryError($sql));
 				}
+				
+				if(isset($source['question_multi'])){
+					foreach($source['question_multi'] AS $key=>$entries){
+						unset($field);
+						unset($value);
+						unset($exec);
+						foreach($entries AS $key=>$val){
+							$field[] = $key;
+							$value[] = ":".$key;
+						}
+						
+						$sql = "INSERT INTO question_multi (question_id, ".implode(', ',$field).") VALUES ('".$pid."', ".implode(', ',$value).");";
+						
+						foreach($entries AS $key=>$val){
+							$exec[":".$key] = $val;
+						}
+						
+						try{
+							$mpid = $this->db->insert($sql, $exec); 
+						}catch(CustomException $e){
+							throw new CustomException($e->queryError($sql));
+						}
+					}
+				}
 				$this->db_connect->commit();
 			}
 
@@ -220,11 +251,15 @@ type FROM question WHERE (delete_date ='00-00-0000 00:00:00' OR delete_date IS N
 	 */
 	Private function read($id){
 	
-		$sql = "SELECT question_id,
-question_catagory_id,
-advertisement_id,
-label,
-type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 00:00:00' OR delete_date IS NULL)" ;
+		$sql = "SELECT 
+					question.*, 
+					question_multi.label AS multi_lable,
+					question_multi.multi_id,  
+					question_catagory.question_catagory_name
+				FROM question 
+				LEFT JOIN question_multi ON question.question_id = question_multi.question_id 
+				LEFT JOIN question_catagory ON question.question_catagory_id= question_catagory.question_catagory_id
+				WHERE question.question_id = ". $id ." AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL)" ;
 
 		
 			$stmt = $this->db_connect->prepare($sql);
@@ -235,8 +270,31 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 			}catch(CustomException $e){
 				 echo $e->queryError($sql);
 			}
+			
+			unset($_SESSION['Question_Details']['values']);
 
-			return $result[0];
+			$count=0;
+			foreach($result AS $key=>$value){
+				$retResult['question_id'] =$value['question_id'];
+				$retResult['question_catagory_id'] =$value['question_catagory_id'];
+				$retResult['question_catagory_name'] =$value['question_catagory_name'];
+				$retResult['label'] =$value['label'];
+				$retResult['type'] =$value['type'];
+				$retResult['options'] =unserialize($value['options']);
+				$retResult['create_date'] =$value['create_date'];
+				$retResult['create_by'] =$value['create_by'];
+				$retResult['modify_date'] =$value['modify_date'];
+				$retResult['modify_by'] =$value['modify_by'];
+				$retResult['delete_date'] =$value['delete_date'];
+				$retResult['delete_by'] =$value['delete_by'];
+				$retResult['value'][$count]['multi_id'] =$value['multi_id'];
+				$retResult['value'][$count]['value'] =$value['multi_lable'];
+				$_SESSION['Question_Details']['values'][$count]['multi_id'] =$value['multi_id'];
+				$_SESSION['Question_Details']['values'][$count]['value'] =$value['multi_lable'];
+				$count++;
+			}
+			
+			return $retResult;
 		
 			
 	}
@@ -366,7 +424,7 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 		
 		$result = $this->lists($orderby, $direction, $filter);
 		
-		$this->table->removeColumn(array('question_id'));
+		$this->table->removeColumn(array('question_id', 'question_catagory_id'));
 		
 		switch(strtoupper($type)){
 		
@@ -380,17 +438,15 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 			DEFAULT :
 				$this->table->setHeader(array(
 						'question_id'=>'Question Id',
-'question_catagory_id'=>'Question Catagory Id',
-'advertisement_id'=>'Advertisement Id',
-'label'=>'Label',
-'type'=>'Type'));
+						'question_catagory_name'=>'Catagory',
+						'label'=>'Label',
+						'type'=>'Type'));
 				
 				$this->table->setFilter(array(	
-						'question_id'=>'TEXT',
-'question_catagory_id'=>'TEXT',
-'advertisement_id'=>'TEXT',
-'label'=>'TEXT',
-'type'=>'TEXT'));
+						'question_id'=>'COMPILED',
+						'question_catagory_name'=>'COMPILED',
+						'label'=>'TEXT',
+						'type'=>'TEXT'));
 				
 				$this->table->setIdentifier('question_id');
 				
@@ -419,10 +475,19 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 		
 		$this->templateQuestionLayout($fieldMember);
 
-		//if($this->checkAdminLevel(1)){
-			$this->template->assign('FUNCTION', "<div class=\"button\" onclick=\"location.href='question.php?action=edit&id=".$id."'\">Edit</div>");
-		//}
+
+		$this->template->assign('FUNCTION', "<div class=\"button\" onclick=\"location.href='question.php?action=edit&id=".$id."'\">Edit</div>");
 		
+		if(file_exists(DIR_ROOT.'/question/'.strtolower(@$fieldMember['type']).'.q.php')){
+			include_once DIR_ROOT.'/question/'.strtolower(@$fieldMember['type']).'.q.php';
+		}
+		
+		$questionType = new $fieldMember['type']();
+		
+		$html = $questionType->create($fieldMember['options'], $fieldMember['label']);
+		
+		$this->template->assign('create-question', $html);
+			
 		echo $this->template->fetch();	
 	}
 		
@@ -451,6 +516,8 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 		
 		$this->templateQuestionLayout($fieldMember, true);
 		
+		$this->template->assign('create-question', $this->getQuestionDetailsById($id));
+
 		$this->template->assign('FUNCTION', "<div class=\"button\" onclick=\"document.$name.submit(); return false\">Update</div><div class=\"button\" onclick=\"location.href='question.php?action=show&id=".$id."'\">Cancel</div>");
 		
 		$this->template->display();
@@ -482,7 +549,6 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 				$table = 'question';
 
 				$save[$table]['question_catagory_id'] = $request['question_catagory_id'];
-				$save[$table]['advertisement_id'] = $request['advertisement_id'];
 				$save[$table]['label'] = $request['label'];
 				$save[$table]['type'] = $request['type'];
 				
@@ -569,13 +635,28 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 				$table = 'question';
 
 				$save[$table]['question_catagory_id'] = $request['question_catagory_id'];
-				$save[$table]['advertisement_id'] = $request['advertisement_id'];
 				$save[$table]['label'] = $request['label'];
 				$save[$table]['type'] = $request['type'];
 				
+				$save[$table]['options'] = serialize(@$request['options']);
+
 				$save[$table]['create_date'] = date('Y-m-d h:i:s');
 				
+				if(isset($_SESSION['Question_Details']['values'])){
+					if(is_array($_SESSION['Question_Details']['values'])){
+						$table="question_multi";
+						$table2="questionTracking";
+						foreach($_SESSION['Question_Details']['values'] AS $key=>$value){
+							$save[$table][$key]['label'] = $value['value'];
+							if(!empty($value['tracker'])){
+								$save[$table2][$key]['tracker'] = $value['tracker'];
+							}
+						}
+					}
+				}
+				unset($_SESSION['Question_Details']['values']);
 				$id = $this->create($save);
+				
 				header('Location: question.php?action=show&id='.$id);
 			}else{
 			
@@ -639,11 +720,10 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 				$id = @$fieldMember['question_id'];
 
 				//@$this->template->assign('question_id', ($input)? $this->template->input('text', 'question_id', $fieldMember['question_id']):$fieldMember['question_id']);
-				@$this->template->assign('question_catagory_id', ($input)? $this->template->input('text', 'question_catagory_id', $fieldMember['question_catagory_id']):$fieldMember['question_catagory_id']);
-				@$this->template->assign('advertisement_id', ($input)? $this->template->input('text', 'advertisement_id', $fieldMember['advertisement_id']):$fieldMember['advertisement_id']);
+				@$this->template->assign('question_catagory_id',  ($input)? $this->getQuestionCategoryList($fieldMember['question_catagory_id']) : $fieldMember['question_catagory_name']);
 				@$this->template->assign('label', ($input)? $this->template->input('textarea', 'label', $fieldMember['label']):$fieldMember['label']);
-				@$this->template->assign('type', ($input)? $this->getListOfQuestionTypes($fieldMember['type']):$fieldMember['type']);
-
+				@$this->template->assign('type', ($input)? $this->getListOfQuestionTypes($fieldMember['type']):$this->getQuestionTypeLable($fieldMember['type']));
+				//$this->template->assign('create-question', $this->getQuestionDetailsbyAdvertismentId($id));
 				
 				/*if(isset($id)){
 					$this->template->assign('COMMENTS', $this->comment->getCommentBox($id, 'question'));
@@ -669,7 +749,7 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 	 * @param Array $request
 	 */
 	public function Validate($request){
-	
+		
 		unset($this->valid_field);
 		unset($this->validation_error);
 		$isvalid = True;
@@ -703,7 +783,7 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 		
 		//now lets validate
 		foreach ($this->valid_field AS $key=>$value){
-			$value = trim($value);
+			//$value = trim($value);
 			if(!empty($value)){ // don't cheak if empty, alread done in required check 
 				
 				switch(@$fieldsvalidationtype[$key]){
@@ -751,17 +831,362 @@ type FROM question WHERE question_id = ". $id ." AND (delete_date ='00-00-0000 0
 	
 	}
 	
+	/**
+	 * Add a new question to the Advertisement
+	 * This methods is used for an ajax call to add a question to the question list for an advertisment
+	 * 
+	 * @param Integer $id the Id of the question from the question pool
+	 * @param Integer $pid The id of the advertise this question is to be added too 
+	 * 
+	 * @return String An li row to be added to an unorded list  
+	 */
+	public function addQuestionById($id, $pid=NULL){
+		if(empty($id) && !is_numeric($id)){
+			return false;
+		}
+		
+		$list = $this->read($id);
+		
+		if(empty($pid)){
+			$_SESSION['questions']['create'][] = $list;
+		}else{
+			$_SESSION['questions'][$pid][] = $list;
+		}
+		
+		/*$sql = "INSERT INTO advertisement_question (advertisement_id,question_id) VALUES ('".$pid."','".$list['question_id']."');";
+		
+		try{
+			$pid = $this->db->insert($sql); 
+		}catch(CustomException $e){
+			throw new CustomException($e->queryError($sql));
+		}*/
+
+		$html ='<li id="q_'.$list['question_id'].'">
+					<div style="float:left">
+						<div style="width:300px;float:left">'.$list['label'].'</div>
+						<div style="width:50px;float:left">'.$this->getQuestionTypeLable($list['type'])."</div>
+					</div>
+				 </li>\n";
+
+		return $html;
+		
+	}
+	
 	public function getListOfQuestionTypes($type = false){
 		$html = "<select>";
+		$list = array();
 		if ($handle = opendir('question/')) {
 			while (false !== ($file = readdir($handle))) {
 				if($file != '.' && $file != '..'){
 					$questionType = explode('.', $file);
-		        	$html .= '<option value="'.$questionType[0].'">'.$questionType[0].'</option>'."\n";
+		        	$list[] = $questionType[0];
+		        	
 				}
+			}
+		}
+		
+		sort($list);
+		
+		$html = "<select id=\"question-type\" name=\"type\"><option></option>";
+		foreach($list AS $value){
+			$label = $this->getQuestionTypeLable($value);
+			if($value == $type){
+				$html .= '<option value="'.$value.'" selected=selected>'.$label.'</option>'."\n";
+			}else{
+				$html .= '<option value="'.$value.'">'.$label.'</option>'."\n";
 			}
 		}
 		$html .= "</select>";
 		return $html;
 	} 
+	
+	
+	public function getQuestionTypeLable($name){
+		$label = str_replace('_', ' ', $name);
+		$label = ucwords($label);
+		
+		return $label;
+	}
+	
+	public function getQuestionCategoryList($id, $retType=NULL){
+		$list = $this->questionCatagory->getQuestionCatagorySelect();
+		
+		if($retType){
+			foreach($list AS $value){
+				$html = ($value['question_catagory_id'] == $id)? question_catagory_name : '';
+			}
+		}else{
+			$html = "<select name=\"question_catagory_id\" id=\"question_catagory_id\"><option></option>";
+			foreach($list AS $value){
+				$selected = ($value['question_catagory_id'] == $id)? "selected=selected" : '';
+				$html.='<option value="'.$value['question_catagory_id'].'" '.$selected.'>'.$value['question_catagory_name'].'</option>';
+			}
+		}
+		$html .= "</select>";
+		
+		return $html;
+	}
+	
+	public function getQestionsByAdvertismentId($id){
+		$sql = "SELECT question.question_id,
+				question.question_catagory_id,
+				question_catagory_name,
+				label,
+				type FROM question 
+				LEFT JOIN advertisement_question ON question.question_id = advertisement_question.question_id
+				LEFT JOIN question_catagory ON question.question_catagory_id= question_catagory.question_catagory_id
+				WHERE advertisement_id = ". $id ." AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL)" ;
+
+		
+			$stmt = $this->db_connect->prepare($sql);
+			$stmt->execute();
+			
+			try{
+				 $result = $this->db->select($sql);
+			}catch(CustomException $e){
+				 echo $e->queryError($sql);
+			}
+
+			return $_SESSION['questions'][$id] = $result;
+	}
+	
+	/*public function getQuestions($pid, $id){
+		$sql = "SELECT question.question_id, question.label, question.type, question_multi.label AS multi_label, question_multi.value FROM advertisement_question 
+					LEFT JOIN question ON advertisement_question.question_id = question.question_id
+					LEFT JOIN question_multi ON question.question_id = question_multi.question_id
+				WHERE advertisement_question.advertisement_id = ".$pid." AND question.question_id= ".$id." 
+				AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL);";
+		
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			$result = $this->db->select($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
+		
+		foreach($result AS $value){
+			$temp[] = $value['multi_label'].'|'.$value['value'];
+		}
+		
+		$_SESSION['questions'][$id] = $temp;
+	}*/
+	
+	public function getQuestionDetailsbyAdvertismentId($id, $pid=Null){
+		
+		/*$sql = "SELECT question.question_id, question.label, question.type, question_multi.label AS multi_label, question_multi.value FROM advertisement_question 
+					LEFT JOIN question ON advertisement_question.question_id = question.question_id
+					LEFT JOIN question_multi ON question.question_id = question_multi.question_id
+				WHERE advertisement_question.advertisement_id = ".$pid." AND question.question_id= ".$id." 
+				AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL);";
+		
+		$sql = "SELECT question.question_id, question.label, question.type, question_multi.label AS multi_label, question_multi.value FROM question 
+					LEFT JOIN question_multi ON question.question_id = question_multi.question_id
+				WHERE question.question_id= ".$id." 
+				AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL);";
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			$result = $this->db->select($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}*/
+		$result = $this->read($id);
+		
+		foreach($result['value'] AS $value){
+			$temp[] = $value['value'].'|'.$value['value'];
+		}
+		
+		$value = implode(',', $temp);
+	
+		$str = $result['label'].':'.$result['question_id'].':'.$result['type'].':'.$value.':::required:notype';
+		
+		/*$formExample = new form($str);		
+		$formEdit = new form();
+		$formSetting = new form();
+		*/
+		//$html = $form->edit($str);
+		
+		$type =strtolower($result['type']);
+		if(file_exists(DIR_ROOT.'/question/'.$type.'.q.php')){
+			include_once DIR_ROOT.'/question/'.$type.'.q.php';
+		}
+		
+		$question = new $type();
+		
+		
+		$html = '<script>
+					$(document).ready(function(){
+						$("#example").tabs();
+					})
+				</script> 
+		<div id="example">
+     	<ul>
+		<li><a href="#tabs-1">Eample</a></li>
+		<li><a href="#tabs-2">Tracking</a></li>
+		<li><a href="#tabs-3">Setting</a></li>
+		<li><div class="cancel-button">&nbsp;</div></li>
+			</ul>
+			
+			<div id="tabs-1">
+				<div id="tab-text" >This is an eample of what the question type would look like.</div>
+				<div style="padding:0px 0px 20px 20px">'.$question->display($result['label'], $result['value']).'</div>
+			</div>
+			<div id="tabs-2">
+				<div id="tab-text" >Use this to set the tracking requirments for this question</div>
+				<div style="padding:0px 0px 20px 20px">'.$question->edit(true).'</div>
+			</div>
+			<div id="tabs-3">
+				<div id="tab-text" >you can change the requirment setting for this question below</div>
+				<div style="padding:0px 0px 20px 20px">'.$question->setting($result['options']).'</div>
+			</div>
+		
+		</div>';
+		
+		//$html  = "<div class=\"button qedit\" id=\"$id-$pid\">edit</div><br class=\"clear\">".$form->draw()."<div class=\"button\" id=\"close\">Close</div><br class=\"clear\" />";
+		
+		return $html;
+
+	}
+	
+	public function getQuestionEditbyAdvertismentId($id, $pid){
+		
+		$temp = array();
+		
+		/*$sql = "SELECT question.question_id, question.label, question.type, question_multi.label AS multi_label, question_multi.value FROM advertisement_question 
+					LEFT JOIN question ON advertisement_question.question_id = question.question_id
+					LEFT JOIN question_multi ON question.question_id = question_multi.question_id
+				WHERE advertisement_question.advertisement_id = ".$pid." AND question.question_id= ".$id." 
+				AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL);";*/
+		
+		$sql = "SELECT question.question_id, question.label, question.type, question_multi.label AS multi_label, question_multi.value FROM question
+					LEFT JOIN question_multi ON question.question_id = question_multi.question_id
+				WHERE question.question_id= ".$id." 
+				AND (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL);";
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			$result = $this->db->select($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
+		
+		foreach($result AS $value){
+			$temp[] = $value['multi_label'].'|'.$value['value'];
+		}
+		
+		$value = implode(',', $temp);
+	
+		$str = $result[0]['label'].':'.$result[0]['question_id'].':'.$result[0]['type'].':'.$value.':::required:notype';
+		
+		$form = new form();
+		
+		$html = $form->edit($str);
+		
+
+		//$html .= "<div class=\"button qedit\" id=\"$id-$pid\">edit</div><div class=\"button\" id=\"close\">Cancal</div><br class=\"clear\" /><br class=\"clear\">".$form->edit($str);
+
+		return $html;
+
+	}
+	
+	public function getQuestionPool($pid = NULl){
+		
+		$sql = "SELECT question_catagory_name, question.question_id, question.label, question.type
+					FROM
+					question_catagory
+					Left Outer Join question ON question_catagory.question_catagory_id = question.question_catagory_id
+					WHERE (question.delete_date ='00-00-0000 00:00:00' OR question.delete_date IS NULL)";
+
+		if(!empty($pid)){
+			//$sql .= " AND question.question_id NOT IN (SELECT question_id FROM advertisement_question WHERE advertisement_id = ".$pid.") ";
+		}
+		
+		$sql .= " ORDER BY question_catagory_name;";
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			$result = $this->db->select($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
+		
+		return $result;
+	}
+	
+	public function sortQuestionOrder($id, $q){
+		try{
+			$this->db_connect->beginTransaction();
+			
+			foreach($q AS $key=>$value){
+				$sql = "UPDATE advertisement_question SET sort = $key WHERE question_id =". $value ." AND advertisement_id = ".$id;
+
+				try{
+						$pid = $this->db->update($sql); 
+				}catch(CustomException $e){
+						throw new CustomException($e->queryError($sql));
+				}
+			}
+			
+			$this->db_connect->commit();	
+		}
+		
+		catch (CustomException $e) {
+			$e->queryError($sql);
+			$this->db_connect->rollBack();
+			return false;
+		}	
+	}
+	
+	public function getQuestionDetailsByType($name){
+		
+		$name = strtolower($name);
+		
+		if(file_exists(DIR_ROOT.'/question/'.$name.'.q.php')){
+			include_once DIR_ROOT.'/question/'.$name.'.q.php';
+		}
+		unset($_SESSION['Question_Details']['values']);
+		
+		$questionTpye = new $name();
+		
+		$html = $questionTpye->create(true);	
+		
+		return $html;
+	}
+
+	public function getQuestionDetailsById($id){
+		
+		$read = $this->read($id);
+		
+		$name = $read['type'];
+		
+		unset($_SESSION['Question_Details']['values']);
+		
+		if(!empty($read['value'])){
+			foreach($read['value'] AS $key=>$value){
+				$_SESSION['Question_Details']['values'][]['value'] = trim($value['value']);
+			}
+		}
+		
+		
+		if(file_exists(DIR_ROOT.'/question/'.strtolower($name).'.q.php')){
+			include_once DIR_ROOT.'/question/'.strtolower($name).'.q.php';
+		}
+		
+		$questionType = new $name();
+		
+		$html = $questionType->create($read['options'], $read['label']);
+		
+		//$html = create($read['options']);	
+		
+		return $html;
+	}
 }

@@ -91,7 +91,8 @@ class EmploymenttypeTest extends PHPUnit_Extensions_OutputTestCase
 	 */
 	public function testCreateEmploymenttypeDetails(){
     	$this->expectOutputRegex('/value=\"\"/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Save">/');
     	self::$employmenttype->createEmploymenttypeDetails(self::$id);
     }
     
@@ -100,7 +101,8 @@ class EmploymenttypeTest extends PHPUnit_Extensions_OutputTestCase
 	 */
     public function testEditEmploymenttypeDetails(){
     	$this->expectOutputRegex('/'.self::$_REQUEST[self::$fieldtest].'/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Update">/');
     	self::$employmenttype->editEmploymenttypeDetails(self::$id);
     }
 	
@@ -164,7 +166,55 @@ class SeleniumEmploymenttypeTest extends PHPUnit_Extensions_SeleniumTestCase
 	 */
   public function testWebEmploymenttypeDetails()
   {
-
+	$this->open("/people_scope/");
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("employmenttype", "Full-time");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Full-time", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Full-time", $this->getText("//tr[@id='2']/td[1]"));
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("employmenttype", "Part-Time");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Part-Time", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("employmenttype", "Casual Full time");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Casual Full time", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//div[@onclick=\"location.href='employmenttype.php?action=edit&id=4'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("employmenttype", "Casual Part Time");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Casual Part Time", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("employmenttype", "Casual");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("Casual", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//li[@onclick=\"location.href='employmenttype.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->type("flt_employmenttype", "part");
+    $this->assertEquals("Part-Time", $this->getText("//tr[@id='3']/td[1]"));
+    $this->type("flt_employmenttype", "");
   }
 }
  

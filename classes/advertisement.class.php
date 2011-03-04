@@ -12,6 +12,8 @@
  * @package PeopleScope
  */
 
+require_once('question.class.php');
+
 class advertisement {
 	
 	/**
@@ -37,7 +39,13 @@ class advertisement {
 	 * @var Object
 	 */
 	public $template;
-
+	
+	/**
+	 * Template class object 
+	 * @var Object
+	 */
+	public $questions;
+	
 	/**
 	 * Array of field used in the database if not in this list is dropped from insert or update
 	 * @var Array
@@ -90,6 +98,7 @@ class advertisement {
 		
 		$this->table = new table();
 		$this->template = new template();
+		$this->questions = new question();
 	
 	}
 	
@@ -126,8 +135,8 @@ class advertisement {
 					state.name,
 					advertisement.store_location_id,
 					advertisement.storerole_id,
-					DATE_FORMAT(advertisement.start_date, '%d/%m/%Y') AS start_date,
-					DATE_FORMAT(advertisement.end_date, '%d/%m/%Y') AS end_date,
+					CASE WHEN advertisement.start_date = '00-00-0000 00:00:00' THEN 'Now' ELSE DATE_FORMAT(advertisement.start_date, '%d/%m/%Y') END  AS start_date,
+					CASE WHEN advertisement.end_date = '00-00-0000 00:00:00' THEN 'Never' ELSE DATE_FORMAT(advertisement.end_date, '%d/%m/%Y') END  AS end_date,
 					advertisement.discription,
 					advertisement.requirments,
 					if(advertisement.upload_resume, 'yes', 'no') AS upload_resume,
@@ -221,6 +230,22 @@ class advertisement {
 				}catch(CustomException $e){
 					throw new CustomException($e->queryError($sql));
 				}
+				
+				$sql = "INSERT INTO advertisement_question (advertisement_id, question_id, sort) VALUES "; 
+				pp($source['advertisement_question']);
+				foreach($source['advertisement_question'] AS $key=>$value){
+					
+					$fields[] = "(".$pid.", ".$value['question_id'].",".$key.")";
+				}
+				
+				$sql .= implode(',', $fields);
+				
+				try{
+					$this->db->insert($sql); 
+				}catch(CustomException $e){
+					throw new CustomException($e->queryError($sql));
+				}
+				
 				$this->db_connect->commit();
 			}
 
@@ -229,7 +254,7 @@ class advertisement {
 				$this->db_connect->rollBack();
 				return false;
 			}
-
+			
 			return $pid;
 	}
 	
@@ -259,8 +284,8 @@ class advertisement {
 					state_id,
 					store_location_id,
 					storerole_id,
-					DATE_FORMAT(start_date, '%d/%m/%Y') AS start_date,
-					DATE_FORMAT(end_date, '%d/%m/%Y') AS end_date,
+					CASE WHEN advertisement.start_date = '00-00-0000 00:00:00' THEN '' ELSE DATE_FORMAT(advertisement.start_date, '%d/%m/%Y') END  AS start_date,
+					CASE WHEN advertisement.end_date = '00-00-0000 00:00:00' THEN '' ELSE DATE_FORMAT(advertisement.end_date, '%d/%m/%Y') END   AS end_date,
 					discription,
 					requirments,
 					upload_resume,
@@ -287,7 +312,9 @@ class advertisement {
 			}catch(CustomException $e){
 				 echo $e->queryError($sql);
 			}
-
+			
+			$this->questions->getQestionsByAdvertismentId($id);
+			
 			return $result[0];
 		
 			
@@ -376,7 +403,7 @@ class advertisement {
 				return false;
 			}
 			
-			$sql = "UPDATE advertisement SET delete_date=NOW(), deleted_by=".$_SESSION['user']['user_id']." WHERE advertisement_id =". $id;
+			$sql = "UPDATE advertisement SET delete_date=NOW(), delete_by=".$_SESSION['user']['user_id']." WHERE advertisement_id =". $id;
 
 			try{
 				$result = $this->db->update($sql);
@@ -471,6 +498,7 @@ class advertisement {
 				
 				$this->table->setIdentifier('advertisement_id');
 				
+				$this->template->assign('pagetitle', "List Advertisments" );
 				$this->template->content(Box($this->table->genterateDisplayTable($result),'Advertisement List', 'Shows the current listings for the Advertisement. To create a new Listing <a href="advertisement.php?action=create">Click Here</a>'));
 				
 				$this->template->display();
@@ -495,7 +523,7 @@ class advertisement {
 		$this->template->page('advertisement.tpl.html');
 		
 		$this->templateAdvertisementLayout($fieldMember);
-
+		$this->template->assign('pagetitle', $fieldMember['title'] );
 		//if($this->checkAdminLevel(1)){
 			$this->template->assign('FUNCTION', "<div class=\"button\" onclick=\"location.href='advertisement.php?action=edit&id=".$id."'\">Edit</div>");
 		//}
@@ -525,10 +553,10 @@ class advertisement {
 		
 		$this->template->page('advertisement.tpl.html');
 		$this->template->assign('FORM-HEADER', '<form action="advertisement.php?action=update&id='.$id.'" method="POST" name="'.$name.'">');
-		
+		$this->template->assign('pagetitle', $fieldMember['title'] );
 		$this->templateAdvertisementLayout($fieldMember, true);
 		
-		$this->template->assign('FUNCTION', "<button type=\"submit\">Update</button><div class=\"button\" onclick=\"location.href='advertisement.php?action=show&id=".$id."'\">Cancel</div>");
+		$this->template->assign('FUNCTION', "<input class=\"button\" type=\"image\" value=\"Update\"><div class=\"button\" onclick=\"location.href='advertisement.php?action=show&id=".$id."'\">Cancel</div>");
 		
 		$this->template->display();
 	}
@@ -560,7 +588,7 @@ class advertisement {
 				
 				$save[$table]['title'] = $request['title'];
 				$save[$table]['catagory_id'] = $request['catagory_id'];
-				$save[$table]['template_id'] = @$request['template_id'];
+				//$save[$table]['template_id'] = @$request['template_id'];
 				/*$save[$table]['office_id'] = $request['office_id'];
 				$save[$table]['dept_id'] = $request['dept_id'];
 				$save[$table]['role_id'] = $request['role_id'];*/
@@ -571,9 +599,9 @@ class advertisement {
 				$save[$table]['end_date'] = formatDateUI($request['end_date']);
 				$save[$table]['discription'] = $request['discription'];
 				$save[$table]['requirments'] = $request['requirments'];
-				$save[$table]['upload_resume'] = $request['upload_resume'];
-				$save[$table]['cover_letter'] = $request['cover_letter'];
-				$save[$table]['status'] = $request['status'];
+				$save[$table]['upload_resume'] = (isset($request['upload_resume']))?$request['upload_resume']:0;
+				$save[$table]['cover_letter'] = (isset($request['cover_letter']))?$request['cover_letter']:0;
+				$save[$table]['status'] = (isset($request['status']))?$request['status']:0;
 				$save[$table]['employmenttype_id'] = $request['employmenttype_id'];
 				$save[$table]['modify_by'] = @$_SESSION['user']['user_id'];
 				
@@ -621,11 +649,13 @@ class advertisement {
 	 */
 	Public function createAdvertisementDetails(){
 		
+		$_SESSION['questions']['create'] = '';
+		
 		$name = 'createAdvertisement';
 		
 		$this->template->page('advertisement.tpl.html');
 		$this->template->assign('FORM-HEADER', '<form action="advertisement.php?action=save" method="POST" name="'.$name.'">');
-		
+		$this->template->assign('pagetitle', "Create Advertisment" );
 		$this->templateAdvertisementLayout('', true);
 		
 		$this->template->assign('FUNCTION', "<input class=\"button\" type=\"image\" value=\"Save\"><div class=\"button\" onclick=\"location.href='advertisement.php?action=list'\">Cancel</div>");
@@ -661,7 +691,7 @@ class advertisement {
 
 				$save[$table]['title'] = $request['title'];
 				$save[$table]['catagory_id'] = $request['catagory_id'];
-				$save[$table]['template_id'] = $request['template_id'];
+				//$save[$table]['template_id'] = $request['template_id'];
 				/*$save[$table]['office_id'] = $request['office_id'];
 				$save[$table]['dept_id'] = $request['dept_id'];
 				$save[$table]['role_id'] = $request['role_id'];*/
@@ -679,6 +709,12 @@ class advertisement {
 				$save[$table]['create_by'] = $_SESSION['user']['user_id'];
 				
 				$save[$table]['create_date'] = date('Y-m-d h:i:s');
+				
+				$table = 'advertisement_question';
+				if(isset($_SESSION['questions']['create'])){
+					$save[$table] = $_SESSION['questions']['create'];
+				}
+				
 				
 				$id = $this->create($save);
 				header('Location: advertisement.php?action=show&id='.$id);
@@ -742,7 +778,9 @@ class advertisement {
 	private function templateAdvertisementLayout($fieldMember, $input = false, $inputArray=array() ){
 				
 				$id = @$fieldMember['advertisement_id'];
-
+				
+				@$this->template->assign('advertisement_id', $id);
+				
 				@$this->template->assign('title', ($input)? $this->template->input('text', 'title', $fieldMember['title']):'<div id="title">'.$fieldMember['title'].'</div>');
 				@$this->template->assign('catagory_name', ($input)? $this->getSelectListOfCategory($fieldMember['catagory_id'], True):'<div class="indent">'.$this->getSelectListOfCategory($fieldMember['catagory_id']).'</div>');
 				@$this->template->assign('template_title', ($input)? $this->getSelectListOfTemplate($fieldMember['template_id'], True):$this->getSelectListOfTemplate($fieldMember['template_id']));
@@ -756,6 +794,8 @@ class advertisement {
 				@$this->template->assign('end_date', ($input)? $this->template->input('text', 'end_date', $fieldMember['end_date']):'<div class="indent">'.$fieldMember['end_date'].'</div>');
 				@$this->template->assign('discription', ($input)? $this->template->input('textarea', 'discription', $fieldMember['discription']):$fieldMember['discription']);
 				@$this->template->assign('requirments', ($input)? $this->template->input('textarea', 'requirments', $fieldMember['requirments']):$fieldMember['requirments']);
+				@$this->template->assign('question_list', ($input)? $this->getAdvertisingQuestions($_SESSION['questions'][$id]):$this->getAdvertisingQuestions($_SESSION['questions'][$id]));
+				@$this->template->assign('question_pool', ($input)? $this->getListOfQuestions($id):$this->getListOfQuestions($id));
 				@$this->template->assign('upload_resume', ($input)? $this->template->input('checkbox', 'upload_resume', $this->template->formatBoolean($fieldMember['upload_resume'])):$this->template->formatBoolean($fieldMember['upload_resume'] ));
 				@$this->template->assign('cover_letter', ($input)? $this->template->input('checkbox', 'cover_letter', $this->template->formatBoolean($fieldMember['cover_letter'])):$this->template->formatBoolean($fieldMember['cover_letter'] ));
 				@$this->template->assign('status', ($input)? $this->template->input('checkbox', 'status', $this->template->formatBoolean($fieldMember['status'])):$this->template->formatBoolean($fieldMember['status'] ));
@@ -874,6 +914,55 @@ class advertisement {
 	
 	}
 	
+	private function getAdvertisingQuestions($qArray){
+		if(!is_array($qArray)){
+			return false;
+		}
+		
+		$html ="";
+		
+		foreach($qArray AS $value){
+			$html .='<li id="q_'.$value['question_id'].'" style="clear:both">
+						<div>
+							<div style="width:300px;float:left">'.$value['label'].'</div>
+							<span style="width:50px;">'.$this->questions->getQuestionTypeLable($value['type'])."</span>
+						</div>
+					 </li>\n";
+		}
+		
+		return $html;
+	}
+	
+	public function getListOfQuestions($pid){
+		$list = $this->questions->getQuestionPool($pid);
+		//pp($list);
+		foreach($list AS $value){
+			$value['question_catagory_name'] = (!empty($value['question_catagory_name']))?$value['question_catagory_name'] : "Other";
+			$listArray[$value['question_catagory_name']][] = $value;
+		}
+		
+		$html ='<div style="float:left;width:380px">';
+		$html .='<div class="pool" >';
+		$html .= "<h3><a href=\"#\">Create new</a></h3><ul><li></li></ul>";
+		foreach($listArray AS $key=>$value1){
+			$html .= "<h3><a href=\"#\">$key</a></h3>";
+			$html .= "<ul>";
+			foreach($value1 AS $key=>$value){
+				$html .='<li id="list_'.$value['question_id'].'">
+							<div class="pool-list" style="float:left">
+								<div style="width:265px;float:left">'.$value['label'].'</div>
+								<div style="width:50px;float:left">'.$this->questions->getQuestionTypeLable($value['type'])."</div>
+							</div>
+						 </li>\n";
+			}
+			$html .= "</ul>";
+		}
+		$html .="</div>";
+		$html .='</div>';
+		
+		return $html;
+	}
+	
 	/**
 	 * This Method will either the catagory_name feild or a select box of catagory_name fields
 	 * 
@@ -964,7 +1053,7 @@ class advertisement {
 	 */
 	public function getSelectListOfTemplate($id, $selectBox=NULL){
 
-			if(is_nan($id) || empty($id)){
+		if(is_nan($id) && empty($id)){
 			return;
 		}
 		
@@ -1018,5 +1107,6 @@ class advertisement {
 		return $result[0]['admin'];
 		
 	}
+	
 	
 }

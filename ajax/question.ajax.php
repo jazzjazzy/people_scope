@@ -17,8 +17,36 @@ $filter=$question->table->buildWhereArrayFromRequest();
 switch($action){
 	case 'list':$page="staff.php?action=show" ;
 				$filter=$question->table->buildWhereArrayFromRequest();
-				$question->getQuestionList('AJAX', $orderby, $dir, $filter); break;
-	
-				
-	default : echo ("<tr class=\"row\"><td colspan=\"10\">No action given</td></tr>");
+				$question->getQuestionList('AJAX', $orderby, $dir, $filter); 
+			break;
+	case 'show-question' : 
+				$id=(isset($_REQUEST['id']))? $_REQUEST['id'] : '';
+				$pid=(isset($_REQUEST['pid']))? $_REQUEST['pid'] : '';
+				echo $question->getQuestionDetailsbyAdvertismentId($id, $pid);
+			break;
+	case 'edit-question' : 
+				$id=(isset($_REQUEST['id']))? $_REQUEST['id'] : '';
+				$pid=(isset($_REQUEST['pid']))? $_REQUEST['pid'] : '';
+				echo $question->getQuestionEditbyAdvertismentId($id, $pid);
+			break;	
+	case 'arrange-sort' :
+				$q = (isset($_REQUEST['q']))? $_REQUEST['q'] : '';
+				$id=(isset($_REQUEST['id']))? $_REQUEST['id'] : '';	
+				$question->sortQuestionOrder($id, $q);	
+			break;
+	case 'add-question': 
+				$id=(isset($_REQUEST['id']))? $_REQUEST['id'] : '';	
+				$pid=(isset($_REQUEST['pid']))? $_REQUEST['pid'] : '';
+				echo $question->addQuestionById($id,$pid);
+			break;
+	case 'get-question-details':
+				$name=(isset($_REQUEST['id']))? $_REQUEST['id'] : '';
+				echo $question->getQuestionDetailsByType($name);
+			break;
+	case 'set-tracking':
+				$qid = (isset($_REQUEST['qid']))? $_REQUEST['qid'] : ''; //page id 
+				$pid=(isset($_REQUEST['pid']))? $_REQUEST['pid'] : '';	//question id
+				$tid=(isset($_REQUEST['tid']))? $_REQUEST['tid'] : '';	//tracking id
+				$question->sortQuestionOrder($pid, $qid, $tid);	
+	default : echo ("No action given");
 }

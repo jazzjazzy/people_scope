@@ -212,7 +212,7 @@ class table{
 												$link = "onclick=\"location.href='".$page."/".$action."/".$id."'\" id=".$id;
 											}else{
 												$action = "action=".$action;
-												$link = "onclick=\"location.href='".$page."?".$action."&id=".$id."'\" id=".$id;
+												$link = "onclick=\"location.href='".$page.".php?".$action."&id=".$id."'\" id=".$id;
 											}
 											//$link = "onclick=\"location.href='".$page."?".$action."&id=".$id."'\" id=".$id;
 										}
@@ -275,7 +275,7 @@ class table{
 												$action = "action=show";
 											}
 											
-											$link = "onclick=\"location.href='".$page."?".$action."&id=".$id."'\" id=".$id;
+											$link = "onclick=\"location.href='".$page.".php?".$action."&id=".$id."'\" id=".$id;
 										}
 									}
 				    		}

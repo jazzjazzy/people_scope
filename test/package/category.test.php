@@ -91,7 +91,8 @@ class CategoryTest extends PHPUnit_Extensions_OutputTestCase
 	 */
 	public function testCreateCategoryDetails(){
     	$this->expectOutputRegex('/value=\"\"/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Save<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Save">/');
     	self::$category->createCategoryDetails(self::$id);
     }
     
@@ -100,7 +101,8 @@ class CategoryTest extends PHPUnit_Extensions_OutputTestCase
 	 */
     public function testEditCategoryDetails(){
     	$this->expectOutputRegex('/'.self::$_REQUEST[self::$fieldtest].'/');
-    	$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	//$this->expectOutputRegex('/<div class="button" onclick="document\.(.+?)\.submit\(\); return false">Update<\/div>/');
+    	$this->expectOutputRegex('/<input class="button" type="image" value="Update">/');
     	self::$category->editCategoryDetails(self::$id);
     }
 	
@@ -165,37 +167,46 @@ class SeleniumCategoryTest extends PHPUnit_Extensions_SeleniumTestCase
 	 */
   public function testWebCategoryDetails()
   {
-  	$this->open("/people_scope/category.php");
+  	    $this->open("/people_scope/");
     $this->click("//li[@onclick=\"location.href='category.php'\"]");
     $this->waitForPageToLoad("30000");
     $this->click("link=Click Here");
     $this->waitForPageToLoad("30000");
-    $this->type("catagory_name", "Warehouseing");
-    $this->click("//div[@onclick='document.createCategory.submit(); return false']");
+    $this->type("catagory_name", "Whare Housing");
+    $this->click("//input[@value='Save']");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("Warehouseing", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->assertEquals("Whare Housing", $this->getText("//div[@id='tab-body']/div[5]"));
     $this->click("//li[@onclick=\"location.href='category.php'\"]");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("Warehouseing", $this->getText("//tr[@id='2']/td[1]"));
+    $this->assertEquals("Whare Housing", $this->getText("//tr[@id='2']/td[1]"));
+    $this->click("//li[@onclick=\"location.href='category.php'\"]");
+    $this->waitForPageToLoad("30000");
     $this->click("link=Click Here");
     $this->waitForPageToLoad("30000");
-    $this->type("catagory_name", "Sales Department");
-    $this->click("//div[@onclick='document.createCategory.submit(); return false']");
+    $this->type("catagory_name", "Sales");
+    $this->click("//input[@value='Save']");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("Sales Department", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->assertEquals("Sales", $this->getText("//div[@id='tab-body']/div[5]"));
     $this->click("//li[@onclick=\"location.href='category.php'\"]");
     $this->waitForPageToLoad("30000");
-    $this->click("//tr[@id='2']/td[1]");
+    $this->click("link=Click Here");
     $this->waitForPageToLoad("30000");
-    $this->click("//div[@onclick=\"location.href='category.php?action=edit&id=2'\"]");
+    $this->type("catagory_name", "Management");
+    $this->click("//input[@value='Save']");
     $this->waitForPageToLoad("30000");
-    $this->type("catagory_name", "Warehouseing Department");
-    $this->click("//div[@onclick='document.editCategory.submit(); return false']");
-    $this->waitForPageToLoad("30000");
-    $this->assertEquals("Warehouseing Department", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->assertEquals("Management", $this->getText("//div[@id='tab-body']/div[5]"));
     $this->click("//li[@onclick=\"location.href='category.php'\"]");
     $this->waitForPageToLoad("30000");
-    $this->assertEquals("Warehouseing Department", $this->getText("//tr[@id='2']/td[1]"));
+    $this->click("link=Click Here");
+    $this->waitForPageToLoad("30000");
+    $this->type("catagory_name", "IT Department");
+    $this->click("//input[@value='Save']");
+    $this->waitForPageToLoad("30000");
+    $this->assertEquals("IT Department", $this->getText("//div[@id='tab-body']/div[5]"));
+    $this->click("//li[@onclick=\"location.href='category.php'\"]");
+    $this->waitForPageToLoad("30000");
+    $this->type("flt_catagory_name", "it");
+    $this->assertEquals("IT Department", $this->getText("//tr[@id='5']/td[1]"));
   }
 }
  

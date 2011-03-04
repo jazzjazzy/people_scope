@@ -744,4 +744,8 @@ delete_date FROM category WHERE catagory_id = ". $id ." AND (delete_date ='00-00
 		return $isvalid;
 	
 	}
+	
+	public function getCategorySelect(){
+		return $this->lists();
+	}
 }

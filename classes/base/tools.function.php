@@ -141,7 +141,11 @@ function formatArray($array, $name){
 	$line .= "<h4>".$name."</h4><blockquote><br/>";
 	if (isset($array)){
 		foreach($array AS $key=>$value){
-			$line .= "['".$key."']=&nbsp;&nbsp;&nbsp;". print_r($value,1)."<br />";
+			if(is_array($value)){
+				$line .= "['".$key."']=&nbsp;&nbsp;&nbsp;<pre>". print_r($value,1)."</pre><br />";
+			}else{
+				$line .= "['".$key."']=&nbsp;&nbsp;&nbsp;". $value."<br />";
+			}
 		}
 	}
 	$line .= "</blockquote>";
@@ -234,7 +238,7 @@ function createDateField($date, $yearRange = 10, $startyear = NULL){
  * @param String $date database date format
  */
 function formatDateUI($date){
-	//exit(print_r(debug_backtrace()));
+	if(empty($date)) return false;
 	list($day, $month, $year) = explode('/', $date);
 	$year = (strlen($year) == 2)?'20'.$year: $year;
 	return $year.'-'.$month.'-'.$day.' 00:00:00' ;
@@ -433,6 +437,18 @@ function Box($content, $header, $discription){
 		</div>';
 	return $html;
 	
+}
+
+function Box2($content){
+	
+$html ='<div class="roundedcornr_box_734246">
+		   <div class="roundedcornr_top_734246"><div></div></div>
+		      <div class="roundedcornr_content_734246">
+		         <p>'.$content.'</p>
+		      </div>
+		   <div class="roundedcornr_bottom_734246"><div></div></div>
+		</div>';
+return $html;
 }
 
 function warning($content){

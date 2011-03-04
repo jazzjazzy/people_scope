@@ -12,6 +12,8 @@
  * @package PeopleScope
  */
 
+require_once('question.class.php');
+
 class advertTemplate {
 	
 	/**
@@ -64,6 +66,12 @@ class advertTemplate {
 	private $validation_error = array();
 	
 	/**
+	 * Template class object 
+	 * @var Object
+	 */
+	public $questions;
+	
+	/**
 	 * Contructor for this method 
 	 * 
 	 * <pre>
@@ -90,6 +98,7 @@ class advertTemplate {
 		
 		$this->table = new table();
 		$this->template = new template();
+		$this->questions = new question();
 	
 	}
 	
@@ -723,7 +732,7 @@ delete_date FROM template WHERE template_id = ". $id ." AND (delete_date ='00-00
 				
 				$id = @$fieldMember['template_id'];
 
-				@$this->template->assign('title', ($input)? $this->template->input('text', 'title', $fieldMember['title']):$fieldMember['title']);
+				/*@$this->template->assign('title', ($input)? $this->template->input('text', 'title', $fieldMember['title']):$fieldMember['title']);
 				@$this->template->assign('employmenttype_id', ($input)? $this->getSelectListOfEmploymentType($fieldMember['employmenttype_id'], True):$this->getSelectListOfEmploymentType($fieldMember['employmenttype_id']));
 				@$this->template->assign('catagory_id',  ($input)? $this->getSelectListOfCategory($fieldMember['catagory_id'], True):$this->getSelectListOfCategory($fieldMember['catagory_id']));
 				@$this->template->assign('office_id', ($input)? $this->template->input('text', 'office_id', $fieldMember['office_id']):$fieldMember['office_id']);
@@ -741,7 +750,33 @@ delete_date FROM template WHERE template_id = ". $id ." AND (delete_date ='00-00
 				@$this->template->assign('create_date', ($input)? $this->template->input('text', 'create_date', $fieldMember['create_date']):$fieldMember['create_date']);
 				@$this->template->assign('modify_date', ($input)? $this->template->input('text', 'modify_date', $fieldMember['modify_date']):$fieldMember['modify_date']);
 				@$this->template->assign('delete_date', ($input)? $this->template->input('text', 'delete_date', $fieldMember['delete_date']):$fieldMember['delete_date']);
-
+				*/
+				
+				$this->template->assign('title', ($input)? $this->template->input('text', 'title', $fieldMember['title']):'<div id="title">'.$fieldMember['title'].'</div>');
+				$this->template->assign('catagory_name', ($input)? $this->getSelectListOfCategory($fieldMember['catagory_id'], True):'<div class="indent">'.$this->getSelectListOfCategory($fieldMember['catagory_id']).'</div>');
+				$this->template->assign('template_title', ($input)? $this->getSelectListOfTemplate($fieldMember['template_id'], True):$this->getSelectListOfTemplate($fieldMember['template_id']));
+				@$this->template->assign('office_id', ($input)? $this->template->input('text', 'office_id', $fieldMember['office_id']):$fieldMember['office_id']);
+				@$this->template->assign('dept_id', ($input)? $this->template->input('text', 'dept_id', $fieldMember['dept_id']):$fieldMember['dept_id']);
+				@$this->template->assign('role_id', ($input)? $this->template->input('text', 'role_id', $fieldMember['role_id']):$fieldMember['role_id']);
+				$this->template->assign('state_name', ($input)? $this->getSelectListOfStates($fieldMember['state_id'], True):'<div class="indent">'.$this->getSelectListOfStates($fieldMember['state_id']).'</div>');
+				@$this->template->assign('store_location_id', ($input)? $this->template->input('text', 'store_location_id', $fieldMember['store_location_id']):$fieldMember['store_location_id']);
+				@$this->template->assign('storerole_id', ($input)? $this->template->input('text', 'storerole_id', $fieldMember['storerole_id']):$fieldMember['storerole_id']);
+				$this->template->assign('start_date', ($input)? $this->template->input('text', 'start_date', $fieldMember['start_date']):'<div class="indent">'.$fieldMember['start_date'].'</div>');
+				$this->template->assign('end_date', ($input)? $this->template->input('text', 'end_date', $fieldMember['end_date']):'<div class="indent">'.$fieldMember['end_date'].'</div>');
+				$this->template->assign('discription', ($input)? $this->template->input('textarea', 'discription', $fieldMember['discription']):$fieldMember['discription']);
+				$this->template->assign('requirments', ($input)? $this->template->input('textarea', 'requirments', $fieldMember['requirments']):$fieldMember['requirments']);
+				$this->template->assign('question_list', ($input)? $this->getAdvertisingQuestions($_SESSION['questions'][$id]):$this->getAdvertisingQuestions($_SESSION['questions'][$id]));
+				$this->template->assign('question_pool', ($input)? $this->getListOfQuestions($id):$this->getListOfQuestions($id));
+				@$this->template->assign('upload_resume', ($input)? $this->template->input('checkbox', 'upload_resume', $this->template->formatBoolean($fieldMember['upload_resume'])):$this->template->formatBoolean($fieldMember['upload_resume'] ));
+				@$this->template->assign('cover_letter', ($input)? $this->template->input('checkbox', 'cover_letter', $this->template->formatBoolean($fieldMember['cover_letter'])):$this->template->formatBoolean($fieldMember['cover_letter'] ));
+				@$this->template->assign('status', ($input)? $this->template->input('checkbox', 'status', $this->template->formatBoolean($fieldMember['status'])):$this->template->formatBoolean($fieldMember['status'] ));
+				$this->template->assign('employmenttype', ($input)? $this->getSelectListOfEmploymentType($fieldMember['employmenttype_id'], True):'<div class="indent">'.$this->getSelectListOfEmploymentType($fieldMember['employmenttype_id']).'</div>');
+				$this->template->assign('create_date', $fieldMember['create_date']);
+				@$this->template->assign('create_by', $this->getUserById($fieldMember['create_by']));
+				$this->template->assign('modify_date', $fieldMember['modify_date']);
+				@$this->template->assign('modify_by', $this->getUserById($fieldMember['modify_by']));
+				$this->template->assign('delete_date', $fieldMember['delete_date']);
+				@$this->template->assign('delete_by', $this->getUserById($fieldMember['delete_by']));
 				
 				/*if(isset($id)){
 					$this->template->assign('COMMENTS', $this->comment->getCommentBox($id, 'advertTemplate'));
@@ -914,4 +949,124 @@ delete_date FROM template WHERE template_id = ". $id ." AND (delete_date ='00-00
 				return $select;
 			}
 	}
+	private function getAdvertisingQuestions($qArray){
+		if(!is_array($qArray)){
+			return false;
+		}
+		
+		$html ="";
+		
+		foreach($qArray AS $value){
+			$html .='<li id="q_'.$value['question_id'].'" style="clear:both">
+						<div>
+							<div style="width:300px;float:left">'.$value['label'].'</div>
+							<span style="width:50px;">'.$this->questions->getQuestionTypeLable($value['type'])."</span>
+						</div>
+					 </li>\n";
+		}
+		
+		return $html;
+	}
+	
+	public function getListOfQuestions($pid){
+		$list = $this->questions->getQuestionPool($pid);
+		//pp($list);
+		foreach($list AS $value){
+			$value['question_catagory_name'] = (!empty($value['question_catagory_name']))?$value['question_catagory_name'] : "Other";
+			$listArray[$value['question_catagory_name']][] = $value;
+		}
+		//pp($listArray);
+		
+		$html ='<div style="float:left;width:380px">';
+		$html .='<div class="pool" >';
+		$html .= "<h3><a href=\"#\">Create new</a></h3><ul><li></li></ul>";
+		foreach($listArray AS $key=>$value1){
+			$html .= "<h3><a href=\"#\">$key</a></h3>";
+			$html .= "<ul>";
+			foreach($value1 AS $key=>$value){
+				$html .='<li id="list_'.$value['question_id'].'">
+							<div class="pool-list" style="float:left">
+								<div style="width:265px;float:left">'.$value['label'].'</div>
+								<div style="width:50px;float:left">'.$this->questions->getQuestionTypeLable($value['type'])."</div>
+							</div>
+						 </li>\n";
+			}
+			$html .= "</ul>";
+		}
+		$html .="</div>";
+		$html .='</div>';
+		
+		return $html;
+	}
+	
+	/**
+	 * This Method will either the employmenttype feild or a select box of employmenttype fields
+	 *
+	 * This Methos is based in the employmenttype_id of the employmenttype table, it will reurn either the information 
+	 * in the employmenttype field as a string or a select box with the id selected 
+	 * 
+	 * @todo move this as a function in advertTemplate class
+	 * @todo move this to its own class for all classes to use 
+	 * 
+	 * @param Integer $id the id of the row we are looking for 
+	 * @param Boolean $selectBox True will return it as a select box with field selected, else just the field
+	 * @return string 
+	 */
+	public function getSelectListOfTemplate($id, $selectBox=NULL){
+
+		if(is_nan($id) && empty($id)){
+			return;
+		}
+		
+		$sql = "Select * from template";
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			 $result = $this->db->select($sql);
+		}catch(CustomException $e){
+			 echo $e->queryError($sql);
+		}
+		
+		$html = '';
+		
+		foreach($result AS $values){
+			if($values['template_id'] == $id){
+				$html .= '<div class="template-list template-selected"><a href="advertTemplate.php?action=show&id='.$values['template_id'].'">'.$values['title'].'</a></div>';
+			}else{
+				$html .= '<div class="template-list"><a href="advertTemplate.php?action=show&id='.$values['template_id'].'">'.$values['title'].'</a></div>';
+			}
+		}
+		return $html;
+	}
+	
+	/**
+	 * Will get name of the user based on id 
+	 * 
+	 * This will return the name and surname concatinated of a user by their id 
+	 *  
+	 * @param Integer $id
+	 * @return String The user name
+	 */
+	public function getUserById($id = false){
+
+		if(is_nan($id) || empty($id)){
+			return;
+		}
+		
+		$sql = "Select CONCAT(name, ' ', surname) as admin from users WHERE user_id = $id;";
+		
+		$stmt = $this->db_connect->prepare($sql);
+		$stmt->execute();
+		
+		try{
+			 $result = $this->db->select($sql);
+		}catch(CustomException $e){
+			 echo $e->queryError($sql);
+		}
+		return $result[0]['admin'];
+		
+	}
+	
 }

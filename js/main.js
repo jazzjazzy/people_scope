@@ -9,6 +9,8 @@ $(document).ready(function(){
 	$("input#title").hint('Create New title');
 	$("input#start_date").datefield();
 	$("input#end_date").datefield();
+	
+	
 });
 
 function generalLink(page){

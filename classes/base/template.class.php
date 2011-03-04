@@ -10,7 +10,21 @@ class template{
 	private $filterArray;
 	private $template;
 	
-	
+	/**
+	 * Constructor for template class 
+	 * 
+	 * This method will take string to define a main layout for the site, if nothing given the it will look for a 
+	 * file called layout.tpl.html, If the param is 'blank' it will return no layout 
+	 * 
+	 * template file must have the template param {*CONTENT*} in then as a location for assigned var to go
+	 * 
+	 * example:
+	 * $template = new template() // will use layout.tpl.html for layout
+	 * $template = new template('indexfile.php')  // will use indexfile.php for layout
+	 * $template = new template('blank')  // will use no layout and just output the assigns
+	 *  
+	 * @param String $layout A name of a html in in the /temple dir to use for main layout or Blamk for no layout
+	 */
 
 	public function __construct($layout = NULL){
 	
@@ -26,7 +40,9 @@ class template{
 		
 		$this->template = new stdClass(); 
 		
-		if($layout){
+		if(strtolower($layout)=='blank'){
+			$this->template->layout = "{*CONTENT*}";
+		}elseif($layout){
 			$this->template->layout = fread(fopen( DIR_ROOT."/templates/".$layout, 'r'), filesize(DIR_ROOT."/templates/".$layout));
 		}else{
 			$this->template->layout = fread(fopen( DIR_ROOT."/templates/layout.tpl.html", 'r'), filesize(DIR_ROOT."/templates/layout.tpl.html"));

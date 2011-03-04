@@ -115,7 +115,7 @@ class form extends table {
 	 * @param String $form input values for form information 
 	 * @return void
 	 */
-	function __construct($form){
+	function __construct($form=NULL){
 		$this->form($form);
 	}
 	
@@ -235,6 +235,43 @@ class form extends table {
 		return @implode("\n", $inputfield);
 	}
 	
+	function edit($input, $type = NULL){
+		$fieldData = explode(":::", $input);
+		//setting vars
+		$file ='';
+		$funcVars = '';
+		$func_div = false;
+		$isdiv = false;
+		$nolable = false;
+		$valid_str = '';
+		$func_script = '';
+		$func_class = '';
+		$func_id = '';
+
+		if(preg_match( "/^:/",@$fieldData[1])){
+			$fieldData[1] = substr($fieldData[1], 1);
+		}
+		$field = explode(':', trim($fieldData[0]));
+		
+		
+		$type =strtolower(@$field[2]);
+		if(file_exists(DIR_ROOT.'/question/'.$type.'.q.php')){
+			include_once DIR_ROOT.'/question/'.$type.'.q.php';
+		}
+		
+		$question = new $type();
+		
+		switch(trim(strtoupper($type))){
+			case "DISPLAY": $edit = $question->edit($field, $funcVars, $valid_str.$this->autoRefresh); break;
+			case "SETTING": $edit = $question->setting($field); break; 
+			default : $edit = $question->edit($field, $funcVars, $valid_str.$this->autoRefresh); break;
+		}
+		
+		//$edit = edit($field, $funcVars, $valid_str.$this->autoRefresh);
+		
+		return $edit;
+	}
+	
 	/**
 	 * Set a alternate FCK config file path
 	 * 
@@ -311,11 +348,16 @@ class form extends table {
 			$funcVars = $func_script.$func_class.$func_id;
 
 		}
-		if(file_exists(DIR_ROOT.'/question/'.strtolower(@$field[2]).'.q.php')){
-			include DIR_ROOT.'/question/'.strtolower(@$field[2]).'.q.php';
+		
+		$type =strtolower(@$field[2]);
+		if(file_exists(DIR_ROOT.'/question/'.$type.'.q.php')){
+			include_once DIR_ROOT.'/question/'.$type.'.q.php';
 		}
 		
-
+		$question = new $type();
+		
+		$file = $question->display($field, $funcVars, $valid_str.$this->autoRefresh);
+		
 		if ($nolable){
 			$isdiv = (@$func_div)?"</div>":"";
 			return $file;
