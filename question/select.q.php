@@ -7,7 +7,7 @@ if(is_file('../config/config.php')){
 }
 
 
-$action = $_REQUEST['action'];
+$action = (isset($_REQUEST['action']))?$_REQUEST['action']:'';
 
 $checkbox = new select();
 
@@ -26,6 +26,14 @@ class select{
 	var $template;
 	
 	public function __construct(){
+		$this->db = new db();
+
+		try {
+			$this->db_connect = $this->db->dbh;
+		} catch (CustomException $e) {
+			$e->logError();
+		}
+		
 		$this->template = new template('blank');
 	}	
 
@@ -45,42 +53,38 @@ class select{
 		$this->template->assign('script', $this->script());
 		$this->template->assign('label', $label);
 		$this->template->assign('value', $this->getValues());
-		$this->template->assign('edit', $this->edit());
+		$this->template->assign('edit', $this->edit(true));
 		$this->template->assign('setting', $this->setting($options));
 		
 			
 		return $this->template->fetch();	
 	}
 	
-	function display($field =NULL ,$funcVars=null){
+	function display($lable ,$field, $qid){
 		
-		$file ='';
+		$file =$lable."<br />";
 		
-		foreach(explode(',',$field[3]) AS $list){
-				$listofcheckboxes = explode(',',$list);
-				foreach($listofcheckboxes AS $checkboxDetails){
-					@list($name,$value,$checked,$idName) = explode('|',$checkboxDetails);
-					if ($checked == 1){
-						$checked = "checked";
-					}
-					if (!empty($idName)){
-						$func_id = " id=\"".$idName."\"";
-					}
-					$file .= '<input type="checkbox" name="'.$field[1].'[]"'.@$func_id.' value="'.$value.'" '.$funcVars.' '.$checked.'>'.$name.'<br>';
-				}
+		$file .= '<select name="q['.$qid.']">';
+		foreach($field AS $checkboxDetails){	
+			$file .= '<option value="'.$checkboxDetails['multi_id'].'">'.$checkboxDetails['label'].'</option>';
 		}
+		$file .= '</select>';
+		
 		return $file;
 	}
 	
-	function edit($field =NULL ,$funcVars=null){
+	function edit($isCreate = false){
 		
-		$html = '
+		$html = '';
 		
-		<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
-		<br /><br />
-		<br />
-		<br />
-		<div id="field-list">';
+		if ($isCreate){
+			$html .= '<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
+			<br /><br />
+			<br />
+			<br />';
+		}
+		
+		$html .= '<div id="field-list">';
 	
 		if(isset($_SESSION['Question_Details']['values'])){
 			$html.= $this->addFields();
@@ -308,6 +312,17 @@ class select{
 edo;
 		return $html; 
 		
+	}
+	
+	function saveValues($qid, $appid, $valueList ){
+
+		$sql = "INSERT INTO applications_question (application_id, question_id, multi_id) VALUES (".$appid.",".$qid.",".$valueList.")";
+
+		try{
+			$application_id = $this->db->insert($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
 	}
 }
 ?>

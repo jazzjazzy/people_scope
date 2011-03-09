@@ -7,7 +7,7 @@ if(is_file('../config/config.php')){
 }
 
 
-$action = $_REQUEST['action'];
+$action = (isset($_REQUEST['action']))?$_REQUEST['action']:'';
 
 $checkbox = new multiselect();
 
@@ -26,6 +26,14 @@ class multiselect{
 	var $template;
 	
 	public function __construct(){
+		
+		$this->db = new db();
+
+		try {
+			$this->db_connect = $this->db->dbh;
+		} catch (CustomException $e) {
+			$e->logError();
+		}
 		$this->template = new template('blank');
 	}	
 
@@ -45,42 +53,38 @@ class multiselect{
 		$this->template->assign('script', $this->script());
 		$this->template->assign('label', $label);
 		$this->template->assign('value', $this->getValues());
-		$this->template->assign('edit', $this->edit());
+		$this->template->assign('edit', $this->edit(true));
 		$this->template->assign('setting', $this->setting($options));
 		
 			
 		return $this->template->fetch();	
 	}
 	
-	function display($field =NULL ,$funcVars=null){
+	function display($lable ,$field, $qid){
 		
-		$file ='';
+		$file =$lable."<br />";
 		
-		foreach(explode(',',$field[3]) AS $list){
-				$listofcheckboxes = explode(',',$list);
-				foreach($listofcheckboxes AS $checkboxDetails){
-					@list($name,$value,$checked,$idName) = explode('|',$checkboxDetails);
-					if ($checked == 1){
-						$checked = "checked";
-					}
-					if (!empty($idName)){
-						$func_id = " id=\"".$idName."\"";
-					}
-					$file .= '<input type="checkbox" name="'.$field[1].'[]"'.@$func_id.' value="'.$value.'" '.$funcVars.' '.$checked.'>'.$name.'<br>';
-				}
+		$file .= '<select multiple size="10" name="q['.$qid.'][]">';
+		foreach($field AS $checkboxDetails){	
+			$file .= '<option value="'.$checkboxDetails['multi_id'].'">'.$checkboxDetails['label'].'</option>';
 		}
+		$file .= '</select>';
+		
 		return $file;
 	}
 	
-	function edit($field =NULL ,$funcVars=null){
+	function edit($isCreate = false){
 		
-		$html = '
+		$html = '';
 		
-		<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
-		<br /><br />
-		<br />
-		<br />
-		<div id="field-list">';
+		if ($isCreate){
+			$html .= '<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
+			<br /><br />
+			<br />
+			<br />';
+		}
+		
+		$html .= '<div id="field-list">';
 	
 		if(isset($_SESSION['Question_Details']['values'])){
 			$html.= $this->addFields();
@@ -99,14 +103,6 @@ class multiselect{
 		Is this field required: 
 		<input type=\"radio\" value=\"yes\" name=\"required\">yes
 		<input type=\"radio\" value=\"no\" name=\"required\" checked=checked>no
-		<br /><br />
-		CheckBox position: 
-		<input type=\"radio\" value=\"BEFORE\" name=\"position\" checked=checked>Before
-		<input type=\"radio\" value=\"AFTER\" name=\"position\">After
-		<br /><br />
-		Output running 
-		<input type=\"radio\" value=\"TRUE\" name=\"horizontal\">Horizontal
-		<input type=\"radio\" value=\"FALSE\" name=\"horizontal\" checked=checked>Vertical
 		<br /><br />
 		Tag Padding width: <input type=\"text\" id=\"tag-width\" value=\"\" name=\"options[padding]\" />
 		<div id=\"slider-tag\" style=\"width:200px\"></div>
@@ -177,6 +173,9 @@ class multiselect{
 	function script(){
 		
 		$html = <<< edo
+		
+		var maxLength=0;
+		
 		$(document).ready(function(){
 				
 				$("#add-field-button").click(function(){
@@ -242,13 +241,13 @@ class multiselect{
 
 				
 				$( "#slider-tag" ).slider({
-					value:0,
-					min: 14,
-					max: 200,
+					value:maxLength,
+					min: maxLength,
+					max: maxLength+200,
 					step: 1,
 					slide: function( event, ui ) {
 						$("#tag-width").val( ui.value );
-						$("#example div#value").exampleVal();	
+						$("#example div#value select").css({'width':ui.value+'px'}); //exampleVal();	
 					}
 				});
 
@@ -276,7 +275,8 @@ class multiselect{
 			});
 
 			jQuery.fn.exampleVal = function(){
-				var select="<select MULTIPLE size=10>";
+
+				var select="<select>";
 				select += "<option></optoin>";
 				$(".selection-list>li").each(function(index) {
 					var name= $(this).text();
@@ -287,30 +287,14 @@ class multiselect{
 				select += "<div class=\"clear\" />";
 				
 				$(this).html(select);
-
-				var tag = $("#tag-width").val();
 				
-				if(tag == ''){
-					$('#example div#value label').css({'float':'none', 'width':'none'});
-				}else{
-					if($("input[name=position]:checked").val() == "AFTER"){
-						$('#example div#value label').css({'float':'left', 'width':tag+'px'});
-					}else{
-						$('#example div#value span').css({'float':'left', 'width':tag+'px'});
-					}
-				}
-
-
+				
 				var fontsize = $("#tag-size").val();
 				
 				if(fontsize == ''){
 					$('#example div#value label').css({'font-size': 'none'});;
 				}else{
 					$('#example div#value label').css({'font-size': fontsize+'px'});
-				}
-
-				if($("input[name=horizontal]:checked").val() == 'TRUE'){
-					$("#example div#value span").css('float','left');
 				}
 				
 				var cssElements = new Array();
@@ -328,6 +312,22 @@ class multiselect{
 edo;
 		return $html; 
 		
+	}
+	
+	function saveValues($qid, $appid, $valueList ){
+
+		foreach($valueList AS $value){
+			$list[] = "(".$appid.",".$qid.",".$value.")";
+		}
+		
+		$sql = "INSERT INTO applications_question (application_id, question_id, multi_id) VALUES ";
+		$sql .= implode(",", $list);
+
+		try{
+			$application_id = $this->db->insert($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
 	}
 }
 ?>

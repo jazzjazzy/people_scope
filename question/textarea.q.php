@@ -7,7 +7,7 @@ if(is_file('../config/config.php')){
 }
 
 
-$action = $_REQUEST['action'];
+$action = (isset($_REQUEST['action']))?$_REQUEST['action']:'';
 
 $checkbox = new textarea();
 
@@ -26,6 +26,14 @@ class textarea{
 	var $template;
 	
 	public function __construct(){
+		$this->db = new db();
+
+		try {
+			$this->db_connect = $this->db->dbh;
+		} catch (CustomException $e) {
+			$e->logError();
+		}
+		
 		$this->template = new template('blank');
 	}	
 		
@@ -54,9 +62,9 @@ class textarea{
 		return $this->template->fetch();	
 	}
 	
-	function display($label){
-		$file=$label."<br />";
-		$file.="<textarea></textarea>";
+	function display($lable ,$field, $qid){
+		$file=$lable."<br />";
+		$file.="<textarea name=\"q[".$qid."]\"></textarea>";
 		return $file;
 	}
 	
@@ -240,6 +248,17 @@ class textarea{
 edo;
 		return $html; 
 		
+	}
+	
+	function saveValues($qid, $appid, $value ){
+
+		$sql = "INSERT INTO applications_question (application_id, question_id, multi_id, value) VALUES (".$appid.",".$qid.",-1,'".addslashes($value)."')";
+
+		try{
+			$application_id = $this->db->insert($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
 	}
 }
 ?>

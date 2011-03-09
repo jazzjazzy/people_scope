@@ -1,0 +1,44 @@
+{*FORM-HEADER*}
+
+<style>
+
+</style>
+<link media="print" rel="stylesheet" href="css/bulkprint.css" type="text/css">
+<div id="row1">
+<h1><div id="staff-title">{*page_title*}</div><div style="clear:both;"></div></h1>
+<div class="container">
+	<div class="tab">
+			<div id="tab-header">
+				<h1>User Details</h1>
+			</div>
+			<div id="tab-text">
+				Information on a selected user 
+			</div>
+			<div id="tab-body">
+				<div class="noprint">{*FUNCTION*}</div><br class="clear"/>
+				<div class="label">Question Catagory :</div> <div class="value">{*question_catagory_name*}{*err_question_catagory_name*}</div><br class="clear"/>
+
+			<br class="clear"/>
+			</div>
+			<div id="tab-foot"></div>
+	</div>
+	<div  class="tab">
+	<div id="tab-header">
+			<h1>Account Details</h1>
+		</div>
+		<div id="tab-text">
+			Information about the element, create, Modify and delete dates 
+		</div>
+		<div id="tab-body">
+			<div style="width:120px">Created on : </div>{*create_date*}<br />
+			<div style="width:120px">Modified on :</div>{*modify_date*}<br />
+			<div style="width:120px">Deleted on :</div>{*delete_date*}<br />
+			<br class="clear"/>
+		</div>
+		<div id="tab-foot"></div>
+	</div>
+</div>
+<br class="clear"/>
+{*FORM-FOOTER*}
+</div>
+{*pbreak*}{*pbreakend*}

@@ -232,10 +232,10 @@ class advertisement {
 				}
 				
 				$sql = "INSERT INTO advertisement_question (advertisement_id, question_id, sort) VALUES "; 
-				pp($source['advertisement_question']);
+				
 				foreach($source['advertisement_question'] AS $key=>$value){
-					
 					$fields[] = "(".$pid.", ".$value['question_id'].",".$key.")";
+					$fields2[] = "(".$value['question_id'].",".$pid.",".$value['multi_id'].")";
 				}
 				
 				$sql .= implode(',', $fields);

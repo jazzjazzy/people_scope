@@ -7,7 +7,7 @@ if(is_file('../config/config.php')){
 }
 
 
-$action = $_REQUEST['action'];
+$action = (isset($_REQUEST['action']))?$_REQUEST['action']:'';
 
 $checkbox = new checkbox();
 
@@ -26,6 +26,15 @@ class checkbox{
 	var $template;
 	
 	public function __construct(){
+		
+		$this->db = new db();
+
+		try {
+			$this->db_connect = $this->db->dbh;
+		} catch (CustomException $e) {
+			$e->logError();
+		}
+		
 		$this->template = new template('blank');
 	}	
 
@@ -46,37 +55,36 @@ class checkbox{
 		$this->template->assign('script', $this->script());
 		$this->template->assign('label', $label);
 		$this->template->assign('value', $this->getValues());
-		$this->template->assign('edit', $this->edit());
+		$this->template->assign('edit', $this->edit(true));
 		$this->template->assign('setting', $this->setting($options));
 		
 			
 		return $this->template->fetch();	
 	}
 	
-	function display($lable ,$field){
+	function display($lable ,$field, $qid){
 		
 		$file =$lable."<br />";
 		
 		foreach($field AS $checkboxDetails){	
-			$file .= '<input type="checkbox" name="'.$checkboxDetails['multi_id'].'[]">'.$checkboxDetails['value'].'<br>';
+			$file .= '<input type="checkbox" name="q['.$qid.'][]" value="'.$checkboxDetails['multi_id'].'">'.$checkboxDetails['label'].'<br>';
 		}
 
 		return $file;
 	}
 	
-	function edit($isTracking = false){
+	function edit($isCreate= false){
 		
 		$html = '';
 		
-		if (!$isTracking){
-		$html = '
-			<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
+		if ($isCreate){
+			$html = '<span style="float:left"><input type="text" value="" id="add-field" style="width:300px";></span><span class="button" id="add-field-button">Add</span>
 			<br /><br />
 			<br />
 			<br />';
 			
 		}
-		$html = '<div id="field-list">';
+		$html .= '<div id="field-list">';
 		if(isset($_SESSION['Question_Details']['values'])){
 			$html.= $this->addFields();
 		}else{
@@ -330,6 +338,22 @@ class checkbox{
 edo;
 		return $html; 
 		
+	}
+	
+	function saveValues($qid, $appid, $valueList ){
+
+		foreach($valueList AS $value){
+			$list[] = "(".$appid.",".$qid.",".$value.")";
+		}
+		
+		$sql = "INSERT INTO applications_question (application_id, question_id, multi_id) VALUES ";
+		$sql .= implode(",", $list);
+
+		try{
+			$application_id = $this->db->insert($sql);
+		}catch(CustomException $e){
+			echo $e->queryError($sql);
+		}
 	}
 }
 ?>

@@ -287,10 +287,10 @@ class question {
 				$retResult['modify_by'] =$value['modify_by'];
 				$retResult['delete_date'] =$value['delete_date'];
 				$retResult['delete_by'] =$value['delete_by'];
-				$retResult['value'][$count]['multi_id'] =$value['multi_id'];
-				$retResult['value'][$count]['value'] =$value['multi_lable'];
-				$_SESSION['Question_Details']['values'][$count]['multi_id'] =$value['multi_id'];
-				$_SESSION['Question_Details']['values'][$count]['value'] =$value['multi_lable'];
+				$retResult['value'][$value['multi_id']]['multi_id'] =$value['multi_id'];
+				$retResult['value'][$value['multi_id']]['value'] =$value['multi_lable'];
+				$_SESSION['Question_Details']['values'][$value['multi_id']]['multi_id'] =$value['multi_id'];
+				$_SESSION['Question_Details']['values'][$value['multi_id']]['value'] =$value['multi_lable'];
 				$count++;
 			}
 			
@@ -645,12 +645,8 @@ class question {
 				if(isset($_SESSION['Question_Details']['values'])){
 					if(is_array($_SESSION['Question_Details']['values'])){
 						$table="question_multi";
-						$table2="questionTracking";
 						foreach($_SESSION['Question_Details']['values'] AS $key=>$value){
 							$save[$table][$key]['label'] = $value['value'];
-							if(!empty($value['tracker'])){
-								$save[$table2][$key]['tracker'] = $value['tracker'];
-							}
 						}
 					}
 				}
@@ -848,9 +844,9 @@ class question {
 		$list = $this->read($id);
 		
 		if(empty($pid)){
-			$_SESSION['questions']['create'][] = $list;
+			$_SESSION['questions']['create'][$id] = $list;
 		}else{
-			$_SESSION['questions'][$pid][] = $list;
+			$_SESSION['questions'][$pid][$id] = $list;
 		}
 		
 		/*$sql = "INSERT INTO advertisement_question (advertisement_id,question_id) VALUES ('".$pid."','".$list['question_id']."');";
@@ -1024,6 +1020,7 @@ class question {
 						$("#example").tabs();
 					})
 				</script> 
+				<input type="hidden" value="'.$id.'" name="qid" id="qid" />
 		<div id="example">
      	<ul>
 		<li><a href="#tabs-1">Eample</a></li>
@@ -1188,5 +1185,12 @@ class question {
 		//$html = create($read['options']);	
 		
 		return $html;
+	}
+	
+	public function addTrackingId($qid, $tid, $pid=NULL){
+		
+		$_SESSION['questions']['create'][$qid]['value'][$tid]['tracking']='true';
+
+		pp($_SESSION['questions']['create'][$qid]['value']);
 	}
 }

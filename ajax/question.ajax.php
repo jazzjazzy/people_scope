@@ -47,6 +47,8 @@ switch($action){
 				$qid = (isset($_REQUEST['qid']))? $_REQUEST['qid'] : ''; //page id 
 				$pid=(isset($_REQUEST['pid']))? $_REQUEST['pid'] : '';	//question id
 				$tid=(isset($_REQUEST['tid']))? $_REQUEST['tid'] : '';	//tracking id
-				$question->sortQuestionOrder($pid, $qid, $tid);	
+				$question->addTrackingId( $qid, $tid, $pid);	
+				echo "isTracking";
+			break;
 	default : echo ("No action given");
 }
